@@ -13,3 +13,6 @@
 
 plugins:
   - jekyll-seo-tag
+remote_theme: b2a3e8/jekyll-theme-console
+url: "https://dotorimook.github.io"
+baseurl: "" # the subpath of your site, e.g. "/blog"
