@@ -14,7 +14,7 @@ function numbers () {
 		
 		/* MARKDOWN SECTION /**/
 
-		select_f.splice(-1, 1);
+		select_f.splice(0, -1);
 
 		/* END OF SECTION*/
 
