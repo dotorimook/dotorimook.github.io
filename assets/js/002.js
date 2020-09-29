@@ -7,7 +7,7 @@ function numbers () {
 		var num = 0;
 		var select = fields[field].innerText;
 		var select_f = select.split(/\n/);
-		// var tab = document.createElement("table");
+		var tab = document.createElement("table");
 
 		// IF YOU USE MARKDOWN AND YOU HAVE BEEN GETTING ONE ADDITIONAL LINE IN YOUR TAG CODE
 		// UNCOMMENT THE SECTION BELOW
@@ -18,8 +18,8 @@ function numbers () {
 
 		/* END OF SECTION*/
 
-		// fields[field].innerHTML = "";
-		// fields[field].appendChild(tab);
+		fields[field].innerHTML = "";
+		fields[field].appendChild(tab);
 		for (line in select_f) {
 			var row = document.createElement("tr");
 			var col = document.createElement("th");
