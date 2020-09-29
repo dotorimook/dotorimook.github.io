@@ -7,6 +7,8 @@ function numbers () {
 		var num = 0;
 		var select = fields[field].innerText;
 		var select_f = select.split(/\n/);
+		if (select_f.length === 1)
+			continue;
 		var tab = document.createElement("table");
 
 		// IF YOU USE MARKDOWN AND YOU HAVE BEEN GETTING ONE ADDITIONAL LINE IN YOUR TAG CODE
