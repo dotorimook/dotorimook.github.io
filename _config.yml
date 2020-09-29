@@ -36,7 +36,3 @@ sass:
 
 # Markdown
 markdown: kramdown
-kramdown:
-  input: GFM
-  syntax_highlighter_opts:
-    disable : false
