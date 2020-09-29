@@ -436,3 +436,11 @@ ul.topbar {
 ::-webkit-scrollbar-corner {
 	background-color: #cacaca;
 } /* if both the vertical and the horizontal bars appear, then perhaps the right bottom corner also needs to be styled */
+
+
+code.language-plaintext {
+	padding: 0.05em 0.3em;
+	border: 1px solid #9b845c;
+	border-radius: 2px;
+	background: #ebe8e6;
+}
