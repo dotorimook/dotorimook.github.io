@@ -37,10 +37,12 @@ tags: jekyll etc
 1. [쉽고 빠르게 수준 급의 GitHub 블로그 만들기 - jekyll remote theme으로][ref1]
 2. [jekyll document][ref2]
 3. [md 정리][ref3]
+4. [md 정리][ref4]
 
 [ref1]: https://dreamgonfly.github.io/blog/jekyll-remote-theme/
 [ref2]: https://jekyllrb.com/docs/
 [ref3]: https://gist.github.com/ihoneymon/652be052a0727ad59601
+[ref4]: http://gjchoi.github.io/env/Kramdown(%EB%A7%88%ED%81%AC%EB%8B%A4%EC%9A%B4)-%EC%82%AC%EC%9A%A9%EB%B2%95/
 
 [theme1]: https://blog.base68.com/
 [theme2]: http://jekyllthemes.org/themes/mere-blog-theme/
