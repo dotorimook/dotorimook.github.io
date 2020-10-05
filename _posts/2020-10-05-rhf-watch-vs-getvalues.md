@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "React Hook Form의 watch() vs getValues"
-date: 2017-10-20 08:26:28 -0400
+date: 2020-10-05 14:11:13
 categories: jekyll update
 tags: react react-hook-form javascript typescript web
 ---
