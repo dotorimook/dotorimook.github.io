@@ -1,10 +1,9 @@
 ---
 layout: post
 title: "아직도 console.log만 쓰니? 내 콘솔창과 디버깅 생활에 생기를 불어넣어줄 console API"
-date: 2020-10-05 16:04:56
+date: 2020-10-06 13:37:00
 categories: javascript
 tags: javascript console web
-published: false
 ---
 # `console.log()`, 진짜 그것만으로 충분할까?
 아주 오래전 웹 개발에서 *Chrome Insepctor* 같은 강력한 도구가 없던 시절 자바스크립트 디버깅엔 `console.log`가 필수였다.
@@ -88,7 +87,56 @@ published: false
 참고로 [`console.timeStamp()`][ref-timestamp]는 표준이 아니라고 함.
 
 ## `console.trace()`
+`console.trace()`는 `console.log()`와 유사하지만 콜스택 정보를 함께 콘솔에 나타낸다.
+
+```
+  console.trace('hello world');
+```
+
+![Image](/assets/posts/2020-10-05-javascript-console/6.png)
+
 ## `console.group()` & `console.groupEnd()`
+`console.group()`과 `console.groupEnd()`는 로그를 그룹해서 몪어준다. 콘솔창을 정리할 때 유용하다.
+
+```
+  console.group();
+  console.log('hello');
+  console.log('world');
+  console.groupEnd();
+```
+
+![Image](/assets/posts/2020-10-05-javascript-console/7.png)
+
 ## `console.table()`
+`console.table()`은 표 형태로 로그를 나타낸다.
+`Object`형태로 파라미터를 넘길 수도 있고, `Array`나 `Object[]`형태도 가능하다. `Object[]` 형태로 파라미터를 넘겼을 경우는 두 번째 파라미터에 프로퍼티명을 파라미터로 넣어서 원하는 속성만을 확인할 수도 있다.
+```
+  console.table({name: 'apple', amount: 10});
+  console.table(['apple', 'orange']);
+  const fruits = [
+    {
+      name: 'apple',
+      amount: 10,
+    }, {
+      name: 'orange',
+      amount: 12,
+    }, {
+      name: 'strawberry',
+      amount: 15,
+    }
+  ];
+  console.table(fruits);
+  console.table(fruits, ['name']);
+```
+![Image](/assets/posts/2020-10-05-javascript-console/8.png)
+
+`console.debug()`에서 부터 `console.tabel()`까지 다양한 Console API를 확인해보았다.
+다양한 Console API를 이용해서 좀 더 세련되고 풍성한 디버깅을 즐겨보자!
+
+### Reference
+1. [MDN][ref-mdn]
+2. [There's more than just console.log()....other useful ways to use the console in javascript][ref-dev-to]
 
 [ref-timestamp]: [https://developer.mozilla.org/en-US/docs/Web/API/Console/timeStamp]
+[ref-mdn]: [https://developer.mozilla.org/en-US/docs/Web/API/Console]
+[ref-dev-to]: [https://dev.to/developer_buddy/there-s-more-than-just-console-log-other-useful-ways-to-use-the-console-in-javascript-17l8]
