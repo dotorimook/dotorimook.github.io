@@ -26,3 +26,29 @@ document.body.addEventListener('drag', (e) => {
     }
   }
 });
+
+document.body.addEventListener('click', (e) => {
+  if(e.target.classList.contains('btn-toy')) {
+    const el = document.createElement('div')
+    el.classList.add('wrapper');
+    el.classList.add('toy');
+    el.classList.add('draggable');
+    el.draggable = true;
+    el.innerHTML = `
+      <div class="default_title">
+        <h1>Hello, World</h1>
+        <button class='btn btn-close'>
+          <span class="fa fa-times">
+        </button>
+      </div>
+      <div class='img-toy'>
+        <img src='https://source.unsplash.com/480x320/?vaporwave'/>
+      </div>
+    `;
+    dragify(el);
+    document.body.prepend(el);
+  } else if (e.target.classList.contains('btn-close')) {
+    const wrapper = e.target.closest('.wrapper');
+    wrapper.remove();
+  }
+});

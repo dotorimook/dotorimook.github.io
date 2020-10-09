@@ -3,13 +3,58 @@
 
 @import "reset";
 @import "main";
-
 html, body {
   width:100%;
   height:100%;
 }
+
+.content-layer {
+  // z-index:1;
+  // position:absolute;
+  // width:100%;
+  // height:100%;
+}
+.toy-layer {
+  // z-index:0;
+  // position:absolute;
+  // width:100%;
+  // height:100%;
+}
+
+.btn {
+  background: #cccccc;
+  border: 2px solid;
+  border-color: #fff8ff #000000 #000000 #fff8ff;
+  text-align:center;
+  padding: .6em 1em;
+  &:focus {
+    outline:0;
+  }
+  &:active {
+    border-color: grey #dfdfdf #dfdfdf grey;
+    box-shadow: inset 1px 1px 0 0 #000;
+  }
+}
+
+.default_title {
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  h1 {
+    flex:1;
+  }
+  .btn {
+    padding:0;
+    width:15px;
+    height:15px;
+  }
+}
+
 .wrapper.toy {
   width:480px;
+  // > * {
+  //   pointer-events: none;
+  // }
   .img-toy {
     width:480px;
     height:320px;
