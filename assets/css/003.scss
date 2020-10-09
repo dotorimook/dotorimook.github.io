@@ -26,7 +26,6 @@ html, body {
   border: 2px solid;
   border-color: #fff8ff #000000 #000000 #fff8ff;
   text-align:center;
-  padding: .6em 1em;
   &:focus {
     outline:0;
   }
@@ -35,8 +34,13 @@ html, body {
     box-shadow: inset 1px 1px 0 0 #000;
   }
 }
+body {
+  > .btn {
+    padding: .6em 1em;
+  }
+}
 
-.default_title {
+.default_title,.post_title {
   display:flex;
   flex-direction:row;
   align-items:stretch;
@@ -44,14 +48,18 @@ html, body {
     flex:1;
   }
   .btn {
-    padding:0;
     width:15px;
     height:15px;
   }
 }
 
 .wrapper.toy {
-  width:480px;
+  .default_title {
+    .btn {
+      padding:0;
+    }
+  }
+  width:auto;
   // > * {
   //   pointer-events: none;
   // }

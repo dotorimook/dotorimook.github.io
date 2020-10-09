@@ -1,5 +1,5 @@
 const draggables = document.querySelectorAll('*[draggable=true]');
-draggables.forEach((draggable) => {
+const dragify = (draggable) => {
   draggable.style.position = 'fixed';
   const screenW = document.body.clientWidth;
   const screenH = document.body.clientHeight;
@@ -8,7 +8,9 @@ draggables.forEach((draggable) => {
   const left = Math.random() * screenH - windowRect.height;
   draggable.style.left = `${top > 0 ? top : 0}px`;
   draggable.style.top = `${left > 0 ? left: 0}px`;
-});
+};
+draggables.forEach((draggable) => dragify(draggable));
+
 let initOffsetX = 0, initOffsetY = 0;
 document.body.addEventListener('dragstart', (e) => {
   if(e.target.classList.contains('draggable')) {
