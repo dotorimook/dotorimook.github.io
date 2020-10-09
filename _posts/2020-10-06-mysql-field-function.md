@@ -12,21 +12,21 @@ tags: MySQL
 
 ```
 SELECT name FROM city
-ORDER BY FIELD(name, 'london', 'milano', 'paris', 'new york', tokyo');
+ORDER BY FIELD(name, 'london', 'milano', 'paris', 'new york', 'tokyo');
 ```
 
 `FIELD`의 파라미터로 넘긴 값 외 다른 값의 정렬은 `DESC`나 `ASC`로 설정 가능하다.
 
 ```
 SELECT name FROM city
-ORDER BY FIELD(name, 'london', 'milano', 'paris', 'new york', tokyo') DESC;
+ORDER BY FIELD(name, 'london', 'milano', 'paris', 'new york', 'tokyo') DESC;
 ```
 
 다른 필드를 섞어서 정렬도 가능하다.
 
 ```
 SELECT name FROM city
-ORDER BY FIELD(name, 'london', 'milano', 'paris', 'new york', tokyo') DESC, poularity;
+ORDER BY FIELD(name, 'london', 'milano', 'paris', 'new york', 'tokyo') DESC, poularity;
 ```
 
 만약 `FIELD`를 사용하지 않는다고 한다면? `CASE`나 `DESC`를 줄줄 늘려서 쓸 수도 있다고 한다.
