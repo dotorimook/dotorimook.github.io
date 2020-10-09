@@ -57,6 +57,9 @@ body {
   .default_title {
     .btn {
       padding:0;
+      * {
+        pointer-events: none;
+      }
     }
   }
   width:auto;
