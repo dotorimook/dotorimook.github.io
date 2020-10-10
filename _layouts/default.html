@@ -39,7 +39,7 @@
 		</div>
 	</div>
 	
-	<div class="wrapper">
+	<div class="wrapper draggable" draggable="true">
 		<div class="default_title">
 			<img src="/assets/img/mycomputer.png" />
 			{% if page.tag %}
@@ -90,7 +90,7 @@
 		</div>
 	</div>
 	{% if page.title %}
-        <div class="content">
+		<div class="wrapper draggable content" draggable="true">
 			<div class="post_title">
 				<img src="/assets/img/file.png" />
 				<h1>{{  page.title  }}</h1>
