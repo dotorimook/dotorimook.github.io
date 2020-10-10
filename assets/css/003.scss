@@ -6,6 +6,7 @@
 html, body {
   width:100%;
   height:100%;
+  font-size:14px;
 }
 .footer {
   position:fixed;
@@ -25,6 +26,10 @@ html, body {
   // position:absolute;
   // width:100%;
   // height:100%;
+}
+
+.wrapper {
+  z-index:1;
 }
 
 .btn {
