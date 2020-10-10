@@ -102,6 +102,12 @@
 				<li>{{ page.date | date: '%B %-d, %Y' }}</li>
 			</ul>
 			<div class="post_content">
+				<div class='frame-title'>
+					<h1>
+						{{page.title}}
+					</h1>
+					<div class='frame-date'>{{ page.date | date: '%B %-d, %Y' }}</div>
+				</div>
         		{{ content }}
 				{% if page.title %}
 					{% include donate.html %}

@@ -13,7 +13,7 @@
 }
 
 .post_content {
-  padding: 1.4em;
+  padding: 1em;
   code:not(.highlighter-rouge) {
     background: var(--code-bg);
     color:var(--code-font-color-normal);
@@ -32,6 +32,10 @@
   }
   font-size: 1rem;
   line-height: 1.4rem;
+
+  .frame-title {
+    margin-bottom:2rem;
+  }
   
   h1,h2,h3,h4 {margin-bottom: 1rem};
 
