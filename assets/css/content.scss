@@ -30,6 +30,35 @@
       color: var(--code-font-color-comment);
     }
   }
+  font-size: 1rem;
+  line-height: 1.4rem;
+  
+  h1,h2,h3,h4 {margin-bottom: 1rem};
+
+  h1 { font-size: 2.2rem; }
+  h2 { font-size: 1.8rem; }
+  h3 {font-size: 1.2rem; font-weight:bold; }
+  h4 { font-size: 1.1rem; }
+  p {
+    margin-bottom:0.25rem;
+  }
+  .highlighter-rouge {
+    font-size:0.84em;
+  }
+	ul {
+		list-style: square;
+		margin: 0 0 15px 1.4em;
+		li {
+			padding: 5px;
+			ul {
+        margin:0;
+        margin-left: 1.4em;
+				li {
+					padding: 5px;
+				}
+			}
+		}
+	}
 }
 ul.topbar, .post_content {
   padding-left: 1.7em;
