@@ -11,6 +11,24 @@ const dragify = (draggable) => {
 };
 draggables.forEach((draggable) => dragify(draggable));
 
+const ls = window.localStorage;
+
+const initializeWindowPosition = (draggable) => {
+  const key = draggable.getAttribute('data-key');
+  if(!key)
+  return;
+  const info = JSON.parse(ls.getItem(`${key}-info`));
+  if(!info)
+    return;
+  const { top, left } = info;
+  draggable.style.top = top;
+  draggable.style.left = left;
+};
+const initWindowPositions = () => {
+  const draggables = document.querySelectorAll('.draggable');
+  draggables.forEach(initializeWindowPosition);
+}
+
 let initOffsetX = 0, initOffsetY = 0;
 document.body.addEventListener('dragstart', (e) => {
   if(e.target.classList.contains('draggable')) {
@@ -20,11 +38,22 @@ document.body.addEventListener('dragstart', (e) => {
   }
 });
 document.body.addEventListener('drag', (e) => {
+  const ls = window.localStorage;
   if(e.target.classList.contains('draggable')) {
     const rect = e.target.getBoundingClientRect();
     if(!!e.screenX && !!e.screenY) {
       e.target.style.left = `${rect.x + e.offsetX - initOffsetX}px`;
       e.target.style.top = `${rect.y + e.offsetY - initOffsetY}px`;
+      const key = e.target.getAttribute('data-key');
+      if(!key)
+        return;
+      const info = JSON.parse(ls.getItem(`${key}-info`)) || {};
+      const infoValue = JSON.stringify({
+        ...info,
+        top: e.target.style.top,
+        left: e.target.style.left,
+      });
+      ls.setItem(`${key}-info`, infoValue);
     }
   }
 });
@@ -54,3 +83,5 @@ document.body.addEventListener('click', (e) => {
     wrapper.remove();
   }
 });
+
+initWindowPositions();
