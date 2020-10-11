@@ -13,6 +13,8 @@
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
 #remote_theme: h01000110/windows-95
 
 #permalink: /:year:month:day/:title
