@@ -1,6 +1,6 @@
 ---
 layout: post
-title: [mongoose] mongoose 연결하기
+title: "[mongoose] mongoose 연결하기"
 date: 2020-10-24 16:19:25
 categories: mongoose
 tags: mongoose node js db javascript typescript database
