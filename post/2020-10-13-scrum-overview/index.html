@@ -1,0 +1,609 @@
+<!DOCTYPE html><html lang="en"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="ie=edge"/><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/><style id="typography.js">html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}article,aside,details,figcaption,figure,footer,header,main,menu,nav,section,summary{display:block}audio,canvas,progress,video{display:inline-block}audio:not([controls]){display:none;height:0}progress{vertical-align:baseline}[hidden],template{display:none}a{background-color:transparent;-webkit-text-decoration-skip:objects}a:active,a:hover{outline-width:0}abbr[title]{border-bottom:none;text-decoration:underline;text-decoration:underline dotted}b,strong{font-weight:inherit;font-weight:bolder}dfn{font-style:italic}h1{font-size:2em;margin:.67em 0}mark{background-color:#ff0;color:#000}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}img{border-style:none}svg:not(:root){overflow:hidden}code,kbd,pre,samp{font-family:monospace,monospace;font-size:1em}figure{margin:1em 40px}hr{box-sizing:content-box;height:0;overflow:visible}button,input,optgroup,select,textarea{font:inherit;margin:0}optgroup{font-weight:700}button,input{overflow:visible}button,select{text-transform:none}[type=reset],[type=submit],button,html [type=button]{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}fieldset{border:1px solid silver;margin:0 2px;padding:.35em .625em .75em}legend{box-sizing:border-box;color:inherit;display:table;max-width:100%;padding:0;white-space:normal}textarea{overflow:auto}[type=checkbox],[type=radio]{box-sizing:border-box;padding:0}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-cancel-button,[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-input-placeholder{color:inherit;opacity:.54}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}html{font:100%/1.75 'Merriweather','Georgia',serif;box-sizing:border-box;overflow-y:scroll;}*{box-sizing:inherit;}*:before{box-sizing:inherit;}*:after{box-sizing:inherit;}body{color:hsla(0,0%,0%,0.9);font-family:'Merriweather','Georgia',serif;font-weight:400;word-wrap:break-word;font-kerning:normal;-moz-font-feature-settings:"kern", "liga", "clig", "calt";-ms-font-feature-settings:"kern", "liga", "clig", "calt";-webkit-font-feature-settings:"kern", "liga", "clig", "calt";font-feature-settings:"kern", "liga", "clig", "calt";}img{max-width:100%;margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}h1{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:Montserrat,sans-serif;font-weight:900;text-rendering:optimizeLegibility;font-size:2.5rem;line-height:1.1;}h2{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.73286rem;line-height:1.1;}h3{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1.4427rem;line-height:1.1;}h4{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:1rem;line-height:1.1;letter-spacing:0.140625em;text-transform:uppercase;}h5{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.83255rem;line-height:1.1;}h6{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;color:inherit;font-family:'Merriweather','Georgia',serif;font-weight:900;text-rendering:optimizeLegibility;font-size:0.75966rem;line-height:1.1;font-style:italic;}hgroup{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}ul{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;list-style:disc;}ol{margin-left:1.75rem;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;list-style-position:outside;list-style-image:none;}dl{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}dd{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}p{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}figure{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}pre{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:0.85rem;line-height:1.75rem;}table{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1rem;line-height:1.75rem;border-collapse:collapse;width:100%;}fieldset{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}blockquote{margin-left:-1.75rem;margin-right:1.75rem;margin-top:0;padding-bottom:0;padding-left:1.42188rem;padding-right:0;padding-top:0;margin-bottom:1.75rem;font-size:1.20112rem;line-height:1.75rem;color:hsla(0,0%,0%,0.59);font-style:italic;border-left:0.32813rem solid hsla(0,0%,0%,0.9);}form{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}noscript{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}iframe{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}hr{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:calc(1.75rem - 1px);background:hsla(0,0%,0%,0.2);border:none;height:1px;}address{margin-left:0;margin-right:0;margin-top:0;padding-bottom:0;padding-left:0;padding-right:0;padding-top:0;margin-bottom:1.75rem;}b{font-weight:700;}strong{font-weight:700;}dt{font-weight:700;}th{font-weight:700;}li{margin-bottom:calc(1.75rem / 2);}ol li{padding-left:0;}ul li{padding-left:0;}li > ol{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}li > ul{margin-left:1.75rem;margin-bottom:calc(1.75rem / 2);margin-top:calc(1.75rem / 2);}blockquote *:last-child{margin-bottom:0;}li *:last-child{margin-bottom:0;}p *:last-child{margin-bottom:0;}li > p{margin-bottom:calc(1.75rem / 2);}code{font-size:0.85rem;line-height:1.75rem;}kbd{font-size:0.85rem;line-height:1.75rem;}samp{font-size:0.85rem;line-height:1.75rem;}abbr{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}acronym{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;}abbr[title]{border-bottom:1px dotted hsla(0,0%,0%,0.5);cursor:help;text-decoration:none;}thead{text-align:left;}td,th{text-align:left;border-bottom:1px solid hsla(0,0%,0%,0.12);font-feature-settings:"tnum";-moz-font-feature-settings:"tnum";-ms-font-feature-settings:"tnum";-webkit-font-feature-settings:"tnum";padding-left:1.16667rem;padding-right:1.16667rem;padding-top:0.875rem;padding-bottom:calc(0.875rem - 1px);}th:first-child,td:first-child{padding-left:0;}th:last-child,td:last-child{padding-right:0;}blockquote > :last-child{margin-bottom:0;}blockquote cite{font-size:1rem;line-height:1.75rem;color:hsla(0,0%,0%,0.9);font-weight:400;}blockquote cite:before{content:"— ";}ul,ol{margin-left:0;}@media only screen and (max-width:480px){ul,ol{margin-left:1.75rem;}blockquote{margin-left:-1.3125rem;margin-right:0;padding-left:0.98438rem;}}h1,h2,h3,h4,h5,h6{margin-top:3.5rem;}a{box-shadow:0 1px 0 0 currentColor;color:#007acc;text-decoration:none;}a:hover,a:active{box-shadow:none;}mark,ins{background:#007acc;color:white;padding:0.10938rem 0.21875rem;text-decoration:none;}a.gatsby-resp-image-link{box-shadow:none;}</style><style data-href="/styles.e4341d76e25e5efb0870.css" id="gatsby-global-css">.tl-edges{max-width:100%;overflow-x:hidden}.tl-wrapper{width:100%;float:left;position:relative}.tl-wrapper+.tl-wrapper{margin-left:-100%;margin-right:0}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:100;src:local("Montserrat Thin "),local("Montserrat-Thin"),url(/static/montserrat-latin-100-4124805c0503dbfe42dd67d7f5715964.woff2) format("woff2"),url(/static/montserrat-latin-100-c8fb2f714bbc7bc3e8dfffa916b286dc.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:100;src:local("Montserrat Thin italic"),local("Montserrat-Thinitalic"),url(/static/montserrat-latin-100italic-e4bf47bd171a9b2a72dd84c58bf90edf.woff2) format("woff2"),url(/static/montserrat-latin-100italic-d1f3f2d02ee4d7d2d4b1ad865014f189.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:200;src:local("Montserrat Extra Light "),local("Montserrat-Extra Light"),url(/static/montserrat-latin-200-444ae007121264bc1969d49b4031f9b2.woff2) format("woff2"),url(/static/montserrat-latin-200-edbce16a90aa22c297a0307b85789837.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:200;src:local("Montserrat Extra Light italic"),local("Montserrat-Extra Lightitalic"),url(/static/montserrat-latin-200italic-f316c5d1ec40f3e68654c3f38b3999f3.woff2) format("woff2"),url(/static/montserrat-latin-200italic-d7bbb730d9b5e11720b3eb32326dcca7.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:300;src:local("Montserrat Light "),local("Montserrat-Light"),url(/static/montserrat-latin-300-0a7c6df06e85d978d096d4d18fd8d43d.woff2) format("woff2"),url(/static/montserrat-latin-300-5e86df2cad22d2ef2b03516334afae5e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:300;src:local("Montserrat Light italic"),local("Montserrat-Lightitalic"),url(/static/montserrat-latin-300italic-c076c4892bc7a4be7b9097e97a35012d.woff2) format("woff2"),url(/static/montserrat-latin-300italic-37c74a8d2d0d36a0a2c6e9a37ee15b0c.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:400;src:local("Montserrat Regular "),local("Montserrat-Regular"),url(/static/montserrat-latin-400-501ce09c42716a2f6e1503a25eb174c9.woff2) format("woff2"),url(/static/montserrat-latin-400-f29d2b8559699b6beb5b29b25b8bc572.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:400;src:local("Montserrat Regular italic"),local("Montserrat-Regularitalic"),url(/static/montserrat-latin-400italic-882908d9950d9c86ebd380877f293d95.woff2) format("woff2"),url(/static/montserrat-latin-400italic-22e7b04e5f2a901d49d4d342315a715a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:500;src:local("Montserrat Medium "),local("Montserrat-Medium"),url(/static/montserrat-latin-500-f0f2716c5fe401d175b88715e7d28685.woff2) format("woff2"),url(/static/montserrat-latin-500-991b453bf90a0980e78966d2af7e3d3a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:500;src:local("Montserrat Medium italic"),local("Montserrat-Mediumitalic"),url(/static/montserrat-latin-500italic-4590ebba421b3288c305305d7fa7b504.woff2) format("woff2"),url(/static/montserrat-latin-500italic-f3d41e4cdcc2314e49ddcea751d6f87f.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:600;src:local("Montserrat SemiBold "),local("Montserrat-SemiBold"),url(/static/montserrat-latin-600-15c24f7109941777774ddd2c636c6a50.woff2) format("woff2"),url(/static/montserrat-latin-600-f6dc6096f48956908c1787d9a722570a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:600;src:local("Montserrat SemiBold italic"),local("Montserrat-SemiBolditalic"),url(/static/montserrat-latin-600italic-6d10b80529d5c36c7c09fca7193af0fc.woff2) format("woff2"),url(/static/montserrat-latin-600italic-02c4833312d94b1b0866f073023a250e.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:700;src:local("Montserrat Bold "),local("Montserrat-Bold"),url(/static/montserrat-latin-700-79982cd1f74c6fa7451bf9b37ead09ff.woff2) format("woff2"),url(/static/montserrat-latin-700-957e93fbbe131a59791cd820d98b7109.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:700;src:local("Montserrat Bold italic"),local("Montserrat-Bolditalic"),url(/static/montserrat-latin-700italic-283438e9577fe6a684466bb100e105ec.woff2) format("woff2"),url(/static/montserrat-latin-700italic-ca627c5ccc65cf80c2ecaea44b997de9.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold "),local("Montserrat-ExtraBold"),url(/static/montserrat-latin-800-35386154b78d046218fc8f88a44ff515.woff2) format("woff2"),url(/static/montserrat-latin-800-756655905d91b77960888262e7d58d35.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:800;src:local("Montserrat ExtraBold italic"),local("Montserrat-ExtraBolditalic"),url(/static/montserrat-latin-800italic-e1b52a7bd83e2324db6d92bdc206844c.woff2) format("woff2"),url(/static/montserrat-latin-800italic-a69f0add9d86c1a84311d7dd8693ba4a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:normal;font-display:swap;font-weight:900;src:local("Montserrat Black "),local("Montserrat-Black"),url(/static/montserrat-latin-900-260c2ea3ef57feb82251952e605a36d5.woff2) format("woff2"),url(/static/montserrat-latin-900-186cae8091da578150d81958e217714a.woff) format("woff")}@font-face{font-family:Montserrat;font-style:italic;font-display:swap;font-weight:900;src:local("Montserrat Black italic"),local("Montserrat-Blackitalic"),url(/static/montserrat-latin-900italic-d785fb9fc74588ffb7f306799709a97d.woff2) format("woff2"),url(/static/montserrat-latin-900italic-43b527fe77254f97ea36e2b54e845ec4.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:300;src:local("Merriweather Light "),local("Merriweather-Light"),url(/static/merriweather-latin-300-b1158cfcd4aacb9d8fb61625e37af46a.woff2) format("woff2"),url(/static/merriweather-latin-300-cc7de05e166e90320d7d896e0f72a19d.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:300;src:local("Merriweather Light italic"),local("Merriweather-Lightitalic"),url(/static/merriweather-latin-300italic-8fe52a48089d6ebe46db0b8e7cc66263.woff2) format("woff2"),url(/static/merriweather-latin-300italic-e1331f5397c2a673f9d3765138debdb5.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:400;src:local("Merriweather Regular "),local("Merriweather-Regular"),url(/static/merriweather-latin-400-8276fdb72ae8f4714d4e6eba704cc39f.woff2) format("woff2"),url(/static/merriweather-latin-400-69f09800f4f6479d06e44eba837df872.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:400;src:local("Merriweather Regular italic"),local("Merriweather-Regularitalic"),url(/static/merriweather-latin-400italic-3a9be9ea9f7aa4af6de7307df21d9fc0.woff2) format("woff2"),url(/static/merriweather-latin-400italic-d76079ed7541a433a54f79316de086e9.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:700;src:local("Merriweather Bold "),local("Merriweather-Bold"),url(/static/merriweather-latin-700-fa534be7ffa380e39a7f6e03bf9a5e03.woff2) format("woff2"),url(/static/merriweather-latin-700-ba56ea84b8084b7ff9677f50d3cd81bd.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:700;src:local("Merriweather Bold italic"),local("Merriweather-Bolditalic"),url(/static/merriweather-latin-700italic-1ef5edaaa20ae53ea50399884c5e48c6.woff2) format("woff2"),url(/static/merriweather-latin-700italic-534bc9e7ce93c73d73426e46acd78092.woff) format("woff")}@font-face{font-family:Merriweather;font-style:normal;font-display:swap;font-weight:900;src:local("Merriweather Black "),local("Merriweather-Black"),url(/static/merriweather-latin-900-7528fb70e8a4a82c7305e72ff43ac25f.woff2) format("woff2"),url(/static/merriweather-latin-900-3799b6e2f5ed3fcccf9d7a708d7419fa.woff) format("woff")}@font-face{font-family:Merriweather;font-style:italic;font-display:swap;font-weight:900;src:local("Merriweather Black italic"),local("Merriweather-Blackitalic"),url(/static/merriweather-latin-900italic-e1b4d2aaa78e12ad84aaf8a56321e4c2.woff2) format("woff2"),url(/static/merriweather-latin-900italic-2ae22f731b3424e8dbb4b37f7ca6e708.woff) format("woff")}</style><meta name="generator" content="Gatsby 2.29.3"/><link rel="alternate" type="application/rss+xml" href="/rss.xml"/><link rel="icon" href="/favicon-32x32.png?v=4a9773549091c227cd2eb82ccd9c5e3a" type="image/png"/><link rel="manifest" href="/manifest.webmanifest" crossorigin="anonymous"/><meta name="theme-color" content="#663399"/><link rel="apple-touch-icon" sizes="48x48" href="/icons/icon-48x48.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="72x72" href="/icons/icon-72x72.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="96x96" href="/icons/icon-96x96.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="144x144" href="/icons/icon-144x144.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="256x256" href="/icons/icon-256x256.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="384x384" href="/icons/icon-384x384.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png?v=4a9773549091c227cd2eb82ccd9c5e3a"/><title data-react-helmet="true">스크럼의 이론과 실천에 대한 가벼운 안내서 | Gatsby Starter Blog</title><meta data-react-helmet="true" content="이 글은 ScrumPrimer…" name="description"/><meta data-react-helmet="true" content="스크럼의 이론과 실천에 대한 가벼운 안내서" property="og:title"/><meta data-react-helmet="true" content="이 글은 ScrumPrimer…" property="og:description"/><meta data-react-helmet="true" content="website" property="og:type"/><meta data-react-helmet="true" content="summary" name="twitter:card"/><meta data-react-helmet="true" content="Kyle Mathews" name="twitter:creator"/><meta data-react-helmet="true" content="스크럼의 이론과 실천에 대한 가벼운 안내서" name="twitter:title"/><meta data-react-helmet="true" content="이 글은 ScrumPrimer…" name="twitter:description"/><style data-styled="kNLFUz  fZZzcG gMkVzT ladeOl eXgzts gtvafs iKgKpx fCYyby" data-styled-version="4.4.1">
+/* sc-component-id: WindowFrame-sc-3zlzl4-0 */
+.fZZzcG{background:#BFBFBF;box-shadow:inset -1px -1px 0px #000000,inset 1px 1px 0px #DBDBDB,inset -2px -2px 0px #808080,inset 2px 2px 0px #FFFFFF;padding:3px;padding-bottom:24px;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;}
+/* sc-component-id: sc-global-2144751476 */
+@font-face{font-family:'GmarketSansBold';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');font-weight:normal;font-style:normal;} @font-face{font-family:'GmarketSansMedium';src:url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');font-weight:normal;font-style:normal;} html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;box-sizing:border-box;} article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;} body{line-height:1;} ol,ul{list-style:none;} blockquote,q{quotes:none;} blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;} table{border-collapse:collapse;border-spacing:0;} html,body{background:#008080;} textarea:focus,input:focus{outline:none;} *{word-break:keep-all;} a{-webkit-text-decoration:none;text-decoration:none;color:inherit;box-shadow:none;} a:hover{-webkit-text-decoration:underline;text-decoration:underline;} ion-content{--background:transparent;} html,body,#___gatsby,#gatsby-focus-wrapper,.tl-edges,.tl-wrapper{width:100%;height:100%;padding:0;margin:0;}
+/* sc-component-id: Button-sc-19gt5s4-0 */
+.ladeOl{border:none;background:#BFBFBF;box-shadow:inset -1px -1px 0px #000000,inset 1px 1px 0px #FFFFFF,inset -2px -2px 0px #808080,inset 2px 2px 0px #DBDBDB;} .ladeOl:active:not(:disabled){background:#BFBFBF;box-shadow:inset -1px -1px 0px #FFFFFF,inset 1px 1px 0px #818181,inset -2px -2px 0px #DBDBDB,inset 2px 2px 0px #000000;} .ladeOl:focus{outline:0;}
+/* sc-component-id: TitleBar__TitleFrame-sc-1k4xgls-0 */
+.gMkVzT{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;width:100%;height:18px;background:linear-gradient(270deg,#1085D2 0%,#00007B 100%);padding-left:4px;} .gMkVzT .title{-webkit-flex:1;-ms-flex:1;flex:1;font-family:MS Sans Serif;font-size:11px;line-height:12px;color:#FFFFFF;} .gMkVzT .btn-close{margin-left:2px;} .gMkVzT .frame-actions{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;height:100%;padding:2px;} .gMkVzT .frame-actions > button{width:16px;height:14px;position:relative;} .gMkVzT .btn-minimize img{position:absolute;width:6px;height:2px;left:4px;top:9px;} .gMkVzT .btn-maximize img{position:absolute;width:9px;height:9px;left:3px;top:2px;} .gMkVzT .btn-close img{position:absolute;width:8px;height:7px;left:4px;top:3px;}
+/* sc-component-id: layout__ContentFrame-z7e7u9-0 */
+.eXgzts{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:row;-ms-flex-direction:row;flex-direction:row;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;} .eXgzts .frame-content{-webkit-flex:1;-ms-flex:1;flex:1;} .eXgzts .frame-menu{max-width:320px;} .eXgzts .frame-menu *[class^=frame],.eXgzts > .frame-content{padding:16px;} .eXgzts .frame-menu{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start;-webkit-align-items:stretch;-webkit-box-align:stretch;-ms-flex-align:stretch;align-items:stretch;} .eXgzts .frame-menu .frame-categories{height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;padding-bottom:2rem;} .eXgzts .frame-menu .frame-tags{-webkit-flex:1;-ms-flex:1;flex:1;} .eXgzts .frame-menu .frame-bio{min-height:240px;} .eXgzts .frame-menu .frame-bio ul{margin-top:1em;list-style:circle;} .eXgzts .frame-menu .frame-bio ul li{margin-left:1.2em;} .eXgzts .frame-menu .frame-bio title{display:block;font-size:1rem;font-weight:bold;line-height:1.45em;} .eXgzts .frame-inner{background:#fff;box-shadow:inset -1px -1px 0px #FFFFFF,inset 1px 1px 0px #818181,inset -2px -2px 0px #DBDBDB,inset 2px 2px 0px #000000;} .eXgzts h1{font-size:24px;font-weight:bold;line-height:1.5em;} .eXgzts h2{font-size:16px;font-weight:bold;line-height:1.5em;} .eXgzts h3{line-height:1.5em;font-weight:bold;} .eXgzts li{line-height:1.5em;} .eXgzts .article-post:not(:first-child){margin-top:16px;} .eXgzts .frame-main-banner{padding:0;} .eXgzts .frame-main-banner img{width:100%;} .eXgzts .frame-categories li:before{content:'📁';display:inline-block;margin-right:4px;} .eXgzts .frame-tags li{display:inline;} .eXgzts .frame-tags li:not(:first-child){margin-left:6px;} .eXgzts .frame-tags li:before{content:'#';} .eXgzts code{padding:0.05em 0.3em;border:1px solid #9b845c;border-radius:2px;background:#ebe8e6;} .eXgzts .frame-posts{padding:24px;line-height:1.5em;}
+/* sc-component-id: layout__Content-z7e7u9-4 */
+.kNLFUz{padding:32px;width:100%;height:-webkit-fit-content;height:-moz-fit-content;height:fit-content;min-height:100%;}
+/* sc-component-id: blog-post__Divider-sc-1jbsnju-1 */
+.iKgKpx{margin-bottom:1.75rem;}
+/* sc-component-id: blog-post__PostNavigator-sc-1jbsnju-2 */
+.fCYyby{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;-webkit-box-pack:justify;-webkit-justify-content:space-between;-ms-flex-pack:justify;justify-content:space-between;list-style:none;padding:0;}
+/* sc-component-id: blog-post__Frame-sc-1jbsnju-3 */
+.gtvafs .date{font-size:.8rem;margin-bottom:1rem;}</style><link as="script" rel="preload" href="/webpack-runtime-f2be5c82d82c63c7988f.js"/><link as="script" rel="preload" href="/styles-540f25bd5e5cb35d6f53.js"/><link as="script" rel="preload" href="/framework-305b3707783ccc9d7ca6.js"/><link as="script" rel="preload" href="/app-0408835f895339b9c0c4.js"/><link as="script" rel="preload" href="/f339c45a0414fcde3d97bd41694a7816c5c12aa2-12f39fce22eaa3ba2b9a.js"/><link as="script" rel="preload" href="/5ab70dd3b6ca162de984cbbccc8160d1acdf6f38-6d51b72122d128fd90b1.js"/><link as="script" rel="preload" href="/component---src-templates-blog-post-tsx-b6cb6993f4ed492bac85.js"/><link as="fetch" rel="preload" href="/page-data/post/2020-10-13-scrum-overview/page-data.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/2880150720.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/sq/d/63159454.json" crossorigin="anonymous"/><link as="fetch" rel="preload" href="/page-data/app-data.json" crossorigin="anonymous"/></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="tl-edges"><div class="tl-wrapper tl-wrapper--mount tl-wrapper-status--entered" style="z-index:1;opacity:1"><div class="layout__Content-z7e7u9-4 kNLFUz"><div class="WindowFrame-sc-3zlzl4-0 fZZzcG"><div class="TitleBar__TitleFrame-sc-1k4xgls-0 gMkVzT"><div class="title">title</div><div class="frame-actions"><button class="Button-sc-19gt5s4-0 ladeOl btn-minimize" disabled=""><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNiIgaGVpZ2h0PSIyIiB2aWV3Qm94PSIwIDAgNiAyIiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cmVjdCB3aWR0aD0iNiIgaGVpZ2h0PSIyIiBmaWxsPSIjOTk5Ii8+Cjwvc3ZnPgo="/></button><button class="Button-sc-19gt5s4-0 ladeOl btn-maximize" disabled=""><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOSIgaGVpZ2h0PSI5IiB2aWV3Qm94PSIwIDAgOSA5IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTkgMEgwVjlIOVYwWk04IDJIMVY4SDhWMloiIGZpbGw9IiM5OTkiLz4KPC9zdmc+Cg=="/></button><button class="Button-sc-19gt5s4-0 ladeOl btn-close" disabled=""><img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOCIgaGVpZ2h0PSI3IiB2aWV3Qm94PSIwIDAgOCA3IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTAgMEgyVjFIM1YySDVWMUg2VjBIOFYxSDdWMkg2VjNINVY0SDZWNUg3VjZIOFY3SDZWNkg1VjVIM1Y2SDJWN0gwVjZIMVY1SDJWNEgzVjNIMlYySDFWMUgwVjBaIiBmaWxsPSIjOTk5Ii8+Cjwvc3ZnPgo="/></button></div></div><div class="layout__ContentFrame-z7e7u9-0 eXgzts"><section class="frame-menu"><section class="main-banner"><img class="img-main-banner" src="https://source.unsplash.com/480x320/?vaporwave"/></section><section class="frame-bio"><a href="/"><h1>Dotorimook&#x27;s blog</h1></a><div><p>Hello, World!
+This is Dotorimook&#x27;s blog</p><ul><title>interest</title><li>HCI</li><li>UI/UX</li><li>Frontend</li><li>javascript</li><li>node</li></ul></div></section><section class="frame-categories frame-inner"><h1 class="title">Categories</h1><ul><li><a href="/category/JQuery">JQuery</a></li><li><a href="/category/Jira">Jira</a></li><li><a href="/category/MySQL">MySQL</a></li><li><a href="/category/Software-Engineering">Software-Engineering</a></li><li><a href="/category/express">express</a></li><li><a href="/category/javascript">javascript</a></li><li><a href="/category/jekyll">jekyll</a></li><li><a href="/category/mac">mac</a></li><li><a href="/category/mongoose">mongoose</a></li><li><a href="/category/nginx">nginx</a></li><li><a href="/category/portal">portal</a></li><li><a href="/category/react">react</a></li><li><a href="/category/react-hook">react-hook</a></li><li><a href="/category/update">update</a></li><li><a href="/category/vscode">vscode</a></li></ul></section><section class="frame-tags frame-inner"><h2 class="title">Tags</h2><ul><li><a href="/tag/Jira">Jira</a></li><li><a href="/tag/MySQL">MySQL</a></li><li><a href="/tag/Software-Engineering">Software-Engineering</a></li><li><a href="/tag/agile">agile</a></li><li><a href="/tag/bitbucket">bitbucket</a></li><li><a href="/tag/commit">commit</a></li><li><a href="/tag/console">console</a></li><li><a href="/tag/cookie">cookie</a></li><li><a href="/tag/database">database</a></li><li><a href="/tag/db">db</a></li><li><a href="/tag/docker">docker</a></li><li><a href="/tag/error">error</a></li><li><a href="/tag/etc">etc</a></li><li><a href="/tag/express">express</a></li><li><a href="/tag/git">git</a></li><li><a href="/tag/indexOf">indexOf</a></li><li><a href="/tag/javascript">javascript</a></li><li><a href="/tag/jekyll">jekyll</a></li><li><a href="/tag/jquery">jquery</a></li><li><a href="/tag/js">js</a></li><li><a href="/tag/load">load</a></li><li><a href="/tag/lock">lock</a></li><li><a href="/tag/mac">mac</a></li><li><a href="/tag/mongoose">mongoose</a></li><li><a href="/tag/nginx">nginx</a></li><li><a href="/tag/node">node</a></li><li><a href="/tag/npm">npm</a></li><li><a href="/tag/package">package</a></li><li><a href="/tag/pm2">pm2</a></li><li><a href="/tag/pm2-runtime">pm2-runtime</a></li><li><a href="/tag/portal">portal</a></li><li><a href="/tag/react">react</a></li><li><a href="/tag/react-hook">react-hook</a></li><li><a href="/tag/react-hook-form">react-hook-form</a></li><li><a href="/tag/scurm">scurm</a></li><li><a href="/tag/server">server</a></li><li><a href="/tag/sprint">sprint</a></li><li><a href="/tag/swagger">swagger</a></li><li><a href="/tag/typescript">typescript</a></li><li><a href="/tag/unload">unload</a></li><li><a href="/tag/vscode">vscode</a></li><li><a href="/tag/web">web</a></li><li><a href="/tag/yarn">yarn</a></li></ul></section></section><section class="frame-content"><section class="frame-posts frame-inner"><article class="blog-post__Frame-sc-1jbsnju-3 gtvafs"><h1>스크럼의 이론과 실천에 대한 가벼운 안내서</h1><div class="date">October 13, 2020</div><div><p>이 글은 <a href="https://scrumprimer.org/translations">ScrumPrimer</a> 사이트의 스크럼의 이론과 실천에 대한 가벼운 안내서를 요약한 글입니다. 요즘 여기저기서 <em>애자일</em>을 도입한다, <em>스크럼</em> 도입한다고만 하면서 여러가지 이유로 실제로 잘 운영되지 못하는 경우가 많은데… 내용을 보니 정말 중요한 이야기들이 많아 공유하려 합니다.</p>
+<h1>개요 Overview</h1>
+<p><em>스크럼</em>은 <em><a href="https://en.wikipedia.org/wiki/Cross-functional_team">다기능팀</a></em>이 제품이나 프로젝트를 <strong>반복적</strong>이고 <strong>점진적</strong>인 방식으로 개발하기 위한 개발 프레임워크</p>
+<ul>
+<li>
+<p><em>스프린트</em>라고 불리는 주기로 구성</p>
+<ul>
+<li>반복 주기는 4주를 넘지 않으며 (보통 2주)</li>
+<li>멈추지 않고 하나가 끝나면 다음것이 시작</li>
+<li>
+<p><strong>시간이 고정</strong> (<em>timeboxed)</em>되어있음</p>
+<ul>
+<li>일이 끝났던, 끝나지 않았던 기간이 <strong>절대 늘어나지 않고 정해진 날짜에 끝</strong>난다.</li>
+<li>보통 스크럼 팀은 스프린트의 길이를 정해놓고 개선해서 주기를 더 짧게 할 수 있을
+때 까지는 모든 스프린트를 그 길이로 진행</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>매 스프린트 시작 시 다기능팀(약 7명)은</p>
+<ul>
+<li>우선순위가 매겨진 리스트에서 아이템(요구사항)을 고름</li>
+<li>
+<p>스프린트가 끝날 때 어떤 <strong>결과물</strong>을 낼 수 있을지 합의</p>
+<ul>
+<li>결과물은 분명하고 정말로 <strong>“완료”</strong>라고 할 수 있는 것을 말함</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p>스프린트 동안은 <strong>어떤 새로운 아이템도 추가되지 않음.</strong></p>
+<ul>
+<li><em>다음 스프린트</em>에 대한 변화는 수용</li>
+<li>
+<p><em>현재의 짧은 스프린트</em>는</p>
+<ul>
+<li>작고</li>
+<li>분명하며</li>
+<li><strong>상대적으로 안정적인 목표에 집중</strong>해야 한다.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>매일 진척사항에 대해 간단히 점검 + 남은 일을 완료하기 위해 필요한 다음 단계 조정</li>
+<li>
+<p>스프린트가 끝날 때</p>
+<ul>
+<li>이해관계자와 해당 스프린트에 대해 검토하고 시연함</li>
+<li>다음 스프린트에 반영될 수 있는 피드백 수집</li>
+</ul>
+</li>
+<li>
+<p>스크럼에서는 스프린트가 끝날 때 <strong>작동할 수 있는 제품</strong>을 만드는 것이 강조</p>
+<ul>
+<li>시스템이 통합되고</li>
+<li>완전히 테스트 되었으며</li>
+<li>최종 사용자를 위한 문서가 작성되었고</li>
+<li>잠재적으로 출시 가능한 제품</li>
+</ul>
+</li>
+<li>스크럼의 주요한 주제는 <strong>검토</strong>와 <strong>조정</strong></li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/2c8233265b6fc401b4e6c05417f3804b/2f8cb/scrum_diagram.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCUlEQVQoz52SXW/ScBTG+/X8HN76AfwC3iwxXu3GRGPMXFCme4ksG7qROTdGCAjdxijQMimvBVb6QmmB8bOt6TKWeeNJTvo///Oc5/+cJxUWiwX3I6iju+FwiCiKVCoVEokEsVgMRVHucI+FEDXm01mAWgJrmhYSBplMJonH4w8IF5GKuxSC2nZd1k/SZJV62L+NHpnP8TwvzOA8m83C78NNovMiItSnHu9zWU7r8t2r/1rpvjWP4YRRV6OUTOFaJmJrxNpZnb7pRGNLA5OJh207uJPp301u5yEmqPUby+9PEbRshvTKCrZSY1fWebF3yVXXDAd03eHDu2Muz9UQLNdaSOVrxvZkSdVA65M9y9FtthEc20DvNMPGyBqj9nrMpi5T1+G61uT16gEf19LsJ4rsbOYQfzVCbOCnWi362AlS9juvnj9FksoIrWqKxsUh+lBDVVXaLclXYyLl48jlHSxrxkHygtS3c44OS2ROKyFh4Wibl8+e+KoUBo0O4vE+SlND6Hd/I18V0Hoa5VKdfL5Mpz1CLJz4/1+ea6XPl09Ztj6n2drIsL2R862wkEo5fuxv+tgmu18vebt+xnmxijAeOxiWhet6DPsm/Z6Oodu+sjFBbziwKF00Of0p+T7VqJTbmKaNYRjc+MSOY9HrGqy+OUaWOwhz3wvLJ/Q8l/8N23LoqD2cscsfBdo0bo3r/awAAAAASUVORK5CYII='); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Image"
+        title=""
+        src="/static/2c8233265b6fc401b4e6c05417f3804b/fcda8/scrum_diagram.png"
+        srcset="/static/2c8233265b6fc401b4e6c05417f3804b/12f09/scrum_diagram.png 148w,
+/static/2c8233265b6fc401b4e6c05417f3804b/e4a3f/scrum_diagram.png 295w,
+/static/2c8233265b6fc401b4e6c05417f3804b/fcda8/scrum_diagram.png 590w,
+/static/2c8233265b6fc401b4e6c05417f3804b/efc66/scrum_diagram.png 885w,
+/static/2c8233265b6fc401b4e6c05417f3804b/c83ae/scrum_diagram.png 1180w,
+/static/2c8233265b6fc401b4e6c05417f3804b/2f8cb/scrum_diagram.png 1689w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<h1>스크럼에서의 역할들 (Scrum Roles)</h1>
+<p><strong>제품 책임자</strong>와 <strong>팀</strong>, <strong>스크럼마스터</strong>가 있음.</p>
+<h2>제품 책임자 (Product Owner)</h2>
+<ul>
+<li>투자 수익률(ROI)를 최대해야할 책임</li>
+<li><em>기능(Feature)</em>를 식별하고</li>
+<li>이것을 반영해 리스트의 우선순위를 수립하여</li>
+<li>어떤 것이 리스트의 가장 위에 와야하는지 결정</li>
+<li>지속적으로 리스트의 우선순위를 재조정 + 개선</li>
+<li>제품이 상업적인 경우, 제품 책임자는 <strong>제품의 손익에 대한 책임이 있다</strong></li>
+<li>고객과 제품책임자가 같을 수도 있음</li>
+<li>
+<p>Product Manager나 Product Marketing Manager의 역활과 비슷하지만 기존 Product Manager와는 다름</p>
+<ul>
+<li>제품 책임자는 프로젝트 관리자에게 개발에 대한 결정권을 위임하는 것이 아님</li>
+<li>팀과 적극적인 소통 + 모든 이해관계자들과 협업을 통해 ⇒ 매 스프린트의 결과를 검토하며 우선순위를 정함</li>
+</ul>
+</li>
+<li><strong>스크럼의 최종 권한을 가진 책임자는 오직 1명</strong>이며 업무의 가치에 대한 책임이 있음</li>
+</ul>
+<h2>팀</h2>
+<ul>
+<li>개발팀이라고도 함</li>
+<li>제품 책임자가 지시하는 제품(App, Web, etc.)을 만든다</li>
+<li><strong>다기능 (cross-functional)</strong> = 필요한 모든 전문 지식을 가지고 있어야 함.</li>
+<li>높은 수준의 자율성과 책임을 가진 <strong>자기조직(self-organizing, self-managing)</strong>이어야 함.</li>
+<li>
+<p>제품 책임자가 제안한 것들 중 한 스프린트 동안</p>
+<ul>
+<li>몇 개의 아이템을 완성할 지</li>
+<li>목표 달성을 위한 방법을 결정</li>
+</ul>
+</li>
+<li>고정된 전문가는 없으며, 매 스프린트가 진행되는 동안 스스로 정한 목표의 달성을 위해 <strong>어떤 방식으로든</strong> 함께 일한다.</li>
+<li>오직 팀원만 있기 때문에 <strong>다중학습(multi-learning)</strong>이어야 함.</li>
+<li>
+<p>팀 구성은 7명~2명 안팎</p>
+<ul>
+<li>제품을 개발</li>
+<li>제품 책임자에게 어떻게 제품을 훌륭하게 만들 것인지에 대한 아이디어를 제시</li>
+</ul>
+</li>
+<li>스프린트 동안 하나의 제품을 위해서 100% 몰두해서 일할 수 있을 때 가장 생산적 &#x26; 효율적
+⇒ <strong>주의가 분산되거나 흐름이 바뀌면서 낭비되는 것을 막아야 함.
+여러 제품이나 프로젝트에 걸쳐져서 동시에 여러 작업을 하게 되는 것을 피해야 함.
+팀원이 바뀌는 것을 지양</strong></li>
+<li>하나의 팀이 고객 중심의 기능들을 완성하기 위한 모든 일(계획, 분석, 프로그래밍, 테스트)을 종종 하므로 이런 팀은 또한 <em>기능팀(feature team)</em>이라고도 불린다</li>
+</ul>
+<h2>스크럼마스터(ScrumMaster)</h2>
+<ul>
+<li>제품 그룹이 사업적인 가치를 만들기 위해서 스크럼을 배우고 적용하는 것을 돕는다.</li>
+<li>팀과 제품 책임자, 조직이 성공하기 위해 가능한 모든 일을 돕는다.</li>
+<li>
+<p>관리자가 아니며, 프로젝트 관리자도 아니고 팀 리더도 아니며 팀 대표자도 아님!
+단지 도움을 주는 사람</p>
+<ul>
+<li>장애물을 제거</li>
+<li>외부의 간섭으로부터 보호</li>
+<li>새로운 개발 방식에 적응할 수 있도록 도움</li>
+<li>제품 책임자와 팀 그리고 다른 조직원이 스크럼을 능숙하게 사용할 수 있도록 가르치고 지도하고 설명</li>
+</ul>
+</li>
+<li>비록 작은 팀의 경우는 팀원이 기존에 하던 일을 줄이고 이 역할을 할 수도 있지만, <strong>그래도 모든 시간 동안 이 일에만 전념하는 스크럼마스터가 있어야 한다</strong></li>
+<li>스크럼마스터와 제품 책임자는 <strong>초점이 매우 다르며</strong> 병행할 경우 혼란이나 충돌이 생기기 때문에 <strong>같은 사람이 맡을 수 없다</strong></li>
+</ul>
+<blockquote>
+<p>참고: 스크럼에서는 <strong>프로젝트 관리자의 역할이 전혀 없다.</strong> 왜냐하면 전혀 필요하지 않기 때문이다. 기존의 프로젝트 매니저가 맡았던 일들은 스크럼의 세 가지 역할에 나누어 할당되는데 스크럼 마스터보다는 팀과 제품 책임자에게 대부분 할당한다. 스크럼을 하면서 프로젝트 관리자를 추가한다는 것은 <strong>스크럼을 근본적으로 잘못 이해하고 있다는 것</strong>을 말한다. 그리고 이런 경우 일반적으로 책임들 간의 충돌, 분명하지 않은 권한, 차선의 결과 같은 것들이 발생한다. 때론 프로젝트 관리자가 스크럼마스터의 역할을 하게 될 수 있지만 이런 접근방식이 전적으로 성공할 수 있을지는 개인이 얼마나 두 역할의 근본적인 차이에 대해서 이해를 했는지, 그날그날의 역할과 성공하기 위한 마음가짐을 모두 이해했는지에 달려있다. 스크럼마스터의 역할을 완전히 이해하고 성공하기 위한 핵심 기술들을 개발하기 위한 좋은 방법은 Scrum Alliance의 Certified ScrumMaster 교육을 받는 것이다.</p>
+</blockquote>
+<h2>기타 역할</h2>
+<ul>
+<li>
+<p>제품의 성공에 기여하는 다른 이해관계자들</p>
+<ul>
+<li>직무 관리자</li>
+<li>공학 관리자 등</li>
+</ul>
+</li>
+<li>
+<p>스크럼을 적용할 때에는 변해야 함</p>
+<ul>
+<li>그들은 스크럼의 규칙들과 참뜻을 존중함으로써 팀을 지원한다.</li>
+<li>그들은 팀과 제품 책임자가 찾은 장애물을 제거하는 것을 돕는다.</li>
+<li>그들은 그들의 전문 지식과 경험을 쓸 수 있도록 한다</li>
+</ul>
+<p><strong>⇒ 업무를 할당하고 현황 보고서를 받고 다른 형태의 세세한 관리 → 멘토링, 코칭, 장애물 제거를 돕기, 문제를 해결하는 것을도와주기, 창의적인 조언 제공, 팀원들의 기술 개발 지도</strong> 로 변화</p>
+</li>
+</ul>
+<h1>제품 백로그 (Product Backlog)</h1>
+<ul>
+<li>스프린트 시작 전에 제품 백로그가 있어야 함</li>
+<li>사용자 중심의 기능들을 우선순위를 매겨 리스트화</li>
+<li>제품 수명기간 동안 계속 존재하고 개선되면서 <strong>해당 제품의 로드맵 역할</strong>을 함</li>
+<li>우선 순위에 따라 기록된 것이 한눈에 명확히 드러나야 함</li>
+<li>하나의 제품에 대해 오직 하나의 제품 백로그만 존재: <strong>제품 책임자는 팀을 포함해 이해관계자들의 관심사를 전반적으로 반영하여 우선순위를 결정해야함.</strong></li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/20a8024431aa0a40929923dd5535f3b7/5a3c9/scrum_backlog.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIElEQVQ4y12U21NTVxTG8yf1oX9BO9OHvvShM+1M7YxObTt1HBvlLkkDxATIlYSQREyAAEGEChTQarVWndqOtR3FYriIXARygYSEcIvc5te9DqR2ema+s/bes9b3ffvsfZZuc3OT9fV1DTIWbG9vs7W19e98Y2ODnZ0dbV1iPp/nyZMnPHv2jIWFBdbW1rR8iTp5ZTIZdnd3OTw85ODgQCORBBnv7++zt7dHPB7XIGRSk06nSaVSrK6uks1mNVGJuvn5eWZnZ1laWtIKVlZWNFWBJEiBIBaLMTk5qeUsLi5qZMlkUkMikdDWJepEaXl5mfHxca1AIAKvXr3i5cuXzM3NaWJCKs4kimiRrIiigE4SpGBqaoqZmRmNSEjEoUTZgURJFnFxIcWCFYV4IsnS8hFhSghFTRxOT08zMTGhbUcEZE22nFOQKHnyrYuEMhekUuI2dTxOoZPCeeXg7+fP1XYnNMj2x8bGeK7WxLnkiJC4nJPvrcayJohrURk4NqE5TCiFpUSK/OYWO4U3FAq72hUpolAoKLzRkN9Q10jlFZHPqxuxvaPqCtpJ63Z398ilU6TnYsRn1YFMv2Bi/A9ik+pUpyaVw0l1ONMsvJ4lmXhNPpOksJFhfzvHQSEPhztkU0skF18jj24tm+PxnRHue0u45asmYDqHqfRzSr/+gm/PnqWsspzaSyZaGixcb/Pz8HY/47/dYuav+yRijyisTnC328P1Vs9bwvu3hhl0lXGvzcqAr46Qsw6bXo+5sgJLvQW318kVayN9gQA/XO/h56Fr/H57kNivN1kcf8Tj4TBPfxk6Iszmcvx0Y5jWWj19zbX0eGuJuEz4G00E3JcINtsJBz10dwTpu9rOYLSN0f4ID0Z7+fPOAC8e/ciNriZmxh4UCdcZGRrk4tlTOIwXsFXrtdhsMRBssnK5xUGr30Mo6KM9HKTjip/erhCj33dxdyjKvdFr3OxpIbPw9O2WhxVh+TcncdRU4airxnnJgFsRehxmWjyNCg78viaCijQUaKazrZW+aDsD0RADvRHCbjMPR6JHhJm1HH39/ei/PIGjVhEqskazEWe9CbfDisfVSJPLhs/jIhBs4UrAR6TtMt2dYbpV7O3p5MLpT7ErM8eEWaLRq5w5+RlWQxVm40XMNUZM1eV8Z6yipsZAvdVIQ4MZm92G2+3E63Xj9TiVmA2/38dXH3+It+6YcDWdIRRq4/SJTzCUlVBZcp7SkgtUlJ2nolzNqyowGPWYag2YrVYaHXYcLgWHDbu9HpcSeO/dd7BU6N867OnppfTcGewWM5a6GhqsZpyOBlwuB+4mF26Pl2a/n9ZwmPbOTiLdXUS6IkQ6O+iIdPDR+x9gqa4+Iix2Wvnp06rzJBJx7SeXWOwu0hz+27H/j7zq9tuKR55/AEgx5OV6+n5GAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Image"
+        title=""
+        src="/static/20a8024431aa0a40929923dd5535f3b7/fcda8/scrum_backlog.png"
+        srcset="/static/20a8024431aa0a40929923dd5535f3b7/12f09/scrum_backlog.png 148w,
+/static/20a8024431aa0a40929923dd5535f3b7/e4a3f/scrum_backlog.png 295w,
+/static/20a8024431aa0a40929923dd5535f3b7/fcda8/scrum_backlog.png 590w,
+/static/20a8024431aa0a40929923dd5535f3b7/efc66/scrum_backlog.png 885w,
+/static/20a8024431aa0a40929923dd5535f3b7/5a3c9/scrum_backlog.png 1169w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<ul>
+<li>
+<p>백로그는 아래 내용들을 모두 포함한다.</p>
+<ul>
+<li>새로운 기능 (e.g. 모든 사용자는 장바구니에 책을 담을 수 있다)</li>
+<li>개발에 대한 발전적인 목표 (e.g. 시스템을 C++ 에서 Java기반으로 변환한다)</li>
+<li>팀의 개선 목표 (e.g. 테스트 속도를 향상시킨다)</li>
+<li>연구 업무 (e.g. 신용 카드 인증 속도를 향상하기 위한 해결책 조사)</li>
+<li>결함 (결함이 많을 경우 별도의 추적 시스템을 사용)</li>
+</ul>
+</li>
+<li>
+<p>아이템은 어떤 방식으로든 분명하고 계속 유지될 수 있도록 표현</p>
+<ul>
+<li>대부분의 아이템들은 고객 가치 전달에 초점이 맞추어져 작성</li>
+</ul>
+</li>
+<li>
+<p><strong>DEEP</strong></p>
+<ul>
+<li><strong>Detailed appropriately</strong>
+최우선 순위의 아이템은 낮은 우선순위의 아이템보다 먼저 진행되기 때문에 <strong>상세하고 세밀하게 기술</strong>되어야 함</li>
+<li><strong>Estimated</strong>
+팀은 제품 책임자에게 제품 백로그의 각 아이템에 대해 해당하는 <strong>일의 양 (effort)와 기술적인 위험성(technical risk)에 대한 추정치를 제공</strong>해야 함.
+사업적 이해관계자들은 제품 <strong>요구사항의 가치에 대한 정보</strong>(수익, 비용절감, 사업적 리스크, 중요성 등)를 다양한 이해관계자들에게 전달해야 함.</li>
+<li><strong>Emergent</strong>
+제품 책임자는 학습 내용, 변동사항에 따라 제품 백로그는 자주 개선해야 함.
+매 스프린트마다 우선순위에 따라 추가/제거/수정 등 변경을 거침</li>
+<li><strong>Prioritized</strong>
+제품 백로그의 최우선 순위 아이템부터 1에서 N까지 순서로 우선순위가 매겨져야 함.
+최우선 순위의 아이템들은 <strong>적은 비용으로 큰 가치를 내는 것</strong>이어야함
+<em>큰 위험을 포함하고 아이템의 우선순위를 높게 잡는 방법(tackle high risks early, before the risks atack you)</em>도 있음.</li>
+</ul>
+</li>
+<li>스크럼마스터는 사업적 가치를 가늠하는 법을 배울 수 있게 도와야 함</li>
+<li>스크럼에는 매 스프린트마다 일이 얼마나 끝났는지 추적하는 기술이 있음 ⇒ 속도velocity</li>
+<li>다가오는 스프린트의 제품 백로그 아이템들은 팀이 이 아이템들에 대해서 이해할 수 있을 만큼 <strong>충분히 세분화되어서 스프린트 계획 때 팀이 유의미한 예측</strong>을 할 수 있어야 함 ⇒ <strong>“실행가능한(actionable)” 크기</strong></li>
+<li>
+<p>시간과 비용이 많이 드는 주요한 기술 개선사항은 제품 백로그에 포함돼야함.</p>
+<ul>
+<li>가벼운 기술사항에 대해서는 독자적으로 맡아 진행할 수 있더라도, 매 스프린트마다 팀은 대부분 시간을 내부적인 기술 업무 보다는 제품 책임자가 정한 목표를 위해 사용해야함.</li>
+</ul>
+</li>
+<li>무엇이 중요한지를 최소한으로 명시해야 함.</li>
+</ul>
+<h1>완료 기준 (Definition of Done)</h1>
+<ul>
+<li>매 스프린트의 산출물 = 잠재적으로 출시 가능한 제품 증분 (Potentionally Shippable Product Increment)</li>
+<li>제품을 출시하기 위해 필요한 모든 활동 = 잠재적으로 출시 가능이라는 말의 정의에 포함되어야 함 (그러므로 스프린트 동안 끝나야 함)</li>
+<li>
+<p>매 스프린트마다 잠재적으로 출시 가능한 제품을 전달하는데 실패할 경우</p>
+<ul>
+<li>팀이 자동화가 덜 되었거나</li>
+<li>충분히 다기능적이지 않기 때문</li>
+</ul>
+</li>
+<li>스프린트 시작 전 제품 책임자와 팀은 완료 기준에 대해 합의를 봐야함.</li>
+<li>
+<p>좋은 제품 책임자?</p>
+<ul>
+<li>완료기준이 가능하면 잠재적으로 출시할 수 있을 수준</li>
+<li>개발이 투명해지고 지연되는 경우가 줄어들며 리스크가 감소</li>
+</ul>
+</li>
+</ul>
+<h1>스프린트 계획(Sprint Planning)</h1>
+<ul>
+<li>
+<p>매 스프린트 시작 전 스프린트를 준비하기 위한 회의로, 2개의 파트로 나뉜다.</p>
+<ul>
+<li>파트1: <strong>“무엇(what)”</strong></li>
+<li>파트2: <strong>“어떻게(how)”</strong></li>
+</ul>
+</li>
+<li>
+<p>참가자</p>
+<ul>
+<li>파트1: 제품 책임자, 팀, 스크럼마스터</li>
+<li>파트2: 팀, 스크럼마스터, 제품 책임자(optional)</li>
+</ul>
+</li>
+<li>기간: 각 파트는 스프린트의 한 주당 한 시간 이내로 제한</li>
+</ul>
+<h2>스프린트 계획 파트1</h2>
+<ul>
+<li>제품 책임자와 팀이 제품 백로그 중 제품 책임자가 이번 스프린트에서 진행되길 원하는 우선순위가 높은 아이템들을 검토</li>
+<li>
+<p>지난 스프린트에서 제품 백로그 개선을 하는 동안 분석되었으므로 간단히 질문에 대해서 한 번 명확히 하는 작업만 진행</p>
+<ul>
+<li>우선순위가 높은 아이템에 대한 목표와 내용에 대해서 정의</li>
+<li>제품 책임자의 의도 파악</li>
+</ul>
+</li>
+<li>제품 책임자가 무엇을 원하고 그것이 왜 필요한지 초점</li>
+<li>
+<p><strong>스프린트 목표</strong>를 정한다.</p>
+<ul>
+<li>이상적으로는 짜임새가 있는 주제를 담고 있을 것</li>
+</ul>
+</li>
+<li>아이템의 이상적인 규모 = 전체 스프린트에 비해 현저히 작게 쪼개질 것 (스프린트 기간의 1/4 이내에 완수될 수 있을 정도의 크기)</li>
+</ul>
+<h2>스프린트 계획 파트2</h2>
+<ul>
+<li>아이템을 <strong>어떻게 수행</strong>할 지에 대해서 초점</li>
+<li><strong>팀은 제품 백로그의 우선순위가 높은 것부터 순차적으로 해당 스프린트가 끝날 때까지 할 수
+있는 아이템의 수를 예측</strong> ⇒ 핵심!
+<strong>스크럼에서는 완수해야 할 작업을 제품 책임자가 팀에 할당하는 것이 아니라, 팀이 스스로 할 수 있는 작업의 양을 결정하는 것을 중요</strong></li>
+<li>팀은 우선순위가 아래에 있는 제품에 대해서도 영향력을 행사할 수 있음 (보통 팀과 제품 책임자 둘 다 현재 우선순위가 아래에 있는 아이템이 더 위에 있는 것이 적절하다고 생각하는 경우)</li>
+<li>스프린트 계획 회의는 2주 단위의 스프린트를 기준으로 4시간을 넘지 않도록 제한</li>
+<li>
+<p>수용 능력을 활용하는 방식으로 목표치 결정하기</p>
+<ul>
+<li>
+<p>업무 수행에 얼만큼의 시간을 쓸지 추정</p>
+<ul>
+<li>스프린트와 관련된 업무를 수행하는데 쓸 시간 = 회의 참석, 메일, 휴식시간 등은 제외하는 개념</li>
+</ul>
+</li>
+<li>일반적으로 하루 4~6시간 정도 = 스프린트에 대한 수용 능력</li>
+<li>수용 능력이 정해지고 나면 기간동안 제품 백로그에 있는 아이템 몇개를 할지, 완수할지 검토</li>
+</ul>
+</li>
+<li>
+<p>아이템 선정</p>
+<ul>
+<li>지난 스프린트의 회고 때 나온 개선 목표를 위한 작업</li>
+<li>제품 백로그에서 제품 책임자가 가장 우선순위를 높게 설정해놓은 아이템을 골라서 ‘충분’할 때까지 세분화</li>
+</ul>
+</li>
+<li>스프린트 동안 해야 하는 일에 대한 리스트 = <strong>스프린트 백로그(Sprint Backlog)</strong></li>
+</ul>
+<p>
+  <a
+    class="gatsby-resp-image-link"
+    href="/static/78cd45d8006a8f0496e47a5a124cbfd1/a9965/scrum_sprint_backlog.png"
+    style="display: block"
+    target="_blank"
+    rel="noopener"
+  >
+  
+  <span
+    class="gatsby-resp-image-wrapper"
+    style="position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;"
+  >
+    <span
+      class="gatsby-resp-image-background-image"
+      style="padding-bottom: 31.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA80lEQVQY0z1R16qEQBTz/79M0BdlFffae++KWCCXHHAfwmmZzMmMsm0biGmasCwL9n3Hfd84z1Nqzpgfx4F1XWXe9z3SNEWSJPh8PrBtG3meYxxHKCRQrCxLabyC13WhrmvpPc8josMwCNq2heM4aJpGhIqikJxQXkJVVXKz7/vQNA2WZSEIAmRZ9ptzIwrEcSwz1oxhGMo55gptzPP8245kVVWh6zpM05RD3JQOaJN5FEUiQi4j6xcK7RLclMJsUsgwDHkb3kohClKA8RVh9DxPONyQUF6xruvEMi19v39wXVfI7PFzyGPOSC7fizWfg/WLf9mYvNrFWn5uAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    >
+      <img
+        class="gatsby-resp-image-image"
+        style="width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;"
+        alt="Image"
+        title=""
+        src="/static/78cd45d8006a8f0496e47a5a124cbfd1/fcda8/scrum_sprint_backlog.png"
+        srcset="/static/78cd45d8006a8f0496e47a5a124cbfd1/12f09/scrum_sprint_backlog.png 148w,
+/static/78cd45d8006a8f0496e47a5a124cbfd1/e4a3f/scrum_sprint_backlog.png 295w,
+/static/78cd45d8006a8f0496e47a5a124cbfd1/fcda8/scrum_sprint_backlog.png 590w,
+/static/78cd45d8006a8f0496e47a5a124cbfd1/efc66/scrum_sprint_backlog.png 885w,
+/static/78cd45d8006a8f0496e47a5a124cbfd1/a9965/scrum_sprint_backlog.png 1171w"
+        sizes="(max-width: 590px) 100vw, 590px"
+      />
+    </span>
+  </span>
+  
+  </a>
+    </p>
+<ul>
+<li>계획회의의 결과 = <strong>스프린트 약속 (Sprint Commitment): 스프린트가 끝날 때 어떤 결과물을 내놓을 것인지에 대한 현실적인 목표</strong></li>
+</ul>
+<blockquote>
+<p>스크럼의 기본적인 하나의 특징은 <strong>팀이 스프린트의 목표를 한 번 설정하면, 모든 추가사항이나 변경사항들은 다음 스프린트까지 미뤄져야 한다는 것</strong>이다. 이 말은 만일 제품 책임자가 스프린트 중에 팀이 했으면 하는 새로운 아이템을 결정해도 <strong>다음 스프린트가 시작할 때 까지는 바꿀 수 없다는 뜻</strong>이다. 만약 외부 상황에 의해서 우선순위가 많이 바뀌거나 이 일을 계속 했을 경우 팀이 시간을
+낭비하는 꼴이 된다면 제품 책임자나 팀은 <strong>스프린트를 중단</strong>할 수 있다. 팀이 스프린트를 중단하면 새로운 스프린트 계획 회의를 통해서 새로운 스프린트를 시작한다. 보통 이런 일이 일어나는 것을 막는 것이 좋다. 왜냐하면 이런 경우 제품 책임자와 팀이 사기가 하락해서 극단적인 결정에 의지하도록 하기 때문이다.</p>
+</blockquote>
+<ul>
+<li>
+<p>스프린트 동안 목표가 바뀌지 않는 긍정적인 효과</p>
+<ul>
+<li>
+<p>팀</p>
+<ul>
+<li>팀은 목표가 바뀌지 않을 것임을 확실하게 알고 일을 하기 대문에 확실하게 완료하는데 초점을 둘 수 있음</li>
+<li>스프린트에 자신이 제품 백로그에 우선순위를 매기고 팀에게 준 아이템들에 대해서 제대로 생각해 보게 됨</li>
+</ul>
+</li>
+<li>
+<p>제품 책임자</p>
+<ul>
+<li>팀이 실질적이고 분명한 일들을 끝내기 위해서 최선을 다 한다는 것을 알게 된 것에 확신</li>
+<li>다음 스프린트가 시작하기 전에는 어떤 변경이든 제품 백로그에 반영할 수 있다.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h1>데일리 스크럼(Daily Scrum)</h1>
+<ul>
+<li>팀원 사이의 최근 정보 공유와 협력</li>
+<li>
+<p>참가자</p>
+<ul>
+<li>팀(required)</li>
+<li>제품 책임자(optional)</li>
+<li>스크럼마스터 (팀에도 이 역할을 할 사람이 있어야함)</li>
+</ul>
+</li>
+<li>기간: 최대 15분 이내</li>
+<li>
+<p>팀원</p>
+<ul>
+<li>
+<p>각자 한 업무에 대해 서로 맞추고 장애 요소에 대해서 공유</p>
+<ol>
+<li>지난 회의 이후로 무엇을 완료했는가?</li>
+<li>다음 회의 전에 무엇을 완료할 것인가?</li>
+<li>이것을 하는데 장애 요소는 무엇인가?</li>
+</ol>
+</li>
+</ul>
+</li>
+<li>보고 자리가 아닌, 진행사항에 대한 공유/협력의 시간</li>
+<li>누군가 장애 요소를 말했다면, 스크럼 마스터는 팀원들이 그것을 해결할 수 있도록 도와주는 역할</li>
+<li>회의가 필요하다면 종료 후 이어서 회의 진행</li>
+</ul>
+<blockquote>
+<p>팀이 스크럼을 처음 한다면 일반적으로 <strong>관리자나 또는 권한이 있다고 여겨지는 사람들이 데일리 스크럼에 들어오지 않기를 권장</strong>한다. 이런 위험한 행동을 통해 팀은“ 감시”당하고 있다고 생각하게 되어서 매일 비현실적인 기대치에 대한 주요 진척도를 보고해야 한다는 압박을 느끼게 된다. 또한 팀은 문제점을 보고하는 것에 대해서 억제를 당한다고 느끼며 팀이 스스로 잘 관리하지 못하고 세부사항까지 관리를 받게 된다. 이해관계자들은 팀의 회의에 따라가기 보다는 팀의 진척을 느리게 하는 장애 요소들을 제거해 주는 것이 더 유익할 것이다.</p>
+</blockquote>
+<h1>스프린트 동안 진척도 추적(Tracking Progress during the Sprint)</h1>
+<ul>
+<li>스크럼에서 팀은 스스로 관리한다.</li>
+<li>스프린트 백로그에 있는 현재 작업을 완료하기 위해서 얼마나 남았는지 새로 추정</li>
+<li>스프린트 번다운 차트에 표시</li>
+<li>지속적으로 효율적으로 일할 방향을 찾아서 조정해야 함</li>
+</ul>
+<p><img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e28160e-4cc9-4ac2-8018-8045f9664aad/Untitled.png" alt="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4e28160e-4cc9-4ac2-8018-8045f9664aad/Untitled.png"></p>
+<h2>제품 백로그 개선(Product Backlog Refinement)</h2>
+<ul>
+<li>미래의 스프린트를 위해 큰 아이템을 쪼개고 아이템을 분석하고 재추정하고 우선순위 재조정</li>
+<li>
+<p>참가자</p>
+<ul>
+<li>팀</li>
+<li>제품 책임자(optional, 세부적 개선에 도움을 줄 수 있는 전문가라면)</li>
+<li>요구사항을 이해하고 팀에 도움을 줄 수 있는 사람들 참가.</li>
+<li>스크럼마스터(효과적으로 진행할 수 있도록 지도하기 위해서 참가하고 나머지 부분은 참가하지 않을 수도 있음.)</li>
+</ul>
+</li>
+<li>
+<p>기간</p>
+<ul>
+<li>일반적으로 팀이 사용 가능한 시간의 10% 넘지 않도록 함</li>
+<li>분석이 작업이 많은 아이템이기 때문에 오래 걸릴수는 있음</li>
+</ul>
+</li>
+<li>
+<p>가치있는 스크럼 가이드라인 중 하나는 매 스프린트의 일정 부분은 팀 전체가 미래의 스프린트들을 위해 제품 백로그를 개선해야하는데 써야 한다는 것</p>
+<ul>
+<li>세부적인 요구사항 분석</li>
+<li>아이템 쪼개기</li>
+<li>새로운 아이템에 대한 추정</li>
+<li>현재 아이템 재추정</li>
+</ul>
+</li>
+<li>이 과정을 통해 스프린트 계획이 상대적으로 간단해짐</li>
+</ul>
+<h1>스프린트 리뷰(Sprint Review)</h1>
+<ul>
+<li>제품 증분의 기능성에 관한 검토와 조정</li>
+<li>
+<p>참가자</p>
+<ul>
+<li>팀</li>
+<li>제품 책임자</li>
+<li>스크럼 마스터</li>
+<li>제품 책임자가 초대한 적합한 이해관계자들</li>
+</ul>
+</li>
+<li>스프린트의 한 주당 한 시간으로 제약 (2주 길이 스프린트 = 최대 2시간)</li>
+<li>
+<p>스프린트를 검토</p>
+<ul>
+<li>데모 x, 중요한 개념은 <em>검토</em>와 <em>조정</em></li>
+<li>제품 책임자: 제품과 팀에 대한 상황을 배움</li>
+<li>팀: 제품 책임자와 시장에 대해 배움</li>
+</ul>
+</li>
+<li>실제 제품으로 데모를 할 것</li>
+<li>리뷰 준비에 30분 이상을 사용하지 않을 것 (그렇다면 뭔가 잘못된 것)</li>
+</ul>
+<h1>스프린트 회고(Sprint Retrospective)</h1>
+<ul>
+<li>프로세스와 환경에 관련된 것을 검토하고 조정하는 활동</li>
+<li>
+<p>참가자</p>
+<ul>
+<li>팀</li>
+<li>스크럼 마스터</li>
+<li>제품 책임자 (optional)</li>
+<li>팀이 초대하지 않은 이해관계자들은 <strong>참석 불가</strong></li>
+</ul>
+</li>
+<li>스프린트 한 주당 45분으로 제한</li>
+<li><em>프로세스</em>와 <em>환경</em>에 대해서 검토하고 조정</li>
+<li>스크럼 마스터는 회고에서 퍼실리테이터 역할을 할 수도 있으나, 외부 퍼실리테이터를 찾는 것이 더 나을 수 있음</li>
+<li>기법은 <a href="https://agile.2ia.net/Agile%20Retrospectives.pdf">Agile Rerospectives(Derby, Larsen 2006)</a> 참고</li>
+<li>긍정적인 부분 부정적인 부분 모두 집중할 것</li>
+</ul>
+<h1>다음 스프린트의 시작(Starting the next Sprint)</h1>
+<ul>
+<li>새로운 시각으로 새로운 아이템을 추가, 기존 아이템 제거 등 수정하여 제품 백로그 업데이트</li>
+<li>애자일 개발의 한 가지 원칙은 “지속 가능한 속도”이며 탐은 합리적인 수준으로 적절히 일해야 이 주기를 계속 이어나갈 수 있다.</li>
+</ul>
+<blockquote>
+<p>생산성은 팀의 실천방식이 발전하고 <strong>팀의 생산성에 방해가 되는
+요소들을 제거해 가며 계속해서 오르는 것</strong>이지, 잔업이나 품질에 대해서 타협하며 오르는 것이 아니다.</p>
+</blockquote>
+<ul>
+<li>스프린트는 제품 책임자가 제품을 출시할 준비가 되었다고 판단할 때까지 계속</li>
+<li>완벽한 스크럼에서 제품은 매 스프린트가 끝날 때 마다 잠재적으로 출시가 가능한 상태</li>
+<li>하지만 많은 조직들은 개발 방법, 툴, 인프라가 약하고 이런 완벽한 스크럼은 할 수 없으며 그렇기 때문에 남은 일을 처리하기 위해서 <strong>“릴리즈 스프린트(Release Sprint)”</strong>가 필요</li>
+</ul>
+<h1>릴리즈 관리(Managing Release)</h1>
+<ul>
+<li>반복적인 모델의 경우 장기적인 출시 계획을 어떻게 해야 하는가?</li>
+<li>첫번째 릴리즈를 위한 새로운 제품</li>
+<li>추후의 릴리즈를 위한 현재의 제품</li>
+<li>
+<p>새로운 제품의 경우나 현재의 제품에 단지 스크럼만 적용하는 경우</p>
+<ul>
+<li>첫 번째 스프린트 전에 제품 백로그 개선을 시작 = <strong>제품 백로그 제작 or 릴리즈 계획</strong></li>
+<li>모든 아이템에 대한 추정도 필요</li>
+</ul>
+</li>
+<li>확실히 정해진 제품 백로그가 있는 제품의 경우는 다음 릴리즈를 위한 어떤 특별하거나 큰 릴리즈 계획이 필요 없음 (= 매 스프린트마다 5~10% 정도의 시간을 백로그 개선, 추후를 위한 준비에 사용)</li>
+<li>스크럼은 매 스프린트마다 잠재적으로 출시 가능한 코드를 만드는 것을 강조하기 때문에 제품 책임자는 중간 릴리즈를 하기로 할 수도 있고, 고객이 완료된 작업에 대한 수혜를 더 빨리 받을 수 있게 할 수도 있다.</li>
+<li>계획을 세우고 개선하는 것을 통해서 릴리즈에 대한 큰 방향성을 제시하고 어떻게 결정들의 균형을 맞출지(예를 들면 범위냐 일정이냐 같은)를 명확히 하는 것이 핵심</li>
+</ul>
+<h1>애플리케이션 또는 제품에서의 관점</h1>
+<ul>
+<li>스크럼은 더 이상 시작, 중간, 끝이 있는 프로젝트는 없다.</li>
+<li>기존의 프로젝트 관리자도 없다.</li>
+<li>
+<p>필요한 모든 프로젝트 관리 업무는 팀과 제품 책임자가 한다.</p>
+<ul>
+<li>제품 책임자는 내부적인 사업 고객이거나 제품 관리와 관련된 사람</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>때로는 앞의 방법으로도 해결하기 힘들 정도로 새로운 일이 적어서 팀이 한 스프린트 내에 여러 애플리케이션의 아이템들을 담당할 수도 있다. 그러나 이런 방법은 <strong>다양한 애플리케이션에 걸쳐서 비생산적인 멀티태스크를 만들 수도 있으니 주의</strong>해야 한다. 스크럼에서 생산성에 대한 기본적인 <strong>한 가지는 팀은 한 스프린트에 한 개의 제품이나 애플리케이션에 집중해야 한다</strong>는 것이다.</p>
+</blockquote>
+<h1>공통 과제(Common Challenge)</h1>
+<blockquote>
+<p>도전적인 스크럼 실천 방법을 할 때의 한 가지 <strong>흔한 실수는 스크럼을 변형시키는 것</strong>이다. 예를 들어 산출물을 만드는데 문제가 있는 팀은 스프린트의 기간을 늘일 수도 있고 그래서 절대 시간이 다 되지 않을 것이다. 그리고 그런 프로세스에서는 추정하고 시간을 관리하는 것을 어떻게 하면 더 잘할지 절대 배울 필요가 없을 것이다. 이런 식으로 경험이 있는 스크럼마스터의 코칭이나 지원 없이 조직은 그들의 약점과 장애와는 반대로 스크럼을 변형시킬 수도 있고 스크럼이 주는 진정한 혜택을 약하게 만들 수도 있다. 여기서 말하는 스크럼이 주는 진정한 혜택은 <strong>장점과 단점을 눈에 보이도록 하고 조직이 더 높은 수준으로 나아가기 위한 선택 사항을 제시하는 것</strong>을 뜻한다.
+다른 흔한 실수는 스크럼이 <strong>특정 실천 사항을 분명하게 요구하지 않는다</strong>는 이유로 어떤 실천 사항을 피하거나 금지해야 한다고 생각하는 것이다. 예를 들면, 스크럼에서는 제품 책임자가 제품을 위한 장기적인 전략을 세우는 것을 요구하지 않는다. 또한 스크럼에서는 엔지니어가 복잡한 기술적인 문제에 대해서 더 경험이 많은 엔지니어에게 조언을 구하는 것을 요구하지도 않는다. 스크럼에서는 이런 부분들은 개인이 올바른 결정을 하도록 남겨둔다. 대부분의 경우는 위의 두 실천 사항은 하는 것이 더 낫다.</p>
+</blockquote>
+<h3>Reference</h3>
+<ol>
+<li><a href="https://scrumprimer.org/translations">Scrum Primer</a></li>
+</ol></div><hr class="blog-post__Divider-sc-1jbsnju-1 iKgKpx"/><ul class="blog-post__PostNavigator-sc-1jbsnju-2 fCYyby"><li><a rel="prev" href="/post/2020-10-09-jekyll-preview-local/">← <!-- -->로컬에서 Jekyll 확인하기 - 기본 Jekyll 커맨드</a></li><li><a rel="next" href="/post/2020-10-22-jira-smart-commit/">Jira 스마트 커밋(Smart Commit) 사용하기<!-- --> →</a></li></ul></article></section></section></div></div></div></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/post/2020-10-13-scrum-overview/";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-dfda8d059abd9d0298c4.js"],"app":["/app-0408835f895339b9c0c4.js"],"component---node-modules-gatsby-plugin-offline-app-shell-js":["/component---node-modules-gatsby-plugin-offline-app-shell-js-36dc033f967ae9fe9cda.js"],"component---src-pages-404-tsx":["/component---src-pages-404-tsx-c30de5f9200bd94ed34b.js"],"component---src-pages-index-tsx":["/component---src-pages-index-tsx-aec41bf108fafc3c9ea1.js"],"component---src-templates-blog-post-tsx":["/component---src-templates-blog-post-tsx-b6cb6993f4ed492bac85.js"],"component---src-templates-categories-tsx":["/component---src-templates-categories-tsx-6406f77f00c824542689.js"],"component---src-templates-tags-tsx":["/component---src-templates-tags-tsx-b81774c03ccbe97a9089.js"],"polyfills-dom":["/polyfills-dom-93064dd2f9b42a28a028.js"],"polyfills-core-js":["/polyfills-core-js-0d48a606562b2aecce24.js"]};/*]]>*/</script><script src="/polyfill-dfda8d059abd9d0298c4.js" nomodule=""></script><script src="/component---src-templates-blog-post-tsx-b6cb6993f4ed492bac85.js" async=""></script><script src="/5ab70dd3b6ca162de984cbbccc8160d1acdf6f38-6d51b72122d128fd90b1.js" async=""></script><script src="/f339c45a0414fcde3d97bd41694a7816c5c12aa2-12f39fce22eaa3ba2b9a.js" async=""></script><script src="/app-0408835f895339b9c0c4.js" async=""></script><script src="/framework-305b3707783ccc9d7ca6.js" async=""></script><script src="/styles-540f25bd5e5cb35d6f53.js" async=""></script><script src="/webpack-runtime-f2be5c82d82c63c7988f.js" async=""></script></body></html>
