@@ -1,4 +1,71 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 10 Feb 2021 16:52:07 GMT</lastBuildDate><item><title><![CDATA[eslint 'React' was used before it was defined  @typescript-eslint/no-use-before-define 대처법]]></title><description><![CDATA[‘React’ was used before it was defined ? typescript 기반 CRA 프로젝트를 생성한 다음 eslint…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-10-typescript-eslint-warning/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-10-typescript-eslint-warning/</guid><pubDate>Wed, 10 Feb 2021 22:53:41 GMT</pubDate><content:encoded>&lt;h1&gt;‘React’ was used before it was defined ?&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 11 Feb 2021 00:25:23 GMT</lastBuildDate><item><title><![CDATA[최신버전 mobx mobx-react에서 observer re-render 안될 때]]></title><description><![CDATA[최신버전 mobx mobx-react 패키지 설치 후 observer 리렌더링이 되지 않는다?! 😭 오랜만에 새로운 프로젝트를 세팅하느라 React 프로젝트를 만들고, state 관리로는 MobX…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-11-mobx-v7-observer-rerender/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-11-mobx-v7-observer-rerender/</guid><pubDate>Thu, 11 Feb 2021 08:40:16 GMT</pubDate><content:encoded>&lt;h1&gt;최신버전 mobx mobx-react 패키지 설치 후 observer 리렌더링이 되지 않는다?! 😭&lt;/h1&gt;
+&lt;p&gt;오랜만에 새로운 프로젝트를 세팅하느라 React 프로젝트를 만들고, state 관리로는 &lt;em&gt;MobX&lt;/em&gt;로 결정. &lt;code class=&quot;language-text&quot;&gt;mobx&lt;/code&gt;롸 &lt;code class=&quot;language-text&quot;&gt;mobx-react&lt;/code&gt; 패키지를 설치한다. 테스트로 &lt;code class=&quot;language-text&quot;&gt;observable&lt;/code&gt; 변수를 만들고 &lt;code class=&quot;language-text&quot;&gt;observer&lt;/code&gt; 컴포넌트에서 상태 변화를 확인해본다. 그런데 갑자기 업데이트가 되질 않는다. 도대체 무슨 일인가?! 이것저것 해봐도 한 것은 정확히 똑같은데?!!&lt;/p&gt;
+&lt;h2&gt;Enabling decorators&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://mobx.js.org/enabling-decorators.html&quot;&gt;공식 문서&lt;/a&gt;에 소개된 바로는, &lt;em&gt;MobX&lt;/em&gt; 버전 6이전까지는 ES.next 데코레이터를 이용해서 &lt;code class=&quot;language-text&quot;&gt;observable&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;computed&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;action&lt;/code&gt;으로 만들기로 되어 있었다. 하지만 데코레이터는 현재 ES 표준이 아니고, 표준화의 과정이 너무 오랜 기간이 소요된다. 그리고 표준이 이전에 데코레이터와는 다른 방식으로 구현되고 있는 것으로 보이고 있다고 한다. MobX 버전 6부터는 &lt;code class=&quot;language-text&quot;&gt;makeObservable&lt;/code&gt;과 &lt;code class=&quot;language-text&quot;&gt;makeAutoObservable&lt;/code&gt;을 대신 사용하도록 한다고 한다.&lt;/p&gt;
+&lt;deckgo-highlight-code   &gt;
+          &lt;code slot=&quot;code&quot;&gt;import { makeObservable, observable, computed, action } from &amp;quot;mobx&amp;quot;
+
+class Todo {
+    id = Math.random()
+    @observable title = &amp;quot;&amp;quot;
+    @observable finished = false
+
+    constructor() {
+        makeObservable(this)
+    }
+
+    @action
+    toggle() {
+        this.finished = !finished
+    }
+}
+
+class TodoList {
+    @observable todos = []
+
+    @computed
+    get unfinishedTodoCount() {
+        return this.todos.filter(todo =&amp;gt; !todo.finished).length
+    }
+
+    constructor() {
+        makeObservable(this)
+    }
+}&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;h2&gt;mobx와 mobx-react의 올바른 버전 선택은?&lt;/h2&gt;
+&lt;p&gt;사실 셋업하는 시점에는 최신 버전의 &lt;code class=&quot;language-text&quot;&gt;mobx&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;mobx-react&lt;/code&gt;를 설치해서 사용하지만, &lt;a href=&quot;https://github.com/mobxjs/mobx-react&quot;&gt;mobx-react 문서&lt;/a&gt;에 따르면 &lt;code class=&quot;language-text&quot;&gt;mobx-react&lt;/code&gt;는 유지보수가 되고 있는 법전이 2가지 존재한다고한다. &lt;code class=&quot;language-text&quot;&gt;mobx&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;mobx-react&lt;/code&gt;는 다음 버전 궁함이 있는 것으로 보인다:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;mobx-react&lt;/code&gt; 버전&lt;/th&gt;
+&lt;th&gt;&lt;code class=&quot;language-text&quot;&gt;mobx&lt;/code&gt; 버전&lt;/th&gt;
+&lt;th&gt;React 버전&lt;/th&gt;
+&lt;th&gt;hook 기반 컴포넌트 지원 여부&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;v7&lt;/td&gt;
+&lt;td&gt;6.*&lt;/td&gt;
+&lt;td&gt;16.8+&lt;/td&gt;
+&lt;td&gt;지원&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v6&lt;/td&gt;
+&lt;td&gt;4._ / 5._&lt;/td&gt;
+&lt;td&gt;16.8+&lt;/td&gt;
+&lt;td&gt;지원&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;v5&lt;/td&gt;
+&lt;td&gt;4._ / 5._&lt;/td&gt;
+&lt;td&gt;0.13+&lt;/td&gt;
+&lt;td&gt;미지원 (&lt;code class=&quot;language-text&quot;&gt;&amp;lt;Observer&amp;gt;&lt;/code&gt; 로 감싸서 사용)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;혹시나 MobX가 잘 동작하지 않는다면, 버전을 확인해봐야 할 것 같다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[eslint 'React' was used before it was defined  @typescript-eslint/no-use-before-define 대처법]]></title><description><![CDATA[‘React’ was used before it was defined ? typescript 기반 CRA 프로젝트를 생성한 다음 eslint…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-10-typescript-eslint-warning/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-10-typescript-eslint-warning/</guid><pubDate>Wed, 10 Feb 2021 22:53:41 GMT</pubDate><content:encoded>&lt;h1&gt;‘React’ was used before it was defined ?&lt;/h1&gt;
 &lt;p&gt;typescript 기반 CRA 프로젝트를 생성한 다음 eslint르 적용을 다음과 같이 적용했는데,&lt;/p&gt;
 &lt;deckgo-highlight-code language=&quot;shell&quot;  &gt;
           &lt;code slot=&quot;code&quot;&gt;yarn add eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin --dev&lt;/code&gt;
