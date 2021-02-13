@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Feb 2021 01:05:49 GMT</lastBuildDate><item><title><![CDATA[마참내!! 나에게도 드디어!! 애드센스! - 애드센스 도전기]]></title><description><![CDATA[Adsnese. 마참내!! (마침내 ㅋㅋ) 애드고사 통과! 사실 오랜기간 여러번 도전했으나 여러 실패를 겪고 거의 반 포기하고 있었다.. 그런데 얼마전. 약 일주일전인가? Jekyll 기반의 블로그를 gatsby…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-12-adsense/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-12-adsense/</guid><pubDate>Fri, 12 Feb 2021 14:53:44 GMT</pubDate><content:encoded>&lt;h1&gt;Adsnese. 마참내!! (마침내 ㅋㅋ) 애드고사 통과!&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Feb 2021 07:04:26 GMT</lastBuildDate><item><title><![CDATA[맥북 스크린샷 저장 오류 - 스크린샷 저장이 되지 않을 때 해결법]]></title><description><![CDATA[…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-13-mac-screenshot-troubleshoot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-13-mac-screenshot-troubleshoot/</guid><pubDate>Sat, 13 Feb 2021 15:52:15 GMT</pubDate><content:encoded>&lt;h1&gt;맥에서 갑자기 스크린샷 저장이 되지 않는다?&lt;/h1&gt;
+&lt;p&gt;맥에서 스크린샷을 할 때에 &lt;code class=&quot;language-text&quot;&gt;cmd + shift + 3&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;cmd + shift + 4&lt;/code&gt;로 스크린샷을 찍는다. 최근 맥북을 바꾸면서 스크린샷이 되지 않는 문제가 있었다.&lt;/p&gt;
+&lt;h2&gt;이전에는 터치바에서 저장 위치를 설정할 수 있었는데..&lt;/h2&gt;
+&lt;p&gt;이전 맥북은 터치바가 있는 모델이어서 스크린샷을 찍을 때에 저장될 위치를 선택할 수 있었는데, 새로운 맥북은 터치바가 없으면서 그것이 안된 것으로 추측된다. 그러니까 &lt;em&gt;클립보드로 저장&lt;/em&gt;되도록 설정해둔채로 데이터를 마이그레이션해서 그게 계속 유지되고 있고 터치바가 없어서 따로 옵션을 선택할 수 없었던 것.&lt;/p&gt;
+&lt;h2&gt;터치바가 없으면 저장 위치를 설정하지 못하나?&lt;/h2&gt;
+&lt;p&gt;그렇지 않다. &lt;strong&gt;&lt;code class=&quot;language-text&quot;&gt;cmd + shift + 5&lt;/code&gt;&lt;/strong&gt; 를 누르면 아래와 같이 &lt;strong&gt;메뉴와 함께 스크린샷 도구가 나타난다.&lt;/strong&gt; 메뉴 오른편에 &lt;code class=&quot;language-text&quot;&gt;옵션&lt;/code&gt;을 누르면 &lt;code class=&quot;language-text&quot;&gt;다음으로 저장&lt;/code&gt;에서 저장 방법을 선택할 수 있다. 여기서 원하는 옵션을 누르면 이후 &lt;code class=&quot;language-text&quot;&gt;cmd + shift + 3&lt;/code&gt;이나 &lt;code class=&quot;language-text&quot;&gt;cmd + shift + 4&lt;/code&gt;로 캡처를 해도 &lt;strong&gt;동일한 설정대로 저장된다.&lt;/strong&gt; 😎&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9648602c48663334f162c905f0012bb0/62522/macos-big-sur-screenshot-menu-record.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABWxGb6SAj/8QAGxAAAgIDAQAAAAAAAAAAAAAAARIAAwIRISL/2gAIAQEAAQUC8stZlWChRtRK+D//xAAZEQEAAwEBAAAAAAAAAAAAAAABAAMhAhH/2gAIAQMBAT8B9rsNI8hhP//EABkRAAIDAQAAAAAAAAAAAAAAAAABESExQf/aAAgBAgEBPwGGsZfT/8QAGhABAQACAwAAAAAAAAAAAAAAAQAQEUFRYf/aAAgBAQAGPwJ2c3Um5fcN/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAITFRYbHB/9oACAEBAAE/ISaA2tQC4bYAIiMAhuoDWMu5RqnUFDnwT//aAAwDAQACAAMAAAAQGz//xAAYEQEBAAMAAAAAAAAAAAAAAAABACFBUf/aAAgBAwEBPxBMM5yR0X//xAAWEQEBAQAAAAAAAAAAAAAAAAABAGH/2gAIAQIBAT8QtKtX/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFB0f/aAAgBAQABPxBdb8A3rKChOfQIDGNhXhFK2VS86hcAfRhlSK96w//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9648602c48663334f162c905f0012bb0/1c72d/macos-big-sur-screenshot-menu-record.jpg&quot;
+        srcset=&quot;/static/9648602c48663334f162c905f0012bb0/a80bd/macos-big-sur-screenshot-menu-record.jpg 148w,
+/static/9648602c48663334f162c905f0012bb0/1c91a/macos-big-sur-screenshot-menu-record.jpg 295w,
+/static/9648602c48663334f162c905f0012bb0/1c72d/macos-big-sur-screenshot-menu-record.jpg 590w,
+/static/9648602c48663334f162c905f0012bb0/a8a14/macos-big-sur-screenshot-menu-record.jpg 885w,
+/static/9648602c48663334f162c905f0012bb0/fbd2c/macos-big-sur-screenshot-menu-record.jpg 1180w,
+/static/9648602c48663334f162c905f0012bb0/62522/macos-big-sur-screenshot-menu-record.jpg 1560w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;그러니, 스크린샷이 잘 동작하지 않는다면,&lt;/p&gt;
+&lt;p&gt;당장 눌러서 확인해보세요. &lt;strong&gt;cmd + shift + 5&lt;/strong&gt;.&lt;/p&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;https://support.apple.com/ko-kr/HT208721&quot;&gt;apple 홈페이지&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[마참내!! 나에게도 드디어!! 애드센스! - 애드센스 도전기]]></title><description><![CDATA[Adsnese. 마참내!! (마침내 ㅋㅋ) 애드고사 통과! 사실 오랜기간 여러번 도전했으나 여러 실패를 겪고 거의 반 포기하고 있었다.. 그런데 얼마전. 약 일주일전인가? Jekyll 기반의 블로그를 gatsby…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-12-adsense/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-12-adsense/</guid><pubDate>Fri, 12 Feb 2021 14:53:44 GMT</pubDate><content:encoded>&lt;h1&gt;Adsnese. 마참내!! (마침내 ㅋㅋ) 애드고사 통과!&lt;/h1&gt;
 &lt;p&gt;사실 오랜기간 여러번 도전했으나 여러 실패를 겪고 거의 반 포기하고 있었다.. 그런데 얼마전. 약 일주일전인가? &lt;em&gt;Jekyll&lt;/em&gt; 기반의 블로그를 &lt;em&gt;gatsby&lt;/em&gt;로 업데이트하면서 한 번 더 도전했고.. 마침내 광고를 개제할 수 있게 되었다는 메일을 받았따.. 와우! 얼마나 수익을 낼 수 있을까라는 것과 별개로 꽤 오랜시간 해보고자 했는데 잘 되지 않았던 것이 드디어 되어서 너무 기쁜 마음이 컸다. 애드센스 통과를 위해 많은 시도를 했던 것은 아니지만.. 약간 감이 잡힌다.&lt;/p&gt;
 &lt;h1&gt;나의 애드센스 도전기&lt;/h1&gt;
 &lt;p&gt;뭐 사실 도전이라고 하기에는 아주 가끔씩이었지만, 잠깐 썰을 풀어보려한다.&lt;/p&gt;
