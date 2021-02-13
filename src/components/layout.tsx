@@ -118,6 +118,18 @@ const ContentFrame = styled.div`
     padding:24px;
     line-height:1.5em;
   }
+  ins {
+    background:none;
+  }
+  h1 {
+    margin-top:1rem;
+  }
+  h2 {
+    margin-top:0.4rem;
+  }
+  .frame-post {
+    margin-bottom:2rem;
+  }
 `;
 
 const StyledH1 = styled.h1`

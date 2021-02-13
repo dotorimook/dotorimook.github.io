@@ -1,3 +1,4 @@
+import { Adsense } from "@ctrl/react-adsense"
 import { graphql, Link, PageRendererProps } from "gatsby"
 import React from "react"
 import styled from "styled-components"
@@ -58,7 +59,11 @@ const BlogPostTemplate = (props: Props) => {
         <Frame>
           <h1>{post.frontmatter!.title}</h1>
           <div className='date'>{frontmatter.date}</div>
-          <div dangerouslySetInnerHTML={{ __html: html }} />
+          <Adsense
+            client='ca-pub-5013570089563608'
+            slot='3747930287'
+          />
+          <div className='frame-post' dangerouslySetInnerHTML={{ __html: html }} />
           <Divider />
           <PostNavigator>
             <li>
@@ -76,6 +81,10 @@ const BlogPostTemplate = (props: Props) => {
               )}
             </li>
           </PostNavigator>
+          <Adsense
+            client='ca-pub-5013570089563608'
+            slot='5476601469'
+          />
         </Frame>
       </section>
     </Layout>
