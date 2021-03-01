@@ -1,4 +1,22 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 13 Feb 2021 07:04:26 GMT</lastBuildDate><item><title><![CDATA[맥북 스크린샷 저장 오류 - 스크린샷 저장이 되지 않을 때 해결법]]></title><description><![CDATA[…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-13-mac-screenshot-troubleshoot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-13-mac-screenshot-troubleshoot/</guid><pubDate>Sat, 13 Feb 2021 15:52:15 GMT</pubDate><content:encoded>&lt;h1&gt;맥에서 갑자기 스크린샷 저장이 되지 않는다?&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 01 Mar 2021 06:42:36 GMT</lastBuildDate><item><title><![CDATA[Git push error pre-receive hook declined 에러]]></title><description><![CDATA[git 푸시 실패: pre-receive hook declined git 브랜치에서 푸시를 하려고 하는데 푸시가 되지 않았다. 하려고 했던 푸시는 force to push였다. pre-receive hook declined…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/git-pre-receive-hook-declined-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/git-pre-receive-hook-declined-error/</guid><pubDate>Mon, 01 Mar 2021 15:30:04 GMT</pubDate><content:encoded>&lt;h1&gt;git 푸시 실패: pre-receive hook declined&lt;/h1&gt;
+&lt;p&gt;git 브랜치에서 푸시를 하려고 하는데 푸시가 되지 않았다.&lt;/p&gt;
+&lt;deckgo-highlight-code   &gt;
+          &lt;code slot=&quot;code&quot;&gt;remote: GitLab: You are not allowed to force push code to a protected branch on this project.
+[remote rejected] master -&amp;gt; master (pre-receive hook declined)&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;하려고 했던 푸시는 force to push였다.&lt;/p&gt;
+&lt;h2&gt;pre-receive hook declined 에러 해결 방법&lt;/h2&gt;
+&lt;p&gt;그래서 내가 에러를 해결한 방법은? 푸시를 하려고 하는 해당 &lt;code class=&quot;language-text&quot;&gt;master&lt;/code&gt; 브랜치에 &lt;strong&gt;protect&lt;/strong&gt; 설정이 있는지 확인했다. 역시나 &lt;strong&gt;protect&lt;/strong&gt; 설정이 되어있었고 그걸 일시적으로 해제해서 해결을 했다.&lt;/p&gt;
+&lt;h2&gt;pre-receive hook declined 에러 원인은?&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;pre-receive hook declined&lt;/strong&gt;는 에러 양상이 여러가지로 알고 있다. 일반적으로 원인은&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;브랜치 권한 문제&lt;/li&gt;
+&lt;li&gt;브랜치 protect 문제 (권한 문제로 봐도 무방한 것 같음)&lt;/li&gt;
+&lt;li&gt;커밋 메시지 규칙 준수 문제 (이슈 ID를 작성하지 않았다든지)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;그냥 그렇게만 알고 있었는데 그 의미를 곱씹어보면 왜 한 가지가 아니라 다양하게 원인이 있는지 추측할 수 있다.
+일반적으로 &lt;strong&gt;pre-receive hook declined&lt;/strong&gt; &lt;code class=&quot;language-text&quot;&gt;hook&lt;/code&gt;이 거절됐다는 것인데, 우리가 푸시를 할 때에 &lt;em&gt;git hook&lt;/em&gt;을 걸 수 있는데, 그 단계에서 푸시가 반려되었다고 추측해볼 수 있다. 일반적으로 위에 나열된 브랜치 권한이나 브랜치 보호, 커밋 메시지 규칙 준수 문제의 validation을 git hook으로 작동한다고 추측할 수도 있다. 그래서 해당 에러가 발생하면 어떤 훅이 설정되어있고, 어떤 훅에서 문제가 발생했는지 파악하는 것이 중요할 것 같다.&lt;/p&gt;
+&lt;p&gt;또 한가지 팁이 있는데, 사실 &lt;strong&gt;pre-recevie hook declined&lt;/strong&gt; 라인 위에 한 줄이 더 있는데, 아마도 hook에 설정된 메시지 인 것 같은데, 그 메시지가 있는 경우도 아닌 경우도 있을 것 같지만, 해당 메시지가 있다면 그 메시지를 보는 것이 더 원인 파악에 중요할 것 같다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[맥북 스크린샷 저장 오류 - 스크린샷 저장이 되지 않을 때 해결법]]></title><description><![CDATA[…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-02-13-mac-screenshot-troubleshoot/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-02-13-mac-screenshot-troubleshoot/</guid><pubDate>Sat, 13 Feb 2021 15:52:15 GMT</pubDate><content:encoded>&lt;h1&gt;맥에서 갑자기 스크린샷 저장이 되지 않는다?&lt;/h1&gt;
 &lt;p&gt;맥에서 스크린샷을 할 때에 &lt;code class=&quot;language-text&quot;&gt;cmd + shift + 3&lt;/code&gt; 또는 &lt;code class=&quot;language-text&quot;&gt;cmd + shift + 4&lt;/code&gt;로 스크린샷을 찍는다. 최근 맥북을 바꾸면서 스크린샷이 되지 않는 문제가 있었다.&lt;/p&gt;
 &lt;h2&gt;이전에는 터치바에서 저장 위치를 설정할 수 있었는데..&lt;/h2&gt;
 &lt;p&gt;이전 맥북은 터치바가 있는 모델이어서 스크린샷을 찍을 때에 저장될 위치를 선택할 수 있었는데, 새로운 맥북은 터치바가 없으면서 그것이 안된 것으로 추측된다. 그러니까 &lt;em&gt;클립보드로 저장&lt;/em&gt;되도록 설정해둔채로 데이터를 마이그레이션해서 그게 계속 유지되고 있고 터치바가 없어서 따로 옵션을 선택할 수 없었던 것.&lt;/p&gt;
