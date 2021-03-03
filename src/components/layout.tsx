@@ -9,6 +9,7 @@ import { FadeLink } from "./link"
 import TitleBar from "./TitleBar"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import Helmet from "react-helmet"
+import iconFolder from '../../content/assets/img/folder.ico';
 deckDeckGoHighlightElement();
 
 interface Props extends PageRendererProps {
@@ -25,6 +26,7 @@ const ContentFrame = styled.div`
   align-items:stretch;
   .frame-content {
     flex:1;
+    overflow:hidden;
   }
   .frame-menu {
     max-width:320px;
@@ -94,10 +96,43 @@ const ContentFrame = styled.div`
   .frame-main-banner img {
     width:100%;
   }
-  .frame-categories li:before {
+  /* .frame-categories li:before {
     content:'📁';
     display:inline-block;
     margin-right: 4px;
+  } */
+  .frame-categories {
+    .li-category {
+      position:relative;
+      &:before {
+        position:absolute;
+        content:'';
+        width:10px;
+        height: 25px;
+        /* border: 1px solid #333; */
+        margin-top: -15px;
+        border-width: 0 0 1px 1px;
+        border-style: dotted;
+        border-color: #666;
+      }
+      &:first-child:before {
+        height:12px;
+        margin-top:-2px;
+      }
+    }
+    .folder {
+      margin-left:10px;
+      /* position:relative; */
+      &:before {
+        /* position:absolute; */
+        content:'';
+        width:16px;
+        height:16px;
+        display:inline-block;
+        background:url(${iconFolder});
+        margin-right:5px;
+      }
+    }
   }
   .frame-tags li {
     display:inline;
@@ -129,6 +164,12 @@ const ContentFrame = styled.div`
   }
   .frame-post {
     margin-bottom:2rem;
+  }
+
+  @media screen and (max-width: 420px) {
+    .frame-menu {
+      display:none;
+    }
   }
 `;
 
@@ -232,8 +273,8 @@ export const Layout = (props: Props) => {
               <ul>
                 {
                   (categories || []).map(category => (
-                    <li key={`link-category-${category}`}>
-                      <Link to={`/category/${category}`}>{category}</Link>
+                    <li className='li-category' key={`link-category-${category}`}>
+                      <Link to={`/category/${category}`}><span className='folder'>{category}</span></Link>
                     </li>
                   ))
                 }
