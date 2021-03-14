@@ -1,4 +1,65 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 03 Mar 2021 13:22:12 GMT</lastBuildDate><item><title><![CDATA[Git push error pre-receive hook declined 에러]]></title><description><![CDATA[git 푸시 실패: pre-receive hook declined git 브랜치에서 푸시를 하려고 하는데 푸시가 되지 않았다. 하려고 했던 푸시는 force to push였다. pre-receive hook declined…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/git-pre-receive-hook-declined-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/git-pre-receive-hook-declined-error/</guid><pubDate>Mon, 01 Mar 2021 15:30:04 GMT</pubDate><content:encoded>&lt;h1&gt;git 푸시 실패: pre-receive hook declined&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Mar 2021 02:36:00 GMT</lastBuildDate><item><title><![CDATA[SSH로 git 사용하기]]></title><description><![CDATA[Github는 패스워드 기반 인증을 지원하지 않기로 했다. 대표적인 무료 git 저장소인 github가 패스워드기반 인증을 사용하지 않겠다고 발표했습니다. 앞으로는 github를 이용할 때에는 1. 토큰 기반 인증 또는 2. SSH…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/ssh-git/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/ssh-git/</guid><pubDate>Sun, 14 Mar 2021 11:28:08 GMT</pubDate><content:encoded>&lt;h1&gt;Github는 패스워드 기반 인증을 지원하지 않기로 했다.&lt;/h1&gt;
+&lt;p&gt;대표적인 무료 git 저장소인 &lt;strong&gt;github&lt;/strong&gt;가 패스워드기반 인증을 사용하지 않겠다고 발표했습니다. 앞으로는 &lt;strong&gt;github&lt;/strong&gt;를 이용할 때에는 &lt;strong&gt;1. 토큰 기반 인증&lt;/strong&gt; 또는 &lt;strong&gt;2. SSH 기반 인증&lt;/strong&gt;을 해야합니다. github뿐만 아니라 BitBucket이나 gitlab 등 일반적으로 많이 사용하는 git 기반 저장소에서도 많은 경우에 HTTPS기반 인증을 사용하고 있지만, SSH기반 인증 역시 지원하고 있습니다. 저장소의 페이지에 있는 &lt;strong&gt;Clone&lt;/strong&gt;버튼을 눌러보면 &lt;strong&gt;Clone with SSH&lt;/strong&gt;가 있는데, SSH를 통해서도 저장소를 받을 수 있음을 확인할 수 있는 부분입니다.&lt;/p&gt;
+&lt;h1&gt;SSH기반 인증, 그거 어떻게 하는 건데?&lt;/h1&gt;
+&lt;p&gt;그럼 슬슬 본론으로 넘어가서, SSH기반으로 인증할 수 있는 절차를 살펴보겠습니다.&lt;/p&gt;
+&lt;p&gt;SSH인증을 위해서는 2가지를 해야합니다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;SSH키 생성&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;퍼블릭 키 등록&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;1. SSH 키 생성&lt;/h2&gt;
+&lt;p&gt;SSH키라는 것은 &lt;strong&gt;SSH 프로토콜의 접근 크리덴셜&lt;/strong&gt;이라고 보면 됩니다. &lt;strong&gt;퍼블릭 키(public key, 공개 키)&lt;/strong&gt;와 &lt;strong&gt;프라이빗 키(private key, 개인 키)&lt;/strong&gt;를 가지고 있으며, &lt;strong&gt;퍼블릭 키&lt;/strong&gt;를 서비스에 등록해 놓으면, &lt;strong&gt;프라이빗 키&lt;/strong&gt;를 이용해서 인증하여 접속합니다.&lt;/p&gt;
+&lt;p&gt;SSH키를 생성하면 &lt;strong&gt;퍼블릭 키&lt;/strong&gt;와 &lt;strong&gt;프라이빗 키&lt;/strong&gt;가 나오는데, 이 퍼블릭 키를  github 등 서비스에 등록하여 사용합니다.&lt;/p&gt;
+&lt;p&gt;윈도우는 git-bash를 이용하세요.&lt;/p&gt;
+&lt;h3&gt;프라이빗 키 생성&lt;/h3&gt;
+&lt;p&gt;키 생성은 &lt;code class=&quot;language-text&quot;&gt;ssh-keygen&lt;/code&gt;이라는 명령어를 사용합니다. &lt;code class=&quot;language-text&quot;&gt;-t&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;-b&lt;/code&gt;,  &lt;code class=&quot;language-text&quot;&gt;-C&lt;/code&gt; 등 옵션을 제공합니다.&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;ssh-keygen&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;Generating public/private rsa key pair.
+Enter file in which to save the key (/***/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
+Your identification has been saved in /***/.ssh/id_rsa.
+Your public key has been saved in /***/.ssh/id_rsa.pub.
+The key fingerprint is:
+*** ***&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;따로 경로를 지정하지 않으면, 일반적으로 &lt;em&gt;~/.ssh&lt;/em&gt; 경로에 &lt;strong&gt;id_rsa&lt;/strong&gt;와 &lt;strong&gt;id_rsa.pub&lt;/strong&gt; 라는 파일이 생성됩니다.&lt;/p&gt;
+&lt;h3&gt;프라이빗 키를 등록하기&lt;/h3&gt;
+&lt;p&gt;퍼블릭 키를 서비스에 등록하여 사용하기 전에 &lt;code class=&quot;language-text&quot;&gt;ssh-add&lt;/code&gt; 커맨드를 이용해서 개인 키 파일을 &lt;strong&gt;ssh-agent&lt;/strong&gt; 에 등록합니다.&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;ssh-add ~/.ssh/id_rsa&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;키를 다른 경로에 등록했을 경우 각 경로로 사용해야 합니다.&lt;/p&gt;
+&lt;h3&gt;퍼블릭 키를 서비스에 등록하기&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;pub&lt;/em&gt; 확장자는 &lt;strong&gt;퍼블릭 키(public key)&lt;/strong&gt; 를 의미합니다. &lt;code class=&quot;language-text&quot;&gt;cat&lt;/code&gt; 커맨드를 이용해서 그 내용을 터미널에 띄울 수 있습니다.&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;cat ~/.ssh/id_rsa.pub
+ssh-rsa AAAB3Nza어쩌구저쩌구..&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;터미널에 떠 있는 모든 내용을 복사해서 서비스에 등록을 해서 사용하면 됩니다.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Github&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Settings &gt; SSH and GPG Keys 메뉴에서 &lt;strong&gt;New **SSH Key&lt;/strong&gt; 버튼을 누르고 키를 title과 key를 입력 후 &lt;strong&gt;Add SSH Key&lt;/strong&gt; 버튼을 눌러 등록&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Gitlab&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Edit Profile &gt; SSH Keys 에 Key를 붙여넣고 &lt;em&gt;Title, Expires at&lt;/em&gt; (유효기간)을 입력 후 &lt;strong&gt;Add Key&lt;/strong&gt; 버튼을 누른다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Bitbucket&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Personal settings &gt; Security &gt; SSH keys 메뉴에서 &lt;strong&gt;Add Key&lt;/strong&gt; 버튼을 누른 이후 &lt;em&gt;Label&lt;/em&gt; 과 &lt;em&gt;Key&lt;/em&gt; 값 입력 후 &lt;strong&gt;Add Key&lt;/strong&gt; 버튼을 눌러 등록&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Git push error pre-receive hook declined 에러]]></title><description><![CDATA[git 푸시 실패: pre-receive hook declined git 브랜치에서 푸시를 하려고 하는데 푸시가 되지 않았다. 하려고 했던 푸시는 force to push였다. pre-receive hook declined…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/git-pre-receive-hook-declined-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/git-pre-receive-hook-declined-error/</guid><pubDate>Mon, 01 Mar 2021 15:30:04 GMT</pubDate><content:encoded>&lt;h1&gt;git 푸시 실패: pre-receive hook declined&lt;/h1&gt;
 &lt;p&gt;git 브랜치에서 푸시를 하려고 하는데 푸시가 되지 않았다.&lt;/p&gt;
 &lt;deckgo-highlight-code   &gt;
           &lt;code slot=&quot;code&quot;&gt;remote: GitLab: You are not allowed to force push code to a protected branch on this project.
