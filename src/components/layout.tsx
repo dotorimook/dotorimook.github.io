@@ -10,6 +10,7 @@ import TitleBar from "./TitleBar"
 import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
 import Helmet from "react-helmet"
 import iconFolder from '../../content/assets/img/folder.ico';
+import imgProfile from '../../content/assets/img/xvz60Z.gif';
 deckDeckGoHighlightElement();
 
 interface Props extends PageRendererProps {
@@ -69,19 +70,33 @@ const ContentFrame = styled.div`
     box-shadow: inset -1px -1px 0px #FFFFFF, inset 1px 1px 0px #818181, inset -2px -2px 0px #DBDBDB, inset 2px 2px 0px #000000;
   }
 
+  p {
+    padding:3px 2px;
+    line-height:1.5em;
+    font-size:16px;
+    margin:1px 0;
+  }
+
   h1 {
+    font-size:30px;
+    font-weight:bold;
+    line-height:1.3em;
+    /* margin-top:1rem; */
+    margin-top:32px;
+    margin-bottom:4px;
+  }
+  h2 {
     font-size:24px;
     font-weight:bold;
     line-height:1.5em;
-  }
-  h2 {
-    font-size:16px;
-    font-weight:bold;
-    line-height:1.5em;
+    margin-top:22.4px;
+    margin-bottom:1px;
   }
   h3 {
+    font-size:16px;
     line-height:1.5em;
     font-weight:bold;
+    margin-top:16px;
   }
   li {
     line-height:1.5em;
@@ -144,23 +159,19 @@ const ContentFrame = styled.div`
     }
   }
   code {
-    padding: 0.05em 0.3em;
-    border: 1px solid #9b845c;
-    border-radius: 2px;
-    background: #ebe8e6;
+    line-height: normal;
+    background: rgba(135,131,120,0.15);
+    color: #EB5757;
+    border-radius: 3px;
+    font-size: 85%;
+    padding: 0.2em 0.4em;
   }
   .frame-posts {
-    padding:24px;
+    padding:3rem;
     line-height:1.5em;
   }
   ins {
     background:none;
-  }
-  h1 {
-    margin-top:1rem;
-  }
-  h2 {
-    margin-top:0.4rem;
   }
   .frame-post {
     margin-bottom:2rem;
@@ -246,7 +257,7 @@ export const Layout = (props: Props) => {
         <ContentFrame>
           <section className='frame-menu'>
             <section className='main-banner'>
-              <img className='img-main-banner' src='https://source.unsplash.com/480x320/?vaporwave'/>
+              <img className='img-main-banner' src={imgProfile} />
             </section>
             <section className='frame-bio'>
               <Link to='/'>
