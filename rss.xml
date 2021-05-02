@@ -1,4 +1,160 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 14 Mar 2021 03:00:22 GMT</lastBuildDate><item><title><![CDATA[SSH로 git 사용하기]]></title><description><![CDATA[Github는 패스워드 기반 인증을 지원하지 않기로 했다. 대표적인 무료 git 저장소인 github가 패스워드기반 인증을 사용하지 않겠다고 발표했습니다. 앞으로는 github를 이용할 때에는 1. 토큰 기반 인증 또는 2. SSH…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/ssh-git/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/ssh-git/</guid><pubDate>Sun, 14 Mar 2021 11:28:08 GMT</pubDate><content:encoded>&lt;h1&gt;Github는 패스워드 기반 인증을 지원하지 않기로 했다.&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 02 May 2021 07:59:41 GMT</lastBuildDate><item><title><![CDATA[내가 쓰는 앱이 M1 맥용일까? 인텔용일까? 애플 실리콘용 앱 확인하는 방법]]></title><description><![CDATA[애플 실리콘용 / 인텔용 확인하는 방법 M1 맥용 앱? 인텔 맥용 앱? m1 맥북 출시후 벌써 반년이 되어가고 있는데, 그동안 국내외 많은 유튜버 등 인플루언서, IT 커뮤니티, 벤치마크 사이트 등을 통해 m…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-05-02-check-intel-mac-app/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-05-02-check-intel-mac-app/</guid><pubDate>Sun, 02 May 2021 16:29:01 GMT</pubDate><content:encoded>&lt;h1&gt;애플 실리콘용 / 인텔용 확인하는 방법&lt;/h1&gt;
+&lt;h2&gt;M1 맥용 앱? 인텔 맥용 앱?&lt;/h2&gt;
+&lt;p&gt;m1 맥북 출시후 벌써 반년이 되어가고 있는데, 그동안 국내외 많은 유튜버 등 인플루언서, IT 커뮤니티, 벤치마크 사이트 등을 통해 m1 맥의 뜨거운 관심과 놀라운 성능이 입증되었고, 최근 애플은 m1칩을 탑재한 새로운 iMac을 출시했습니다. m1 프로세서는 맥에 새로운 세상을 열었다고 해도 과언이 아닙니다.&lt;/p&gt;
+&lt;h2&gt;인텔용 앱도 문제없어, 로제타!&lt;/h2&gt;
+&lt;p&gt;m1 맥을 도입을 가장 망설이게 되는 부분이 바로 내 앱이 m1 맥을 지원하는 앱인가 하는 점일텐데요, &lt;strong&gt;인텔 기반의 앱을 m1 맥에서도 실행할 수 있게 해주는 &lt;a href=&quot;https://support.apple.com/ko-kr/HT211861&quot;&gt;로제타&lt;/a&gt;&lt;/strong&gt;가 기대 이상으로 잘 동작하고, 링크된 문서에 작성되어 있는 것 처럼 로제타를 사용해서 실행한다고 하더라도 대부분의 경우 &lt;strong&gt;앱 성능에서는 차이가 느껴지지 않기 때문에&lt;/strong&gt; 더더욱 이 걱정은 그저 기우일 뿐이라는 생각이 듭니다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/9fc19ffdf0f6e65c32eaf08c1a663df9/e2310/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 46.621621621621614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQoz41SyU7jUBD05yHmYzjBDc2VO+JHkIJQFEWIG1xCiIKdEDuLHWfxEjvO8xLsFK8e44g5IGGpVK1uverqbmtZ7KAIdeRpgrKsUFUVfvsdDgf5pvwPWlEU2O8LpGkqeY/dbocgCOB5HlarFZbLpQJj13Uxn8/hOA4WiwWiKEKWZeptDc11F7i9u8f55V+8mybiOEa73Uaz2USj0UCr1UK328V4PEa/34eu6zAMA4PBAL7vg4YoSgghoBmycH1zg5M/p3h6foaQDnu9nkKn01E8nU6VS7oj6JbMvG3byjnrymGe51iv13jtvqgExxiNRjClW8uyFNPdcDhUeTLzjMmbzQZhGCpWgrRJUR6DtlmYzWYKtu1gMpkembtjns5qNq0xbGcOkf4bmaoMkmQnBVP44Rb6xMebRM/yZOyp+NX04K4CRLJhFMVqEjYvkgCHLAJKgSKTgiwQtTC5XvJP+Lq8vHK8xdVDhYu7Eme3H9DdDBp/E+L76YWQqPkIcWzK63Jv222Cx1GOppHj/i3HcpPiE9FAnSNopM5BAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/9fc19ffdf0f6e65c32eaf08c1a663df9/fcda8/1.png&quot;
+        srcset=&quot;/static/9fc19ffdf0f6e65c32eaf08c1a663df9/12f09/1.png 148w,
+/static/9fc19ffdf0f6e65c32eaf08c1a663df9/e4a3f/1.png 295w,
+/static/9fc19ffdf0f6e65c32eaf08c1a663df9/fcda8/1.png 590w,
+/static/9fc19ffdf0f6e65c32eaf08c1a663df9/efc66/1.png 885w,
+/static/9fc19ffdf0f6e65c32eaf08c1a663df9/e2310/1.png 968w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;실제로 인텔용 앱을 사용하면 로제타 설치 메시지가 나오고, 설치 이후에는 자동으로 로제타를 이용해서 사용하는데, 인텔용 앱과 맥용 앱의 성능차이가 거의 없기 때문에 사용하는 도중에는 이 앱이 인텔용 앱인지, 맥용 앱인지 체감으로는 거의 불가능에 가깝고, 이 점은 애플에서 어느정도 의도한 부분도 있는 것 같습니다. 사용경험의 차이가 거의 없기 때문에 굳이 알필요도, 걱정할 필요도 없다는 것이죠.&lt;/p&gt;
+&lt;h2&gt;굳이 알고싶다. 이게 정말 애플용 앱인가?!&lt;/h2&gt;
+&lt;p&gt;사용 중간에 간간이 궁금해집니다. 자연스럽게 사용하고 있는 이 앱이 과연 애플용 앱인가? 이것을 확인하는 방법은 두 가지가 있습니다.&lt;/p&gt;
+&lt;h3&gt;&lt;em&gt;시스템 리포트 &gt; 응용프로그램&lt;/em&gt; 에서 확인하기&lt;/h3&gt;
+&lt;p&gt;스크린 좌측 상단의 사과 아이콘  을 클릭하여 &lt;em&gt;이 Mac에 관하여&lt;/em&gt;를 클릭합니다. 그럼 아래와 같은 창이 뜨는데 &lt;em&gt;시스템 리포트…&lt;/em&gt;를 클릭합니다. 시스템 리포트 창이 뜨면 좌측에 &lt;em&gt;소프트웨어 &gt; 응용 프로그램&lt;/em&gt; 메뉴를 누르게되면 우측에 설치된 응용프로그램 목록이 나타납니다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/da7cc9071fb99cb8055540fd1df9dae7/5c1ad/2.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd+ykUIP/8QAFxAAAwEAAAAAAAAAAAAAAAAAAQIDIP/aAAgBAQABBQJblrjP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAAQMSICH/2gAIAQEABj8CK45b/8QAGhABAAEFAAAAAAAAAAAAAAAAAQARICFB8P/aAAgBAQABPyFKYlK7ieLf/9oADAMBAAIAAwAAABCQz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAwADAAAAAAAAAAAAAAEAESExURChwf/aAAgBAQABPxCsrlHCjacY1FT0+y3saGwL7DZg8f/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/da7cc9071fb99cb8055540fd1df9dae7/1c72d/2.jpg&quot;
+        srcset=&quot;/static/da7cc9071fb99cb8055540fd1df9dae7/a80bd/2.jpg 148w,
+/static/da7cc9071fb99cb8055540fd1df9dae7/1c91a/2.jpg 295w,
+/static/da7cc9071fb99cb8055540fd1df9dae7/1c72d/2.jpg 590w,
+/static/da7cc9071fb99cb8055540fd1df9dae7/a8a14/2.jpg 885w,
+/static/da7cc9071fb99cb8055540fd1df9dae7/5c1ad/2.jpg 1172w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    
+
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bc4dc012b24b14ceaff84c29ac58e755/37c35/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB5UlEQVQ4y4VT227aUBD0Z0RcDcb3G1CMwTZ2cAzEgITUSry1Td8bVaqaL+iHT3c3AqWE0ofR7tlzNJ7ZXSuLfIr0PoFt27AIDiFLE8ziGLquYaD1YRo6fM+FbZnwXEdiGAYIAx/xNJLzaDiUO2WxyFE/1nA9D5ahQR+VeHz6jeTjC+6iL2jGX9GeP8HffEeD8rvoM9rJN3zY/5Ba+umF3v7CsH5GfPgJJU1TLJfLV4WWBdf1sN3tUJYP8PwAhmmRcgfzJKU3jpxtx0VR3GM2n6NarbHebJCkGR6qFZSiKLAjAt/3hdA0TQxJvk25qnbR7XbR6/XIvk5RpZoq0TQM6IMBLHpvkWW+56iUZYnVanVWyMiyDFEUySMmaDabaDQaaLVaaLfbAq7xmePbXMnzHExqypcsIU6SBFyv61ry6XSKmIY0Ho+pJS486jej3+8LeafTOUMUVlUlhI7jYEA2+IJtcs0gayflfHdJ8I6Qlez3e8xmM1GnadrZ2jVbJ5ITLklpbRbYbrcyabZ0zcYtRe8U8tqwbZ5sEAR/Ed4i/hdkbQ6HA0ajEa2KLX06WfufuquEa1rM4/GIlKYZhqGsCvfrbZ8u+3UL0kMeymQykYlqpFDTBkLMZ1bMOQ+Ll/wa+Ad4hYo/bMyDNY8jqaAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/bc4dc012b24b14ceaff84c29ac58e755/fcda8/3.png&quot;
+        srcset=&quot;/static/bc4dc012b24b14ceaff84c29ac58e755/12f09/3.png 148w,
+/static/bc4dc012b24b14ceaff84c29ac58e755/e4a3f/3.png 295w,
+/static/bc4dc012b24b14ceaff84c29ac58e755/fcda8/3.png 590w,
+/static/bc4dc012b24b14ceaff84c29ac58e755/efc66/3.png 885w,
+/static/bc4dc012b24b14ceaff84c29ac58e755/c83ae/3.png 1180w,
+/static/bc4dc012b24b14ceaff84c29ac58e755/37c35/3.png 1810w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;응용 프로그램을 선택하거나 목록의 우측의 종류를 통해 확인할 수 있습니다. 종류가 &lt;em&gt;Universal&lt;/em&gt;로 표기된다면 m1맥 Intel맥에서 모두 실행되는 유니버설 앱이며, &lt;strong&gt;Intel&lt;/strong&gt;로 표기된 앱은 인텚용 앱입니다.&lt;/p&gt;
+&lt;h3&gt;&lt;em&gt;활성 상태 보기&lt;/em&gt; 를 이용하는 방법&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;활성 상태 보기&lt;/em&gt;를 이용하는 방법도 있습니다. &lt;em&gt;응용 프로그램 &gt; 유틸리티&lt;/em&gt;에서 &lt;em&gt;활성 상태 보기(Activity Monitor)&lt;/em&gt;를 선택하거나, spotlight이나 Alfred를 이용해 실행시켜줍니다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/2e47fb49a89e697e5803452187e273d9/fa60d/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 94.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAABpElEQVQ4y62U626DMAyFeZGuN0K4h1uBltKpk9jPbe//Mmc+aYtY10nTxg8rJnE+O4k5ztDVOA97vL1/4HUYUNc12qbBvm3RH4/o+97OP59OOIlxfDmf0XWdXW8lrpE9h8MBTbuHE2iNMPQRxzHKskTg+3Bd11qSJAiDAFmWIYoiGxOFIRpJSD+QtSLP4XkejEmhlIaTCIzV5LKglII3NQmMBeRLEmMMtCT3rwmZmDGcDyUJ4UEQwdHak43KwrQA7s27G39atyYsh1kvH/rhht8awazeAr1/gKZAHtvxZwSyuFmB9shToPdH42Mo5doXn69C6RL26izA2/2xP2cFspfnBbJCPTfwW4WP/pjp3AP/K9DX4wRfSl1FgaZu40QsuGn0pVVubTPeoYVI0Ha7RSpyVRaFlSYjfiFGn/LFHqNfVRXSNB3ljq3CvYRxdDbrNdZii8XCBlM4L8EV9l0PI5szkwnEiG+s4BaSlFpJceW4XC5Bzmq1guNuN6Apd4MkDqVK0T/NH92Xb6nI5KiyAoddg11eyp3p8VqoiTwqCyJw+fSETyyLL+E16MnjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;Image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/2e47fb49a89e697e5803452187e273d9/fcda8/4.png&quot;
+        srcset=&quot;/static/2e47fb49a89e697e5803452187e273d9/12f09/4.png 148w,
+/static/2e47fb49a89e697e5803452187e273d9/e4a3f/4.png 295w,
+/static/2e47fb49a89e697e5803452187e273d9/fcda8/4.png 590w,
+/static/2e47fb49a89e697e5803452187e273d9/efc66/4.png 885w,
+/static/2e47fb49a89e697e5803452187e273d9/c83ae/4.png 1180w,
+/static/2e47fb49a89e697e5803452187e273d9/fa60d/4.png 1792w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;창을 보시면 현재 활성화되어있는 프로세스들을 확인할 수 있는데 해당 목록에 &lt;strong&gt;아키텍쳐&lt;/strong&gt; 컬럼을 보시면 &lt;strong&gt;Apple&lt;/strong&gt; 또는 &lt;strong&gt;Intel&lt;/strong&gt;로 표기되어 있는 것을 확인할 수 있습니다. 해당하는 프로세스가 어떤 아키텍처에서 실행되고 있는지를 보여줍니다. 따라서 이 앱이 인텔용인지, 애플 실리콘 용 인지 확인할 수 있습니다.&lt;/p&gt;
+&lt;p&gt;이상 내가 쓰는 앱이 애플 실리콘 최적화 된 앱인지 인텔용 앱인지 확인하는 두 가지 방법을 알아보았습니다. 😁&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SSH로 git 사용하기]]></title><description><![CDATA[Github는 패스워드 기반 인증을 지원하지 않기로 했다. 대표적인 무료 git 저장소인 github가 패스워드기반 인증을 사용하지 않겠다고 발표했습니다. 앞으로는 github를 이용할 때에는 1. 토큰 기반 인증 또는 2. SSH…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/ssh-git/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/ssh-git/</guid><pubDate>Sun, 14 Mar 2021 11:28:08 GMT</pubDate><content:encoded>&lt;h1&gt;Github는 패스워드 기반 인증을 지원하지 않기로 했다.&lt;/h1&gt;
 &lt;p&gt;대표적인 무료 git 저장소인 &lt;strong&gt;github&lt;/strong&gt;가 패스워드기반 인증을 사용하지 않겠다고 발표했습니다. 앞으로는 &lt;strong&gt;github&lt;/strong&gt;를 이용할 때에는 &lt;strong&gt;1. 토큰 기반 인증&lt;/strong&gt; 또는 &lt;strong&gt;2. SSH 기반 인증&lt;/strong&gt;을 해야합니다. github뿐만 아니라 BitBucket이나 gitlab 등 일반적으로 많이 사용하는 git 기반 저장소에서도 많은 경우에 HTTPS기반 인증을 사용하고 있지만, SSH기반 인증 역시 지원하고 있습니다. 저장소의 페이지에 있는 &lt;strong&gt;Clone&lt;/strong&gt;버튼을 눌러보면 &lt;strong&gt;Clone with SSH&lt;/strong&gt;가 있는데, SSH를 통해서도 저장소를 받을 수 있음을 확인할 수 있는 부분입니다.&lt;/p&gt;
 &lt;h1&gt;SSH기반 인증, 그거 어떻게 하는 건데?&lt;/h1&gt;
 &lt;p&gt;그럼 슬슬 본론으로 넘어가서, SSH기반으로 인증할 수 있는 절차를 살펴보겠습니다.&lt;/p&gt;
