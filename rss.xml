@@ -1,6 +1,100 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 13 Jun 2021 12:35:22 GMT</lastBuildDate><item><title><![CDATA[애자일 팀이란 무엇일까? 우리팀 애자일 방법론 사례]]></title><description><![CDATA[우리팀의 애자일 사례 정확하겐 우리 파트 애자일은 사실상]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-06-09-agile-in-my-team/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-06-09-agile-in-my-team/</guid><pubDate>Wed, 09 Jun 2021 23:18:36 GMT</pubDate><content:encoded>&lt;h1&gt;우리팀의 애자일 사례&lt;/h1&gt;
-&lt;h2&gt;정확하겐 우리 파트&lt;/h2&gt;
-&lt;h2&gt;애자일은 사실상&lt;/h2&gt;</content:encoded></item><item><title><![CDATA[내가 쓰는 앱이 M1 맥용일까? 인텔용일까? 애플 실리콘용 앱 확인하는 방법]]></title><description><![CDATA[애플 실리콘용 / 인텔용 확인하는 방법 M1 맥용 앱? 인텔 맥용 앱? m1 맥북 출시후 벌써 반년이 되어가고 있는데, 그동안 국내외 많은 유튜버 등 인플루언서, IT 커뮤니티, 벤치마크 사이트 등을 통해 m…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-05-02-check-intel-mac-app copy/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-05-02-check-intel-mac-app copy/</guid><pubDate>Sun, 02 May 2021 16:29:01 GMT</pubDate><content:encoded>&lt;h1&gt;애플 실리콘용 / 인텔용 확인하는 방법&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Wed, 16 Jun 2021 10:16:04 GMT</lastBuildDate><item><title><![CDATA[NextJS + Typescript + ESLint + Capacitor 세팅을 해보자]]></title><description><![CDATA[Background  사실상 Capacitor가 ionic과 궁합이 좋다지만.. 꼭 ionic을 위해 만들어진 것도 아니다?! 라는 생각이 들어서. 그렇다면 NextJS 세팅에선 어떨까? 하는 생각이 들었다. 그래서 한 번 테스트 해보았다. What…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-06-13-next-js-with-capacitor/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-06-13-next-js-with-capacitor/</guid><pubDate>Sun, 13 Jun 2021 21:34:49 GMT</pubDate><content:encoded>&lt;h1&gt;Background&lt;/h1&gt;
+&lt;p&gt; 사실상 Capacitor가 ionic과 궁합이 좋다지만.. 꼭 ionic을 위해 만들어진 것도 아니다?! 라는 생각이 들어서. 그렇다면 NextJS 세팅에선 어떨까? 하는 생각이 들었다. 그래서 한 번 테스트 해보았다.&lt;/p&gt;
+&lt;h1&gt;What is Capacitor?&lt;/h1&gt;
+&lt;p&gt;Capacitor는 웹플랫폼에서 네이티브 기능을 사용해 줄 수 있는 플러그인들을 제공하는 라이브러리다.  크로스플랫폼 네이티브 런타임이라고 스스로 표방한다. 이전 Cordova와 PhoneGap을 계승하여, 모던 웹 앱을 메이저 플랫폼에서 쉽게 돌아가게 하도록 한다. 아이오닉에서 만들어진 만큼 아이오닉 프레임워크와 가장 궁합이 좋다. &lt;/p&gt;
+&lt;h1&gt;Next JS + Typescript + ESLint 세팅&lt;/h1&gt;
+&lt;p&gt;NextJS Typescript 세팅은 이미 create next-app에서 간단하게 제공하고 있다. &lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;yarn create next-app --example with-typescript-eslint-jest project-name&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;h1&gt;Capacitor 끼얹기&lt;/h1&gt;
+&lt;h2&gt;Capacitor 설치&lt;/h2&gt;
+&lt;p&gt;우선 capacitor에 필요한 &lt;code class=&quot;language-text&quot;&gt;@capacitor/core&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;@capacitor/cli&lt;/code&gt;를 설치한다.&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;yarn add @capacitor/core @capacitor/cli&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;h2&gt;Capacitor 초기화&lt;/h2&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;npx cap init --web-dir=out&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;실행하면 초기화하기 위한 옵션들을 물어보는데 맞게 입력하고 넘어가면 된다.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;--web-dir=out&lt;/code&gt; 옵션이 중요한데, next가 빌드되면 결과물이 &lt;code class=&quot;language-text&quot;&gt;out&lt;/code&gt; 에 생성 되기 때문이다.&lt;/p&gt;
+&lt;p&gt;대략 물어보는 정보는 다음과 같다:&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;[?] What is the name of your app?
+    This should be a human-friendly app name, like what you&amp;#39;d see in the App Store.
+✔ Name … project-name
+[?] What should be the Package ID for your app?
+    Package IDs (aka Bundle ID in iOS and Application ID in Android) are unique identifiers for apps. They must be in
+    reverse domain name notation, generally representing a domain name that you or your company owns.
+✔ Package ID … com.example.app
+✔ Creating capacitor.config.ts in /Users/jihoyeom/Documents/Projects/playground/next-with-capacitor in 8.51ms
+[success] capacitor.config.ts created!
+
+Next steps: 
+https://capacitorjs.com/docs/getting-started#where-to-go-next
+[?] Join the Ionic Community! 💙
+    Connect with millions of developers on the Ionic Forum and get access to live events, news updates, and more.
+✔ Create free Ionic account? … no
+[?] Would you like to help improve Capacitor by sharing anonymous usage data? 💖
+    Read more about what is being collected and why here: https://capacitorjs.com/telemetry. You can change your mind at
+    any time by using the npx cap telemetry command.
+✔ Share anonymous usage data? … yes
+
+Thank you for helping to make Capacitor better! 💖
+Information about the data we collect is available on our website: https://capacitorjs.com/telemetry&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;프로젝트 루트에 &lt;code class=&quot;language-text&quot;&gt;capacitor.config.ts&lt;/code&gt; 라는 설정 파일이 생성된다. 이 설정파일의 &lt;code class=&quot;language-text&quot;&gt;webDir&lt;/code&gt; 필드가 &lt;code class=&quot;language-text&quot;&gt;out&lt;/code&gt;으로 설정되어 있는 것을 확인한다.&lt;/p&gt;
+&lt;h2&gt;플랫폼 추가하기&lt;/h2&gt;
+&lt;p&gt;android와 ios 프로젝트를 추가하기 위해 다음과 같이 입력한다&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;bash&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;npx cap add android
+npx cap add ios&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;각 명령어를 실행하기 위해서는 &lt;code class=&quot;language-text&quot;&gt;@capacitor/ios&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;@capacitor/android&lt;/code&gt; 의존성도 필요하다.&lt;/p&gt;
+&lt;h1&gt;NextJS 에서 Capacitor를 사용 했을 때 가능 범위&lt;/h1&gt;
+&lt;p&gt;NextJs에서 지원하는 좋은 기능들을 다 쓸 수 있는 것일까?&lt;/p&gt;
+&lt;h2&gt;사용할 수 있는것&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;router&lt;/li&gt;
+&lt;li&gt;getInitialProps&lt;/li&gt;
+&lt;li&gt;dynamic Routes&lt;/li&gt;
+&lt;li&gt;api&lt;/li&gt;
+&lt;li&gt;link&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;NextJS를 사용하면서 중요하게 생각했던 기능들은 대체로 잘 동작하는 것을 확인했다.&lt;/p&gt;
+&lt;h2&gt;사용할 수 없는 것&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;next/images&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;제한적으로 사용할 수 있는 것&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;live reload&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;기존에 &lt;code class=&quot;language-text&quot;&gt;ionic capacitor —live-reload-url&lt;/code&gt; 로 편리하게 사용할 수 있었던 live reload기능은 사용할 수 없다. 다만, &lt;strong&gt;capacitor.config.ts&lt;/strong&gt; 에 다음을 추가해서 비슷한 효과를 낼 수 있다.&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;tsx&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;const config: CapacitorConfig = {
+...
+  server: {
+    url: &amp;#39;http://[YOUR_IP_ADDRESS]:[YOUR_PORT]&amp;#39;,
+    cleartext: true
+  }
+...
+};&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;yarn dev&lt;/code&gt; 로 개발 서버를 띄운 다음에 주소를 &lt;code class=&quot;language-text&quot;&gt;server.url&lt;/code&gt; 로 설정해서 사용할 수 있다.&lt;/p&gt;
+&lt;p&gt;실제로 &lt;code class=&quot;language-text&quot;&gt;ionic capcitor&lt;/code&gt;도 실행되는 동안 저 설정을 추가하고 종료 시 되돌리는 일을 하고 있다.&lt;/p&gt;
+&lt;p&gt;그런데 이상하게 live reload 중에는  &lt;strong&gt;next/link&lt;/strong&gt;가 잘 동작하지 않았다. 이부분은 추후 확인이 필요하다.&lt;/p&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;Capacitor는 모던 웹앱을 네이티브 앱 처럼 손쉽게 만들어주는 감동적인 라이브러리이다. Ionic과 찰떡 궁합이겠지만, 약간의 제한이 있지만 NextJS와도 나쁘지 않은 궁합을 보여주는 것 같다. NextJS는 CRA나 Ionic과 같은 CSR 프로젝트에 비해 SSR의 장점을 취할 수 있는데, Capacitor와 NextJS를 함께 이용한다면 웹 서비스와 앱 두 장점을 모두 취할 수 있을 것 같다.&lt;/p&gt;
+&lt;h1&gt;Trouble Shooting&lt;/h1&gt;
+&lt;h2&gt;&lt;code class=&quot;language-text&quot;&gt;next export&lt;/code&gt; 시 Error: Image Optimization using Next.js’ default loader is not compatible with &lt;code class=&quot;language-text&quot;&gt;next export&lt;/code&gt;. 에러 발생할 때&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;next/images&lt;/strong&gt; 를 이용해서 이미지를 사용하는데 &lt;code class=&quot;language-text&quot;&gt;next export&lt;/code&gt; 를 사용할 때 발생한다. &lt;strong&gt;next/images&lt;/strong&gt;는  &lt;code class=&quot;language-text&quot;&gt;next export&lt;/code&gt; 를 이용해서 생성된 정적 페이지에서는 동작하지 않기 때문에 export 시에 오류가 발생한다. &lt;strong&gt;next/images&lt;/strong&gt; 대신 &lt;strong&gt;&lt;a href=&quot;https://github.com/cyrilwanner/next-optimized-images&quot;&gt;next-optimized-images&lt;/a&gt;&lt;/strong&gt;를 사용할 수 있다.&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest&quot;&gt;https://github.com/vercel/next.js/tree/canary/examples/with-typescript-eslint-jest&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://broddin.be/english/packaging-nextjs-capacitor/&quot;&gt;https://broddin.be/english/packaging-nextjs-capacitor/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/cyrilwanner/next-optimized-images&quot;&gt;https://github.com/cyrilwanner/next-optimized-images&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/65487914/no-exportpathmap-found-in-next-config-js-generating-map-from-pages&quot;&gt;https://stackoverflow.com/questions/65487914/no-exportpathmap-found-in-next-config-js-generating-map-from-pages&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[내가 쓰는 앱이 M1 맥용일까? 인텔용일까? 애플 실리콘용 앱 확인하는 방법]]></title><description><![CDATA[애플 실리콘용 / 인텔용 확인하는 방법 M1 맥용 앱? 인텔 맥용 앱? m1 맥북 출시후 벌써 반년이 되어가고 있는데, 그동안 국내외 많은 유튜버 등 인플루언서, IT 커뮤니티, 벤치마크 사이트 등을 통해 m…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-05-02-check-intel-mac-app copy/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-05-02-check-intel-mac-app copy/</guid><pubDate>Sun, 02 May 2021 16:29:01 GMT</pubDate><content:encoded>&lt;h1&gt;애플 실리콘용 / 인텔용 확인하는 방법&lt;/h1&gt;
 &lt;h2&gt;M1 맥용 앱? 인텔 맥용 앱?&lt;/h2&gt;
 &lt;p&gt;m1 맥북 출시후 벌써 반년이 되어가고 있는데, 그동안 국내외 많은 유튜버 등 인플루언서, IT 커뮤니티, 벤치마크 사이트 등을 통해 m1 맥의 뜨거운 관심과 놀라운 성능이 입증되었고, 최근 애플은 m1칩을 탑재한 새로운 iMac을 출시했습니다. m1 프로세서는 맥에 새로운 세상을 열었다고 해도 과언이 아닙니다.&lt;/p&gt;
 &lt;h2&gt;인텔용 앱도 문제없어, 로제타!&lt;/h2&gt;
