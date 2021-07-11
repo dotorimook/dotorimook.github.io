@@ -8,6 +8,7 @@ import { FadeLink } from "../components/link"
 import { SEO } from "../components/seo"
 import { Query, SitePageContext } from "../graphql-types"
 import { rhythm, styledScale } from "../utils/typography"
+import Utterances from '../components/Utterances';
 
 interface Props extends PageRendererProps {
   pageContext: SitePageContext
@@ -85,6 +86,7 @@ const BlogPostTemplate = (props: Props) => {
             client='ca-pub-5013570089563608'
             slot='5476601469'
           />
+          <Utterances repo='dotorimook/dotorimook.github.io' theme='github-light' />
         </Frame>
       </section>
     </Layout>
