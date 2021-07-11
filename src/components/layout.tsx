@@ -210,6 +210,13 @@ const Content = styled.div`
   width:100%;
   height:fit-content;
   min-height:100%;
+  
+  @media screen and (max-width: 420px) {
+    padding:0;
+    .frame-content {
+      padding:4px;
+    }
+  }
 `
 
 export const Layout = (props: Props) => {
