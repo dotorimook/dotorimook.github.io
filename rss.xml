@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 04 Oct 2021 03:06:44 GMT</lastBuildDate><item><title><![CDATA[module 'telegram' has no attribute 'Bot' 에러 해결 python telegram]]></title><description><![CDATA[module ‘telegram’ has no attribute ‘Bot’ 텔레그램 봇을 간단하게 만들었다가, 오랜만에 다른 환경에서 돌려야하는데 다음과같은 에러를 발견했고, 그 해결책을 찾아보고자 한다. ImportError: No module…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-04-python-telegram-bot-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-04-python-telegram-bot-error/</guid><pubDate>Mon, 05 Jul 2021 21:33:20 GMT</pubDate><content:encoded>&lt;h1&gt;module ‘telegram’ has no attribute ‘Bot’&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 07 Oct 2021 00:46:56 GMT</lastBuildDate><item><title><![CDATA[module 'telegram' has no attribute 'Bot' 에러 해결 python telegram]]></title><description><![CDATA[module ‘telegram’ has no attribute ‘Bot’ 텔레그램 봇을 간단하게 만들었다가, 오랜만에 다른 환경에서 돌려야하는데 다음과같은 에러를 발견했고, 그 해결책을 찾아보고자 한다. ImportError: No module…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-04-python-telegram-bot-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-04-python-telegram-bot-error/</guid><pubDate>Mon, 05 Jul 2021 21:33:20 GMT</pubDate><content:encoded>&lt;h1&gt;module ‘telegram’ has no attribute ‘Bot’&lt;/h1&gt;
 &lt;p&gt;텔레그램 봇을 간단하게 만들었다가, 오랜만에 다른 환경에서 돌려야하는데 다음과같은 에러를 발견했고, 그 해결책을 찾아보고자 한다.&lt;/p&gt;
 &lt;h2&gt;ImportError: No module named telegram&lt;/h2&gt;
 &lt;p&gt;처음  &lt;code class=&quot;language-text&quot;&gt;telegram&lt;/code&gt; 모듈을 import 하는 스크립트를 실행하려고 할 때 다음과 같은 메시지를 받게 될 것이다:&lt;/p&gt;
@@ -21,7 +21,159 @@
 $pip install python-telegram-bot&lt;/code&gt;
         &lt;/deckgo-highlight-code&gt;
 &lt;p&gt;이렇게 하고 다시 실행하면 잘 실행되는 것을 확인할 수 있다. 😎&lt;/p&gt;
-&lt;p&gt;사실상 설치해야하는 패키지는 &lt;code class=&quot;language-text&quot;&gt;python-telegram-bot&lt;/code&gt;이다. 명심하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[앤 프로2 Honey and Milk XDA 키캡 교체 후기]]></title><description><![CDATA[저렴하고 예쁜 키보드를 찾는 사람들이라면 한 번쯤 들어봤을 키보드 앤프로…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-07-05-honey-key-cap-review/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-07-05-honey-key-cap-review/</guid><pubDate>Mon, 05 Jul 2021 21:33:20 GMT</pubDate><content:encoded>&lt;p&gt;저렴하고 예쁜 키보드를 찾는 사람들이라면 한 번쯤 들어봤을 키보드 앤프로2. 키보드를 좋아하는 사람이라면 한 번쯤 살펴봤을만큼 유명한 키보드인데, 그도 그럴 것이 조금 써 보면 세심한 디테일에서 그 만듬새가 그냥 단순한 고민으로 만든 것이 아님을 짐작하게 한다.&lt;/p&gt;
+&lt;p&gt;사실상 설치해야하는 패키지는 &lt;code class=&quot;language-text&quot;&gt;python-telegram-bot&lt;/code&gt;이다. 명심하자.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까?]]></title><description><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까? 스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-07-jira-kanban-card-dots/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-07-jira-kanban-card-dots/</guid><pubDate>Mon, 05 Jul 2021 21:33:20 GMT</pubDate><content:encoded>&lt;h1&gt;JIRA 칸반 보드에 점들은 대체 무엇일까?&lt;/h1&gt;
+&lt;p&gt;스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA 사용 경험을 이미 하고 오는 사람들도 있을 정도다.&lt;/p&gt;
+&lt;p&gt;내가 있는 조직도 기본적으로는 스크럼으로 개발을 하고 있기 때문에 평소에는 스크럼 보드를 이용하고 있는데, 최근 일정 조정이 되면서 칸반 보드를 생성해서 사용하게 됐다. 그런데, 사용하고 있던 카드 레이아웃과 다른 생소한 요소를 발견하게 되었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c79ad4c611fe841ef01968d11d4c2987/69476/img_kanban_ex1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoklEQVQY03WQ3Q6CMAyF9/7P5I1P4K0XuDGQkYAEw6ZGtp66DTGExCYnX3/Sk6ZCqhqybLIu6oqyMihkDaUbNG2X68k6MDOIiIkQiR85TdIwRqLQejFJZquhLBeatoeuWjj3zIb83d1xGxBq8JgD1oW/Wi/Y9OKVhNtwjxrRj5ZPxwNEN715nj2HENjvFDYMgRKx5InE3vv8DmsfmNyLTXHGBxnJNQ3hP2pQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c79ad4c611fe841ef01968d11d4c2987/fcda8/img_kanban_ex1.png&quot;
+        srcset=&quot;/static/c79ad4c611fe841ef01968d11d4c2987/12f09/img_kanban_ex1.png 148w,
+/static/c79ad4c611fe841ef01968d11d4c2987/e4a3f/img_kanban_ex1.png 295w,
+/static/c79ad4c611fe841ef01968d11d4c2987/fcda8/img_kanban_ex1.png 590w,
+/static/c79ad4c611fe841ef01968d11d4c2987/efc66/img_kanban_ex1.png 885w,
+/static/c79ad4c611fe841ef01968d11d4c2987/69476/img_kanban_ex1.png 926w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;이 점은 뭐지?&lt;/p&gt;
+&lt;p&gt;동글동글 귀여운 것 같은데… 다른 카드를 살펴보면 다른 점도 확인할 수 있다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/46bcb5bc029c957ae69386c7aa8c3efd/416ee/img_kanban_ex2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7klEQVQY042P22rDMBBE/f8/1EKg0A8opLS0Ly1JZFsXS5Z1sS1f5FEVl+SpD1047LAzC7uFEA3qugZnHLSmkFKCkBJKKZCSoaLZz5CKQ7UGUnU4Ewou1D6/IqTGrYqKKXxfOM6lwIlwlFTh60TBhM4oNDncKA3etDDWQ3cOlEm02v56Gd1ZpJR2irfLjKfXAY8vHofcD8ceD1k/v4/YkO7B/1J8soAPOkHbCd4NCAswThvCvO0v5My9bks37fshX2rQ5gutsZhCQMHMlJSfU1zXFJclbTHuxMyaZ3+xXLMxwvkB2jgY18MZgzCM+AGcK333a+8icQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/46bcb5bc029c957ae69386c7aa8c3efd/fcda8/img_kanban_ex2.png&quot;
+        srcset=&quot;/static/46bcb5bc029c957ae69386c7aa8c3efd/12f09/img_kanban_ex2.png 148w,
+/static/46bcb5bc029c957ae69386c7aa8c3efd/e4a3f/img_kanban_ex2.png 295w,
+/static/46bcb5bc029c957ae69386c7aa8c3efd/fcda8/img_kanban_ex2.png 590w,
+/static/46bcb5bc029c957ae69386c7aa8c3efd/efc66/img_kanban_ex2.png 885w,
+/static/46bcb5bc029c957ae69386c7aa8c3efd/416ee/img_kanban_ex2.png 930w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;저건 뭐지? 뭔가 빨간 색 점이 위험 신호를 알리는 것만 같은 느낌은 확실하다. 😑;;&lt;/p&gt;
+&lt;p&gt;이 점들의 의미는 마우슬 호버해보면 쉽게 알 수 있었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/c4936b011ffcb536afa71e3a09a0cd65/f6f78/img_kanban_ex3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 27.7027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLElEQVQY04WPzU7CQBSF+4qyIhr38jyuZdONWxuMb6AhRmmZ/kNppUA7/ZsKQtHFGadTQ1zp4suce+fckxzFIC5MywcxPbhegIluyZdYc+jEh+UsMDXncg7CNQxzhqnQ7d5ssQM4foS8qJHljCuvugNDHBrEE6YALxMbtrsAEUadzORhG0asoAsUu1ZbP2G/A/M2UHssoD0VGI1L3AtG4woPzzXidAfGtijKd5TVVtLpjlZXbHdCBhY1V4yowWLTINwcEKVHOFENJ2RIaGtgooasIulq1Se9WmeIVxTLmCJJclBaQrke3nJVVbk6vOHancbTlPKqZJxm1X/A9d9ge6EgwjKKQRMK5fLiHP1+H2e9Hq4GA9CsQHP8wse+wf7wB+K/aT6Ft+PQHOXuG0PArrOO3DjRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/c4936b011ffcb536afa71e3a09a0cd65/fcda8/img_kanban_ex3.png&quot;
+        srcset=&quot;/static/c4936b011ffcb536afa71e3a09a0cd65/12f09/img_kanban_ex3.png 148w,
+/static/c4936b011ffcb536afa71e3a09a0cd65/e4a3f/img_kanban_ex3.png 295w,
+/static/c4936b011ffcb536afa71e3a09a0cd65/fcda8/img_kanban_ex3.png 590w,
+/static/c4936b011ffcb536afa71e3a09a0cd65/efc66/img_kanban_ex3.png 885w,
+/static/c4936b011ffcb536afa71e3a09a0cd65/f6f78/img_kanban_ex3.png 932w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;이 열에서 6일&lt;/strong&gt;… 그렇다. 이 티켓이 이 열에 들어선지 시간을 카운트해주고 있었다. 점이 많고 빨갈수록 그 상태로 오래 있었다는 의미, 즉 고여있는 티켓이고 체크가 필요한 티켓이라는 의미가 된다. 아이콘을 통해 직관적으로 확인할 수 있어 좋은 것 같다.&lt;/p&gt;
+&lt;p&gt;숫자로 표시되지않고 색깔과 모양의 시각 정보만으로 나타내기 때문에 한눈에 들어오는 반면, 규칙이 복잡해서 직관적인 이해를 방해한다는 &lt;a href=&quot;https://uxdesign.cc/a-deep-dive-into-those-dots-on-jira-kanban-cards-45ed61f22421&quot;&gt;의견&lt;/a&gt;도 있는 것 같지만, 확실히 한 눈에 파악하기에는 용이한 것 같다.&lt;/p&gt;
+&lt;p&gt;점을 나타내는 규칙은 &lt;a href=&quot;https://support.atlassian.com/jira-software-cloud/docs/customize-cards/&quot;&gt;공식 문서&lt;/a&gt;에 설명이 있어 찾아볼 수 있다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/099b42a6f3f01526ff465ba2cea4c71a/891d5/img_card_doc.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 72.2972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAAAsTAAALEwEAmpwYAAABGklEQVQ4y6VTi27DIAzk/z90qqo2aZrwNMTjTEw3TWtZZ8mKCXA+24dZ7htfp4Vvy8o+RPY+coyJz5eZP04Xvs6L+DTfZU/O/OZ13/AXK6X0OBHxvu/8FytlZ0M5C1DO8BaXCuR9YGt9Ww867hsAgQkWKBUxPNQSnAsSIzOSPPOGUR6AkoEA2MoGO/QXpkle+TdAfIliZ6Tlj4L9BKyXk/d9MNvmZPLvMwRgqD07WKVElXH+B8Mqk2i3VubRw3W17wwlP6bsbO8bZIOyx2XTMIz2LKfE4TaxahkSchVU7VW5+jBMm2ZDpxh7Ri86bNJRfQ4JWxmStezOp84IwpY+blaGM/b0DoaYMC5RLVufYD56qQflXy5PHc/4ExekUgwi/mp2AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/099b42a6f3f01526ff465ba2cea4c71a/fcda8/img_card_doc.png&quot;
+        srcset=&quot;/static/099b42a6f3f01526ff465ba2cea4c71a/12f09/img_card_doc.png 148w,
+/static/099b42a6f3f01526ff465ba2cea4c71a/e4a3f/img_card_doc.png 295w,
+/static/099b42a6f3f01526ff465ba2cea4c71a/fcda8/img_card_doc.png 590w,
+/static/099b42a6f3f01526ff465ba2cea4c71a/efc66/img_card_doc.png 885w,
+/static/099b42a6f3f01526ff465ba2cea4c71a/c83ae/img_card_doc.png 1180w,
+/static/099b42a6f3f01526ff465ba2cea4c71a/891d5/img_card_doc.png 1520w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://support.atlassian.com/jira-software-cloud/docs/customize-cards/&quot;&gt;https://support.atlassian.com/jira-software-cloud/docs/customize-cards/&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[앤 프로2 Honey and Milk XDA 키캡 교체 후기]]></title><description><![CDATA[저렴하고 예쁜 키보드를 찾는 사람들이라면 한 번쯤 들어봤을 키보드 앤프로…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-07-05-honey-key-cap-review/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-07-05-honey-key-cap-review/</guid><pubDate>Mon, 05 Jul 2021 21:33:20 GMT</pubDate><content:encoded>&lt;p&gt;저렴하고 예쁜 키보드를 찾는 사람들이라면 한 번쯤 들어봤을 키보드 앤프로2. 키보드를 좋아하는 사람이라면 한 번쯤 살펴봤을만큼 유명한 키보드인데, 그도 그럴 것이 조금 써 보면 세심한 디테일에서 그 만듬새가 그냥 단순한 고민으로 만든 것이 아님을 짐작하게 한다.&lt;/p&gt;
 &lt;p&gt;일반적인 사용자들에게 익숙하지 않은 포커 배열임에도 앤프로를 결정하는 큰 이유는 &lt;strong&gt;디자인&lt;/strong&gt;일거다. 앙증맞은 사이즈에 깔끔한 디자인과 마감, 시선을 압도하는 화려한 백라이트 LED, 게다가 패키지로 제공하는 포인트 키캡으로 따로 키캡을 구입하지 않아도 나만의 키보드를 꾸밀수 있다.&lt;/p&gt;
 &lt;p&gt;
   &lt;a
