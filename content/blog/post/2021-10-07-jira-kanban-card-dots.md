@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JIRA 칸반 보드에 점들은 대체 무엇일까?"
-date: 2021-07-05 21:33:20
+date: 2021-10-07 09:57:52
 categories:
   - Jira
 tags:
