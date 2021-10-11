@@ -1,4 +1,110 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 11 Oct 2021 01:53:21 GMT</lastBuildDate><item><title><![CDATA[Javacript Hidden Class와 Inline Caching]]></title><description><![CDATA[Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다. Hidden class javacript…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-11-javascript-hidden-class/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-11-javascript-hidden-class/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;p&gt;Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Mon, 11 Oct 2021 03:46:58 GMT</lastBuildDate><item><title><![CDATA[기계식 키보드 소음 감소 오링 장착 후기]]></title><description><![CDATA[…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-11-keyboard-oring-review/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-11-keyboard-oring-review/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;h1&gt;기계식 키보드 소음 감소 오링 장착 후기&lt;/h1&gt;
+&lt;p&gt;나는 외장 키보드를 두 개 사용하고 있는데, 무접점 키보드와 저소음 적축 기계식 키보드다. 나는 노트북에 너무 익숙한 탓일까,  펜타그래프 키보드나 버터플라이 키보드도 충분히 만족하며 사용하고 있었다. 어렸을 때 어느집에서나 있었던 표준 멤브레인 키보드 시절, 펜타그래프의 슬림하고 심플하 디자인을 봤을 때 감동이 컸던 탓일지도 모르겠다. 어쨌든 나는 펜타그래프 키보드도 충분히 좋았기 때문에, 기계식 키보드 같은 고가이고 매니아틱한 영역에는 손대지 않고 있었다.&lt;/p&gt;
+&lt;p&gt;그래도 요즘은 기계식 키보드가 많이 대중화되어서 쉽게 접할 수도 있고, 가격대도 많이 저렴해져서 용기내서 구입해봤던 것이다.&lt;/p&gt;
+&lt;p&gt;무접점 키보드와 기계식 키보드를 사용해봤을 때, 두 가지 특징은 뚜렷했다. 개인적으로는 무접점 키보드가 만족이 컸다. 주위에서 기계식 키보드를 많이 사용하고 있어서 기계식 키보드가 예상했던 키감과 사운드와는 다른 새로운 것이었기 때문에 신선하게 다가왔는지는 모르겠지만, 무접점 키보드는 새로운 감각에 놀라고, 소음도 적어서 기분 좋게 사용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;반면에 생각보다 별로였던 저소음 적축 기계식 키보드. 청축 키보드야 워낙 소음이 유명해서 선택지엔 없었고, 그나마 선택했던 것이 적축이었던 건데, 생각보다 너무 소음이 컸다. 제품 자체가 통울림이 좀 있는 제품이라 소음이 있었던 것 같기도 하지만, 어쨌든 간에 화상회의 등을 할 때에도 키보드 소리가 사람들 목소리보다 더 커서 회의를 방해할 정도였으니…&lt;/p&gt;
+&lt;p&gt;그러다보니 자연스럽게 사용도 줄게 되어서 아 이대로는 진짜 애물단지가 되어버리겠다, 키캡도 예쁘게 단장했는데 예쁜 쓰레기가 되겠다는 생각에 특단의 조치가 필요했다.&lt;/p&gt;
+&lt;p&gt;그래서 키보드의 소음을 줄일 방법을 찾아봤다.&lt;/p&gt;
+&lt;h1&gt;기계식 키보드 소음 줄이기&lt;/h1&gt;
+&lt;p&gt;키보드에서 타건 시 발생하는 소음은 여러가지가 있겠지만 대표적인 것은 두 가지 인 것 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;통 울림 소리&lt;/p&gt;
+&lt;p&gt;키보드 바디 소재의 특성상 소음을 먹지 않는 등 소음이 발생하는 케이스&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;스위치 타건 시 자체 소음&lt;/p&gt;
+&lt;p&gt;키 스위치의 구조상 스위치가 눌려지면서 스프링 등에서 자체적으로 나는 소리다&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1번 소리는 흡음재를 붙이는 등으로 소리를 줄일 수 있다고 한다. 혹은 키보드 아래에 수건 같은 소리를 먹을 수 있는 소재를 깔아봐도 소리가 확 주는 것을 느낄 수 있다. 2번 스위치 타건 시 스위치에서 나는 소음음은 키캡에 오링을 붙이거나 윤활 작업 등을 통해 해결하는 듯 하다. &lt;/p&gt;
+&lt;p&gt;현재 소음이 나는 키보드는 통울림이 더 큰 문제인 것 같지만 생각보다 흡음재를 부착하거나 윤활 작업은 찾아보면 정말 손이 많이 가는 것 같았다(…). 일단 키캡 이상으로 하우징을 분해해야하는 작업이 필요하더라..&lt;/p&gt;
+&lt;p&gt;그래서 제일 쉽게 도전해본 것이 오링이었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/d2602/img_oring0.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABAv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAUYPjG2QIf8A/8QAGBABAQEBAQAAAAAAAAAAAAAAAQASEBH/2gAIAQEAAQUC1LavWXn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAFRERD/2gAIAQEAAT8hGPLsMprp/9oADAMBAAIAAwAAABA/7//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EKr/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QgT//xAAaEAACAwEBAAAAAAAAAAAAAAAAAREhUTFB/9oACAEBAAE/EIN3S2CupSIr1Ejs2h7D/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;이것이 오링&quot;
+        title=&quot;&quot;
+        src=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/1c72d/img_oring0.jpg&quot;
+        srcset=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/a80bd/img_oring0.jpg 148w,
+/static/86aa46c0061e4d1817ff2833301bcea7/1c91a/img_oring0.jpg 295w,
+/static/86aa46c0061e4d1817ff2833301bcea7/1c72d/img_oring0.jpg 590w,
+/static/86aa46c0061e4d1817ff2833301bcea7/a8a14/img_oring0.jpg 885w,
+/static/86aa46c0061e4d1817ff2833301bcea7/fbd2c/img_oring0.jpg 1180w,
+/static/86aa46c0061e4d1817ff2833301bcea7/d2602/img_oring0.jpg 4032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;이것이 오링&lt;/p&gt;
+&lt;p&gt;이것이 오링이다. 실리콘 재질인 것 같다. 판매하는 곳에 따라 조금씩 차이가 있는데, 굵기나 색상 등의 차이가 있을 것으로 보인다.&lt;/p&gt;
+&lt;p&gt;착용은 아래와 같이 한다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5d35e626cb0600f2034726aaa907f80d/d2602/img_oring1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAFhtcCV0Wuf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAIBAxAREjH/2gAIAQEAAQUCd9YSqzNkk5b/xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8BHJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAESAhMf/aAAgBAQAGPwJl5H//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhEDFB/9oACAEBAAE/IRWlysksZXnHYj1AFhUHJ//aAAwDAQACAAMAAAAQWM//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAQlt/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QiP/EABwQAQABBAMAAAAAAAAAAAAAAAEAESFBUTFhkf/aAAgBAQABPxCoxRgnObW2bgdnsyArIxgEOiIi8//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;오링의 착용&quot;
+        title=&quot;&quot;
+        src=&quot;/static/5d35e626cb0600f2034726aaa907f80d/1c72d/img_oring1.jpg&quot;
+        srcset=&quot;/static/5d35e626cb0600f2034726aaa907f80d/a80bd/img_oring1.jpg 148w,
+/static/5d35e626cb0600f2034726aaa907f80d/1c91a/img_oring1.jpg 295w,
+/static/5d35e626cb0600f2034726aaa907f80d/1c72d/img_oring1.jpg 590w,
+/static/5d35e626cb0600f2034726aaa907f80d/a8a14/img_oring1.jpg 885w,
+/static/5d35e626cb0600f2034726aaa907f80d/fbd2c/img_oring1.jpg 1180w,
+/static/5d35e626cb0600f2034726aaa907f80d/d2602/img_oring1.jpg 4032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;이렇게 키캡 기둥에 오링을 끼운 다음에 키캡을 씌우듯이 꽂으면 된다. 이 모습을 보면 대충 어떤 방식으로 소음이 줄 지 상상이 된다. 스위칠 눌릴 때 장애물을 만들어서 스위치가 눌려지는 정도를 조절하면서 소음을 조절하는 것으로 추측된다. 키캡쪽에 흔들림 같은 것도 미세하게 잡을 수 있지 않을까 ㅎ… 당연히 오링의 두께나 재질 뭐 이런 것에도 영향이 있을 것 같다. 그래도 사이즈는 거의 표준화 되어 있는 것 같고, &lt;strong&gt;색깔&lt;/strong&gt;도 중요할텐데 키캡이 반투명이나 투명이고 LED가 들어오는 키보드라면 오링이 짙은 색깔이면 색깔이 흉할 수도 있을 것 같아서 투명한 색깔을 골랐다.&lt;/p&gt;
+&lt;p&gt;내가 구입한 곳 &lt;a href=&quot;https://smartstore.naver.com/bodang/products/5423965279&quot;&gt;여기&lt;/a&gt;였는데, 알리에서 구입한다면 좀 더 저렴하게 살 수 있다고 알려져 있지만 빨리 배송을 받고 싶어서 네이버 스토어를 이용했다. 여기 외에도 더 저렴하게 판매하는 곳도 많은 것 같다. 후기 영상이나 제품 상세에서 소음이 주는 정도는 가늠해볼 수 있다.&lt;/p&gt;
+&lt;h1&gt;나의 소음 감소 정도는?&lt;/h1&gt;
+&lt;p&gt;내가 느끼기에 &lt;strong&gt;소음 감소 정도는 확실히&lt;/strong&gt; 있었다. 거슬리던 소음이 거슬리지 않을 정도로 줄어들었다. 그에 따라 타건음도 조금 뭉툭해지면서 감각도 &lt;strong&gt;조금 뭉툭해지는 느낌&lt;/strong&gt;이 있다. &lt;strong&gt;조금 키감이 조금 무거워지면서 끝이 막히는 느낌&lt;/strong&gt;?ㅎㅎ 통울림도 상당히 감소한 듯한 느낌이 든다. 오링을 끼지 않았을 때에는 타자를 칠 때마다 통에 길게 울려지는 소리가 있었는데, 그 소음이 확실히 감소되긴 했다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;무접점 키보드 소리와 키감에 만족&lt;/strong&gt;하는 나로써는 굉장히 만족스러운 효과였다. 참고로 오링을 적용한 키보드는 앤프로2 게이트론 적축 키보드다.&lt;/p&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;오링을 통해서 키보드 소음을 줄여보았다. 내가 예민한 편은 아니기 때문에, 키보드에 진심이고 예민한 사람에게는 다르게 보일지도 모르겠다. 하지만 나처럼 보통의 사람들에게는 조금이나마 도음이 될까 하여 작성해보았다. ㅎㅎ&lt;/p&gt;
+&lt;p&gt;오링은 흡음재나 윤활 작업에 비해 굉장히 간단하게 소음을 잡는 방법인 것 같다. 소개한 네이버 제품 페이지 외에도 여기저기 서치해보면 &lt;a href=&quot;https://youtu.be/B6J9GBYdd3k?t=46&quot;&gt;오링 착용 전/후 타건 영상&lt;/a&gt;들을 많이 찾을 수 있다.&lt;/p&gt;
+&lt;p&gt;후기를 보면 오링 부착 후 손가락에 힘이 더 많이 들어간다고 얘기하는 사람들도 있는데, 구름 타자를 치는 사람들에게는 오링보다 그냥 그렇게 치면 될것 같은데 ㅎㅎ &lt;strong&gt;습관적으로 강하게 타자를 치는 사람&lt;/strong&gt;들에게는 이정도 정성으로 꽤 만족스러운 느낌이 들 것 같다.&lt;/p&gt;
+&lt;p&gt;주의할 점은 &lt;strong&gt;타건감이 확실히 바뀌긴 한다&lt;/strong&gt;는 점이다. 기계식 키보드 스위치 감각이 너무 좋았다면 사실 불만족스러울지도 모르겠다. 하지만 &lt;strong&gt;이정도 가격과 정성을 들여서 소음을 줄이는 효과를 만들어내는 것은 오링뿐&lt;/strong&gt;일 것 같다. 이정도 투자로 한 번쯤 시도해볼만 하지 않을까? ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javacript Hidden Class와 Inline Caching]]></title><description><![CDATA[Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다. Hidden class javacript…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-11-javascript-hidden-class/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-11-javascript-hidden-class/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;p&gt;Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다.&lt;/p&gt;
 &lt;h1&gt;Hidden class&lt;/h1&gt;
 &lt;p&gt;javacript는 런타임에서 오브젝트의 속성을 추가/변경할 수 있는 동적인 언어이다. V8엔진은 &lt;strong&gt;hidden class&lt;/strong&gt;를 통해 색인 등 속성 관리를 최적화하고 있다.&lt;/p&gt;
 &lt;p&gt;예를 들어 아래와 같은 코드가 있다고 할 때에&lt;/p&gt;
