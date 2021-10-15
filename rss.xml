@@ -1,4 +1,173 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 14 Oct 2021 07:43:05 GMT</lastBuildDate><item><title><![CDATA[hoist-non-react-statics/node_modules/@types/react vscode auto import 문제]]></title><description><![CDATA[auto import 여러 기기에서 같은 React 프로젝트 소스 작업을 하고 있었는데, 윈도우 PC에서는 auto import를 잘했는데 맥에서는 이상한 경로로 오토 임포트가 되어서 좀 황당한 일이 있었고 그에 대한 해결책을 공유한다. vscode…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-14-auto-import-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-14-auto-import-error/</guid><pubDate>Thu, 14 Oct 2021 16:42:24 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;hoist-non-react-statics/node_modules/@types/react&amp;#39;&lt;/code&gt; auto import&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Gatsby Starter Blog]]></title><description><![CDATA[A starter blog demonstrating what Gatsby can do.]]></description><link>https://gatsby-starter-blog-demo.netlify.com</link><generator>GatsbyJS</generator><lastBuildDate>Fri, 15 Oct 2021 17:05:54 GMT</lastBuildDate><item><title><![CDATA[hoist-non-react-statics/node_modules/@types/react vscode auto import 문제]]></title><description><![CDATA[아이폰13 미니 신지모루 에어로핏 구입 후기 신지모루 에어로핏 구매를 망설이는 분들께 조금이라도 정보가 되길 바라며 이 글을 작성합니다. 아이폰13 미니 사전주문 GET! 10월 1일 대란이었던 아이폰1…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-16-sinjimoru-case-review/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-16-sinjimoru-case-review/</guid><pubDate>Sat, 16 Oct 2021 01:59:34 GMT</pubDate><content:encoded>&lt;h1&gt;아이폰13 미니 신지모루 에어로핏 구입 후기&lt;/h1&gt;
+&lt;p&gt;신지모루 에어로핏 구매를 망설이는 분들께 조금이라도 정보가 되길 바라며 이 글을 작성합니다.&lt;/p&gt;
+&lt;h2&gt;아이폰13 미니 사전주문 GET!&lt;/h2&gt;
+&lt;p&gt;10월 1일 대란이었던 아이폰13 미니 사전주문을 성공했다. 쿠팡은 시잔주문 개시 시각이었던 10월 1일 0시 0분까지도 카드 즉시할인 혜택 등을 공개하지 않았다. 결론적으로 11번가가 좀 더 저렴하게 받을 수 있었지만, 주문의 편의성으로 쿠팡을 대기타고 있었는데, 광클로 성공적으로 사전주문을 할 수 있었다. 😆&lt;/p&gt;
+&lt;h2&gt;신지모루 에어로핏을 구입하다.&lt;/h2&gt;
+&lt;p&gt;사전주문 다음 단계는 즐거운 마음으로 케이스와 액정필름을 구입하는 것이었다. 내손을 떠날 때까지 아주 깔끔하게 쓰고 싶다는 욕심히 강해서 -최근에는 리퍼를 받지 않고도 기스 하나 없이 사용했다- 깔끔한 사용을 도와줄 케이스와 액정필름은 필수였다. 개인적으로는 다른 케이스보다 실리콘처럼 말랑한 재질의 케이스가 데미지도 적고 사용하기 좋아서 그런 케이스를 찾아봤다.&lt;/p&gt;
+&lt;p&gt;설레는 기분으로 검색을 했지만, 이제막 출시해서인지 선택지가 그렇게 많지 않았다. 어떤 것을 사면 좋을까 고민을 하다가 &lt;strong&gt;신지모루&lt;/strong&gt;라는 브랜드가 눈에 보였다. 검색을 해보니 나름 추천하는 사람들도 있어서 별 생각없이 구매를 결정했다. 일단 검색결과에 잘 걸렸기도 했지만, 들어가서 봤을 때, &lt;strong&gt;스토어에서 전면 액정필름뿐만 아니라 후면 카메라 필름도 판매도 함께 하고있었기 때문에&lt;/strong&gt; 배송비를 아낄 겸 주문한 것이었다. 배송은 빠르게 왔고, 그상태로 그냥 아이폰만 기다리고 있었다.&lt;/p&gt;
+&lt;h2&gt;드디어 부착.&lt;/h2&gt;
+&lt;p&gt;10월 8일. 약속의 때가 왔고 아이폰13 미니가 영롱한 자태로 내게 왔다. 🥺 드디어 구매해뒀던 신지모루 케이스를 뜯었다. 앗 근데… 내가 생각한 느낌이 아니었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e6f66c72afbb12d6f549002bc1ffb159/768c6/img_sinji0.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAB0vmplaEgf//EABoQAAMBAAMAAAAAAAAAAAAAAAABAhIDEyH/2gAIAQEAAQUCmNC40N+p5ruoZ//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/Aaf/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BEX//xAAaEAACAgMAAAAAAAAAAAAAAAAAEQEQAjEy/9oACAEBAAY/AmzqnCNY1//EABoQAQACAwEAAAAAAAAAAAAAAAEAESFRYeH/2gAIAQEAAT8hpYTkVkSclCNRWyHZKfSK29z/2gAMAwEAAgADAAAAEHjP/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QSP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCnX//EABwQAQEBAAIDAQAAAAAAAAAAAAERACExQVFhcf/aAAgBAQABPxD2aPSpMCMHIgz0LSYu0ErMPnOPMvyMirtVm//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e6f66c72afbb12d6f549002bc1ffb159/1c72d/img_sinji0.jpg&quot;
+        srcset=&quot;/static/e6f66c72afbb12d6f549002bc1ffb159/a80bd/img_sinji0.jpg 148w,
+/static/e6f66c72afbb12d6f549002bc1ffb159/1c91a/img_sinji0.jpg 295w,
+/static/e6f66c72afbb12d6f549002bc1ffb159/1c72d/img_sinji0.jpg 590w,
+/static/e6f66c72afbb12d6f549002bc1ffb159/a8a14/img_sinji0.jpg 885w,
+/static/e6f66c72afbb12d6f549002bc1ffb159/fbd2c/img_sinji0.jpg 1180w,
+/static/e6f66c72afbb12d6f549002bc1ffb159/768c6/img_sinji0.jpg 3264w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e26fc60d96923716a6643ed7421b04aa/768c6/img_sinji1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAa8dgGrGkv/EABoQAQABBQAAAAAAAAAAAAAAAAIBAAMQERP/2gAIAQEAAQUCVlJcZobg5//EABURAQEAAAAAAAAAAAAAAAAAABAS/9oACAEDAQE/AZP/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEv/aAAgBAgEBPwGj/8QAGRABAAIDAAAAAAAAAAAAAAAAAQAhAiBB/9oACAEBAAY/AnJW52W6f//EABkQAAMBAQEAAAAAAAAAAAAAAAABESFRMf/aAAgBAQABPyG5E18F2y+E1Wa6YQw//9oADAMBAAIAAwAAABBf7//EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oACAEDAQE/EEQX/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EJTX/8QAGhABAAMAAwAAAAAAAAAAAAAAAQARMSFRYf/aAAgBAQABPxBTa45lebGgOwW972HP+sU17KWEp0QocT//2Q==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e26fc60d96923716a6643ed7421b04aa/1c72d/img_sinji1.jpg&quot;
+        srcset=&quot;/static/e26fc60d96923716a6643ed7421b04aa/a80bd/img_sinji1.jpg 148w,
+/static/e26fc60d96923716a6643ed7421b04aa/1c91a/img_sinji1.jpg 295w,
+/static/e26fc60d96923716a6643ed7421b04aa/1c72d/img_sinji1.jpg 590w,
+/static/e26fc60d96923716a6643ed7421b04aa/a8a14/img_sinji1.jpg 885w,
+/static/e26fc60d96923716a6643ed7421b04aa/fbd2c/img_sinji1.jpg 1180w,
+/static/e26fc60d96923716a6643ed7421b04aa/768c6/img_sinji1.jpg 3264w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;다시봐도 아름다운 아이폰의 자태 🥺&lt;/p&gt;
+&lt;p&gt;지금보니 굉장히 매끄러워 보이는 것 같고, 스피커 등 구멍들도 딱 잘 맞다.&lt;/p&gt;
+&lt;h1&gt;신지모루 에어로핏. 그냥 사용하기에는 심상치 않은 점 몇 가지&lt;/h1&gt;
+&lt;h2&gt;신지모루 에어로핏 케이스는 &lt;strong&gt;하드 케이스&lt;/strong&gt;다.&lt;/h2&gt;
+&lt;p&gt;우선 &lt;strong&gt;PC 소재&lt;/strong&gt;라는 것. PC 소재가 무엇인지 정확하게 모르고 상품 소개 페이지에 있는 아래 이미지를 보고 그냥 아 변색이 없는 좋은 소재구나. 라고만 생각했다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1e5fabed99b65f8e73fc8f1b882792b5/e7aec/img_sinji2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9klEQVQoz12S266aUBCGff9XaHpZTWp7YbYaEVEIqLFRo7saRFBBDh7wjFt3vPAvMw3UlGQCzFrzzT+HzOVywfl8ZouiCL7vYzQaYTabwTAMWJYF27bZNx6P2TedTqHrOt+lGIolDlkmAZ5OJ9xuN0wmE5RKJbTbbdTrdSiKgm63i2KxyP5GowFVVSFJEkMphmITUZn/FW63WyyXS85O5nkeNpstFosFHMdJfev1GmEYpgoTlRn6uF6vDKKMVI4ZGwWv4qCPWAEF3e93VkLnSTvoTe1YrVbMYIV0+XA4cK8IQmD6dxwblqljvXI5M8FIJUFI3X6/j5VvOIHrunzOCimzaZrIZrMYDPqcjZ66JKJS/I73nhxnvjAgn8+j1Wox+Pl8sohcLofhcIggCLiSzN/JBhDFCqTqD9gLC67nw5wM8PbzKzpNIe1Rs9lEuVxmAdRHslqtBlmW/wFJZhD4EIQ3COUcAn+J4/EMyxiikP8SA6tIBkfqCoUC5vN5fOfIEFEUeeJUfgp07BkUuQJNU+KSA3x+PjB+70AWvuFXq5quFa0SrREpfDwe3HNaIU3TGE6D4ZIJoqkKOp0OdrtdfPAB33PQUmsw9N98kfy9Xo9V0mBeff1+nweZrk0Y7uJG29yT5CCKrjidafujdMqvluzt6w7T+w/89xuoR0+zBwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1e5fabed99b65f8e73fc8f1b882792b5/fcda8/img_sinji2.png&quot;
+        srcset=&quot;/static/1e5fabed99b65f8e73fc8f1b882792b5/12f09/img_sinji2.png 148w,
+/static/1e5fabed99b65f8e73fc8f1b882792b5/e4a3f/img_sinji2.png 295w,
+/static/1e5fabed99b65f8e73fc8f1b882792b5/fcda8/img_sinji2.png 590w,
+/static/1e5fabed99b65f8e73fc8f1b882792b5/efc66/img_sinji2.png 885w,
+/static/1e5fabed99b65f8e73fc8f1b882792b5/c83ae/img_sinji2.png 1180w,
+/static/1e5fabed99b65f8e73fc8f1b882792b5/e7aec/img_sinji2.png 1726w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;하지만 &lt;strong&gt;주의할 점은  PC 소재는 하드 케이스 소재&lt;/strong&gt;란 것이었다. 변색보다는 소재 자체가 딱딱하다는 말이다.&lt;/p&gt;
+&lt;p&gt;나는 중간에 &lt;strong&gt;케이스를 뒤트는 영상덕에 소재가 말랑한 것인줄만 알았던 것(…) PC소재가 하드케이스를 의미한다는 것&lt;/strong&gt;을 이 글을 쓰는 순간에야 깨달았던 것이다.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/7e3a2036a6bd684d217c148fcefa5337/img_case_anim.gif&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+&lt;p&gt;이런 하드케이스가 나같은 사람에게 굉장히 거슬리는 가장 큰 이유는 &lt;strong&gt;탈착 시 기스가 생길 수 있다&lt;/strong&gt;는 점이다. 하드케이스는 소재가 단단하기 때문에 강하게 눌러 끼워 넣는 방식인데, 꼭 &lt;strong&gt;옆면을 긁는 듯한 느낌&lt;/strong&gt;을 받게 된다. 현재는 조금 나아진 것 같지만, 아이폰 4~5시절 다이아몬드 커팅의 옆면은 손톱에도 코팅이 벗겨져서 바로 데미지가 생길 정도로 예민한 것이어서, 이런형태의 탈착 방식은 정말 치명적으로 불안감을 준다. 😥 &lt;strong&gt;물론 끼우고 나서 봤을 때에는 데미지가 없어보였다.&lt;/strong&gt; 하지만 여러번 꼈다 뺐다 하면서 테스트해볼 수는 없었다. 너무 불안해서 🥲…&lt;/p&gt;
+&lt;p&gt;새 것이니까 당장은 마감이 매끈해서 괜찮았겠지만, 만약 쓰다가 마감이 조금이라도 거칠어진 상태에서 탈착을 한다고 생각하면 😱…&lt;/p&gt;
+&lt;h2&gt;계속 신경쓰이는 빈틈…&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/3cc8c4d278d961645b2e5f61a1b5c460/768c6/img_sinji3.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAFo7LBKXFP/xAAbEAACAQUAAAAAAAAAAAAAAAAAAQIDEBESIf/aAAgBAQABBQKcNiNDqVkjB//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGtf//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMf//EABgQAAIDAAAAAAAAAAAAAAAAAAABESBh/9oACAEBAAY/AtJdf//EABkQAQACAwAAAAAAAAAAAAAAAAEAIRBBcf/aAAgBAQABPyEblQLu9lMDM//aAAwDAQACAAMAAAAQ4B//xAAVEQEBAAAAAAAAAAAAAAAAAAAQYf/aAAgBAwEBPxCh/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EG4T/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIUFxMf/aAAgBAQABPxDSg+8fYlLbdFj2CEPhhLoLpDGVP//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/3cc8c4d278d961645b2e5f61a1b5c460/1c72d/img_sinji3.jpg&quot;
+        srcset=&quot;/static/3cc8c4d278d961645b2e5f61a1b5c460/a80bd/img_sinji3.jpg 148w,
+/static/3cc8c4d278d961645b2e5f61a1b5c460/1c91a/img_sinji3.jpg 295w,
+/static/3cc8c4d278d961645b2e5f61a1b5c460/1c72d/img_sinji3.jpg 590w,
+/static/3cc8c4d278d961645b2e5f61a1b5c460/a8a14/img_sinji3.jpg 885w,
+/static/3cc8c4d278d961645b2e5f61a1b5c460/fbd2c/img_sinji3.jpg 1180w,
+/static/3cc8c4d278d961645b2e5f61a1b5c460/768c6/img_sinji3.jpg 3264w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;탈착만이 신경쓰이는 것이 아니다. 빈틈… 케이스 아래쪽에 이유 모를 절개가 있다. 이 절개는 아마도 하드케이스다 보니까 조금의 탄력을 주기 위한 부분이 아닐까 하고 생각되는 부분이다. 하지만, &lt;a href=&quot;https://macguyver.kr/924&quot;&gt;케이스와 폰 사이에 존재하는 먼지 등은 사용하면서 안에서 흔들리면서 잔기스를 만들어 낸다.&lt;/a&gt; 그래서 웬만하면 먼지가 들어갈 틈이 없는 것을 선호하는데 떡하니 절개가 있으니..😨 실제로 에어로핏을 부착한 상태로 주머니에 넣고 뺐는데도 절개부위 근처에 먼지가 낀 것을 확인할 수 있었다. 아무래도 신경쓰이는 절개였다.&lt;/p&gt;
+&lt;h2&gt;그립감? 너무 매끄러워…&lt;/h2&gt;
+&lt;p&gt;그리고 아주 매끄러운 케이스이다. 얇고 매끄럽게 만들어져서 잡으면 &lt;strong&gt;끼운듯 안끼운 듯&lt;/strong&gt;한 느낌에 &lt;strong&gt;본연의 느낌&lt;/strong&gt; 그대로 라고 하는데, 나로써는 글쎄.. 결국 꼈기 때문에 사실 겉보기나 느낌은 비슷한 것 같다.. 쌩폰을 만지는 듯한 그립감이라고 하면서 선호하는 사람도 있는 것 같다. 그런데 클리어 하드 케잇의 특징이라고 해야할까? 내겐 &lt;strong&gt;너무 매끈했다&lt;/strong&gt;. 이런 느낌을 선호하는 사람도 있겠지만, 나는 너무 불안했다 😨 언젠가 무심코 쥐었을 때 손에서 미끄러져 떨어질 것 만 같은 그런 느낌이 드는 것이다. 심지어 &lt;a href=&quot;https://m.blog.naver.com/tweec2/222175737983&quot;&gt;구매한지 하루만에 떨어졌는데 케이스가 깨져버렸다는 후기&lt;/a&gt;를 발견할 수도 있었다.&lt;/p&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;신지모루 에어로핏을 우연한 계기로 구입하게 되었는데, 이 케이스의 장점들은 상품 후기나 다른 블로그에서 쉽게 찾을 수 있을 것 같다. 데미지에 예민한 입장에서 신지모루 에어로핏을 착용했을 때 느꼈던 신지모루 단점에 대해서 작성했다. 이 케이스 구입을 망설이고 있는 사람에게 조금이라도 도움이 되길 바란다.😉&lt;/p&gt;
+&lt;p&gt;이 케이스를 뒤로하고 황급히 바꾼 다른 케이스에 대해서도 추후 리뷰를 남길 수 있길바라며..ㅋㅋ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[hoist-non-react-statics/node_modules/@types/react vscode auto import 문제]]></title><description><![CDATA[auto import 여러 기기에서 같은 React 프로젝트 소스 작업을 하고 있었는데, 윈도우 PC에서는 auto import를 잘했는데 맥에서는 이상한 경로로 오토 임포트가 되어서 좀 황당한 일이 있었고 그에 대한 해결책을 공유한다. vscode…]]></description><link>https://gatsby-starter-blog-demo.netlify.com/post/2021-10-14-auto-import-error/</link><guid isPermaLink="false">https://gatsby-starter-blog-demo.netlify.com/post/2021-10-14-auto-import-error/</guid><pubDate>Thu, 14 Oct 2021 16:42:24 GMT</pubDate><content:encoded>&lt;h1&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;hoist-non-react-statics/node_modules/@types/react&amp;#39;&lt;/code&gt; auto import&lt;/h1&gt;
 &lt;p&gt;여러 기기에서 같은 React 프로젝트 소스 작업을 하고 있었는데, 윈도우 PC에서는 auto import를 잘했는데 맥에서는 이상한 경로로 오토 임포트가 되어서 좀 황당한 일이 있었고 그에 대한 해결책을 공유한다.&lt;/p&gt;
 &lt;p&gt;vscode에서  &lt;code class=&quot;language-text&quot;&gt;FC&lt;/code&gt; 나 &lt;code class=&quot;language-text&quot;&gt;useState&lt;/code&gt; 등 리액트의 특정 기능들을 import  하려고 하면 &lt;code class=&quot;language-text&quot;&gt;hoist-non-react-statics/node_modules/@types/react&lt;/code&gt; 에서 auto import가 생겨나는 문제가 발생할 수 있다:&lt;/p&gt;
 &lt;deckgo-highlight-code language=&quot;jsx&quot;  &gt;
