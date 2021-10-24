@@ -1,4 +1,214 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Oct 2021 09:14:23 GMT</lastBuildDate><item><title><![CDATA[아이폰13 미니 신지모루 에어로핏 구입하고 버린 후기]]></title><description><![CDATA[아이폰13 미니 신지모루 에어로핏 구입 후기 신지모루 에어로핏 구매를 망설이는 분들께 조금이라도 정보가 되길 바라며 이 글을 작성합니다. 아이폰13 미니 사전주문 GET! 10월 1일 대란이었던 아이폰1…]]></description><link>https://dotorimook.github.io/post/2021-10-16-sinjimoru-case-review/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-16-sinjimoru-case-review/</guid><pubDate>Sat, 16 Oct 2021 01:59:34 GMT</pubDate><content:encoded>&lt;h1&gt;아이폰13 미니 신지모루 에어로핏 구입 후기&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Oct 2021 13:28:15 GMT</lastBuildDate><item><title><![CDATA[vscode.dev! 브라우저에서 VSCode 실행하기]]></title><description><![CDATA[vscode.dev(!) 공개 마참내! vscode.dev에 대한 포스트가  공개되었다. vscode가 2019년 당시  도메인이 오픈될 때,    도메인을 구입했고,  로 가리키게 해두었는데, 드디어  URL에 걸맞는 Web IDE…]]></description><link>https://dotorimook.github.io/post/2021-10-24-vscode-dev/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-24-vscode-dev/</guid><pubDate>Sun, 24 Oct 2021 22:16:20 GMT</pubDate><content:encoded>&lt;h1&gt;vscode.dev(!) 공개 마참내!&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/blogs/2021/10/20/vscode-dev&quot;&gt;vscode.dev에 대한 포스트가  공개&lt;/a&gt;되었다. vscode가 2019년 당시 &lt;code class=&quot;language-text&quot;&gt;.dev&lt;/code&gt; 도메인이 오픈될 때, &lt;code class=&quot;language-text&quot;&gt;vscode.dev&lt;/code&gt;   도메인을 구입했고, &lt;code class=&quot;language-text&quot;&gt;[code.visualstudio.com](https://code.visualstudio.com/)&lt;/code&gt; 로 가리키게 해두었는데, 드디어 &lt;code class=&quot;language-text&quot;&gt;vscode.dev&lt;/code&gt; URL에 걸맞는 Web IDE가 출시 되었다는 느낌이다. vscode의 &lt;a href=&quot;https://www.youtube.com/watch?v=hilznKQij7A&amp;#x26;list=PLj6YeMhvp2S6uB23beQaffszlavLq3lNq&quot;&gt;10여년간의 개발 역사를 공개한 키노트 영상&lt;/a&gt;도 있다. 그간의 Web IDE들은 꽤 있었지만, &lt;a href=&quot;https://visualstudiomagazine.com/articles/2021/01/13/wakatime-vs-code.aspx&quot;&gt;vscode가 1위 IDE인 만큼&lt;/a&gt; 핫 이슈가 될 것 같다.&lt;/p&gt;
+&lt;p&gt;vscode는 대표적인 electron 프로젝트라고 볼 수 있는 타입스크립트 기반의 프로젝트다. 그래서 web으로도 당연히 쉽게 될 수 있지 않을까 했는데, 드디어 나오게 되었다. 웹버전으로의 출시가 타입스크립트 프로젝트 치고는 시간이 꽤 걸린 것으로 느껴지기도 한 것 같지만, 웹 환경의 성숙도가 이제야 그만큼 수준이 되었나 싶기도하고..&lt;/p&gt;
+&lt;h1&gt;vscode.dev로 개발? 클라우드 도구로 로컬 개발을.&lt;/h1&gt;
+&lt;p&gt;vscode.dev는 &lt;a href=&quot;https://developer.mozilla.org/ko/docs/Web/API/File_System_Access_API&quot;&gt;File System Access API&lt;/a&gt;를 지원하는 모던 브라우저(크롬이나 엣지)의 기능을 이용해서 로컬  파일 편집을 지원하고 있는 것으로 보인다. vscode.dev로 설치 없이 로컬 개발을 할 수 있는 흥미로운 시나리오들을 소개하고 있다:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;로컬 파일 색인 및 편집. 마크다운 작성 및 프리뷰. vscode를 설치할 수 없는 환경에서도 vs code를 열어서 로컬 파일을 작성할 수 있음 (와우..)&lt;/li&gt;
+&lt;li&gt;클라이언트 사이드의 HTML, Javascript, CSS 앱을 빌드하여 브라우저 툴로 디버깅 하기 (와.. 👏)&lt;/li&gt;
+&lt;li&gt;vscde를 설치할 수 없는 저전력 머신 (e.g. 크롬북) 에서 코드를 편집하기&lt;/li&gt;
+&lt;li&gt;iPad에서 개발하기(👏👏👏👏👏) 파일을 업로드, 다운로드 할 수 있고 (파일 앱을 이용해서 클라우드에 저장도할 수 있다!) 빌트인 되어있는 깃헙 리파지토리 확장으로 공개 리파지토리와 연결해 열 수도 있다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;만약 브라우저가 로컬 파일 시스템 API를 지원하지 않는다면 브라우저에서 파일을 업로드나 다운로드 해서 사용할 수 있게끔 되어있다고 한다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/ad5fed6fc5fa5340892b129ea216d416/bc962/1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz4WR606DQBCFeZQW2GUv3FukQIGQGNMWW9OX0MT4NkZ93OPO4jb6yx9fZmdgz5yZ9YKAYe0zUAyCEL4fGPyf+D90JwwZGOOQUsGLNUdTCWjJwblAHCfIshxpmt1IktRGrWP7nXL3n1LqJkh4XS1wPSgjajqoBF23R9O0aNsOfd9jt2ssVK+qO9R1beqDZb/vrehqtbaihKeMsyyJoCSDENK6UErbSE6cK6o5l84hoQ15XiCKxCK47I6bPYa2GzmhzsMwGhYn0zTZusvdeTDncRzRmom4GdcKutkp4TyyThy05N/QBBTJjdYJpE6h4hxcaARMgJk38NzsTpRebXk5jofDjPnxCYfTGVmxxTjdYz5fcTqekPcz2ud3jK8fmN4+sXv5Aq+Pfx26s6MoNijLrUVKbVZSoNxUpl5CplskvWk0XCxxfwHTG3wDbBn4gyOLa/sAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/ad5fed6fc5fa5340892b129ea216d416/fcda8/1.png&quot;
+        srcset=&quot;/static/ad5fed6fc5fa5340892b129ea216d416/12f09/1.png 148w,
+/static/ad5fed6fc5fa5340892b129ea216d416/e4a3f/1.png 295w,
+/static/ad5fed6fc5fa5340892b129ea216d416/fcda8/1.png 590w,
+/static/ad5fed6fc5fa5340892b129ea216d416/bc962/1.png 617w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;정말 나날이 기술이 발전하면서 개발 환경이 좋아지고 있는 것 같다. 하지만 데스크탑 앱에 비해서 아직까지는 좀 더 &lt;strong&gt;가벼운 수준의 경험&lt;/strong&gt;을 제공하고 있다고 하는데, 예를들어 터미널이나 디버거는 불가능하고, Rsut나 Go 애플리케이션을 브라우저샌드박스에서 컴파일, 실행, 디버깅 하는 것은 현재는 할 수 없다고 한다.&lt;/p&gt;
+&lt;p&gt;데스크탑에서 실행되는 것은 일반적으로 파일시스템에서 작동하는 컴파일러와 랭귀지 서비스에 의해 코드 수정, 네비게이션, 브라우징이 가능한 것이지만, vscode.dev는 브라우저에서 동작하는 랭귀지 서비스에서 제공되는 경험이라고 한다. 그래서 typescript, javascript, JSON, HTML, CSS, LESS 등 웹 관련 언어가 좋은 경험을 제공할 수 있을 것으로 보인다&lt;/p&gt;
+&lt;h1&gt;Setting Sync&lt;/h1&gt;
+&lt;p&gt;또한 키바인딩, 확장 등을 포함한 환경설정도 &lt;a href=&quot;https://code.visualstudio.com/docs/editor/settings-sync&quot;&gt;Setting Sync&lt;/a&gt;를 통해서 가능하다고 한다.&lt;/p&gt;
+&lt;p&gt;vscode 좌측 하단에 사용자 아이콘 같은 동그란 아이콘을 클릭하면 Setting Sync를 설정할 수 있는 메뉴가 있다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/944348b94d58aa00b7dea5a063098d71/3f3b9/2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaElEQVQY0yWQXY+TQBhG+SfGRNvyDYUWKNAZYIEWaJvqarzwwq81GrO7/qPdmo268cKfeJzixcl555nJzOTRmvotabahKPes5UBVH2k2l4jigOXm6PYK44z135aT4fsVrltg2hlOIPCXBW5YEMY1msyOtE1H3x/pugN104/utgfm8wRd9zBMH8PwMJVNw2c6sVTuYFkLbGeJ7cbq8ZhFLNHcqEcM35H725F8uCFur0k2N7jiCiv7MGKm70fb2Sfc/POIc7b8gld+G5nXt2hhec3m61/qj79orh6R734zGU486+6U75nu7pXvmO1P43xmtjvPJ5X9QD88oB9/4rz+g/nyEW29fEUmWkS5Q1aqx2JQXXZsukvKi73Ke3K5xQtylW9Ziy1C7Ut1Tiiq5gXt8AY/qrGDCu3J0wmLKFdkRMmaUNkPk3HtBzHhMiVcpOimxzxIiOKcVVqoy1vilVS9ifFDMzPg+dTjHzv61nW5EhvAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/944348b94d58aa00b7dea5a063098d71/fcda8/2.png&quot;
+        srcset=&quot;/static/944348b94d58aa00b7dea5a063098d71/12f09/2.png 148w,
+/static/944348b94d58aa00b7dea5a063098d71/e4a3f/2.png 295w,
+/static/944348b94d58aa00b7dea5a063098d71/fcda8/2.png 590w,
+/static/944348b94d58aa00b7dea5a063098d71/3f3b9/2.png 870w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;한글로는 &lt;strong&gt;설정 동기화&lt;/strong&gt; 라는 것인데 Github이나 Microsoft 계정으로 설정할 수 있다.&lt;/p&gt;
+&lt;p&gt;그러면 vscode.dev를 들어가서 똑같은 위치에 있는 아이콘을 선택하면 &lt;strong&gt;Turn on Setting Sync&lt;/strong&gt;를 선택하고 메뉴들을 선택하면, 깃헙으로 인증을 하게 되고, 기존 선택해둔 설정들을 다 가져올 수 있게된다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/20bc08242a77f7c391f4bad98b769a3e/d67fd/3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 27.027027027027025%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyElEQVQY021QSRKCMBDkKUgIIChLEqiwyOIHuPD/r7SZoVApPXRNZ7aejtc0DQhFUUIICSljhGH0xvebuJTRqf7pkTzvTdOEdV1hjMHlIpBld5SlQlVpJ1IxN6aBUoY5Ce9xrx2gpUKE8Ky1GMeHS1acjKLkpE6qhINTT5KkjDi+uriDOF9Idtu2dQtLBEHIl1jbuW+w6LoBy/JE3w+MYRiR54Ub/LV9CHrzPGPbNtR1Dd8PWPmwQba0rnm5Upqtp+mNhf+BFr4AMbGXvIf0q2gAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/20bc08242a77f7c391f4bad98b769a3e/fcda8/3.png&quot;
+        srcset=&quot;/static/20bc08242a77f7c391f4bad98b769a3e/12f09/3.png 148w,
+/static/20bc08242a77f7c391f4bad98b769a3e/e4a3f/3.png 295w,
+/static/20bc08242a77f7c391f4bad98b769a3e/fcda8/3.png 590w,
+/static/20bc08242a77f7c391f4bad98b769a3e/d67fd/3.png 670w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/636d3/4.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/0lEQVQY043QzUrDQBiF4VyKM5nJJG3T/FFrJc1PmwgthWKriLaoVXBlEUTvQrzl1xC7Kbhw8XC+A2f1WVG+Ip1vSCZr/PGSsFgRlWuC/LK948lV25PpNWY4Q8YVdlK3RFgSLN853X0x2H3TW+yxwsUH1faT89UrbrWje/GM16RXP9FpuNNHnPIeM3nAzjaI8R3yQKS36PoFM9tj5m+ofIsVZFvysiYrKkZpSZiM6PYT/HBAPx6iXR+hO8iG7XQbvSNSe0jbIJWLkA5WNL4hzwqKvCCOYsSJwJZ2SzaUrRr6kH9QuqWV0+4tv/lLmuUMhmdo42K8zhHnP9zfrXIMP6T3ocD2NnalAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/fcda8/4.png&quot;
+        srcset=&quot;/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/12f09/4.png 148w,
+/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/e4a3f/4.png 295w,
+/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/fcda8/4.png 590w,
+/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/efc66/4.png 885w,
+/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/c83ae/4.png 1180w,
+/static/e5f0aa1439b1bd6a5b5dc4abe692efdf/636d3/4.png 1222w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;테마나 기본적인 세팅들은 잘 동작하는 것 같았는데, &lt;code class=&quot;language-text&quot;&gt;git checkout&lt;/code&gt; 을 바로 하려고 한다든지 그런것은 어려운 것 같았고, gitlens 같은 일부 내가 좋아라 사용하고 있는 익스텐션은 되지 않아서 봤더니, vscode.dev에는 제공하지 안고 있었다 😢&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/224745b635022dfe2df1676f815534c2/e4611/5.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 4.72972972972973%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAABCAYAAADeko4lAAAACXBIWXMAAAsTAAALEwEAmpwYAAAASElEQVQI12OwtvP+7+gc+N/SxvO/jb3vf0eXwP/OrkH/7Z38wWxbBz+wuLNb8H8H54D/tlA1IOzgFACWcwKyzW18/+uY+vwHAJ2OI/cP4I/oAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;image&quot;
+        title=&quot;&quot;
+        src=&quot;/static/224745b635022dfe2df1676f815534c2/fcda8/5.png&quot;
+        srcset=&quot;/static/224745b635022dfe2df1676f815534c2/12f09/5.png 148w,
+/static/224745b635022dfe2df1676f815534c2/e4a3f/5.png 295w,
+/static/224745b635022dfe2df1676f815534c2/fcda8/5.png 590w,
+/static/224745b635022dfe2df1676f815534c2/efc66/5.png 885w,
+/static/224745b635022dfe2df1676f815534c2/c83ae/5.png 1180w,
+/static/224745b635022dfe2df1676f815534c2/e4611/5.png 1298w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;그리고 한 가지 더 아쉬운 점은 bitbucket이나 gitlab같은 리파지토리 접근도 아직은 어려운 듯 하다. 뭔가 익스텐션이 생기면 달라지려나? 기대해본다.&lt;/p&gt;
+&lt;p&gt;하지만, 이정도 수준으로 가볍지만 내게 익숙한 개발 환경을 웹으로 (게다가 아이패드에서도!!) 즐길 수 있다는 것은 정말 큰 장점인 것 같다👏&lt;/p&gt;
+&lt;p&gt;그리고 이전까지는 &lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=Shan.code-settings-sync&quot;&gt;Setting Sync&lt;/a&gt;라는 익스텐션을 이용해서 환경설정 동기화를 해왔는데, 이게 Setting Sync 기능이 된 것일까? 무튼 이번 기회를 통해 Setting Sync 기능을 이용하게 되었는데 굉장히 만족스러운 것 같다. &lt;/p&gt;
+&lt;h1&gt;vs Github Dev?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.dev&quot;&gt;github.dev&lt;/a&gt;라고 들어보셨을랑가 모르겠다. github도 github에 내장되어있는 Web IDE를 최근 출시했다. 깃헙 페이지에서 &lt;code class=&quot;language-text&quot;&gt;.&lt;/code&gt;을 누르게 되면 vscode가 뜨게 된다.  (아마도 github.dev가 &lt;a href=&quot;http://vscode.dev&quot;&gt;vscode.dev&lt;/a&gt; 예고편 같은 것 아니었을까?)&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/52f226e18800025c89f9071bbc8207aa/githubdev.gif&quot; alt=&quot;image&quot;&gt;&lt;/p&gt;
+&lt;p&gt;vscode와 거의 동일한 환경 (여기도 Setting Sync를 통해 기존 환경설정을 동기화 할 수 있다.)을 제공하고 있다. 그럼 &lt;a href=&quot;http://vscode.dev&quot;&gt;vscode.dev&lt;/a&gt; 는 뭐가 다른가? 비슷하지만 좀 다르다고 하는데,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;github.dev는 Github와 깊게 통합되어, 자동으로 로그인 되고 URL도 Github/organization/repo 형식으로 나타낸다고.&lt;/li&gt;
+&lt;li&gt;vscode.dev는 Azure 리포도 지원한다고 한다.&lt;/li&gt;
+&lt;li&gt;또한 확장 테마도 URL을 통해서 공유 가능하다고 한다. 예를 들면, &lt;a href=&quot;https://vscode.dev/theme/sdras.night-owl&quot;&gt;https://vscode.dev/theme/sdras.night-owl&lt;/a&gt; 처럼.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;따끈따끈한 신상 Web 개발 환경인 vscode를 만나보았다 😎 브라우저에서 동작하는 것이기 때문에 몇 가지 한계로 인해 IDE라고 불러도 괜찮을지 모르겠다. 하지만 다른 시선으로 보면, 특히 웹 개발에 있어서는 많은 가능성을 가지고 있는 것 같다.&lt;/p&gt;
+&lt;p&gt;또, 공개 리포지토리 외에는 업로드 다운로드로 접근해야하는 것, 익스텐션의 웹vscode 미지원으로, 기존 데스크톱 앱 환경에서 사용하는 익스텐션을 사용할 수 없는 한계점도 있다. 하지만 이 부분들은 이제 막 시작했으니 차츰 좋아지지 않을까 생각한다.&lt;/p&gt;
+&lt;p&gt;무엇보다 설치 없이 어디서든 - 특히 크롬북이나 아이패드 같은 환경에서 - 나만의 개발 환경으로 가벼운 버전의 개발 경험을 느낄 수 있는게 큰 장점이라고 하겠다.&lt;/p&gt;
+&lt;p&gt;앞으로 Web IDE 환경이 얼마나 더 진화할 것인지 앞으로가 기대된다. 😆&lt;/p&gt;</content:encoded></item><item><title><![CDATA[아이폰13 미니 신지모루 에어로핏 구입하고 버린 후기]]></title><description><![CDATA[아이폰13 미니 신지모루 에어로핏 구입 후기 신지모루 에어로핏 구매를 망설이는 분들께 조금이라도 정보가 되길 바라며 이 글을 작성합니다. 아이폰13 미니 사전주문 GET! 10월 1일 대란이었던 아이폰1…]]></description><link>https://dotorimook.github.io/post/2021-10-16-sinjimoru-case-review/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-16-sinjimoru-case-review/</guid><pubDate>Sat, 16 Oct 2021 01:59:34 GMT</pubDate><content:encoded>&lt;h1&gt;아이폰13 미니 신지모루 에어로핏 구입 후기&lt;/h1&gt;
 &lt;p&gt;신지모루 에어로핏 구매를 망설이는 분들께 조금이라도 정보가 되길 바라며 이 글을 작성합니다.&lt;/p&gt;
 &lt;h2&gt;아이폰13 미니 사전주문 GET!&lt;/h2&gt;
 &lt;p&gt;10월 1일 대란이었던 아이폰13 미니 사전주문을 성공했다. 쿠팡은 시잔주문 개시 시각이었던 10월 1일 0시 0분까지도 카드 즉시할인 혜택 등을 공개하지 않았다. 결론적으로 11번가가 좀 더 저렴하게 받을 수 있었지만, 주문의 편의성으로 쿠팡을 대기타고 있었는데, 광클로 성공적으로 사전주문을 할 수 있었다. 😆&lt;/p&gt;
