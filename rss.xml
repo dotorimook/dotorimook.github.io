@@ -1,4 +1,96 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 24 Oct 2021 15:05:59 GMT</lastBuildDate><item><title><![CDATA[vscode.dev! 브라우저에서 VSCode 실행하기]]></title><description><![CDATA[vscode.dev(!) 공개 마참내! vscode.dev에 대한 포스트가  공개되었다. vscode가 2019년 당시  도메인이 오픈될 때,    도메인을 구입했고,  로 가리키게 해두었는데, 드디어  URL에 걸맞는 Web IDE…]]></description><link>https://dotorimook.github.io/post/2021-10-24-vscode-dev/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-24-vscode-dev/</guid><pubDate>Sun, 24 Oct 2021 22:16:20 GMT</pubDate><content:encoded>&lt;h1&gt;vscode.dev(!) 공개 마참내!&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 09 Nov 2021 01:23:23 GMT</lastBuildDate><item><title><![CDATA[속독을 위한 몇 가지 테크닉 - 페이서, 들여쓰기]]></title><description><![CDATA[속독은 활자를 읽는 기술이라는 생각을 하게 된다. 몇 가지 알게된 속독하는 테크닉을 정리한다. 다시 돌아가지 않기 고정 (Fixations) Fixations라고 하는데, 눈이 계속 한 페이지에 머물러 있는 상태를 의미한다. 평균 비훈련자는 10~1…]]></description><link>https://dotorimook.github.io/post/2021-11-09-speed-reading/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-09-speed-reading/</guid><pubDate>Tue, 09 Nov 2021 10:20:00 GMT</pubDate><content:encoded>&lt;p&gt;속독은 활자를 읽는 기술이라는 생각을 하게 된다. 몇 가지 알게된 속독하는 테크닉을 정리한다.&lt;/p&gt;
+&lt;h1&gt;다시 돌아가지 않기&lt;/h1&gt;
+&lt;h2&gt;고정 (Fixations)&lt;/h2&gt;
+&lt;p&gt;Fixations라고 하는데, &lt;strong&gt;눈이 계속 한 페이지에 머물러 있는 상태&lt;/strong&gt;를 의미한다. 평균 비훈련자는 10~15번의 고정에 걸린다고 한다. 이런 고정 상태를 피해야한다고 한다. &lt;strong&gt;다시 돌아가서 읽지 않으려고 하는 것이다&lt;/strong&gt;. 어떻게 그렇게 읽을 수 있을까?&lt;/p&gt;
+&lt;h2&gt;페이서&lt;/h2&gt;
+&lt;p&gt;고정에 걸리지 않기 위해 페이서(Pacer)라는 기법을 활용한다. 페이서는 어절 단위로 밑줄을 긋듯이 읽는 방법이다. 형광펜 등 물리적인 도구를 이용해서 써도 관계 없다고 한다. 마치 교과서에 줄을 그어가며 독서를 했던 것과 동일한 방법이다. 아래는 그 예시다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/71495b66d752916c585e078c15e3dfa5/a1517/pacer.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 68.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB3ItRaIr/xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQJrf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAABMYEQIaH/2gAIAQEAAT8hsKY7jYpCZ//aAAwDAQACAAMAAAAQ+A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCn/8QAHRABAAICAgMAAAAAAAAAAAAAAQAhEUExgWFxof/aAAgBAQABPxArpe3BBTC6g433EKjL5YF39ISVmf/Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;페이서를 활용한 독서법 (텍스트 출처: [https://namu.wiki/w/인간실격(드라마)](https://namu.wiki/w/%EC%9D%B8%EA%B0%84%EC%8B%A4%EA%B2%A9(%EB%93%9C%EB%9D%BC%EB%A7%88)))&quot;
+        title=&quot;&quot;
+        src=&quot;/static/71495b66d752916c585e078c15e3dfa5/1c72d/pacer.jpg&quot;
+        srcset=&quot;/static/71495b66d752916c585e078c15e3dfa5/a80bd/pacer.jpg 148w,
+/static/71495b66d752916c585e078c15e3dfa5/1c91a/pacer.jpg 295w,
+/static/71495b66d752916c585e078c15e3dfa5/1c72d/pacer.jpg 590w,
+/static/71495b66d752916c585e078c15e3dfa5/a8a14/pacer.jpg 885w,
+/static/71495b66d752916c585e078c15e3dfa5/fbd2c/pacer.jpg 1180w,
+/static/71495b66d752916c585e078c15e3dfa5/a1517/pacer.jpg 1329w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;페이서를 활용한 독서법 (텍스트 출처: &lt;a href=&quot;https://namu.wiki/w/%EC%9D%B8%EA%B0%84%EC%8B%A4%EA%B2%A9(%EB%93%9C%EB%9D%BC%EB%A7%88)&quot;&gt;https://namu.wiki/w/인간실격(드라마)&lt;/a&gt;)&lt;/p&gt;
+&lt;p&gt;페이서를 이용하면 평균 &lt;strong&gt;분당 250 어절&lt;/strong&gt; 속도로 읽을 수 있다고 한다.&lt;/p&gt;
+&lt;p&gt;페이서는 2가지장점이 있는데,&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;읽기 속도를 유지해준다.&lt;/li&gt;
+&lt;li&gt;더 빠르게 읽을 수 있는 눈을 가지게 해준다: 속도감 있는 페이서를 좇아서 읽게 되기 때문&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;라고 한다.&lt;/p&gt;
+&lt;h1&gt;들여 읽기&lt;/h1&gt;
+&lt;p&gt;속도감 있게 책을 읽을 수 있는 또 다른 방법은 &lt;strong&gt;들여 읽기&lt;/strong&gt;이다. 이 기술은 페이지의 양 끝을 보지 않는 기술이다. 시선이 페이지의 끝까지 빠지지 않게 하는 것이다. 한 줄의 시선 시작과 끝을 한 단어 정도 앞으로 들여서 움직인다. 그렇게 되면 시선이 짧게 움직이고 더 집중이 되는 방식인 것 같다. 아래와 같이 페이지의 가상의 줄을 그어 놓고 읽으면 도움이 될 것 같다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a7afdaaade5e8e75f0cc8f9ce3eae777/27529/indentation.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 19.594594594594593%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2qAH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFhABAQEAAAAAAAAAAAAAAAAAABEx/9oACAEBAAE/IdRH/9oADAMBAAIAAwAAABCAH//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAAIDAQAAAAAAAAAAAAAAAAABESFRQf/aAAgBAQABPxCLN6R1lOs//9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;들여 쓰기 예시 (텍스트 출처: [https://namu.wiki/w/인간실격(드라마)](https://namu.wiki/w/%EC%9D%B8%EA%B0%84%EC%8B%A4%EA%B2%A9(%EB%93%9C%EB%9D%BC%EB%A7%88)))&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a7afdaaade5e8e75f0cc8f9ce3eae777/1c72d/indentation.jpg&quot;
+        srcset=&quot;/static/a7afdaaade5e8e75f0cc8f9ce3eae777/a80bd/indentation.jpg 148w,
+/static/a7afdaaade5e8e75f0cc8f9ce3eae777/1c91a/indentation.jpg 295w,
+/static/a7afdaaade5e8e75f0cc8f9ce3eae777/1c72d/indentation.jpg 590w,
+/static/a7afdaaade5e8e75f0cc8f9ce3eae777/a8a14/indentation.jpg 885w,
+/static/a7afdaaade5e8e75f0cc8f9ce3eae777/fbd2c/indentation.jpg 1180w,
+/static/a7afdaaade5e8e75f0cc8f9ce3eae777/27529/indentation.jpg 1486w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;들여 쓰기 예시 (텍스트 출처: &lt;a href=&quot;https://namu.wiki/w/%EC%9D%B8%EA%B0%84%EC%8B%A4%EA%B2%A9(%EB%93%9C%EB%9D%BC%EB%A7%88)&quot;&gt;https://namu.wiki/w/인간실격(드라마)&lt;/a&gt;)&lt;/p&gt;
+&lt;h1&gt;배경지식을 최대한 활용&lt;/h1&gt;
+&lt;p&gt;비슷한 종류의 책을 많이 읽어가면서 배경지식을 늘리고 그 지식을 활용하면서 맥락을 파악해가면서 읽는 것이다. 비슷한 종류의 책은 서로 겹치는 내용들이 있기 때문에 읽어가면서 많이 읽어가면서 맥락을 파악하고 이해하는데 도움이 된다고 한다.&lt;/p&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;속독에 다양한 테크닉이 존재하겠지만 알게된 방법을 정리해봤다. 페이서나 들여 읽기는 직접적인 방법으로 훈련을 해볼 수 있을 것 같고, 배경지식과 관련된 부분은 좀 당연하고 막연한 방법이긴 하다 😂. 하지만 도전해볼만한 내용인 것 같다. 결국 적극적으로 글을 읽어야하는 자세가 중요한 것 같다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[vscode.dev! 브라우저에서 VSCode 실행하기]]></title><description><![CDATA[vscode.dev(!) 공개 마참내! vscode.dev에 대한 포스트가  공개되었다. vscode가 2019년 당시  도메인이 오픈될 때,    도메인을 구입했고,  로 가리키게 해두었는데, 드디어  URL에 걸맞는 Web IDE…]]></description><link>https://dotorimook.github.io/post/2021-10-24-vscode-dev/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-24-vscode-dev/</guid><pubDate>Sun, 24 Oct 2021 22:16:20 GMT</pubDate><content:encoded>&lt;h1&gt;vscode.dev(!) 공개 마참내!&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://code.visualstudio.com/blogs/2021/10/20/vscode-dev&quot;&gt;vscode.dev에 대한 포스트가  공개&lt;/a&gt;되었다. vscode가 2019년 당시 &lt;code class=&quot;language-text&quot;&gt;.dev&lt;/code&gt; 도메인이 오픈될 때, &lt;code class=&quot;language-text&quot;&gt;vscode.dev&lt;/code&gt;   도메인을 구입했고, &lt;code class=&quot;language-text&quot;&gt;[code.visualstudio.com](https://code.visualstudio.com/)&lt;/code&gt; 로 가리키게 해두었는데, 드디어 &lt;code class=&quot;language-text&quot;&gt;vscode.dev&lt;/code&gt; URL에 걸맞는 Web IDE가 출시 되었다는 느낌이다. vscode의 &lt;a href=&quot;https://www.youtube.com/watch?v=hilznKQij7A&amp;#x26;list=PLj6YeMhvp2S6uB23beQaffszlavLq3lNq&quot;&gt;10여년간의 개발 역사를 공개한 키노트 영상&lt;/a&gt;도 있다. 그간의 Web IDE들은 꽤 있었지만, &lt;a href=&quot;https://visualstudiomagazine.com/articles/2021/01/13/wakatime-vs-code.aspx&quot;&gt;vscode가 1위 IDE인 만큼&lt;/a&gt; 핫 이슈가 될 것 같다.&lt;/p&gt;
 &lt;p&gt;vscode는 대표적인 electron 프로젝트라고 볼 수 있는 타입스크립트 기반의 프로젝트다. 그래서 web으로도 당연히 쉽게 될 수 있지 않을까 했는데, 드디어 나오게 되었다. 웹버전으로의 출시가 타입스크립트 프로젝트 치고는 시간이 꽤 걸린 것으로 느껴지기도 한 것 같지만, 웹 환경의 성숙도가 이제야 그만큼 수준이 되었나 싶기도하고..&lt;/p&gt;
 &lt;h1&gt;vscode.dev로 개발? 클라우드 도구로 로컬 개발을.&lt;/h1&gt;

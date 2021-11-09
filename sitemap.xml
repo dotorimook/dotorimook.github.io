@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://dotorimook.github.io/post/2021-11-09-speed-reading/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/post/2021-10-24-vscode-dev/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/post/2021-10-16-sinjimoru-case-review/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/post/2021-10-14-auto-import-error/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -125,6 +126,7 @@
 <url> <loc>https://dotorimook.github.io/tag/기계식키보드</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/리뷰</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/소음</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://dotorimook.github.io/tag/속독</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/신지모루</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/신지모루 에어로핏</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/아이폰</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -145,6 +147,7 @@
 <url> <loc>https://dotorimook.github.io/category/Software-Engineering</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/blahblah</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/cryptocurrency</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://dotorimook.github.io/category/etc</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/express</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/gatsby</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/git</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -162,6 +165,5 @@
 <url> <loc>https://dotorimook.github.io/category/typescript</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/update</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/category/vscode</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://dotorimook.github.io/category/사용후기</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 </urlset>
