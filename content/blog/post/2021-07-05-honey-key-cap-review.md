@@ -3,7 +3,7 @@ layout: post
 title: "앤 프로2 Honey and Milk XDA 키캡 교체 후기"
 date: 2021-07-05 21:33:20
 categories:
-  - 사용후기
+  - review
 tags:
   - keybiard
   - review
