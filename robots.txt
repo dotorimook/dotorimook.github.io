@@ -1,2 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
+Sitemap: https://dotorimook.github.io/sitemap.xml
+Host: https://dotorimook.github.io

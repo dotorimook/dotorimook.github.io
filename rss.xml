@@ -1,123 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 16 Nov 2021 12:11:28 GMT</lastBuildDate><item><title><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 - LINE Developer Days 2021 요약]]></title><description><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 Abstract 우리가 사용하는 다양한 NPM…]]></description><link>https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기&lt;/h1&gt;
-&lt;aside&gt;
-💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
-&lt;/aside&gt;
-&lt;h1&gt;Abstract&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;우리가 사용하는 다양한 NPM 패키지 중에는 개발자를 위한 문서나 예제가 충분하지 않은 경우가 많습니다. 개발 초기에는 문서와 예제를 잘 작성해 두었더라도 시간이 지남에 따라 실제 코드와 제공되는 문서가 조금씩 달라지는 경우를 많이 경험하게 됩니다. 하지만 TypeScript와 Storybook을 활용하면 이런 문제를 점진적으로 해결해 나갈 수 있습니다.&lt;/p&gt;
-&lt;p&gt;이번 세션에서는 사내 UI 컴포넌트 라이브러리인 Universal Video Player를 개편하며 얻은 인사이트를 바탕으로 TypeScript와  Storybook을 활용해 적은 노력으로 문서와 예제 페이지와 테스트를 쉽게 구성해 보는 방법을 다룹니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;요약&lt;/h1&gt;
-&lt;h2&gt;개발자 친화적?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;개발자의 경험을 향상 = developer experience를 향상&lt;/li&gt;
-&lt;li&gt;효과적으로 문서를 관리하여 작성자 / 작업자 모두에게 효과적인 방법을 고민&lt;/li&gt;
-&lt;li&gt;발표자가 개발하고 있는 Universal Video Player (라인 여기저기에 비디오 플레이어를 삽입하는 컴포넌트를 개발/배포) 를 예시로 설명함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Problem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;기존 문서의 문제점&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Readme에서 모두 작성&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;링크로 연결되어 있음&lt;/li&gt;
-&lt;li&gt;작성할 때 다시 문서로 돌아와서 내용을 찾아봐야했음&lt;/li&gt;
-&lt;li&gt;풍부한 예제가 없음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Objectives&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;개발자 친화적으로 변경해보자&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Easy to use: 쉽고 가볍게 작성하고 읽음&lt;/li&gt;
-&lt;li&gt;Kindness: 친절하게 설명되어있어서 빠르게 적용해볼 수 있게 한다&lt;/li&gt;
-&lt;li&gt;Usefulness: 여러가지 환경에서 사용할 수 있도록 풍부한 예제를 제공하려고 함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;maintainer 입장에서는&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sustainable Document&lt;/li&gt;
-&lt;li&gt;Stable&lt;/li&gt;
-&lt;li&gt;Automation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Solutions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Typescript&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;TSDoc (&lt;a href=&quot;https://tsdoc.org/&quot;&gt;https://tsdoc.org/&lt;/a&gt;)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;타입스크립트의 표준화된 주석 포맷으로 IDE에서 지원해줌&lt;/li&gt;
-&lt;li&gt;자동완성과 같이 보여지므로 컨텍스트 변경없이 쓸 수 있어서 훨씬 편함&lt;/li&gt;
-&lt;li&gt;Playground(&lt;a href=&quot;https://tsdoc.org/play&quot;&gt;https://tsdoc.org/play&lt;/a&gt;) 도 지원함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Declare file&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;문서화와 구현부를 분리해서 관리할 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;⇒ IDE Workspace에서 볼 수 있기 때문에 컨텍스트를 옮기지 않고, 개발 환경 내에서 참고하여 작성할 수 있음&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Storybook&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;여러가지 애드온들을 결합해서 사용할 수 있어서 빠르게 퀄리티 있고 인터랙티브한 문서를 만들 수 있음&lt;/li&gt;
-&lt;li&gt;빌드에서 CDN에 올리면 별도 서버 구현 없이 바로 배포 가능&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;MDX&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;md + jsx 의 개념으로 md문법&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;컴포넌트를 직접 담을 수 있음&lt;/li&gt;
-&lt;li&gt;변수 사용도 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Snapshot&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Code Sandbox (Mdx-embed Addon)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mdsx-embed addon을 사용해서 code sandbox나 codepen 등을 문서에 삽입할 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;viewport addon&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;반응형 예제에 사용 가능한 addon&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;⇒ 인터랙티브한 Sample 들을 제공하므로써 다양한 환경에서 바로 적용해볼 수 있는 문서를 제공하게 됨&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;느낀점&lt;/h1&gt;
-&lt;p&gt;일단 역시 큰 회사니 개발 영역이 많이 나뉘어져있긴 하구나 하는 느낌이 들었고, 많은 개발자들과 협업해야하는 기회가 많구나 하는 생각이 들었다. 특히 발표자가 작업하는 공용으로 사용되는 컴포넌트를 개발하는 역할은 더욱 그러하겠다고 생각했다. 개발 문화에 대한 고민이 많은 조직에 속해있는 것은 얼마나 행운인가 하는 생각도 들었다.&lt;/p&gt;
-&lt;p&gt;주어진 역할이 그래서 더욱 그랬겠지만, 발표자분이 가진 협업을 위한 개발 환경에 대한 깊은 고민을 엿볼 수 있는 발표였다. 비슷한 고민을 해왔기 때문에 더욱 공감이 되는 발표 내용이었다.&lt;/p&gt;
-&lt;p&gt;기본적으로 개발자라면 누구나 &lt;strong&gt;주석/문서가 필요 없는 코드가 좋은 코드&lt;/strong&gt;라고 생각하고, 문서에 대한 유지보수 노력을 최소화 하고싶어 한다. 하지만, 여러 사람들이 많이 사용하는 코드라면 문서가 필요하지 않을 수가 없다. 그렇다면 최소한의 유지보수 노력이 들고 (코드와의 동기화), 가능하면 사용하기 좋아야 할 것인데 (코드상에서 설명이 보이는), 이러한 고민의 결과라는 느낌이 들었다.&lt;/p&gt;
-&lt;p&gt;나의 경우에는 스토리북을 오래전에 도입 시도를 했는데, 조직이 크지 않아서, 문서도 크게 필요로하지 않고, 실제로 보는 사람이 없어서 (ㅠㅠ) 오히려 유지보수 부담이 들어 스토리북을 없애고 개발 환경에서 볼 수 있는 샘플 코드 페이지를 사용해왔다. 하지만 스토리북이 많은 곳에서 차용되고 있고, 써드파티 생태계도 괜찮아서, 도입도 괜찮겠다는 생각이 들었다.&lt;/p&gt;
-&lt;p&gt;특히, 스냅샷 활용 (PR과 비교해서 사이드 이펙트를 추측)과 써드파티 팁들, 버저닝+CDN 으로 문서의 버전 관리하는 팁들도 눈여겨 볼만 했다.&lt;/p&gt;
-&lt;p&gt;마치 리빙 포인트를 읽는 듯한 쏠쏠한 팁을 볼 수 있는 좋은 발표였다.&lt;/p&gt;
-&lt;h1&gt;발표 영상&lt;/h1&gt;
-&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 58.252427184466015%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/xQOpjychnwQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
-&lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://linedevday.linecorp.com/2021/ko/sessions/100/&quot;&gt;Line Developer Days 2021 세션&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jJ6MqAbsDc8&quot;&gt;발표 Youtube&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/how-we-made-a-developer-friendly-ui-component-library&quot;&gt;발표자료 PDF&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기]]></title><description><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기 Abstract LINE Creative Lab은 사용자가 자신이 만든 콘텐츠를 다른 LINE…]]></description><link>https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Nov 2021 15:09:19 GMT</lastBuildDate><item><title><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기]]></title><description><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기 Abstract LINE Creative Lab은 사용자가 자신이 만든 콘텐츠를 다른 LINE…]]></description><link>https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기&lt;/h1&gt;
 &lt;aside&gt;
 💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
 &lt;/aside&gt;
@@ -257,7 +138,126 @@
 &lt;h1&gt;Reference&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://linedevday.linecorp.com/2021/ko/sessions/103&quot;&gt;Line Developer Days 2021 소개 사이트&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/buWVbRubuBE&quot;&gt;영상&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/line-creative-lab-create-catchy-ads-with-html5-canvas&quot;&gt;발표자료&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약]]></title><description><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 Abstract LINE NEWS의 특징 중 하나는 개인 맞춤형 콘텐츠라는 것입니다. 월 154억 PV(2021년…]]></description><link>https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</guid><pubDate>Mon, 15 Nov 2021 22:02:50 GMT</pubDate><content:encoded>&lt;h1&gt;LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/line-creative-lab-create-catchy-ads-with-html5-canvas&quot;&gt;발표자료&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 - LINE Developer Days 2021 요약]]></title><description><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 Abstract 우리가 사용하는 다양한 NPM…]]></description><link>https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기&lt;/h1&gt;
+&lt;aside&gt;
+💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
+&lt;/aside&gt;
+&lt;h1&gt;Abstract&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;우리가 사용하는 다양한 NPM 패키지 중에는 개발자를 위한 문서나 예제가 충분하지 않은 경우가 많습니다. 개발 초기에는 문서와 예제를 잘 작성해 두었더라도 시간이 지남에 따라 실제 코드와 제공되는 문서가 조금씩 달라지는 경우를 많이 경험하게 됩니다. 하지만 TypeScript와 Storybook을 활용하면 이런 문제를 점진적으로 해결해 나갈 수 있습니다.&lt;/p&gt;
+&lt;p&gt;이번 세션에서는 사내 UI 컴포넌트 라이브러리인 Universal Video Player를 개편하며 얻은 인사이트를 바탕으로 TypeScript와  Storybook을 활용해 적은 노력으로 문서와 예제 페이지와 테스트를 쉽게 구성해 보는 방법을 다룹니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;요약&lt;/h1&gt;
+&lt;h2&gt;개발자 친화적?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;개발자의 경험을 향상 = developer experience를 향상&lt;/li&gt;
+&lt;li&gt;효과적으로 문서를 관리하여 작성자 / 작업자 모두에게 효과적인 방법을 고민&lt;/li&gt;
+&lt;li&gt;발표자가 개발하고 있는 Universal Video Player (라인 여기저기에 비디오 플레이어를 삽입하는 컴포넌트를 개발/배포) 를 예시로 설명함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;기존 문서의 문제점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Readme에서 모두 작성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;링크로 연결되어 있음&lt;/li&gt;
+&lt;li&gt;작성할 때 다시 문서로 돌아와서 내용을 찾아봐야했음&lt;/li&gt;
+&lt;li&gt;풍부한 예제가 없음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objectives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;개발자 친화적으로 변경해보자&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy to use: 쉽고 가볍게 작성하고 읽음&lt;/li&gt;
+&lt;li&gt;Kindness: 친절하게 설명되어있어서 빠르게 적용해볼 수 있게 한다&lt;/li&gt;
+&lt;li&gt;Usefulness: 여러가지 환경에서 사용할 수 있도록 풍부한 예제를 제공하려고 함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;maintainer 입장에서는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sustainable Document&lt;/li&gt;
+&lt;li&gt;Stable&lt;/li&gt;
+&lt;li&gt;Automation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Solutions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Typescript&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;TSDoc (&lt;a href=&quot;https://tsdoc.org/&quot;&gt;https://tsdoc.org/&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;타입스크립트의 표준화된 주석 포맷으로 IDE에서 지원해줌&lt;/li&gt;
+&lt;li&gt;자동완성과 같이 보여지므로 컨텍스트 변경없이 쓸 수 있어서 훨씬 편함&lt;/li&gt;
+&lt;li&gt;Playground(&lt;a href=&quot;https://tsdoc.org/play&quot;&gt;https://tsdoc.org/play&lt;/a&gt;) 도 지원함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Declare file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문서화와 구현부를 분리해서 관리할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;⇒ IDE Workspace에서 볼 수 있기 때문에 컨텍스트를 옮기지 않고, 개발 환경 내에서 참고하여 작성할 수 있음&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Storybook&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;여러가지 애드온들을 결합해서 사용할 수 있어서 빠르게 퀄리티 있고 인터랙티브한 문서를 만들 수 있음&lt;/li&gt;
+&lt;li&gt;빌드에서 CDN에 올리면 별도 서버 구현 없이 바로 배포 가능&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MDX&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;md + jsx 의 개념으로 md문법&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;컴포넌트를 직접 담을 수 있음&lt;/li&gt;
+&lt;li&gt;변수 사용도 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Snapshot&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code Sandbox (Mdx-embed Addon)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mdsx-embed addon을 사용해서 code sandbox나 codepen 등을 문서에 삽입할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;viewport addon&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;반응형 예제에 사용 가능한 addon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;⇒ 인터랙티브한 Sample 들을 제공하므로써 다양한 환경에서 바로 적용해볼 수 있는 문서를 제공하게 됨&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;느낀점&lt;/h1&gt;
+&lt;p&gt;일단 역시 큰 회사니 개발 영역이 많이 나뉘어져있긴 하구나 하는 느낌이 들었고, 많은 개발자들과 협업해야하는 기회가 많구나 하는 생각이 들었다. 특히 발표자가 작업하는 공용으로 사용되는 컴포넌트를 개발하는 역할은 더욱 그러하겠다고 생각했다. 개발 문화에 대한 고민이 많은 조직에 속해있는 것은 얼마나 행운인가 하는 생각도 들었다.&lt;/p&gt;
+&lt;p&gt;주어진 역할이 그래서 더욱 그랬겠지만, 발표자분이 가진 협업을 위한 개발 환경에 대한 깊은 고민을 엿볼 수 있는 발표였다. 비슷한 고민을 해왔기 때문에 더욱 공감이 되는 발표 내용이었다.&lt;/p&gt;
+&lt;p&gt;기본적으로 개발자라면 누구나 &lt;strong&gt;주석/문서가 필요 없는 코드가 좋은 코드&lt;/strong&gt;라고 생각하고, 문서에 대한 유지보수 노력을 최소화 하고싶어 한다. 하지만, 여러 사람들이 많이 사용하는 코드라면 문서가 필요하지 않을 수가 없다. 그렇다면 최소한의 유지보수 노력이 들고 (코드와의 동기화), 가능하면 사용하기 좋아야 할 것인데 (코드상에서 설명이 보이는), 이러한 고민의 결과라는 느낌이 들었다.&lt;/p&gt;
+&lt;p&gt;나의 경우에는 스토리북을 오래전에 도입 시도를 했는데, 조직이 크지 않아서, 문서도 크게 필요로하지 않고, 실제로 보는 사람이 없어서 (ㅠㅠ) 오히려 유지보수 부담이 들어 스토리북을 없애고 개발 환경에서 볼 수 있는 샘플 코드 페이지를 사용해왔다. 하지만 스토리북이 많은 곳에서 차용되고 있고, 써드파티 생태계도 괜찮아서, 도입도 괜찮겠다는 생각이 들었다.&lt;/p&gt;
+&lt;p&gt;특히, 스냅샷 활용 (PR과 비교해서 사이드 이펙트를 추측)과 써드파티 팁들, 버저닝+CDN 으로 문서의 버전 관리하는 팁들도 눈여겨 볼만 했다.&lt;/p&gt;
+&lt;p&gt;마치 리빙 포인트를 읽는 듯한 쏠쏠한 팁을 볼 수 있는 좋은 발표였다.&lt;/p&gt;
+&lt;h1&gt;발표 영상&lt;/h1&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 58.252427184466015%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/xQOpjychnwQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;h1&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://linedevday.linecorp.com/2021/ko/sessions/100/&quot;&gt;Line Developer Days 2021 세션&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jJ6MqAbsDc8&quot;&gt;발표 Youtube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/how-we-made-a-developer-friendly-ui-component-library&quot;&gt;발표자료 PDF&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약]]></title><description><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 Abstract LINE NEWS의 특징 중 하나는 개인 맞춤형 콘텐츠라는 것입니다. 월 154억 PV(2021년…]]></description><link>https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</guid><pubDate>Mon, 15 Nov 2021 22:02:50 GMT</pubDate><content:encoded>&lt;h1&gt;LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법&lt;/h1&gt;
 &lt;aside&gt;
 💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
 &lt;/aside&gt;
@@ -1018,7 +1018,113 @@ import React from &amp;#39;react&amp;#39;;&lt;/code&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/69038328/why-is-vs-code-importing-from-hoist-non-react-statics-node-modules-types-react&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javacript Hidden Class와 Inline Caching]]></title><description><![CDATA[Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다. Hidden class javacript…]]></description><link>https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;p&gt;Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/69038328/why-is-vs-code-importing-from-hoist-non-react-statics-node-modules-types-react&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[기계식 키보드 소음 감소 오링 장착 후기]]></title><description><![CDATA[…]]></description><link>https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;h1&gt;기계식 키보드 소음 감소 오링 장착 후기&lt;/h1&gt;
+&lt;p&gt;나는 외장 키보드를 두 개 사용하고 있는데, 무접점 키보드와 저소음 적축 기계식 키보드다. 나는 노트북에 너무 익숙한 탓일까,  펜타그래프 키보드나 버터플라이 키보드도 충분히 만족하며 사용하고 있었다. 어렸을 때 어느집에서나 있었던 표준 멤브레인 키보드 시절, 펜타그래프의 슬림하고 심플하 디자인을 봤을 때 감동이 컸던 탓일지도 모르겠다. 어쨌든 나는 펜타그래프 키보드도 충분히 좋았기 때문에, 기계식 키보드 같은 고가이고 매니아틱한 영역에는 손대지 않고 있었다.&lt;/p&gt;
+&lt;p&gt;그래도 요즘은 기계식 키보드가 많이 대중화되어서 쉽게 접할 수도 있고, 가격대도 많이 저렴해져서 용기내서 구입해봤던 것이다.&lt;/p&gt;
+&lt;p&gt;무접점 키보드와 기계식 키보드를 사용해봤을 때, 두 가지 특징은 뚜렷했다. 개인적으로는 무접점 키보드가 만족이 컸다. 주위에서 기계식 키보드를 많이 사용하고 있어서 기계식 키보드가 예상했던 키감과 사운드와는 다른 새로운 것이었기 때문에 신선하게 다가왔는지는 모르겠지만, 무접점 키보드는 새로운 감각에 놀라고, 소음도 적어서 기분 좋게 사용할 수 있었다.&lt;/p&gt;
+&lt;p&gt;반면에 생각보다 별로였던 저소음 적축 기계식 키보드. 청축 키보드야 워낙 소음이 유명해서 선택지엔 없었고, 그나마 선택했던 것이 적축이었던 건데, 생각보다 너무 소음이 컸다. 제품 자체가 통울림이 좀 있는 제품이라 소음이 있었던 것 같기도 하지만, 어쨌든 간에 화상회의 등을 할 때에도 키보드 소리가 사람들 목소리보다 더 커서 회의를 방해할 정도였으니…&lt;/p&gt;
+&lt;p&gt;그러다보니 자연스럽게 사용도 줄게 되어서 아 이대로는 진짜 애물단지가 되어버리겠다, 키캡도 예쁘게 단장했는데 예쁜 쓰레기가 되겠다는 생각에 특단의 조치가 필요했다.&lt;/p&gt;
+&lt;p&gt;그래서 키보드의 소음을 줄일 방법을 찾아봤다.&lt;/p&gt;
+&lt;h1&gt;기계식 키보드 소음 줄이기&lt;/h1&gt;
+&lt;p&gt;키보드에서 타건 시 발생하는 소음은 여러가지가 있겠지만 대표적인 것은 두 가지 인 것 같다.&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;통 울림 소리&lt;/p&gt;
+&lt;p&gt;키보드 바디 소재의 특성상 소음을 먹지 않는 등 소음이 발생하는 케이스&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;스위치 타건 시 자체 소음&lt;/p&gt;
+&lt;p&gt;키 스위치의 구조상 스위치가 눌려지면서 스프링 등에서 자체적으로 나는 소리다&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;1번 소리는 흡음재를 붙이는 등으로 소리를 줄일 수 있다고 한다. 혹은 키보드 아래에 수건 같은 소리를 먹을 수 있는 소재를 깔아봐도 소리가 확 주는 것을 느낄 수 있다. 2번 스위치 타건 시 스위치에서 나는 소음음은 키캡에 오링을 붙이거나 윤활 작업 등을 통해 해결하는 듯 하다. &lt;/p&gt;
+&lt;p&gt;현재 소음이 나는 키보드는 통울림이 더 큰 문제인 것 같지만 생각보다 흡음재를 부착하거나 윤활 작업은 찾아보면 정말 손이 많이 가는 것 같았다(…). 일단 키캡 이상으로 하우징을 분해해야하는 작업이 필요하더라..&lt;/p&gt;
+&lt;p&gt;그래서 제일 쉽게 도전해본 것이 오링이었다.&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/d2602/img_oring0.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABAv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAUYPjG2QIf8A/8QAGBABAQEBAQAAAAAAAAAAAAAAAQASEBH/2gAIAQEAAQUC1LavWXn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAFRERD/2gAIAQEAAT8hGPLsMprp/9oADAMBAAIAAwAAABA/7//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EKr/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QgT//xAAaEAACAwEBAAAAAAAAAAAAAAAAAREhUTFB/9oACAEBAAE/EIN3S2CupSIr1Ejs2h7D/9k=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;이것이 오링&quot;
+        title=&quot;&quot;
+        src=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/1c72d/img_oring0.jpg&quot;
+        srcset=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/a80bd/img_oring0.jpg 148w,
+/static/86aa46c0061e4d1817ff2833301bcea7/1c91a/img_oring0.jpg 295w,
+/static/86aa46c0061e4d1817ff2833301bcea7/1c72d/img_oring0.jpg 590w,
+/static/86aa46c0061e4d1817ff2833301bcea7/a8a14/img_oring0.jpg 885w,
+/static/86aa46c0061e4d1817ff2833301bcea7/fbd2c/img_oring0.jpg 1180w,
+/static/86aa46c0061e4d1817ff2833301bcea7/d2602/img_oring0.jpg 4032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;이것이 오링&lt;/p&gt;
+&lt;p&gt;이것이 오링이다. 실리콘 재질인 것 같다. 판매하는 곳에 따라 조금씩 차이가 있는데, 굵기나 색상 등의 차이가 있을 것으로 보인다.&lt;/p&gt;
+&lt;p&gt;착용은 아래와 같이 한다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/5d35e626cb0600f2034726aaa907f80d/d2602/img_oring1.jpg&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAFhtcCV0Wuf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAIBAxAREjH/2gAIAQEAAQUCd9YSqzNkk5b/xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8BHJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAESAhMf/aAAgBAQAGPwJl5H//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhEDFB/9oACAEBAAE/IRWlysksZXnHYj1AFhUHJ//aAAwDAQACAAMAAAAQWM//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAQlt/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QiP/EABwQAQABBAMAAAAAAAAAAAAAAAEAESFBUTFhkf/aAAgBAQABPxCoxRgnObW2bgdnsyArIxgEOiIi8//Z&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;오링의 착용&quot;
+        title=&quot;&quot;
+        src=&quot;/static/5d35e626cb0600f2034726aaa907f80d/1c72d/img_oring1.jpg&quot;
+        srcset=&quot;/static/5d35e626cb0600f2034726aaa907f80d/a80bd/img_oring1.jpg 148w,
+/static/5d35e626cb0600f2034726aaa907f80d/1c91a/img_oring1.jpg 295w,
+/static/5d35e626cb0600f2034726aaa907f80d/1c72d/img_oring1.jpg 590w,
+/static/5d35e626cb0600f2034726aaa907f80d/a8a14/img_oring1.jpg 885w,
+/static/5d35e626cb0600f2034726aaa907f80d/fbd2c/img_oring1.jpg 1180w,
+/static/5d35e626cb0600f2034726aaa907f80d/d2602/img_oring1.jpg 4032w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;이렇게 키캡 기둥에 오링을 끼운 다음에 키캡을 씌우듯이 꽂으면 된다. 이 모습을 보면 대충 어떤 방식으로 소음이 줄 지 상상이 된다. 스위칠 눌릴 때 장애물을 만들어서 스위치가 눌려지는 정도를 조절하면서 소음을 조절하는 것으로 추측된다. 키캡쪽에 흔들림 같은 것도 미세하게 잡을 수 있지 않을까 ㅎ… 당연히 오링의 두께나 재질 뭐 이런 것에도 영향이 있을 것 같다. 그래도 사이즈는 거의 표준화 되어 있는 것 같고, &lt;strong&gt;색깔&lt;/strong&gt;도 중요할텐데 키캡이 반투명이나 투명이고 LED가 들어오는 키보드라면 오링이 짙은 색깔이면 색깔이 흉할 수도 있을 것 같아서 투명한 색깔을 골랐다.&lt;/p&gt;
+&lt;p&gt;내가 구입한 곳 &lt;a href=&quot;https://smartstore.naver.com/bodang/products/5423965279&quot;&gt;여기&lt;/a&gt;였는데, 알리에서 구입한다면 좀 더 저렴하게 살 수 있다고 알려져 있지만 빨리 배송을 받고 싶어서 네이버 스토어를 이용했다. 여기 외에도 더 저렴하게 판매하는 곳도 많은 것 같다. 후기 영상이나 제품 상세에서 소음이 주는 정도는 가늠해볼 수 있다.&lt;/p&gt;
+&lt;h1&gt;나의 소음 감소 정도는?&lt;/h1&gt;
+&lt;p&gt;내가 느끼기에 &lt;strong&gt;소음 감소 정도는 확실히&lt;/strong&gt; 있었다. 거슬리던 소음이 거슬리지 않을 정도로 줄어들었다. 그에 따라 타건음도 조금 뭉툭해지면서 감각도 &lt;strong&gt;조금 뭉툭해지는 느낌&lt;/strong&gt;이 있다. &lt;strong&gt;조금 키감이 조금 무거워지면서 끝이 막히는 느낌&lt;/strong&gt;?ㅎㅎ 통울림도 상당히 감소한 듯한 느낌이 든다. 오링을 끼지 않았을 때에는 타자를 칠 때마다 통에 길게 울려지는 소리가 있었는데, 그 소음이 확실히 감소되긴 했다.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;무접점 키보드 소리와 키감에 만족&lt;/strong&gt;하는 나로써는 굉장히 만족스러운 효과였다. 참고로 오링을 적용한 키보드는 앤프로2 게이트론 적축 키보드다.&lt;/p&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;오링을 통해서 키보드 소음을 줄여보았다. 내가 예민한 편은 아니기 때문에, 키보드에 진심이고 예민한 사람에게는 다르게 보일지도 모르겠다. 하지만 나처럼 보통의 사람들에게는 조금이나마 도음이 될까 하여 작성해보았다. ㅎㅎ&lt;/p&gt;
+&lt;p&gt;오링은 흡음재나 윤활 작업에 비해 굉장히 간단하게 소음을 잡는 방법인 것 같다. 소개한 네이버 제품 페이지 외에도 여기저기 서치해보면 &lt;a href=&quot;https://youtu.be/B6J9GBYdd3k?t=46&quot;&gt;오링 착용 전/후 타건 영상&lt;/a&gt;들을 많이 찾을 수 있다.&lt;/p&gt;
+&lt;p&gt;후기를 보면 오링 부착 후 손가락에 힘이 더 많이 들어간다고 얘기하는 사람들도 있는데, 구름 타자를 치는 사람들에게는 오링보다 그냥 그렇게 치면 될것 같은데 ㅎㅎ &lt;strong&gt;습관적으로 강하게 타자를 치는 사람&lt;/strong&gt;들에게는 이정도 정성으로 꽤 만족스러운 느낌이 들 것 같다.&lt;/p&gt;
+&lt;p&gt;주의할 점은 &lt;strong&gt;타건감이 확실히 바뀌긴 한다&lt;/strong&gt;는 점이다. 기계식 키보드 스위치 감각이 너무 좋았다면 사실 불만족스러울지도 모르겠다. 하지만 &lt;strong&gt;이정도 가격과 정성을 들여서 소음을 줄이는 효과를 만들어내는 것은 오링뿐&lt;/strong&gt;일 것 같다. 이정도 투자로 한 번쯤 시도해볼만 하지 않을까? ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javacript Hidden Class와 Inline Caching]]></title><description><![CDATA[Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다. Hidden class javacript…]]></description><link>https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;p&gt;Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다.&lt;/p&gt;
 &lt;h1&gt;Hidden class&lt;/h1&gt;
 &lt;p&gt;javacript는 런타임에서 오브젝트의 속성을 추가/변경할 수 있는 동적인 언어이다. V8엔진은 &lt;strong&gt;hidden class&lt;/strong&gt;를 통해 색인 등 속성 관리를 최적화하고 있다.&lt;/p&gt;
 &lt;p&gt;예를 들어 아래와 같은 코드가 있다고 할 때에&lt;/p&gt;
@@ -1207,113 +1313,7 @@ obj2.a = 5;&lt;/code&gt;
 &lt;/ol&gt;
 &lt;p&gt;사실 typescript를 쓰거나 immutable한 코딩 습관을 가지고 있다면 자연스러운 일일 것 같다.&lt;/p&gt;
 &lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&quot;&gt;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[기계식 키보드 소음 감소 오링 장착 후기]]></title><description><![CDATA[…]]></description><link>https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;h1&gt;기계식 키보드 소음 감소 오링 장착 후기&lt;/h1&gt;
-&lt;p&gt;나는 외장 키보드를 두 개 사용하고 있는데, 무접점 키보드와 저소음 적축 기계식 키보드다. 나는 노트북에 너무 익숙한 탓일까,  펜타그래프 키보드나 버터플라이 키보드도 충분히 만족하며 사용하고 있었다. 어렸을 때 어느집에서나 있었던 표준 멤브레인 키보드 시절, 펜타그래프의 슬림하고 심플하 디자인을 봤을 때 감동이 컸던 탓일지도 모르겠다. 어쨌든 나는 펜타그래프 키보드도 충분히 좋았기 때문에, 기계식 키보드 같은 고가이고 매니아틱한 영역에는 손대지 않고 있었다.&lt;/p&gt;
-&lt;p&gt;그래도 요즘은 기계식 키보드가 많이 대중화되어서 쉽게 접할 수도 있고, 가격대도 많이 저렴해져서 용기내서 구입해봤던 것이다.&lt;/p&gt;
-&lt;p&gt;무접점 키보드와 기계식 키보드를 사용해봤을 때, 두 가지 특징은 뚜렷했다. 개인적으로는 무접점 키보드가 만족이 컸다. 주위에서 기계식 키보드를 많이 사용하고 있어서 기계식 키보드가 예상했던 키감과 사운드와는 다른 새로운 것이었기 때문에 신선하게 다가왔는지는 모르겠지만, 무접점 키보드는 새로운 감각에 놀라고, 소음도 적어서 기분 좋게 사용할 수 있었다.&lt;/p&gt;
-&lt;p&gt;반면에 생각보다 별로였던 저소음 적축 기계식 키보드. 청축 키보드야 워낙 소음이 유명해서 선택지엔 없었고, 그나마 선택했던 것이 적축이었던 건데, 생각보다 너무 소음이 컸다. 제품 자체가 통울림이 좀 있는 제품이라 소음이 있었던 것 같기도 하지만, 어쨌든 간에 화상회의 등을 할 때에도 키보드 소리가 사람들 목소리보다 더 커서 회의를 방해할 정도였으니…&lt;/p&gt;
-&lt;p&gt;그러다보니 자연스럽게 사용도 줄게 되어서 아 이대로는 진짜 애물단지가 되어버리겠다, 키캡도 예쁘게 단장했는데 예쁜 쓰레기가 되겠다는 생각에 특단의 조치가 필요했다.&lt;/p&gt;
-&lt;p&gt;그래서 키보드의 소음을 줄일 방법을 찾아봤다.&lt;/p&gt;
-&lt;h1&gt;기계식 키보드 소음 줄이기&lt;/h1&gt;
-&lt;p&gt;키보드에서 타건 시 발생하는 소음은 여러가지가 있겠지만 대표적인 것은 두 가지 인 것 같다.&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;통 울림 소리&lt;/p&gt;
-&lt;p&gt;키보드 바디 소재의 특성상 소음을 먹지 않는 등 소음이 발생하는 케이스&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;스위치 타건 시 자체 소음&lt;/p&gt;
-&lt;p&gt;키 스위치의 구조상 스위치가 눌려지면서 스프링 등에서 자체적으로 나는 소리다&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;1번 소리는 흡음재를 붙이는 등으로 소리를 줄일 수 있다고 한다. 혹은 키보드 아래에 수건 같은 소리를 먹을 수 있는 소재를 깔아봐도 소리가 확 주는 것을 느낄 수 있다. 2번 스위치 타건 시 스위치에서 나는 소음음은 키캡에 오링을 붙이거나 윤활 작업 등을 통해 해결하는 듯 하다. &lt;/p&gt;
-&lt;p&gt;현재 소음이 나는 키보드는 통울림이 더 큰 문제인 것 같지만 생각보다 흡음재를 부착하거나 윤활 작업은 찾아보면 정말 손이 많이 가는 것 같았다(…). 일단 키캡 이상으로 하우징을 분해해야하는 작업이 필요하더라..&lt;/p&gt;
-&lt;p&gt;그래서 제일 쉽게 도전해본 것이 오링이었다.&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/d2602/img_oring0.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAABAABAv/EABcBAAMBAAAAAAAAAAAAAAAAAAABAgP/2gAMAwEAAhADEAAAAUYPjG2QIf8A/8QAGBABAQEBAQAAAAAAAAAAAAAAAQASEBH/2gAIAQEAAQUC1LavWXn/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAVEQEBAAAAAAAAAAAAAAAAAAAAEf/aAAgBAgEBPwFH/8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGBAAAwEBAAAAAAAAAAAAAAAAAAFRERD/2gAIAQEAAT8hGPLsMprp/9oADAMBAAIAAwAAABA/7//EABURAQEAAAAAAAAAAAAAAAAAAAAR/9oACAEDAQE/EKr/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8QgT//xAAaEAACAwEBAAAAAAAAAAAAAAAAAREhUTFB/9oACAEBAAE/EIN3S2CupSIr1Ejs2h7D/9k=&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;이것이 오링&quot;
-        title=&quot;&quot;
-        src=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/1c72d/img_oring0.jpg&quot;
-        srcset=&quot;/static/86aa46c0061e4d1817ff2833301bcea7/a80bd/img_oring0.jpg 148w,
-/static/86aa46c0061e4d1817ff2833301bcea7/1c91a/img_oring0.jpg 295w,
-/static/86aa46c0061e4d1817ff2833301bcea7/1c72d/img_oring0.jpg 590w,
-/static/86aa46c0061e4d1817ff2833301bcea7/a8a14/img_oring0.jpg 885w,
-/static/86aa46c0061e4d1817ff2833301bcea7/fbd2c/img_oring0.jpg 1180w,
-/static/86aa46c0061e4d1817ff2833301bcea7/d2602/img_oring0.jpg 4032w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;이것이 오링&lt;/p&gt;
-&lt;p&gt;이것이 오링이다. 실리콘 재질인 것 같다. 판매하는 곳에 따라 조금씩 차이가 있는데, 굵기나 색상 등의 차이가 있을 것으로 보인다.&lt;/p&gt;
-&lt;p&gt;착용은 아래와 같이 한다:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/5d35e626cb0600f2034726aaa907f80d/d2602/img_oring1.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAFhtcCV0Wuf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAIBAxAREjH/2gAIAQEAAQUCd9YSqzNkk5b/xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8BHJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAESAhMf/aAAgBAQAGPwJl5H//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhEDFB/9oACAEBAAE/IRWlysksZXnHYj1AFhUHJ//aAAwDAQACAAMAAAAQWM//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAQlt/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QiP/EABwQAQABBAMAAAAAAAAAAAAAAAEAESFBUTFhkf/aAAgBAQABPxCoxRgnObW2bgdnsyArIxgEOiIi8//Z&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;오링의 착용&quot;
-        title=&quot;&quot;
-        src=&quot;/static/5d35e626cb0600f2034726aaa907f80d/1c72d/img_oring1.jpg&quot;
-        srcset=&quot;/static/5d35e626cb0600f2034726aaa907f80d/a80bd/img_oring1.jpg 148w,
-/static/5d35e626cb0600f2034726aaa907f80d/1c91a/img_oring1.jpg 295w,
-/static/5d35e626cb0600f2034726aaa907f80d/1c72d/img_oring1.jpg 590w,
-/static/5d35e626cb0600f2034726aaa907f80d/a8a14/img_oring1.jpg 885w,
-/static/5d35e626cb0600f2034726aaa907f80d/fbd2c/img_oring1.jpg 1180w,
-/static/5d35e626cb0600f2034726aaa907f80d/d2602/img_oring1.jpg 4032w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;이렇게 키캡 기둥에 오링을 끼운 다음에 키캡을 씌우듯이 꽂으면 된다. 이 모습을 보면 대충 어떤 방식으로 소음이 줄 지 상상이 된다. 스위칠 눌릴 때 장애물을 만들어서 스위치가 눌려지는 정도를 조절하면서 소음을 조절하는 것으로 추측된다. 키캡쪽에 흔들림 같은 것도 미세하게 잡을 수 있지 않을까 ㅎ… 당연히 오링의 두께나 재질 뭐 이런 것에도 영향이 있을 것 같다. 그래도 사이즈는 거의 표준화 되어 있는 것 같고, &lt;strong&gt;색깔&lt;/strong&gt;도 중요할텐데 키캡이 반투명이나 투명이고 LED가 들어오는 키보드라면 오링이 짙은 색깔이면 색깔이 흉할 수도 있을 것 같아서 투명한 색깔을 골랐다.&lt;/p&gt;
-&lt;p&gt;내가 구입한 곳 &lt;a href=&quot;https://smartstore.naver.com/bodang/products/5423965279&quot;&gt;여기&lt;/a&gt;였는데, 알리에서 구입한다면 좀 더 저렴하게 살 수 있다고 알려져 있지만 빨리 배송을 받고 싶어서 네이버 스토어를 이용했다. 여기 외에도 더 저렴하게 판매하는 곳도 많은 것 같다. 후기 영상이나 제품 상세에서 소음이 주는 정도는 가늠해볼 수 있다.&lt;/p&gt;
-&lt;h1&gt;나의 소음 감소 정도는?&lt;/h1&gt;
-&lt;p&gt;내가 느끼기에 &lt;strong&gt;소음 감소 정도는 확실히&lt;/strong&gt; 있었다. 거슬리던 소음이 거슬리지 않을 정도로 줄어들었다. 그에 따라 타건음도 조금 뭉툭해지면서 감각도 &lt;strong&gt;조금 뭉툭해지는 느낌&lt;/strong&gt;이 있다. &lt;strong&gt;조금 키감이 조금 무거워지면서 끝이 막히는 느낌&lt;/strong&gt;?ㅎㅎ 통울림도 상당히 감소한 듯한 느낌이 든다. 오링을 끼지 않았을 때에는 타자를 칠 때마다 통에 길게 울려지는 소리가 있었는데, 그 소음이 확실히 감소되긴 했다.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;무접점 키보드 소리와 키감에 만족&lt;/strong&gt;하는 나로써는 굉장히 만족스러운 효과였다. 참고로 오링을 적용한 키보드는 앤프로2 게이트론 적축 키보드다.&lt;/p&gt;
-&lt;h1&gt;결론&lt;/h1&gt;
-&lt;p&gt;오링을 통해서 키보드 소음을 줄여보았다. 내가 예민한 편은 아니기 때문에, 키보드에 진심이고 예민한 사람에게는 다르게 보일지도 모르겠다. 하지만 나처럼 보통의 사람들에게는 조금이나마 도음이 될까 하여 작성해보았다. ㅎㅎ&lt;/p&gt;
-&lt;p&gt;오링은 흡음재나 윤활 작업에 비해 굉장히 간단하게 소음을 잡는 방법인 것 같다. 소개한 네이버 제품 페이지 외에도 여기저기 서치해보면 &lt;a href=&quot;https://youtu.be/B6J9GBYdd3k?t=46&quot;&gt;오링 착용 전/후 타건 영상&lt;/a&gt;들을 많이 찾을 수 있다.&lt;/p&gt;
-&lt;p&gt;후기를 보면 오링 부착 후 손가락에 힘이 더 많이 들어간다고 얘기하는 사람들도 있는데, 구름 타자를 치는 사람들에게는 오링보다 그냥 그렇게 치면 될것 같은데 ㅎㅎ &lt;strong&gt;습관적으로 강하게 타자를 치는 사람&lt;/strong&gt;들에게는 이정도 정성으로 꽤 만족스러운 느낌이 들 것 같다.&lt;/p&gt;
-&lt;p&gt;주의할 점은 &lt;strong&gt;타건감이 확실히 바뀌긴 한다&lt;/strong&gt;는 점이다. 기계식 키보드 스위치 감각이 너무 좋았다면 사실 불만족스러울지도 모르겠다. 하지만 &lt;strong&gt;이정도 가격과 정성을 들여서 소음을 줄이는 효과를 만들어내는 것은 오링뿐&lt;/strong&gt;일 것 같다. 이정도 투자로 한 번쯤 시도해볼만 하지 않을까? ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까?]]></title><description><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까? 스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA…]]></description><link>https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</guid><pubDate>Thu, 07 Oct 2021 09:57:52 GMT</pubDate><content:encoded>&lt;h1&gt;JIRA 칸반 보드에 점들은 대체 무엇일까?&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&quot;&gt;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까?]]></title><description><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까? 스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA…]]></description><link>https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</guid><pubDate>Thu, 07 Oct 2021 09:57:52 GMT</pubDate><content:encoded>&lt;h1&gt;JIRA 칸반 보드에 점들은 대체 무엇일까?&lt;/h1&gt;
 &lt;p&gt;스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA 사용 경험을 이미 하고 오는 사람들도 있을 정도다.&lt;/p&gt;
 &lt;p&gt;내가 있는 조직도 기본적으로는 스크럼으로 개발을 하고 있기 때문에 평소에는 스크럼 보드를 이용하고 있는데, 최근 일정 조정이 되면서 칸반 보드를 생성해서 사용하게 됐다. 그런데, 사용하고 있던 카드 레이아웃과 다른 생소한 요소를 발견하게 되었다.&lt;/p&gt;
 &lt;p&gt;
