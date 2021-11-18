@@ -87,5 +87,16 @@ module.exports = {
         publisherId: `ca-pub-5013570089563608`
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://dotorimook.github.io',
+        sitemap: 'https://dotorimook.github.io/sitemap.xml',
+        policy: [{
+          userAgent: '*',
+          allow: '/'
+        }]
+      }
+    },
   ],
 }
