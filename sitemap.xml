@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:news="http://www.google.com/schemas/sitemap-news/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml" xmlns:mobile="http://www.google.com/schemas/sitemap-mobile/1.0" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1" xmlns:video="http://www.google.com/schemas/sitemap-video/1.1">
+<url> <loc>https://dotorimook.github.io/post/2021-11-19-gatsby-sharp/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -122,6 +123,7 @@
 <url> <loc>https://dotorimook.github.io/tag/scurm</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/server</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/setting sync</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://dotorimook.github.io/tag/sharp</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/skeleton</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/sprint</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://dotorimook.github.io/tag/storybook</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
