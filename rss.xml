@@ -1,4 +1,111 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Thu, 18 Nov 2021 15:49:35 GMT</lastBuildDate><item><title><![CDATA[Gatsby Something went wrong installing the "sharp" module 개츠비 오류]]></title><description><![CDATA[Something went wrong installing the “sharp” module…]]></description><link>https://dotorimook.github.io/post/2021-11-19-gatsby-sharp/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-19-gatsby-sharp/</guid><pubDate>Fri, 19 Nov 2021 00:28:13 GMT</pubDate><content:encoded>&lt;h1&gt;Something went wrong installing the “sharp” module&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Feb 2022 12:51:39 GMT</lastBuildDate><item><title><![CDATA[개츠비 블로그 - 계륵일세..]]></title><description><![CDATA[이 블로그를 만든지도 어느덧 1년 하고도 4개월에 접어들고 있는 것 같은데, 그사이에 많은 것이 변한 것 같다. Gatsby js 홈페이지를 보면 버전도 4대가 된 것 같은데 지금 내가 쓰는 것은 2.3 대… 얼마전에는 sharp…]]></description><link>https://dotorimook.github.io/post/2022-02-06-diary/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2022-02-06-diary/</guid><pubDate>Sun, 06 Feb 2022 21:25:52 GMT</pubDate><content:encoded>&lt;p&gt;이 블로그를 만든지도 어느덧 1년 하고도 4개월에 접어들고 있는 것 같은데, 그사이에 많은 것이 변한 것 같다.&lt;/p&gt;
+&lt;p&gt;Gatsby js 홈페이지를 보면 버전도 4대가 된 것 같은데 지금 내가 쓰는 것은 2.3 대…&lt;/p&gt;
+&lt;p&gt;얼마전에는 sharp 모듈 때문에 말썽이 있었는데 맥북을 바꾸고 나니까 비슷한 현상이 또 발생했다. 그래서 이참에 버전을 올려볼까 했는데 이것저것 추가한 플러그인도 많고 하려니까 일이 이만저만이 아니다. 디자인도 바꾸고 싶었지만 그건 엄두도 내기 어렵군… 심지어 GraphQL은 이럴 때가 아니면 사용하지 않다보니 매번 낯설게만 느껴진다 ㅡ.ㅡ 쩝…&lt;/p&gt;
+&lt;p&gt;그렇다고 블로그 서비스들이 많지만 그쪽에 기대기엔 웬지 또 DYI 블로그에 대한 환상(ㅋㅋ) 때문에 쉽게 놓치지도 못하는 것 같다..&lt;/p&gt;
+&lt;p&gt;블로그~~ 너 참 계륵이다.-0-~~&lt;/p&gt;
+&lt;p&gt;그래도 시간내서 좀 만져봐야지..&lt;/p&gt;</content:encoded></item><item><title><![CDATA[벌써 새해]]></title><description><![CDATA[…]]></description><link>https://dotorimook.github.io/post/2022-02-01-diary/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2022-02-01-diary/</guid><pubDate>Tue, 01 Feb 2022 23:03:49 GMT</pubDate><content:encoded>&lt;p&gt;하하..벌써 새해가 밝아버렸다. 그간 테크 행사들도 봐와서 내용을 정리하고 그래야겠다고 생각했었지만, 사실 시간을 들여 보고 정리하는 것은 할 수 있었지만, 불특정 다수가 볼 수 있도록 정리해서 작성한다는 것은 또다른 문제였다 -.-;; 게다가 이직을 하게 돼서 새로운 환경에 적응하느라고 블로그를 어느정도 방치하고 있었던 부분도 있었던 것 같다.&lt;/p&gt;
+&lt;p&gt;그간 보고 들은 것도 있고, 겪었던 것들도 많았는데, 그때 그때 기록을 남기지 않았더니 내가 무엇에 대해서 적었어야했는지 조차도 까먹게 되는 것 같다 -.-;;;&lt;/p&gt;
+&lt;p&gt;앞으로는 좀 더 꼼꼼하게 작성하도록 노력해봐야지.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[우아한테크세미나: 시각적요소 테스트 자동화하기를 보고나서]]></title><description><![CDATA[…]]></description><link>https://dotorimook.github.io/post/2022-02-01-woowa-fe-test/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2022-02-01-woowa-fe-test/</guid><pubDate>Tue, 01 Feb 2022 22:59:28 GMT</pubDate><content:encoded>&lt;h1&gt;우아한 테크세미나: 시각적요소 테스트 자동화하기&lt;/h1&gt;
+&lt;p&gt;우아한형제들의 기술 조직에서는 기술 블로그 뿐만 아니라 다양한 방식으로 그들의 기술적인 경험을 공유하고 있는데, 우아한 테크 세미나 역시 우아한 형제들에서 겪는 기술적인 경험을 간단한 세미나 형태로 공유한다. 이번에 열린 세미나는 &lt;strong&gt;시각적 요소 테스트 자동화하기&lt;/strong&gt;라는 주제로 1월 27 목요일에 유튜브 라이브로 진행되었다. 내용을 간단하게 요약하고 보면서 느꼈던 부분들에 대해서 작성하고자 한다.&lt;/p&gt;
+&lt;h2&gt;테스트가 뭐에요? 왜 하는 건가요?&lt;/h2&gt;
+&lt;h3&gt;테스트란?&lt;/h3&gt;
+&lt;blockquote&gt;
+&lt;p&gt;널리 사용되기 전에 어떤 것의 &lt;strong&gt;품질, 성능 또는 신뢰성&lt;/strong&gt;을 확립하기 위한 절차&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;테스트를 통해서 무엇을 얻고자 하는가?&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;소프트웨어의 품질, 성능 또는 신뢰성&lt;/li&gt;
+&lt;li&gt;화면이 잘 그려지는가?&lt;/li&gt;
+&lt;li&gt;기능이 잘 동작하는가?&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;결국 전체 발표 전반에서 테스트의 목적은 &lt;strong&gt;안정성&lt;/strong&gt;이라고 강조하고 있음.&lt;/p&gt;
+&lt;h2&gt;어디에 무슨 테스트를 작성했나요?&lt;/h2&gt;
+&lt;h3&gt;무엇을 테스트 했나요?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://techblog.woowahan.com/2719/&quot;&gt;만다오&lt;/a&gt;라는 툴을 테스트했음.&lt;/li&gt;
+&lt;li&gt;만다오는 사내에서 비 개발자가 GUI를 통해 마크업과 동작을 세팅하면 페이지를 퍼블리싱 해주는 툴&lt;/li&gt;
+&lt;li&gt;주로 이벤트 페이지 같은 정적 페이지를 생성할 때에 사용하고 있음&lt;/li&gt;
+&lt;li&gt;만다오 작업하고 배포 이후 화면 깨짐이나 다른 사이드 이펙트 발생 등 잠재 위험에 대비하기 위해 테스트를 도입&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;어떤 테스트를 했나요?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;시나리오테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;유저 시나리오를 작성해서 시나리오와 동일하게 동작이 되는지 테스트&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https://ideveloper2.dev/blog/2021-01-24--%EC%8B%9C%EA%B0%81%EC%A0%81-%ED%9A%8C%EA%B7%80-%ED%85%8C%EC%8A%A4%ED%8A%B8-visual-regression-test/&quot;&gt;시각적 회귀 테스트&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;렌더링 결과물이 기존과 같은지 스크린샷으로 스냅샷을 남겨서 비교해서 확인함&lt;/li&gt;
+&lt;li&gt;CSS는 런타임 에러 등을 잡기가 어려워서 시각적 회귀 테스트를 통해 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;어떻게 테스트했나요?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;블랙박스 vs 화이트박스 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;I/O 관점에서 테스트 vs edge case 포함 모든 내용이 정상적으로 실행되는지&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;=&gt; 기존 서빙되던 페이지들이 정상적으로 서빙되는지 블랙박스 테스트&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;&lt;a href=&quot;https://jestjs.io/&quot;&gt;jest&lt;/a&gt;&lt;/strong&gt; + &lt;strong&gt;&lt;a href=&quot;https://github.com/puppeteer/puppeteer&quot;&gt;puppeteer&lt;/a&gt;&lt;/strong&gt; 사용&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://www.selenium.dev/&quot;&gt;selenium&lt;/a&gt;&lt;/strong&gt; 보다 적용이 빠르고 쉬워서 &lt;strong&gt;puppeteer&lt;/strong&gt;를 사용했다고.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;저도 테스트를 구성 해 보고 싶어요!&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;필요한 패키지 설치&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;jest-puppeteer&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;jest-image-snapshot&lt;/code&gt; 사용&lt;/li&gt;
+&lt;li&gt;Config 작성&lt;/li&gt;
+&lt;li&gt;런타임 시점에 불리는 config는 ts로 작성함&lt;/li&gt;
+&lt;li&gt;테스트 작성&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;유튜브 임베드 부분은 제거함&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;유튜브 썸네일이 바뀌었을 때 리그레션 테스트 에러가 날 수 있기 때문에&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;테스트 구동&lt;/li&gt;
+&lt;li&gt;각 로컬 환경마다 테스트가 다른 경우가 있어서 docker를 활용해서 가상환경에서 테스트하게 하도록 함.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2&gt;테스트를 작성하는게 진짜 좋은 일인가요?&lt;/h2&gt;
+&lt;p&gt;에러 검거 사례를 소개&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;코드 수정했는데&lt;/li&gt;
+&lt;li&gt;예상하지 못했던 사이드 이펙트로 인해 에러가 발생함을 확인&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;p&gt;찾은 에러보다 못찾은 에러가 무섭다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;strong&gt;레거시 코드 관리에 장점이 있다.&lt;/strong&gt;&lt;/p&gt;
+&lt;h3&gt;E2E 포함 모든 테스트를 우리가 해야할까?&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;테스트의 목적은 &lt;strong&gt;안정성&lt;/strong&gt; -&gt; 최소한의 안정성을 보장&lt;/li&gt;
+&lt;li&gt;일정 중에 목을 조여오는 에러를 미연에 방지할 수 있다.&lt;/li&gt;
+&lt;li&gt;수정된 코드와 관련서잉 있는데, 막상 수동으로 테스트할 때에는 놓치기 쉬운 부분을 케어할 수 있다.&lt;/li&gt;
+&lt;li&gt;테스트 작성은 &lt;strong&gt;비용&lt;/strong&gt;이긴 하기 때문에 장기적인 투자의 입장에서 바라보고 수행해야함.&lt;/li&gt;
+&lt;li&gt;한편으로는 테스트 작성에 그렇게 오랜 시간이 걸리지는 않으니 할만하다.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;h1&gt;느낀점&lt;/h1&gt;
+&lt;p&gt;&lt;strong&gt;rtl&lt;/strong&gt;은 왜 사용하지 않았을까.. 충분히 접근할만한 좋은 라이브러리인 것 같은데, 만다오가 리액트로 작성된 프로젝트가 아닌가? 하는 생각이 들었다. 또, &lt;strong&gt;puppeteer&lt;/strong&gt;를 이용한 테스트를 보면서 기존에 전통적이었던 &lt;strong&gt;enzyme&lt;/strong&gt;과 같은 툴을 이용해서 테스트를 해왔던 것을 비교할 때에, &lt;strong&gt;rtl&lt;/strong&gt;이 가지고 있는 테스팅 철학이 좀 더 트렌드에 맞겠다는 생각도 들었다.설명하는 부분의 대부분은 &lt;strong&gt;rtl&lt;/strong&gt;로 충분히 테스트가 가능한 부분이 아닐까 하는 생각이 들었는데, 스크린샷으로 리그레션 테스트를 하기 위해 &lt;strong&gt;puppeteer&lt;/strong&gt;까지 도입했어야했나? 하는 의문이 들었다.&lt;/p&gt;
+&lt;p&gt;또 &lt;strong&gt;rtl&lt;/strong&gt; + &lt;strong&gt;jest&lt;/strong&gt; 만으로 이미지 스냅샷 테스트를 할 수는 없을까? 하는 생각도 들었다. 스냅샷 테스트라는 것은 결국 이전의 스냅샷과 비교를 하는 것이기 때문에, &lt;strong&gt;이전의 스냅샷이 무결하다&lt;/strong&gt;라는 것을 전제하고 있을텐데, 이부분은 어떻게 보장하고 있는 것이맂 개발 프로세스에서 어떻게 정하고 있을지 궁금해졌다.&lt;/p&gt;
+&lt;p&gt;사실 처음 이 세미나를 듣게 된 부분도 맨 처음 언급된 &lt;strong&gt;CSS 디버깅&lt;/strong&gt;과 같은 관점에서의 테스팅이 어떻게 되는지 궁금했고, 컴포넌트나 페이지가 디자인 시안과 어떻게 일치하는지 테스트하는 방법을 어떻게 하는지가 궁금했었다. 이 부분에 대한 해법으로 스크린샷을 활용한 스냅샷 테스트였다는 점은 흥미로웠다.&lt;/p&gt;
+&lt;p&gt;아무래도 프론트엔드 개발이 이전에 비해 많이 고도화 되면서 곳곳에서 프론트엔드 분야의 테스트가 꾸준히 강조되어오고 있는 것 같다. 테스트는 그간 내 큰 관심사 몇 개 중 하나를 차지하고 있는데, 그 이유는 테스트 코드가 갖는 효과가 &lt;strong&gt;안정성 확보에만 있다고 하기에는 너무 과소평과되는 것은 아닐까&lt;/strong&gt; 하는 부분이다. 물론 &lt;strong&gt;안정성&lt;/strong&gt;에는 단어에는 많은 의미를 담고있어서 이미 포괄하고 있는 ㅡ 사이드 이펙트에 대한 무결성을 확보하는 부분에 포함되는 이야기일 수 있겠지만, &lt;strong&gt;테스트는 리팩토링의 기본&lt;/strong&gt;이 된다는 점이다. 특정코드를 리팩토링할 때에 이전과 동일하게 동작함을 보장하려면 테스트코드가 필수라는 점이다. 그리고 내가 제일 중요하게 생각하는 부분은 &lt;strong&gt;테스트를 고려한 사고방식&lt;/strong&gt;을 기른다는 것이다. 특히 &lt;strong&gt;관심사의 분리&lt;/strong&gt;. 테스트를 할 때에 용이하게 테스트할 수 있는 방법에 대해서 고민하다보면 자연스럽게 관심사의 분리가 적용되는 코드가 작성되는 부분이 있는 것 같다. 테스트에 맞춘 꼭 필요한 부분만 존재하다보니 경제적이다. 이러한 점을 생각해볼 때, 자동화된 테스트를 통한 생산성은 이쯤되면 덤이라고 볼 수 있는 부분이다.&lt;/p&gt;
+&lt;p&gt;사실 발표를 들으면서 조금 의아했던 부분은 막상 테스트 작성에 그렇게 오랜 시간이 걸리지 않는다는 부분이었다. 유저 시나리오는 UI 요소가 생겨날 때마다 갯수만큼 경우의 수가 늘텐데, 과연 얼마 걸리지 않는게 맞을까? 또 개발을 하다보면 알겠지만 기획이나 디자인 단계에서 변경사항이라는 것은 자주 일어난다. 그러다보면 기존 테스트와 충돌도 많이 일어나서, 기존 테스트 코드도 관리하게되는 비용도 발생할 수 있다. 개인적으로는 테스트를 고려해서 개발하려고 하면 개발 프로세스 전반에서 테스트를 고려할 수 있게끔 변경해야한다는 생각이다. 테스트를 고려한 사고방식이 모든 사람들에게 필요하다는 의미가 된다 (생각만해도 너무 좋은 이야기다..). 길게 봤을 때에는 견고한 서비스를 위해 들일 만한 비용이라는 점에는 부정할 수 없다.&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Gatsby Something went wrong installing the "sharp" module 개츠비 오류]]></title><description><![CDATA[Something went wrong installing the “sharp” module…]]></description><link>https://dotorimook.github.io/post/2021-11-19-gatsby-sharp/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-19-gatsby-sharp/</guid><pubDate>Fri, 19 Nov 2021 00:28:13 GMT</pubDate><content:encoded>&lt;h1&gt;Something went wrong installing the “sharp” module&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;gatsby develop&lt;/code&gt; &lt;code class=&quot;language-text&quot;&gt;gatsby build&lt;/code&gt; 등 개츠비 개발 또는 빌드 중에 아래와 같은 메시지를 보게 되는 경우가 있다.&lt;/p&gt;
 &lt;deckgo-highlight-code   &gt;
           &lt;code slot=&quot;code&quot;&gt;Something went wrong installing the &amp;quot;sharp&amp;quot; module
@@ -13,7 +120,126 @@ yarn install --check-files&lt;/code&gt;
         &lt;/deckgo-highlight-code&gt;
 &lt;p&gt;참고로 &lt;code class=&quot;language-text&quot;&gt;--check-files&lt;/code&gt; 옵션은 &lt;strong&gt;node_modules&lt;/strong&gt;에 이미 설치된 파일이 제거되진 않았는지 확인하는 옵션이다.&lt;/p&gt;
 &lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://github.com/gatsbyjs/gatsby/issues/20957#issuecomment-579414671&quot;&gt;관련 github issue&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기]]></title><description><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기 Abstract LINE Creative Lab은 사용자가 자신이 만든 콘텐츠를 다른 LINE…]]></description><link>https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/gatsbyjs/gatsby/issues/20957#issuecomment-579414671&quot;&gt;관련 github issue&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 - LINE Developer Days 2021 요약]]></title><description><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 Abstract 우리가 사용하는 다양한 NPM…]]></description><link>https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기&lt;/h1&gt;
+&lt;aside&gt;
+💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
+&lt;/aside&gt;
+&lt;h1&gt;Abstract&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;우리가 사용하는 다양한 NPM 패키지 중에는 개발자를 위한 문서나 예제가 충분하지 않은 경우가 많습니다. 개발 초기에는 문서와 예제를 잘 작성해 두었더라도 시간이 지남에 따라 실제 코드와 제공되는 문서가 조금씩 달라지는 경우를 많이 경험하게 됩니다. 하지만 TypeScript와 Storybook을 활용하면 이런 문제를 점진적으로 해결해 나갈 수 있습니다.&lt;/p&gt;
+&lt;p&gt;이번 세션에서는 사내 UI 컴포넌트 라이브러리인 Universal Video Player를 개편하며 얻은 인사이트를 바탕으로 TypeScript와  Storybook을 활용해 적은 노력으로 문서와 예제 페이지와 테스트를 쉽게 구성해 보는 방법을 다룹니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1&gt;요약&lt;/h1&gt;
+&lt;h2&gt;개발자 친화적?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;개발자의 경험을 향상 = developer experience를 향상&lt;/li&gt;
+&lt;li&gt;효과적으로 문서를 관리하여 작성자 / 작업자 모두에게 효과적인 방법을 고민&lt;/li&gt;
+&lt;li&gt;발표자가 개발하고 있는 Universal Video Player (라인 여기저기에 비디오 플레이어를 삽입하는 컴포넌트를 개발/배포) 를 예시로 설명함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Problem&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;기존 문서의 문제점&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Readme에서 모두 작성&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;링크로 연결되어 있음&lt;/li&gt;
+&lt;li&gt;작성할 때 다시 문서로 돌아와서 내용을 찾아봐야했음&lt;/li&gt;
+&lt;li&gt;풍부한 예제가 없음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Objectives&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;개발자 친화적으로 변경해보자&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Easy to use: 쉽고 가볍게 작성하고 읽음&lt;/li&gt;
+&lt;li&gt;Kindness: 친절하게 설명되어있어서 빠르게 적용해볼 수 있게 한다&lt;/li&gt;
+&lt;li&gt;Usefulness: 여러가지 환경에서 사용할 수 있도록 풍부한 예제를 제공하려고 함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;maintainer 입장에서는&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sustainable Document&lt;/li&gt;
+&lt;li&gt;Stable&lt;/li&gt;
+&lt;li&gt;Automation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Solutions&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Typescript&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;TSDoc (&lt;a href=&quot;https://tsdoc.org/&quot;&gt;https://tsdoc.org/&lt;/a&gt;)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;타입스크립트의 표준화된 주석 포맷으로 IDE에서 지원해줌&lt;/li&gt;
+&lt;li&gt;자동완성과 같이 보여지므로 컨텍스트 변경없이 쓸 수 있어서 훨씬 편함&lt;/li&gt;
+&lt;li&gt;Playground(&lt;a href=&quot;https://tsdoc.org/play&quot;&gt;https://tsdoc.org/play&lt;/a&gt;) 도 지원함&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Declare file&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;문서화와 구현부를 분리해서 관리할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;⇒ IDE Workspace에서 볼 수 있기 때문에 컨텍스트를 옮기지 않고, 개발 환경 내에서 참고하여 작성할 수 있음&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Storybook&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;여러가지 애드온들을 결합해서 사용할 수 있어서 빠르게 퀄리티 있고 인터랙티브한 문서를 만들 수 있음&lt;/li&gt;
+&lt;li&gt;빌드에서 CDN에 올리면 별도 서버 구현 없이 바로 배포 가능&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;MDX&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;md + jsx 의 개념으로 md문법&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;컴포넌트를 직접 담을 수 있음&lt;/li&gt;
+&lt;li&gt;변수 사용도 가능&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Snapshot&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Code Sandbox (Mdx-embed Addon)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;mdsx-embed addon을 사용해서 code sandbox나 codepen 등을 문서에 삽입할 수 있음&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;viewport addon&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;반응형 예제에 사용 가능한 addon&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;⇒ 인터랙티브한 Sample 들을 제공하므로써 다양한 환경에서 바로 적용해볼 수 있는 문서를 제공하게 됨&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;느낀점&lt;/h1&gt;
+&lt;p&gt;일단 역시 큰 회사니 개발 영역이 많이 나뉘어져있긴 하구나 하는 느낌이 들었고, 많은 개발자들과 협업해야하는 기회가 많구나 하는 생각이 들었다. 특히 발표자가 작업하는 공용으로 사용되는 컴포넌트를 개발하는 역할은 더욱 그러하겠다고 생각했다. 개발 문화에 대한 고민이 많은 조직에 속해있는 것은 얼마나 행운인가 하는 생각도 들었다.&lt;/p&gt;
+&lt;p&gt;주어진 역할이 그래서 더욱 그랬겠지만, 발표자분이 가진 협업을 위한 개발 환경에 대한 깊은 고민을 엿볼 수 있는 발표였다. 비슷한 고민을 해왔기 때문에 더욱 공감이 되는 발표 내용이었다.&lt;/p&gt;
+&lt;p&gt;기본적으로 개발자라면 누구나 &lt;strong&gt;주석/문서가 필요 없는 코드가 좋은 코드&lt;/strong&gt;라고 생각하고, 문서에 대한 유지보수 노력을 최소화 하고싶어 한다. 하지만, 여러 사람들이 많이 사용하는 코드라면 문서가 필요하지 않을 수가 없다. 그렇다면 최소한의 유지보수 노력이 들고 (코드와의 동기화), 가능하면 사용하기 좋아야 할 것인데 (코드상에서 설명이 보이는), 이러한 고민의 결과라는 느낌이 들었다.&lt;/p&gt;
+&lt;p&gt;나의 경우에는 스토리북을 오래전에 도입 시도를 했는데, 조직이 크지 않아서, 문서도 크게 필요로하지 않고, 실제로 보는 사람이 없어서 (ㅠㅠ) 오히려 유지보수 부담이 들어 스토리북을 없애고 개발 환경에서 볼 수 있는 샘플 코드 페이지를 사용해왔다. 하지만 스토리북이 많은 곳에서 차용되고 있고, 써드파티 생태계도 괜찮아서, 도입도 괜찮겠다는 생각이 들었다.&lt;/p&gt;
+&lt;p&gt;특히, 스냅샷 활용 (PR과 비교해서 사이드 이펙트를 추측)과 써드파티 팁들, 버저닝+CDN 으로 문서의 버전 관리하는 팁들도 눈여겨 볼만 했다.&lt;/p&gt;
+&lt;p&gt;마치 리빙 포인트를 읽는 듯한 쏠쏠한 팁을 볼 수 있는 좋은 발표였다.&lt;/p&gt;
+&lt;h1&gt;발표 영상&lt;/h1&gt;
+&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 58.252427184466015%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/xQOpjychnwQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
+&lt;h1&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://linedevday.linecorp.com/2021/ko/sessions/100/&quot;&gt;Line Developer Days 2021 세션&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jJ6MqAbsDc8&quot;&gt;발표 Youtube&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/how-we-made-a-developer-friendly-ui-component-library&quot;&gt;발표자료 PDF&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기]]></title><description><![CDATA[LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기 Abstract LINE Creative Lab은 사용자가 자신이 만든 콘텐츠를 다른 LINE…]]></description><link>https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-line-creative-lab/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기&lt;/h1&gt;
 &lt;aside&gt;
 💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
 &lt;/aside&gt;
@@ -153,126 +379,7 @@ yarn install --check-files&lt;/code&gt;
 &lt;h1&gt;Reference&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://linedevday.linecorp.com/2021/ko/sessions/103&quot;&gt;Line Developer Days 2021 소개 사이트&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://youtu.be/buWVbRubuBE&quot;&gt;영상&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/line-creative-lab-create-catchy-ads-with-html5-canvas&quot;&gt;발표자료&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 - LINE Developer Days 2021 요약]]></title><description><![CDATA[개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 Abstract 우리가 사용하는 다양한 NPM…]]></description><link>https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-16-sustainable-component-document/</guid><pubDate>Tue, 16 Nov 2021 16:54:06 GMT</pubDate><content:encoded>&lt;h1&gt;개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기&lt;/h1&gt;
-&lt;aside&gt;
-💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
-&lt;/aside&gt;
-&lt;h1&gt;Abstract&lt;/h1&gt;
-&lt;blockquote&gt;
-&lt;p&gt;우리가 사용하는 다양한 NPM 패키지 중에는 개발자를 위한 문서나 예제가 충분하지 않은 경우가 많습니다. 개발 초기에는 문서와 예제를 잘 작성해 두었더라도 시간이 지남에 따라 실제 코드와 제공되는 문서가 조금씩 달라지는 경우를 많이 경험하게 됩니다. 하지만 TypeScript와 Storybook을 활용하면 이런 문제를 점진적으로 해결해 나갈 수 있습니다.&lt;/p&gt;
-&lt;p&gt;이번 세션에서는 사내 UI 컴포넌트 라이브러리인 Universal Video Player를 개편하며 얻은 인사이트를 바탕으로 TypeScript와  Storybook을 활용해 적은 노력으로 문서와 예제 페이지와 테스트를 쉽게 구성해 보는 방법을 다룹니다.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h1&gt;요약&lt;/h1&gt;
-&lt;h2&gt;개발자 친화적?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;개발자의 경험을 향상 = developer experience를 향상&lt;/li&gt;
-&lt;li&gt;효과적으로 문서를 관리하여 작성자 / 작업자 모두에게 효과적인 방법을 고민&lt;/li&gt;
-&lt;li&gt;발표자가 개발하고 있는 Universal Video Player (라인 여기저기에 비디오 플레이어를 삽입하는 컴포넌트를 개발/배포) 를 예시로 설명함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Problem&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;기존 문서의 문제점&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Readme에서 모두 작성&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;링크로 연결되어 있음&lt;/li&gt;
-&lt;li&gt;작성할 때 다시 문서로 돌아와서 내용을 찾아봐야했음&lt;/li&gt;
-&lt;li&gt;풍부한 예제가 없음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Objectives&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;개발자 친화적으로 변경해보자&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Easy to use: 쉽고 가볍게 작성하고 읽음&lt;/li&gt;
-&lt;li&gt;Kindness: 친절하게 설명되어있어서 빠르게 적용해볼 수 있게 한다&lt;/li&gt;
-&lt;li&gt;Usefulness: 여러가지 환경에서 사용할 수 있도록 풍부한 예제를 제공하려고 함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;maintainer 입장에서는&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Sustainable Document&lt;/li&gt;
-&lt;li&gt;Stable&lt;/li&gt;
-&lt;li&gt;Automation&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;Solutions&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Typescript&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;TSDoc (&lt;a href=&quot;https://tsdoc.org/&quot;&gt;https://tsdoc.org/&lt;/a&gt;)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;타입스크립트의 표준화된 주석 포맷으로 IDE에서 지원해줌&lt;/li&gt;
-&lt;li&gt;자동완성과 같이 보여지므로 컨텍스트 변경없이 쓸 수 있어서 훨씬 편함&lt;/li&gt;
-&lt;li&gt;Playground(&lt;a href=&quot;https://tsdoc.org/play&quot;&gt;https://tsdoc.org/play&lt;/a&gt;) 도 지원함&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Declare file&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;문서화와 구현부를 분리해서 관리할 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;⇒ IDE Workspace에서 볼 수 있기 때문에 컨텍스트를 옮기지 않고, 개발 환경 내에서 참고하여 작성할 수 있음&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Storybook&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;여러가지 애드온들을 결합해서 사용할 수 있어서 빠르게 퀄리티 있고 인터랙티브한 문서를 만들 수 있음&lt;/li&gt;
-&lt;li&gt;빌드에서 CDN에 올리면 별도 서버 구현 없이 바로 배포 가능&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;MDX&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;md + jsx 의 개념으로 md문법&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;컴포넌트를 직접 담을 수 있음&lt;/li&gt;
-&lt;li&gt;변수 사용도 가능&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Snapshot&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;Code Sandbox (Mdx-embed Addon)&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;mdsx-embed addon을 사용해서 code sandbox나 codepen 등을 문서에 삽입할 수 있음&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;viewport addon&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;반응형 예제에 사용 가능한 addon&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;⇒ 인터랙티브한 Sample 들을 제공하므로써 다양한 환경에서 바로 적용해볼 수 있는 문서를 제공하게 됨&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h1&gt;느낀점&lt;/h1&gt;
-&lt;p&gt;일단 역시 큰 회사니 개발 영역이 많이 나뉘어져있긴 하구나 하는 느낌이 들었고, 많은 개발자들과 협업해야하는 기회가 많구나 하는 생각이 들었다. 특히 발표자가 작업하는 공용으로 사용되는 컴포넌트를 개발하는 역할은 더욱 그러하겠다고 생각했다. 개발 문화에 대한 고민이 많은 조직에 속해있는 것은 얼마나 행운인가 하는 생각도 들었다.&lt;/p&gt;
-&lt;p&gt;주어진 역할이 그래서 더욱 그랬겠지만, 발표자분이 가진 협업을 위한 개발 환경에 대한 깊은 고민을 엿볼 수 있는 발표였다. 비슷한 고민을 해왔기 때문에 더욱 공감이 되는 발표 내용이었다.&lt;/p&gt;
-&lt;p&gt;기본적으로 개발자라면 누구나 &lt;strong&gt;주석/문서가 필요 없는 코드가 좋은 코드&lt;/strong&gt;라고 생각하고, 문서에 대한 유지보수 노력을 최소화 하고싶어 한다. 하지만, 여러 사람들이 많이 사용하는 코드라면 문서가 필요하지 않을 수가 없다. 그렇다면 최소한의 유지보수 노력이 들고 (코드와의 동기화), 가능하면 사용하기 좋아야 할 것인데 (코드상에서 설명이 보이는), 이러한 고민의 결과라는 느낌이 들었다.&lt;/p&gt;
-&lt;p&gt;나의 경우에는 스토리북을 오래전에 도입 시도를 했는데, 조직이 크지 않아서, 문서도 크게 필요로하지 않고, 실제로 보는 사람이 없어서 (ㅠㅠ) 오히려 유지보수 부담이 들어 스토리북을 없애고 개발 환경에서 볼 수 있는 샘플 코드 페이지를 사용해왔다. 하지만 스토리북이 많은 곳에서 차용되고 있고, 써드파티 생태계도 괜찮아서, 도입도 괜찮겠다는 생각이 들었다.&lt;/p&gt;
-&lt;p&gt;특히, 스냅샷 활용 (PR과 비교해서 사이드 이펙트를 추측)과 써드파티 팁들, 버저닝+CDN 으로 문서의 버전 관리하는 팁들도 눈여겨 볼만 했다.&lt;/p&gt;
-&lt;p&gt;마치 리빙 포인트를 읽는 듯한 쏠쏠한 팁을 볼 수 있는 좋은 발표였다.&lt;/p&gt;
-&lt;h1&gt;발표 영상&lt;/h1&gt;
-&lt;div class=&quot;gatsby-resp-iframe-wrapper&quot; style=&quot;padding-bottom: 58.252427184466015%; position: relative; height: 0; overflow: hidden; margin-bottom: 1.0725rem&quot; &gt; &lt;iframe src=&quot;https://www.youtube.com/embed/xQOpjychnwQ&quot; title=&quot;YouTube video player&quot; frameborder=&quot;0&quot; allow=&quot;accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture&quot; allowfullscreen=&quot;&quot; style=&quot; position: absolute; top: 0; left: 0; width: 100%; height: 100%; &quot;&gt;&lt;/iframe&gt; &lt;/div&gt;
-&lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://linedevday.linecorp.com/2021/ko/sessions/100/&quot;&gt;Line Developer Days 2021 세션&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://www.youtube.com/watch?v=jJ6MqAbsDc8&quot;&gt;발표 Youtube&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/how-we-made-a-developer-friendly-ui-component-library&quot;&gt;발표자료 PDF&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약]]></title><description><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 Abstract LINE NEWS의 특징 중 하나는 개인 맞춤형 콘텐츠라는 것입니다. 월 154억 PV(2021년…]]></description><link>https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</guid><pubDate>Mon, 15 Nov 2021 22:02:50 GMT</pubDate><content:encoded>&lt;h1&gt;LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://speakerdeck.com/line_devday2021/line-creative-lab-create-catchy-ads-with-html5-canvas&quot;&gt;발표자료&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약]]></title><description><![CDATA[LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 Abstract LINE NEWS의 특징 중 하나는 개인 맞춤형 콘텐츠라는 것입니다. 월 154억 PV(2021년…]]></description><link>https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-11-15-LINE-NEWS-layout-shift-solution/</guid><pubDate>Mon, 15 Nov 2021 22:02:50 GMT</pubDate><content:encoded>&lt;h1&gt;LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법&lt;/h1&gt;
 &lt;aside&gt;
 💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
 &lt;/aside&gt;
@@ -493,7 +600,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 68.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB3ItRaIr/xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQJrf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABoQAAICAwAAAAAAAAAAAAAAAAABMYEQIaH/2gAIAQEAAT8hsKY7jYpCZ//aAAwDAQACAAMAAAAQ+A//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAgEBPxCn/8QAHRABAAICAgMAAAAAAAAAAAAAAQAhEUExgWFxof/aAAgBAQABPxArpe3BBTC6g433EKjL5YF39ISVmf/Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 68.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAOABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAECAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAAf/aAAwDAQACEAMQAAAB3ItRaIr/xAAVEAEBAAAAAAAAAAAAAAAAAAABEP/aAAgBAQABBQJrf//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABsQAAICAwEAAAAAAAAAAAAAAAABMYEQIUGh/9oACAEBAAE/IbCmPcbcKQmf/9oADAMBAAIAAwAAABDoD//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/EKf/xAAdEAEAAgICAwAAAAAAAAAAAAABACERQTGBYXGh/9oACAEBAAE/ECul7cEFMLqDjfcQqyfLAu/pCSsz/9k=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -539,7 +646,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 19.594594594594593%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAAAAEF/8QAFAEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEAMQAAAB2qAH/8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQABBQJ//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAFBABAAAAAAAAAAAAAAAAAAAAEP/aAAgBAQAGPwJ//8QAFhABAQEAAAAAAAAAAAAAAAAAABEx/9oACAEBAAE/IdRH/9oADAMBAAIAAwAAABCAH//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABkQAAIDAQAAAAAAAAAAAAAAAAABESFRQf/aAAgBAQABPxCLN6R1lOs//9k=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 19.594594594594593%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAEABQDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAX/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAAG2AD//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAEFAn//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/AT//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAUEAEAAAAAAAAAAAAAAAAAAAAQ/9oACAEBAAY/An//xAAWEAEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQEAAT8hTVssv//aAAwDAQACAAMAAAAQAB//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAYEAEAAwEAAAAAAAAAAAAAAAABABFBUf/aAAgBAQABPxAUPXJWVNn/2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -591,7 +698,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABT0lEQVQoz4WR606DQBCFeZQW2GUv3FukQIGQGNMWW9OX0MT4NkZ93OPO4jb6yx9fZmdgz5yZ9YKAYe0zUAyCEL4fGPyf+D90JwwZGOOQUsGLNUdTCWjJwblAHCfIshxpmt1IktRGrWP7nXL3n1LqJkh4XS1wPSgjajqoBF23R9O0aNsOfd9jt2ssVK+qO9R1beqDZb/vrehqtbaihKeMsyyJoCSDENK6UErbSE6cK6o5l84hoQ15XiCKxCK47I6bPYa2GzmhzsMwGhYn0zTZusvdeTDncRzRmom4GdcKutkp4TyyThy05N/QBBTJjdYJpE6h4hxcaARMgJk38NzsTpRebXk5jofDjPnxCYfTGVmxxTjdYz5fcTqekPcz2ud3jK8fmN4+sXv5Aq+Pfx26s6MoNijLrUVKbVZSoNxUpl5CplskvWk0XCxxfwHTG3wDbBn4gyOLa/sAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 40.54054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAICAYAAAD5nd/tAAAACXBIWXMAAAsTAAALEwEAmpwYAAABV0lEQVQoz4WRW07DMBBFs5Q2D8eOY+fVNu9EkZBoGypgFZUQu0HAci8eF1fii4+TGU/kO3fGXhhG2PoRgoAI4fuBwf+N/0N3SCOKGIRI4JFQu+eQgoExjjRVyPMcWmd3lNI20j9Ca21qClmWI0nkXZDw4pjh5Zig2ZkOiULf92jbDl3XYxhGNE2Lum5MfcB+f8DhUGMcJ8swDFZ0s9laUcJjjCFTMRIegXMBKVPblSI5o0iuqEYuXd25lXaiAnHMb4L0CQJm9hHabuSEnE3TbLg5WZbF1t3Z5dM4Yp5ndG0LZsa1gm52OjAWWycOIYRdtIMmoEhupFQQUiNJczAuEUQckXkDz4m5SK92ezmGx+OK9ekZx/MFWVFhXh6wXl5xPp2Rjyv66wfmt08s719ort9g9emvQ5c78qJEUVYWIcwOzUrKcoeiKCB0BTWYRpNhvCA1eSQr/AD1avg20cuEVQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -630,7 +737,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaElEQVQY0yWQXY+TQBhG+SfGRNvyDYUWKNAZYIEWaJvqarzwwq81GrO7/qPdmo268cKfeJzixcl555nJzOTRmvotabahKPes5UBVH2k2l4jigOXm6PYK44z135aT4fsVrltg2hlOIPCXBW5YEMY1msyOtE1H3x/pugN104/utgfm8wRd9zBMH8PwMJVNw2c6sVTuYFkLbGeJ7cbq8ZhFLNHcqEcM35H725F8uCFur0k2N7jiCiv7MGKm70fb2Sfc/POIc7b8gld+G5nXt2hhec3m61/qj79orh6R734zGU486+6U75nu7pXvmO1P43xmtjvPJ5X9QD88oB9/4rz+g/nyEW29fEUmWkS5Q1aqx2JQXXZsukvKi73Ke3K5xQtylW9Ziy1C7Ut1Tiiq5gXt8AY/qrGDCu3J0wmLKFdkRMmaUNkPk3HtBzHhMiVcpOimxzxIiOKcVVqoy1vilVS9ifFDMzPg+dTjHzv61nW5EhvAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 28.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABbUlEQVQY0z2RWW+bQBRG+SdVpdY2q8GAAbMMxsYYDHbopjxGdRdFXZz+otRR1DbqQ3/i6YRKfTg6c78Z6V7NVWLR4/s1i7jBdtZ03RUX/ZF1ecnESFGtDNX8x8RIcGYVfX1DEb9FswTuYk2UV4RpTbq8QBFJT7Vp2O16muZAudkNbuoDs1mEqtpouoOm2ejSuuYwHhkytzAMD9OaY05DDIkf5ijToEV038j3J8kNaXsiqL4Qbk9MxQeM5Digy4kebSbvmKYfB6xMOr/GLj5JPjMrTyhe8ZXt9R/K40827x/Ir34xas88a24Zd98HRu0tk/35fz3pHs9nmd2hHu5R+x9Yb36jv3xASeevSUSFKDry1Z5s2ZLlDdvmFcV6L/MdaV5ju6nMazJRI+R9Lt8JyWrzgqq9xAlKTHeF8uTpCD9IJQlBlOFJO1401I4b4s1jPD9G1W1mbkQQpnKBS9lYLmKRy38Tw0AT3eX52OYvEvDXm6Bh5cIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -700,7 +807,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA/0lEQVQY043QzUrDQBiF4VyKM5nJJG3T/FFrJc1PmwgthWKriLaoVXBlEUTvQrzl1xC7Kbhw8XC+A2f1WVG+Ip1vSCZr/PGSsFgRlWuC/LK948lV25PpNWY4Q8YVdlK3RFgSLN853X0x2H3TW+yxwsUH1faT89UrbrWje/GM16RXP9FpuNNHnPIeM3nAzjaI8R3yQKS36PoFM9tj5m+ofIsVZFvysiYrKkZpSZiM6PYT/HBAPx6iXR+hO8iG7XQbvSNSe0jbIJWLkA5WNL4hzwqKvCCOYsSJwJZ2SzaUrRr6kH9QuqWV0+4tv/lLmuUMhmdo42K8zhHnP9zfrXIMP6T3ocD2NnalAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVQY043Oy07CUBSF4T4KPfeCQNsDLRCgRcEEow6cGJV4jQ6Ixok+CL7w7xFxwMzBt9dO9hrsKE1zcl/STf2W9wW+V5Dlvd1ehntBvxjgkhZSGpS2gUPEgvx8zeh5E3zROV0TZWcfzFefjC5ecfMHWsdPJCGTxSPNwB3dY2a32MM75PSGeHKN2InHV+jFC3b5hj15R1Urom4Y1WzBpJ4zHM9I/ZBWx9NO+3TyEu3axLqJCKQJH5qDPUInCGkRyhELEz6cXFJNa+qqJstyGo0YKVQgEYGSCqV0yD9q388t0Mps+1G7XDKeVvTLAdo6bNLcY/7D/XaVsXwDuSufFLadv6UAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -798,7 +905,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAB0vmplaEgf//EABoQAAMBAAMAAAAAAAAAAAAAAAABAhIDEyH/2gAIAQEAAQUCmNC40N+p5ruoZ//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/Aaf/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BEX//xAAaEAACAgMAAAAAAAAAAAAAAAAAEQEQAjEy/9oACAEBAAY/AmzqnCNY1//EABoQAQACAwEAAAAAAAAAAAAAAAEAESFRYeH/2gAIAQEAAT8hpYTkVkSclCNRWyHZKfSK29z/2gAMAwEAAgADAAAAEHjP/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QSP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCnX//EABwQAQEBAAIDAQAAAAAAAAAAAAERACExQVFhcf/aAAgBAQABPxD2aPSpMCMHIgz0LSYu0ErMPnOPMvyMirtVm//Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABYBAQEBAAAAAAAAAAAAAAAAAAECA//aAAwDAQACEAMQAAAB0vmplaEgf//EABoQAAMBAAMAAAAAAAAAAAAAAAABAhIDEyH/2gAIAQEAAQUCmNC40N+p5ruoZ//EABURAQEAAAAAAAAAAAAAAAAAABAh/9oACAEDAQE/Aaf/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BEX//xAAaEAACAgMAAAAAAAAAAAAAAAAAEQEQAjEy/9oACAEBAAY/AmzqnCNY1//EABoQAQACAwEAAAAAAAAAAAAAAAEAESFRYeH/2gAIAQEAAT8hpYTkVkSclCNRWyHZKfSK29z/2gAMAwEAAgADAAAAEHjP/8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8QSP/EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPxCnX//EABwQAQEBAAIDAQAAAAAAAAAAAAERACExQVFhcf/aAAgBAQABPxD3aPSpMCMHIgz0LSYu0ErMPnOPMvyMirtVm//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -834,7 +941,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAa8dgGrGkv/EABoQAQABBQAAAAAAAAAAAAAAAAIBAAMQERP/2gAIAQEAAQUCVlJcZobg5//EABURAQEAAAAAAAAAAAAAAAAAABAS/9oACAEDAQE/AZP/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEv/aAAgBAgEBPwGj/8QAGRABAAIDAAAAAAAAAAAAAAAAAQAhAiBB/9oACAEBAAY/AnJW52W6f//EABkQAAMBAQEAAAAAAAAAAAAAAAABESFRMf/aAAgBAQABPyG5E18F2y+E1Wa6YQw//9oADAMBAAIAAwAAABBf7//EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oACAEDAQE/EEQX/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EJTX/8QAGhABAAMAAwAAAAAAAAAAAAAAAQARMSFRYf/aAAgBAQABPxBTa45lebGgOwW972HP+sU17KWEp0QocT//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAMCBAX/xAAWAQEBAQAAAAAAAAAAAAAAAAACAAH/2gAMAwEAAhADEAAAAa8dgGrGkv/EABoQAQABBQAAAAAAAAAAAAAAAAIBAAMQERP/2gAIAQEAAQUCVlJcZobg5//EABURAQEAAAAAAAAAAAAAAAAAABAS/9oACAEDAQE/AZP/xAAVEQEBAAAAAAAAAAAAAAAAAAAQEv/aAAgBAgEBPwGj/8QAGRABAAIDAAAAAAAAAAAAAAAAAQAhAiBB/9oACAEBAAY/AnJW52W6f//EABoQAAIDAQEAAAAAAAAAAAAAAAERACFREDH/2gAIAQEAAT8heRE/INqnItDiNlRc/9oADAMBAAIAAwAAABBf7//EABURAQEAAAAAAAAAAAAAAAAAAAEA/9oACAEDAQE/EEQX/8QAFhEBAQEAAAAAAAAAAAAAAAAAAAER/9oACAECAQE/EJTX/8QAGhAAAgIDAAAAAAAAAAAAAAAAAREAMSFRYf/aAAgBAQABPxApo4zC5cNQNwGd7uDX/MEV2IqETQgQGJ//2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -875,7 +982,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB9klEQVQoz12S266aUBCGff9XaHpZTWp7YbYaEVEIqLFRo7saRFBBDh7wjFt3vPAvMw3UlGQCzFrzzT+HzOVywfl8ZouiCL7vYzQaYTabwTAMWJYF27bZNx6P2TedTqHrOt+lGIolDlkmAZ5OJ9xuN0wmE5RKJbTbbdTrdSiKgm63i2KxyP5GowFVVSFJEkMphmITUZn/FW63WyyXS85O5nkeNpstFosFHMdJfev1GmEYpgoTlRn6uF6vDKKMVI4ZGwWv4qCPWAEF3e93VkLnSTvoTe1YrVbMYIV0+XA4cK8IQmD6dxwblqljvXI5M8FIJUFI3X6/j5VvOIHrunzOCimzaZrIZrMYDPqcjZ66JKJS/I73nhxnvjAgn8+j1Wox+Pl8sohcLofhcIggCLiSzN/JBhDFCqTqD9gLC67nw5wM8PbzKzpNIe1Rs9lEuVxmAdRHslqtBlmW/wFJZhD4EIQ3COUcAn+J4/EMyxiikP8SA6tIBkfqCoUC5vN5fOfIEFEUeeJUfgp07BkUuQJNU+KSA3x+PjB+70AWvuFXq5quFa0SrREpfDwe3HNaIU3TGE6D4ZIJoqkKOp0OdrtdfPAB33PQUmsw9N98kfy9Xo9V0mBeff1+nweZrk0Y7uJG29yT5CCKrjidafujdMqvluzt6w7T+w/89xuoR0+zBwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 55.4054054054054%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAAB6UlEQVQoz21SW4+aYBD1//+Fpo+rydo+1KpRVhQiYmi0rts0FEEFBLxbEC8bHzz7zSQQm/Th5IO5nDlzKRyPR2RIkoTfNE1znE6nf/4J/8vJUMiMcRzjcrnANE3UajX0+320222oqorBYIBqtcr2TqcDTdMgyzLHUg7lEgchJyRQ9c1mA9/3EYZhDrLN53O2R1HEttVqhe12yzlZPiukD2qLkqjiZDKBbdvwPI+TzkIBJV2vV1ZC/ul0Csuy+HVdF8vlkjlYIQUfDoechIjp3/NcOLaJVeRzZSKbz2ZMQoX2+z3W6zUXWCwW7GeFV6GAyIrFIl5HP0XwEvc70JZf0Kg9422oIBGBRFAuP0PXdW7/LoIcx0GpVMJ4POZRkLgCSQ3DCC9SA7L0RbQwxSIIYf95xfevn2H0mvmMaBn1ep0FBEHAaLVaUBSF284JoyhEs1GBVC8hCn38jRM41hjfyp8EoZSfR6/XQ6VSwUy0Ti2SKkmSeOPUPhOez2d4QpWqNIQCVVSK8P5+w+83A0rzCT90KT8rOiU6I1J4u9145t1ul5UTOYljhUSidVUYhoHdbiccZ4SBB12TYZm/OJDsw+GQZ0gKH22j0YgXyUshmdvtTgza5ZlkjjQ9IU7o+tN8y4/I7vbxhun9AE7XHyvELs9GAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -917,7 +1024,7 @@ childerenCallback,
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAFo7LBKXFP/xAAbEAACAQUAAAAAAAAAAAAAAAAAAQIDEBESIf/aAAgBAQABBQKcNiNDqVkjB//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGtf//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMf//EABgQAAIDAAAAAAAAAAAAAAAAAAABESBh/9oACAEBAAY/AtJdf//EABkQAQACAwAAAAAAAAAAAAAAAAEAIRBBcf/aAAgBAQABPyEblQLu9lMDM//aAAwDAQACAAMAAAAQ4B//xAAVEQEBAAAAAAAAAAAAAAAAAAAQYf/aAAgBAwEBPxCh/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EG4T/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIUFxMf/aAAgBAQABPxDSg+8fYlLbdFj2CEPhhLoLpDGVP//Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 75%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBP/EABUBAQEAAAAAAAAAAAAAAAAAAAIB/9oADAMBAAIQAxAAAAFo7LBKXFP/xAAbEAACAQUAAAAAAAAAAAAAAAAAAQIDEBESIf/aAAgBAQABBQKcNiNDqVkjB//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAwEBPwGtf//EABYRAQEBAAAAAAAAAAAAAAAAAAABEf/aAAgBAgEBPwGMf//EABgQAAIDAAAAAAAAAAAAAAAAAAABESBh/9oACAEBAAY/AtJdf//EABkQAQACAwAAAAAAAAAAAAAAAAEAIRBBcf/aAAgBAQABPyEblQLu9lMDM//aAAwDAQACAAMAAAAQ4B//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCB/8QAFhEBAQEAAAAAAAAAAAAAAAAAARAx/9oACAECAQE/EG4T/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARIUFxMf/aAAgBAQABPxCyYPvH2JS23RY9ghD4YS6C6QxlT//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -971,7 +1078,7 @@ import React from &amp;#39;react&amp;#39;;&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 14.864864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsUlEQVQI123KyQqCYBiFYS8rhwbKknLKpt8kyZKwAUyJ0qJFLbqHkKAy3HaLJ7NV1OLh/eB8lNYIYXZOkPgA8ls1TAVQ0jaFHeRKCKn8n8x/ftTaNu0eQmkOamGccXSfWA0fWI+SrBs7gW/G8AY3ONoFthjBlr6NGxGm6eabd7jGFct+jG7tAEqoW9AND4rqoNmaQZQnWauCBTZPQLMEOboHmvnFcARcUQdbINlNc228ALctfXs3PzQcAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 14.864864864864865%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAsklEQVQI12XKawvBYBjG8X0jZtiePXN4w9LYwWks59FIsSV5qXwKiTCHtz7iZQ1RXvz6313djECrSGUtRDg1FOW0V+Ma2EAsqSPG66/+em+fPzZhIM6rYKbWFpvZA4vuBcv+LegVK/sOr+3DbZ3gGHvYyg528WsYGATbuHyA1zljZh0xb/qo5ddg5EIPDcuFqjnQyxMopVHYnNwFTZkg1IRA6iDiP1EyIWUaoGkzvIlUwROQbncEry477gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1010,7 +1117,7 @@ import React from &amp;#39;react&amp;#39;;&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 20.945945945945947%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7ElEQVQY003KXUvCYBiA4f0iXW5TCUGhSc6x762Vfbg2TRfSSScSdFJ00manQVASBNGvvNuHUAcX9/M87ytMrEdmJy9EwXPRDXGYE/kZUzcjcvOiObG/qWcnIw6Kv15OUrRUvh3rT7jqA9rgBiENXrmb/7CefbNOarfnX6yCT5b2B6lT2lbzwnqv9r97bW68cWVscQ/uEQbqBMdP8cMVbnCN7S2x3AW9fkijpbMnm4iSgdS2kLs2cqcm7VR716l09m2E/vAIzZoy1M/QnUvGVoThJYzMi+qujk+rKj2ThjJCbGs0C+JO819byiG/yuKkPB42OcYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 20.945945945945947%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA5UlEQVQY002P22rCQBRF80WamoupLV4wMTeSzGjU0tbaknvxrS8i+B9FSKVQKP3K7cwkQh8W65wF5+FIk+kWMyeFOUtgu7nwFd4tO4Hj5cwp2zM2F6LzxuE3w/EG+u0DjEEMqVp94pD9YZ/+Yp80fGx+sFt+oyRfqCjnLOYiqlExl6Rue0MWnJAHZ8ynR0gT8xE0rhCvd5gv30EWJUJa4G60Rqfn40YNISsBFD2CahCo/QalRewGFfQHBNLIWsGNtrD8Z/j0DV70imDB3gxfRDe9J2HtPkRHcyDrLroMuaX7zz3NxgUNL54tNRD7pQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1033,7 +1140,196 @@ import React from &amp;#39;react&amp;#39;;&lt;/code&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
 &lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/69038328/why-is-vs-code-importing-from-hoist-non-react-statics-node-modules-types-react&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[기계식 키보드 소음 감소 오링 장착 후기]]></title><description><![CDATA[…]]></description><link>https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;h1&gt;기계식 키보드 소음 감소 오링 장착 후기&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://stackoverflow.com/questions/69038328/why-is-vs-code-importing-from-hoist-non-react-statics-node-modules-types-react&quot;&gt;Stackoverflow&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javacript Hidden Class와 Inline Caching]]></title><description><![CDATA[Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다. Hidden class javacript…]]></description><link>https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;p&gt;Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다.&lt;/p&gt;
+&lt;h1&gt;Hidden class&lt;/h1&gt;
+&lt;p&gt;javacript는 런타임에서 오브젝트의 속성을 추가/변경할 수 있는 동적인 언어이다. V8엔진은 &lt;strong&gt;hidden class&lt;/strong&gt;를 통해 색인 등 속성 관리를 최적화하고 있다.&lt;/p&gt;
+&lt;p&gt;예를 들어 아래와 같은 코드가 있다고 할 때에&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;jsx&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;function Point(x,y) {
+	this.x = x;
+	this.y = y;
+}
+
+var obj = new Point(1,2);&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;객체가 생성되는 시점에 객체에 대한 &lt;strong&gt;hidden class&lt;/strong&gt;가 생성되며, 새로운 속성이 객체에 추가될 때마다 새로운 &lt;strong&gt;hidden class&lt;/strong&gt;가 생성되며 &lt;strong&gt;기존 hidden class에서 새로운 hidden class로의 전환&lt;/strong&gt;이 일어난다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/62d28471df5ba38dcb6ddf8d8cbbdefe/41d3c/img_hidden_class0.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 490px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 27.7027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAn0lEQVQY05WRuQ7EIAxE+f/vCwpVlCJNOBSRixyQ2R0kijS7YqQRLszo2Rb4KqWEoud5qjzPM9Z1xb7vuRbGGDjnYK3FdV2oEQOXZUHf95BSous6CKUU2rZF0zQ5NMaI+77/mn3HcUBrnc2ccRwhQgjw3mPbNpCW2Kw5xi+zh/+GYXhRi/M8MzrHZXituLsi3iITlqXWHqQchaR8p2nCB6FB0+xQ2rxFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/62d28471df5ba38dcb6ddf8d8cbbdefe/41d3c/img_hidden_class0.png&quot;
+        srcset=&quot;/static/62d28471df5ba38dcb6ddf8d8cbbdefe/12f09/img_hidden_class0.png 148w,
+/static/62d28471df5ba38dcb6ddf8d8cbbdefe/e4a3f/img_hidden_class0.png 295w,
+/static/62d28471df5ba38dcb6ddf8d8cbbdefe/41d3c/img_hidden_class0.png 490w&quot;
+        sizes=&quot;(max-width: 490px) 100vw, 490px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/1635966d12a82affa90cd2172bc4c1b5/4ee7f/img_hidden_class1.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 486px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 43.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABI0lEQVQoz5VSi26DMAzM/39Xf6GlmooqHoUKSnmHV+B2zgbqqlbbLJ3iWLF9vliBZozBPM/iYlmWP2HNy/McWmuLoiig0tsNURzDDwKkaYr/mBR2XRe+7yMMQ1tHxVGE0/GID8dBwKJ1XaPruq2rQO5939tzxTAMSJIE+f2+NZC40k0Dww4zmTb0BdM02YRxHC2kWFmWWyPxJ8ZrvhWApHC5oJeCHR9rwXfnd+Z5HpzDAfv9HlmWfY1MDWvGDckYatmwmbLikpHgnfjyYSK+ez5bvVomGjJc2haa8ZaEBMJerUmPP/zsT2TScUyKDP4cdFXBUGs85K6mXjF6PicybK5XLLsdZo7dcD1kZV6tmfptLawkLCg71lKrmiNWZPej6QraJ+QQvSuRoQabAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/1635966d12a82affa90cd2172bc4c1b5/4ee7f/img_hidden_class1.png&quot;
+        srcset=&quot;/static/1635966d12a82affa90cd2172bc4c1b5/12f09/img_hidden_class1.png 148w,
+/static/1635966d12a82affa90cd2172bc4c1b5/e4a3f/img_hidden_class1.png 295w,
+/static/1635966d12a82affa90cd2172bc4c1b5/4ee7f/img_hidden_class1.png 486w&quot;
+        sizes=&quot;(max-width: 486px) 100vw, 486px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/bfc664bf9755402df8e7fbf68961da3c/bd48c/img_hidden_class2.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 488px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 50.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABeElEQVQoz4VS2W7CMBD0//9X+4YqXoCqhIZQCAkkHL7NMZ2NgFJaiZX2IXY8O8eq8/kM7z2stTgej5CSs2ctFUJAlmWYLRaYzecoyxKqrmtkeY4JO2efTic8qyugJ2C7WsEsl9BVhe12C7XXGlU2Rjn+QM2Lpmk6tprnxphby5n09TuGiGI2gzMa+JoCzQo+RijrLBajFu10D6MtUoq/WFwr8efNZgNDe3aXYSF4EkjIiVevydg7KPHN+ADtHAIfCdDhcOikS6eUOkDL+9FohGIwQD4Yot20cC6hKAzqikN2nkM01IXOjZGALcRkyimKorPgGkCkJcgnpFNBWw+KY5CJgxPfxS5U9ZicHFYM6q3fx5CMxONO8pa2FA3eM6CsgLaVrfgbmLpfE6lIiZH+gGuA9Zq+atFLDx3KOuH1Bfj8PDE08++KqcdViJTsuQro9XCmZMNVEEuE+X635wzLcHQXwA/gA8N7wERATZBAho4MtTFP9/G+vgEFJAcY6zpZIQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/bfc664bf9755402df8e7fbf68961da3c/bd48c/img_hidden_class2.png&quot;
+        srcset=&quot;/static/bfc664bf9755402df8e7fbf68961da3c/12f09/img_hidden_class2.png 148w,
+/static/bfc664bf9755402df8e7fbf68961da3c/e4a3f/img_hidden_class2.png 295w,
+/static/bfc664bf9755402df8e7fbf68961da3c/bd48c/img_hidden_class2.png 488w&quot;
+        sizes=&quot;(max-width: 488px) 100vw, 488px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;주의할 점은, 아래와 같은 코드가 있을 때:&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;jsx&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;function Point(x,y) {
+	this.x = x;
+	this.y = y;
+}
+
+var obj1 = new Point(1,2);
+var obj2 = new Point(3,4);
+
+obj1.a = 5;
+obj1.b = 10;
+
+obj2.b = 10;
+obj2.a = 5;1  function Point(x,y) {
+	this.x = x;
+	this.y = y;
+}
+ 
+var obj1 = new Point(1,2);
+var obj2 = new Point(3,4);
+
+obj1.a = 5;
+obj1.b = 10;
+
+obj2.b = 10;
+obj2.a = 5;&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;처음 &lt;code class=&quot;language-text&quot;&gt;obj1&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;obj2&lt;/code&gt;는 동일한 hidden class를 공유하지만, 속성을 추가하는 시점부터 hidden class가 달라진다고 한다:&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/a3707176ff6ce9d6c271f1868390de7f/d30ee/img_hidden_class3.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB+UlEQVQ4y6WUiXKjMBBE+f8PNPHagMGAuU+dXL3SOHZl2drEm6hKNZIoPXp6JDn4Ztu2jeK8zEjzBFF8gdQCzjdxT+C0aFzCC8IwhFDsNaDd/AA8xh+BJ/9ooAHUJF9X+ADs27IuGEUPJkea/7dC65NVYuM0a/JQKI6et58r/FeKbV8jTVMURUEgC2GCYZomcKPS+QywT3PDirSIcTwecT6fMfAOVVfg7c2Fe3DRtBWcveH7FBljyLIMTd1gGHtkZQrXdeH5HqQSRhVDcAngez6arv5boRCCupSSetd1iK4RoiiiDXVfompK1EaN0hJ6VsZPTtWmY2M3cc4JYuM4jsjzHGVZou978otSPJ1RNxW01liXDfO8YFlWzNMMKRSU1NBqgmMhdV2jaRq0bUsAqyYIAjL+drvhdDrB8zzUVYsiq3CNYqTJzQiQBBn6kbJhI4djlV2vV/i+T6osNEkSAtt07dwW4GJ8alvjYVqSZ/ZmjAMHG8RdgFl7Ai3IdpuuTUkp9Yz7lmcFDocDKR56Bs4k4jimHxDwI8DCv7pqfTcaGzKURXX3TU8Q3OxXM8FfOof38ftVM4VY1+09rvRN69mo5TR29oD9mfzqPtu1pm5xS3Kq/I9fG1vlMIzIwz9S/vYDO604/TrTKZFC//yBlaYwVdFSha2nvwGEUMgLXpCFywAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
+        alt=&quot;img&quot;
+        title=&quot;&quot;
+        src=&quot;/static/a3707176ff6ce9d6c271f1868390de7f/fcda8/img_hidden_class3.png&quot;
+        srcset=&quot;/static/a3707176ff6ce9d6c271f1868390de7f/12f09/img_hidden_class3.png 148w,
+/static/a3707176ff6ce9d6c271f1868390de7f/e4a3f/img_hidden_class3.png 295w,
+/static/a3707176ff6ce9d6c271f1868390de7f/fcda8/img_hidden_class3.png 590w,
+/static/a3707176ff6ce9d6c271f1868390de7f/efc66/img_hidden_class3.png 885w,
+/static/a3707176ff6ce9d6c271f1868390de7f/d30ee/img_hidden_class3.png 980w&quot;
+        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h1&gt;Inline Caching&lt;/h1&gt;
+&lt;p&gt;동적 타입 최적화를 위해 &lt;strong&gt;inline caching&lt;/strong&gt;을 사용하고 있다. 이 기법은 &lt;strong&gt;동일한 메소드를 반복 호출할 때 동일한 유형의 객체에서 발생할 것이다&lt;/strong&gt;라는 점을 기반으로 하고 있다.&lt;/p&gt;
+&lt;p&gt;V8 엔진은 최근 호출된 메서드의 객체 타입을 캐싱해두고 있으면서 호출 속도를 높인다. 캐싱된 객체 타입이 일치한다면, 객체 속성에 직접 액세스하는 대신 캐싱되어있는 히든 클래스 정보를 사용하는 프로세스로 대신 수행할 수 있게 한다. &lt;/p&gt;
+&lt;p&gt;만약 어떤 두 객체가 같은 hidden class를 공유한다면 실행속도가 크게 늘어날 수 있다. 또, hidden class의 변경이 없을 수록 캐싱의 효과가 좋다.&lt;/p&gt;
+&lt;h1&gt;결론&lt;/h1&gt;
+&lt;p&gt;Hidden class와 inline caching은  V8 엔진 기반 브라우저에서 최적의 퍼포먼스를 위해 알고 있으면 좋은 개념이다.&lt;/p&gt;
+&lt;p&gt;좋은 퍼모먼스를 위해 다음을 지키면 좋을 것 같다:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;가능한 hidden class의 변경을 줄일 것&lt;/li&gt;
+&lt;li&gt;가능한 hidden class 공유가 잘 되도록 할 것&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;사실 typescript를 쓰거나 immutable한 코딩 습관을 가지고 있다면 자연스러운 일일 것 같다.&lt;/p&gt;
+&lt;h1&gt;Reference&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&quot;&gt;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[기계식 키보드 소음 감소 오링 장착 후기]]></title><description><![CDATA[…]]></description><link>https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-keyboard-oring-review/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;h1&gt;기계식 키보드 소음 감소 오링 장착 후기&lt;/h1&gt;
 &lt;p&gt;나는 외장 키보드를 두 개 사용하고 있는데, 무접점 키보드와 저소음 적축 기계식 키보드다. 나는 노트북에 너무 익숙한 탓일까,  펜타그래프 키보드나 버터플라이 키보드도 충분히 만족하며 사용하고 있었다. 어렸을 때 어느집에서나 있었던 표준 멤브레인 키보드 시절, 펜타그래프의 슬림하고 심플하 디자인을 봤을 때 감동이 컸던 탓일지도 모르겠다. 어쨌든 나는 펜타그래프 키보드도 충분히 좋았기 때문에, 기계식 키보드 같은 고가이고 매니아틱한 영역에는 손대지 않고 있었다.&lt;/p&gt;
 &lt;p&gt;그래도 요즘은 기계식 키보드가 많이 대중화되어서 쉽게 접할 수도 있고, 가격대도 많이 저렴해져서 용기내서 구입해봤던 것이다.&lt;/p&gt;
 &lt;p&gt;무접점 키보드와 기계식 키보드를 사용해봤을 때, 두 가지 특징은 뚜렷했다. 개인적으로는 무접점 키보드가 만족이 컸다. 주위에서 기계식 키보드를 많이 사용하고 있어서 기계식 키보드가 예상했던 키감과 사운드와는 다른 새로운 것이었기 때문에 신선하게 다가왔는지는 모르겠지만, 무접점 키보드는 새로운 감각에 놀라고, 소음도 적어서 기분 좋게 사용할 수 있었다.&lt;/p&gt;
@@ -1109,7 +1405,7 @@ import React from &amp;#39;react&amp;#39;;&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAFhtcCV0Wuf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAIBAxAREjH/2gAIAQEAAQUCd9YSqzNkk5b/xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8BHJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAESAhMf/aAAgBAQAGPwJl5H//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhEDFB/9oACAEBAAE/IRWlysksZXnHYj1AFhUHJ//aAAwDAQACAAMAAAAQWM//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAQlt/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QiP/EABwQAQABBAMAAAAAAAAAAAAAAAEAESFBUTFhkf/aAAgBAQABPxCoxRgnObW2bgdnsyArIxgEOiIi8//Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAABAAD/8QAFgEBAQEAAAAAAAAAAAAAAAAAAwEC/9oADAMBAAIQAxAAAAFhtcCV0Wuf/8QAGxAAAgEFAAAAAAAAAAAAAAAAAAIBAxAREjH/2gAIAQEAAQUCd9YSqzNkk5b/xAAWEQEBAQAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8BHJ//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAYEAACAwAAAAAAAAAAAAAAAAAAESAhMf/aAAgBAQAGPwJl5H//xAAaEAEAAwADAAAAAAAAAAAAAAABABEhEDFB/9oACAEBAAE/IRWlysgsZXnHYj1AFhUHJ//aAAwDAQACAAMAAAAQGM//xAAWEQEBAQAAAAAAAAAAAAAAAAABABH/2gAIAQMBAT8QAQlt/8QAFREBAQAAAAAAAAAAAAAAAAAAABH/2gAIAQIBAT8QiP/EABwQAQABBAMAAAAAAAAAAAAAAAEAESFBUTFhkf/aAAgBAQABPxCoxRgnOfW2bgNnsyArIxgEOiIi8//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1139,196 +1435,7 @@ import React from &amp;#39;react&amp;#39;;&lt;/code&gt;
 &lt;p&gt;오링을 통해서 키보드 소음을 줄여보았다. 내가 예민한 편은 아니기 때문에, 키보드에 진심이고 예민한 사람에게는 다르게 보일지도 모르겠다. 하지만 나처럼 보통의 사람들에게는 조금이나마 도음이 될까 하여 작성해보았다. ㅎㅎ&lt;/p&gt;
 &lt;p&gt;오링은 흡음재나 윤활 작업에 비해 굉장히 간단하게 소음을 잡는 방법인 것 같다. 소개한 네이버 제품 페이지 외에도 여기저기 서치해보면 &lt;a href=&quot;https://youtu.be/B6J9GBYdd3k?t=46&quot;&gt;오링 착용 전/후 타건 영상&lt;/a&gt;들을 많이 찾을 수 있다.&lt;/p&gt;
 &lt;p&gt;후기를 보면 오링 부착 후 손가락에 힘이 더 많이 들어간다고 얘기하는 사람들도 있는데, 구름 타자를 치는 사람들에게는 오링보다 그냥 그렇게 치면 될것 같은데 ㅎㅎ &lt;strong&gt;습관적으로 강하게 타자를 치는 사람&lt;/strong&gt;들에게는 이정도 정성으로 꽤 만족스러운 느낌이 들 것 같다.&lt;/p&gt;
-&lt;p&gt;주의할 점은 &lt;strong&gt;타건감이 확실히 바뀌긴 한다&lt;/strong&gt;는 점이다. 기계식 키보드 스위치 감각이 너무 좋았다면 사실 불만족스러울지도 모르겠다. 하지만 &lt;strong&gt;이정도 가격과 정성을 들여서 소음을 줄이는 효과를 만들어내는 것은 오링뿐&lt;/strong&gt;일 것 같다. 이정도 투자로 한 번쯤 시도해볼만 하지 않을까? ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Javacript Hidden Class와 Inline Caching]]></title><description><![CDATA[Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다. Hidden class javacript…]]></description><link>https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-11-javascript-hidden-class/</guid><pubDate>Mon, 11 Oct 2021 10:39:41 GMT</pubDate><content:encoded>&lt;p&gt;Hidden class와 inline caching은 사소해보일 수도 있지만 javascript의 최적의 성능을 위해서 알아두면 좋은 개념인 것 같다.&lt;/p&gt;
-&lt;h1&gt;Hidden class&lt;/h1&gt;
-&lt;p&gt;javacript는 런타임에서 오브젝트의 속성을 추가/변경할 수 있는 동적인 언어이다. V8엔진은 &lt;strong&gt;hidden class&lt;/strong&gt;를 통해 색인 등 속성 관리를 최적화하고 있다.&lt;/p&gt;
-&lt;p&gt;예를 들어 아래와 같은 코드가 있다고 할 때에&lt;/p&gt;
-&lt;deckgo-highlight-code language=&quot;jsx&quot;  &gt;
-          &lt;code slot=&quot;code&quot;&gt;function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}
-
-var obj = new Point(1,2);&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-&lt;p&gt;객체가 생성되는 시점에 객체에 대한 &lt;strong&gt;hidden class&lt;/strong&gt;가 생성되며, 새로운 속성이 객체에 추가될 때마다 새로운 &lt;strong&gt;hidden class&lt;/strong&gt;가 생성되며 &lt;strong&gt;기존 hidden class에서 새로운 hidden class로의 전환&lt;/strong&gt;이 일어난다:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/62d28471df5ba38dcb6ddf8d8cbbdefe/41d3c/img_hidden_class0.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 490px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 27.7027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoklEQVQY05WRzQrEIAyEff/nK7an4sFDaS2i/VfbWSbQhb3sbgNDAsbxi1EpJez7jpwzGNd1/a3zPBFjxDRNkkMIUMMwYBxHOOdA8ydBU5oZY6C1Rtu2UE3ToK5rVFUlpqUUof0l9nGyvu9F9Om6DmrbNkFdlgWkJTrreZ6/ij28Z639oFbHcQg6x6X501jX9V3zT4WQL/LgyUJu3ctg9t7jBTGE060IMYd4AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/62d28471df5ba38dcb6ddf8d8cbbdefe/41d3c/img_hidden_class0.png&quot;
-        srcset=&quot;/static/62d28471df5ba38dcb6ddf8d8cbbdefe/12f09/img_hidden_class0.png 148w,
-/static/62d28471df5ba38dcb6ddf8d8cbbdefe/e4a3f/img_hidden_class0.png 295w,
-/static/62d28471df5ba38dcb6ddf8d8cbbdefe/41d3c/img_hidden_class0.png 490w&quot;
-        sizes=&quot;(max-width: 490px) 100vw, 490px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/1635966d12a82affa90cd2172bc4c1b5/4ee7f/img_hidden_class1.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 486px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 43.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJ0lEQVQoz5VSi26DMBDL/39Xf4FSTaMS0NKqQHmF8Ap4vmygruq07SSXNHC245wCy1qLeZ5liWVZ/oS1rygKGGMcyrKEyrIMyeWCKI6Rpin+U0IcBAGiKMLpdHI86sKf98MBb76PmKR106Druk1VIP/7vnfPFcMw4Ha7objfNwHZV0ZrWCrMdKq5FkzT5BrGcXQQsqqqNiFZT9xv+K0ASQKcz+iFsOPHRvCl/FOFYQifp/A8D3mefx6ZGWqasTRjmaWmmJIX4kiwhv0cvlyYhB8cjwhJ0LLR0uHStjDcb2lIIO7V2vQY9COpE6STjsdkyODNwdQ1LLPGU6+UejUOz8+JDvX1imW3w7zfQ3M8ZGRejZn6bSzcvJFQZqxlVg1vVSbhm+gK1gfv8L0x8s5z0AAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/1635966d12a82affa90cd2172bc4c1b5/4ee7f/img_hidden_class1.png&quot;
-        srcset=&quot;/static/1635966d12a82affa90cd2172bc4c1b5/12f09/img_hidden_class1.png 148w,
-/static/1635966d12a82affa90cd2172bc4c1b5/e4a3f/img_hidden_class1.png 295w,
-/static/1635966d12a82affa90cd2172bc4c1b5/4ee7f/img_hidden_class1.png 486w&quot;
-        sizes=&quot;(max-width: 486px) 100vw, 486px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/bfc664bf9755402df8e7fbf68961da3c/bd48c/img_hidden_class2.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 488px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 50.67567567567568%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAKCAYAAAC0VX7mAAAACXBIWXMAAAsTAAALEwEAmpwYAAABd0lEQVQoz4VSXW+CQBC8//+/2jfT+FJtWhQxgoAgcl/cKU7nLmqtbeImk8DBzc7OrDifz7DWQmuN0+mEUOHsGUINw4AkSbDebCKKooCoqwpJmmJBpMQ4jnhWV0JLwrauIbdbyLJE13UQfd+jZJfi6xMVPzRNE9VKKaGUuiGcBVzfnXNYr9fQSgKbFdDUsDwTxmjk8xZt2kNJDefdLxXX8vx5v99D0Z7DpdnA56b1SDOg2lGxNRDBN2UHSGMx8FIgOh6PcfQA730k1MZgPp8je58hJdp9C2M8skyhLNnkYNlEQlzk3BQFsjzP4zhZlkULrgE4WoJ0QTklpLbgcAzSs7HnPRdDFY/JhcOSQb1Np5jNZug5Xhy5oy1Zg48EKEqgbcNW/A1M3K9JKMcRHf0B1wC7HX2VYV56aFBUHq8vwHI5xtD+WzHxuAqOI1uuAiYTnFcrKK5CsCQo7w89e2iGI2MAP4QPCu8JPQklSQYqNFQog9on+3hf3/9PBxNm+ZHFAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/bfc664bf9755402df8e7fbf68961da3c/bd48c/img_hidden_class2.png&quot;
-        srcset=&quot;/static/bfc664bf9755402df8e7fbf68961da3c/12f09/img_hidden_class2.png 148w,
-/static/bfc664bf9755402df8e7fbf68961da3c/e4a3f/img_hidden_class2.png 295w,
-/static/bfc664bf9755402df8e7fbf68961da3c/bd48c/img_hidden_class2.png 488w&quot;
-        sizes=&quot;(max-width: 488px) 100vw, 488px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;p&gt;주의할 점은, 아래와 같은 코드가 있을 때:&lt;/p&gt;
-&lt;deckgo-highlight-code language=&quot;jsx&quot;  &gt;
-          &lt;code slot=&quot;code&quot;&gt;function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}
-
-var obj1 = new Point(1,2);
-var obj2 = new Point(3,4);
-
-obj1.a = 5;
-obj1.b = 10;
-
-obj2.b = 10;
-obj2.a = 5;1  function Point(x,y) {
-	this.x = x;
-	this.y = y;
-}
- 
-var obj1 = new Point(1,2);
-var obj2 = new Point(3,4);
-
-obj1.a = 5;
-obj1.b = 10;
-
-obj2.b = 10;
-obj2.a = 5;&lt;/code&gt;
-        &lt;/deckgo-highlight-code&gt;
-&lt;p&gt;처음 &lt;code class=&quot;language-text&quot;&gt;obj1&lt;/code&gt;와 &lt;code class=&quot;language-text&quot;&gt;obj2&lt;/code&gt;는 동일한 hidden class를 공유하지만, 속성을 추가하는 시점부터 hidden class가 달라진다고 한다:&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/a3707176ff6ce9d6c271f1868390de7f/d30ee/img_hidden_class3.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block;  max-width: 590px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAB80lEQVQ4y6WUiY7iMBBE8/8fCGQgF+S+Lztxrlp3M6DZSDvDMpastkH9UtVt28CbY9s2jvMyI0wCeL6LQUkYb+KewGlRcD0XnutBjv1rQEp+AB7rr8CzbWqog3EaXlf4AOzHsi7oZIN+6Hj/3wqpTqSE4jQrrqEcBRpRfa/wXxarpkQYhkjTlEEE6WWPaZogtErjO8De5oYVYRrANE1cLhe0okZepziZJxyPR5R1AWNf8L3Fvu8RxzHKokTbNYizUCefYNkWKxRaneM6sCzrDtwrlFLyHIaBZ13XuN1uuF6vnFA0GfIyQ1HlXEc1jzoK7jYfG0oSQjCEYtd1SJIEWZahaRqul/mhLZ4vKMocSimsy4Z5XrAsK+ZpxiBHjIOCGicYBCmKAlVV8YyiiNU4jsOFp/1Zw8hSUVRI41wr9hEGkRYgGdI2HbvpOwGDlJEl27ZZFUGDIGBlZJf21ABX16mqdA2jjGvmeR66VqBv5VPAE0ggmmSXLI3j+Iz7kcQZDocDK26bHqIf4Pu+/oB7B34FEPynq9bUHaIwRpbm97qpCVLo/HFm+Evn8L7+vGq6Eeu6fcaV/1Nq1moFr409YH8mf7rP9FupmxUGCXf+168Nddnzrtykvyy//cBOK84fF9iWrc+j+v0DO+jG5GnFHaaa/gGc5MgS7DeBGgAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px white;&quot;
-        alt=&quot;img&quot;
-        title=&quot;&quot;
-        src=&quot;/static/a3707176ff6ce9d6c271f1868390de7f/fcda8/img_hidden_class3.png&quot;
-        srcset=&quot;/static/a3707176ff6ce9d6c271f1868390de7f/12f09/img_hidden_class3.png 148w,
-/static/a3707176ff6ce9d6c271f1868390de7f/e4a3f/img_hidden_class3.png 295w,
-/static/a3707176ff6ce9d6c271f1868390de7f/fcda8/img_hidden_class3.png 590w,
-/static/a3707176ff6ce9d6c271f1868390de7f/efc66/img_hidden_class3.png 885w,
-/static/a3707176ff6ce9d6c271f1868390de7f/d30ee/img_hidden_class3.png 980w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;h1&gt;Inline Caching&lt;/h1&gt;
-&lt;p&gt;동적 타입 최적화를 위해 &lt;strong&gt;inline caching&lt;/strong&gt;을 사용하고 있다. 이 기법은 &lt;strong&gt;동일한 메소드를 반복 호출할 때 동일한 유형의 객체에서 발생할 것이다&lt;/strong&gt;라는 점을 기반으로 하고 있다.&lt;/p&gt;
-&lt;p&gt;V8 엔진은 최근 호출된 메서드의 객체 타입을 캐싱해두고 있으면서 호출 속도를 높인다. 캐싱된 객체 타입이 일치한다면, 객체 속성에 직접 액세스하는 대신 캐싱되어있는 히든 클래스 정보를 사용하는 프로세스로 대신 수행할 수 있게 한다. &lt;/p&gt;
-&lt;p&gt;만약 어떤 두 객체가 같은 hidden class를 공유한다면 실행속도가 크게 늘어날 수 있다. 또, hidden class의 변경이 없을 수록 캐싱의 효과가 좋다.&lt;/p&gt;
-&lt;h1&gt;결론&lt;/h1&gt;
-&lt;p&gt;Hidden class와 inline caching은  V8 엔진 기반 브라우저에서 최적의 퍼포먼스를 위해 알고 있으면 좋은 개념이다.&lt;/p&gt;
-&lt;p&gt;좋은 퍼모먼스를 위해 다음을 지키면 좋을 것 같다:&lt;/p&gt;
-&lt;ol&gt;
-&lt;li&gt;가능한 hidden class의 변경을 줄일 것&lt;/li&gt;
-&lt;li&gt;가능한 hidden class 공유가 잘 되도록 할 것&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;사실 typescript를 쓰거나 immutable한 코딩 습관을 가지고 있다면 자연스러운 일일 것 같다.&lt;/p&gt;
-&lt;h1&gt;Reference&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&quot;&gt;https://richardartoul.github.io/jekyll/update/2015/04/26/hidden-classes.html&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까?]]></title><description><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까? 스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA…]]></description><link>https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</guid><pubDate>Thu, 07 Oct 2021 09:57:52 GMT</pubDate><content:encoded>&lt;h1&gt;JIRA 칸반 보드에 점들은 대체 무엇일까?&lt;/h1&gt;
+&lt;p&gt;주의할 점은 &lt;strong&gt;타건감이 확실히 바뀌긴 한다&lt;/strong&gt;는 점이다. 기계식 키보드 스위치 감각이 너무 좋았다면 사실 불만족스러울지도 모르겠다. 하지만 &lt;strong&gt;이정도 가격과 정성을 들여서 소음을 줄이는 효과를 만들어내는 것은 오링뿐&lt;/strong&gt;일 것 같다. 이정도 투자로 한 번쯤 시도해볼만 하지 않을까? ㅎㅎ&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까?]]></title><description><![CDATA[JIRA 칸반 보드에 점들은 대체 무엇일까? 스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA…]]></description><link>https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2021-10-07-jira-kanban-card-dots/</guid><pubDate>Thu, 07 Oct 2021 09:57:52 GMT</pubDate><content:encoded>&lt;h1&gt;JIRA 칸반 보드에 점들은 대체 무엇일까?&lt;/h1&gt;
 &lt;p&gt;스크럼이나 칸반은 이미 업계 표준이 될 정도로 많이 사용되고 있는 방법론인 것 같다. JIRA 역시 마찬가지로 굉장히 많이 쓰는 툴인 것 같다. 요즘은 취준 전에 JIRA 사용 경험을 이미 하고 오는 사람들도 있을 정도다.&lt;/p&gt;
 &lt;p&gt;내가 있는 조직도 기본적으로는 스크럼으로 개발을 하고 있기 때문에 평소에는 스크럼 보드를 이용하고 있는데, 최근 일정 조정이 되면서 칸반 보드를 생성해서 사용하게 됐다. 그런데, 사용하고 있던 카드 레이아웃과 다른 생소한 요소를 발견하게 되었다.&lt;/p&gt;
 &lt;p&gt;
@@ -1346,7 +1453,7 @@ obj2.a = 5;&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoklEQVQY03WQ3Q6CMAyF9/7P5I1P4K0XuDGQkYAEw6ZGtp66DTGExCYnX3/Sk6ZCqhqybLIu6oqyMihkDaUbNG2X68k6MDOIiIkQiR85TdIwRqLQejFJZquhLBeatoeuWjj3zIb83d1xGxBq8JgD1oW/Wi/Y9OKVhNtwjxrRj5ZPxwNEN715nj2HENjvFDYMgRKx5InE3vv8DmsfmNyLTXHGBxnJNQ3hP2pQAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 18.243243243243242%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAoUlEQVQY03WPyw6CMBBF+/+/5MovcOtCgSpCIo8CBenzjrRoJEYnOTl3JplJhlVNh7rt0IoeTdtH12G2IDoZ+3F6QGsDpQypYB29ZqUj82pinOfILgWSLMc5/WS+uCgr8GsZDxJRgH54W2BpY2Ec3gt/CbU5FLP3/vWNQCUkHfY7sPugyRhLzjmyX7iNnfPBWHOwJ2stBjlCygnDONPtdMQTIrg1009RnPwAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1383,7 +1490,7 @@ obj2.a = 5;&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7klEQVQY042P22rDMBBE/f8/1EKg0A8opLS0Ly1JZFsXS5Z1sS1f5FEVl+SpD1047LAzC7uFEA3qugZnHLSmkFKCkBJKKZCSoaLZz5CKQ7UGUnU4Ewou1D6/IqTGrYqKKXxfOM6lwIlwlFTh60TBhM4oNDncKA3etDDWQ3cOlEm02v56Gd1ZpJR2irfLjKfXAY8vHofcD8ceD1k/v4/YkO7B/1J8soAPOkHbCd4NCAswThvCvO0v5My9bks37fshX2rQ5gutsZhCQMHMlJSfU1zXFJclbTHuxMyaZ3+xXLMxwvkB2jgY18MZgzCM+AGcK333a+8icQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 25%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA40lEQVQY042QwWrDMBBE/f8/1ELooR9QaKHk1JKmASeOZUkr2ZIsyaOsBMmphy48dpkdDWI7Oy8Qk8IkdetKEa7j1Pooqk6NkXdkZhDZpktlmi7Zp7XFGlOjI7Pg+3jBz2nA4XfAqRf4OvQ4D4oRHC45QGK4TtAcpjioP48trO4qNbSU0ugEJbx8LHh+s9hx373PeOL59dNhQ3kY/0t3oRX7PkBSgDUOPgIubPDrhlrsedT90X2u56qnmviHpAnBe3TShiLsWnJKJcdYtpwbmUms/UWs3pxh7AKpDTTf1mgN7xxuIMt/4KQA6SgAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1420,7 +1527,7 @@ obj2.a = 5;&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 27.7027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABLElEQVQY04WPzU7CQBSF+4qyIhr38jyuZdONWxuMb6AhRmmZ/kNppUA7/ZsKQtHFGadTQ1zp4suce+fckxzFIC5MywcxPbhegIluyZdYc+jEh+UsMDXncg7CNQxzhqnQ7d5ssQM4foS8qJHljCuvugNDHBrEE6YALxMbtrsAEUadzORhG0asoAsUu1ZbP2G/A/M2UHssoD0VGI1L3AtG4woPzzXidAfGtijKd5TVVtLpjlZXbHdCBhY1V4yowWLTINwcEKVHOFENJ2RIaGtgooasIulq1Se9WmeIVxTLmCJJclBaQrke3nJVVbk6vOHancbTlPKqZJxm1X/A9d9ge6EgwjKKQRMK5fLiHP1+H2e9Hq4GA9CsQHP8wse+wf7wB+K/aT6Ft+PQHOXuG0PArrOO3DjRAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 27.7027027027027%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAABKklEQVQY04WPTU7DMBCFc0W6qkAcgF6HNd1kw5aoiBuAKsRPVZKWQmonaRM7iZPQ0rhl8YztqogVLD7NmzfjsZ5DaAoaZyBRiihhCMnC9pYoQ6w9U6OYYZkWuu5nZvdAsuDIi9qgnMfnKUbjmcWfhHh4ChBM5xgHofbetKe1/277OVlab+yH8PXOS2AIMZ1RFGWDwhy8ui3h3ZUYDAWuNYNhhZv7Bglbo65XKMUHRLWy/NZC66pe/2APlo1yRlRinkqQtAVlW0xogwmpkXGzYGI0hzj20aE3erHMbdw44chYAc4FnPP+pXJdV7n9C+V5nmIsV5WoFc+r/9BRIwSvREMR0wQ843BOT47R7XZx1OngrNfTvwvI7Rc+NxKb9g/0XMqd3t3Tyq31vgHEpbFLMoH6LwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1520,7 +1627,7 @@ $pip install python-telegram-bot&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAABk7k2zoyLh//EABoQAAICAwAAAAAAAAAAAAAAAAERAAMCECH/2gAIAQEAAQUCr7YVDmIywXr/xAAXEQEBAQEAAAAAAAAAAAAAAAABABES/9oACAEDAQE/AU25L//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEv/aAAgBAgEBPwEbTf/EABkQAAIDAQAAAAAAAAAAAAAAABAhAAFxgf/aAAgBAQAGPwJ8NbGP/8QAGhABAQADAQEAAAAAAAAAAAAAAQARIUExUf/aAAgBAQABPyFmH4iHQsvrAKO4i2zPt//aAAwDAQACAAMAAAAQ69//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPxCoP//EABYRAAMAAAAAAAAAAAAAAAAAAAEQEf/aAAgBAgEBPxCIR//EABoQAQACAwEAAAAAAAAAAAAAAAEAIRFRcUH/2gAIAQEAAT8QIMgt0X3O4BlBtahWHYKjmAUTjMvTqVj/2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAQCAwX/xAAVAQEBAAAAAAAAAAAAAAAAAAAAA//aAAwDAQACEAMQAAABk7k2zoyLh//EABoQAAICAwAAAAAAAAAAAAAAAAERAAMCECH/2gAIAQEAAQUCr7YVDmIywXr/xAAXEQEBAQEAAAAAAAAAAAAAAAABABES/9oACAEDAQE/AU25L//EABYRAQEBAAAAAAAAAAAAAAAAAAEAEv/aAAgBAgEBPwEbTf/EABgQAAIDAAAAAAAAAAAAAAAAABAhAAGB/9oACAEBAAY/AnhqMf/EABoQAQACAwEAAAAAAAAAAAAAAAEAESExQVH/2gAIAQEAAT8hZT4hDoS31gCjm4iyuO5//9oADAMBAAIAAwAAABDr3//EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAEDAQE/EKg//8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/EIhH/8QAGxABAAIDAQEAAAAAAAAAAAAAAQARIVFxMUH/2gAIAQEAAT8QIMgt0X7e4BaDb5CsOwYjmAYpxlvTqYx//9k=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1556,7 +1663,7 @@ $pip install python-telegram-bot&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABsxTp0mOwr//EABgQAQEAAwAAAAAAAAAAAAAAAAEAAhAh/9oACAEBAAEFAg4llGm//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BSf/EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/Aaf/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAgMAAAAAAAAAAAAAAAAAARAxESFh/9oACAEBAAE/IU2ODMk9KVj/2gAMAwEAAgADAAAAEIMv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAx/9oACAEDAQE/EEHYy//EABYRAQEBAAAAAAAAAAAAAAAAAAEAQf/aAAgBAgEBPxADkl//xAAaEAEBAQEBAQEAAAAAAAAAAAABEQAhkUGh/9oACAEBAAE/EIDSuIOfppZIS9c1lX3BT77h3v/Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAMEAQL/xAAVAQEBAAAAAAAAAAAAAAAAAAACA//aAAwDAQACEAMQAAABsxTp0mOwr//EABgQAQEAAwAAAAAAAAAAAAAAAAEAAhAh/9oACAEBAAEFAg4llGm//8QAFREBAQAAAAAAAAAAAAAAAAAAARD/2gAIAQMBAT8BSf/EABURAQEAAAAAAAAAAAAAAAAAABAR/9oACAECAQE/Aaf/xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAACAQUAAAAAAAAAAAAAAAAAAREQITFBYf/aAAgBAQABPyFMJ2cGSTsqsj//2gAMAwEAAgADAAAAEAMv/8QAFhEBAQEAAAAAAAAAAAAAAAAAAQAx/9oACAEDAQE/EEHYy//EABYRAQEBAAAAAAAAAAAAAAAAAAEAQf/aAAgBAgEBPxADkl//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhkUGh/9oACAEBAAE/EGNZdQgz6SrKhL1jUNewLPewbn//2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1607,7 +1714,7 @@ $pip install python-telegram-bot&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 54.05405405405405%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAECA//EABQBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAW+VCKK//8QAGRABAAIDAAAAAAAAAAAAAAAAAAECESFB/9oACAEBAAEFAquoZ0//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8BrX//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BjH//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAwEBAAAAAAAAAAAAAAABEQAQQSEx/9oACAEBAAE/Idx+FRENQl29r//aAAwDAQACAAMAAAAQXO//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8QOp//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8QGL//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUFR/9oACAEBAAE/EBuL5vyBFe+cI9YKlTkbZoGyi+T/2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 54.05405405405405%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECA//EABQBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAS8qCQwr/8QAGRABAAIDAAAAAAAAAAAAAAAAAAECESFB/9oACAEBAAEFAquoZ0//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQMBAT8BrX//xAAWEQEBAQAAAAAAAAAAAAAAAAAAARH/2gAIAQIBAT8BjH//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAaEAACAwEBAAAAAAAAAAAAAAABEQAQQSEx/9oACAEBAAE/Idx+FRENQl29r//aAAwDAQACAAMAAAAQTO//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQMBAT8QOp//xAAWEQADAAAAAAAAAAAAAAAAAAABECH/2gAIAQIBAT8QGL//xAAaEAEAAwEBAQAAAAAAAAAAAAABABEhMUFR/9oACAEBAAE/EBuLc35Ai384R6wVKnI2zQNlF8n/2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1645,7 +1752,7 @@ $pip install python-telegram-bot&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAUsZ80W8A//EABgQAQADAQAAAAAAAAAAAAAAAAEAAhEQ/9oACAEBAAEFAqBmhNgsrz//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQMBAT8BiY//xAAWEQEBAQAAAAAAAAAAAAAAAAAAEQH/2gAIAQIBAT8Bq6//xAAXEAADAQAAAAAAAAAAAAAAAAAQIDFh/9oACAEBAAY/AtET/8QAGhABAAMAAwAAAAAAAAAAAAAAAQARMRAhUf/aAAgBAQABPyFOLtEOBKHqCxe+Ds//2gAMAwEAAgADAAAAEIgv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARUf/aAAgBAwEBPxBa6scr/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARYf/aAAgBAgEBPxAIYF0v/8QAGxABAAICAwAAAAAAAAAAAAAAAQARIUEQMVH/2gAIAQEAAT8QuD0FLiUURsIsQ9rWW4Lao1ct8X//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAGQAAAQUAAAAAAAAAAAAAAAAAAAECAwQF/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAL/2gAMAwEAAhADEAAAAUsZ80W8A//EABcQAQEBAQAAAAAAAAAAAAAAAAEAEQL/2gAIAQEAAQUC4DNC2FuZv//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAwEBPwGJj//EABYRAQEBAAAAAAAAAAAAAAAAAAARAf/aAAgBAgEBPwGrr//EABcQAAMBAAAAAAAAAAAAAAAAABAgMWH/2gAIAQEABj8C0RP/xAAaEAEAAwADAAAAAAAAAAAAAAABABExECFR/9oACAEBAAE/IU4u0Q4Sh6gsXvhqf//aAAwDAQACAAMAAAAQiC//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAEDAQE/EFrqxyv/xAAXEQEBAQEAAAAAAAAAAAAAAAABABFh/9oACAECAQE/EAhgXS//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhQRAxUf/aAAgBAQABPxC4PQUuJRQHYRYh7WstwW1Rq5b4P//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1681,7 +1788,7 @@ $pip install python-telegram-bot&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAF3zqRdxQf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAARICMf/aAAgBAQABBQLnK5WInr//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGH/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Bp//EABcQAAMBAAAAAAAAAAAAAAAAAAAgIUH/2gAIAQEABj8Cwi//xAAaEAACAgMAAAAAAAAAAAAAAAABIQARIHGh/9oACAEBAAE/IQAC+olBe49VgP/aAAwDAQACAAMAAAAQMC//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAEDAQE/EF9gQy//xAAXEQEBAQEAAAAAAAAAAAAAAAABACFR/9oACAECAQE/EA8nW//EABkQAQADAQEAAAAAAAAAAAAAAAEAETEhUf/aAAgBAQABPxCi+Or0wp3VkGG2e0xKlzYlHk//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 56.08108108108109%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAIDBf/EABUBAQEAAAAAAAAAAAAAAAAAAAEC/9oADAMBAAIQAxAAAAF3zqRdxQf/xAAYEAEBAQEBAAAAAAAAAAAAAAAAARICMf/aAAgBAQABBQLnK5WInr//xAAVEQEBAAAAAAAAAAAAAAAAAAAQEf/aAAgBAwEBPwGH/8QAFREBAQAAAAAAAAAAAAAAAAAAEBH/2gAIAQIBAT8Bp//EABcQAAMBAAAAAAAAAAAAAAAAAAAgIUH/2gAIAQEABj8Cwi//xAAaEAACAgMAAAAAAAAAAAAAAAABIQARIHGh/9oACAEBAAE/IQAC+olBe49VgP/aAAwDAQACAAMAAAAQMC//xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAEDAQE/EF9gwy//xAAXEQEBAQEAAAAAAAAAAAAAAAABACFR/9oACAECAQE/EA8nW//EABkQAQEBAQEBAAAAAAAAAAAAAAERACExUf/aAAgBAQABPxCF/HV6cU7V5hhqZ2OSpd7Gh83/2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1717,7 +1824,7 @@ $pip install python-telegram-bot&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 58.78378378378378%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABduCgVDCL/8QAFxABAQEBAAAAAAAAAAAAAAAAAQACEP/aAAgBAQABBQIyTnM5hjn/xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQMBAT8BhX//xAAWEQADAAAAAAAAAAAAAAAAAAABEBH/2gAIAQIBAT8BoX//xAAUEAEAAAAAAAAAAAAAAAAAAAAg/9oACAEBAAY/Al//xAAbEAEAAgIDAAAAAAAAAAAAAAABABEhMUFhcf/aAAgBAQABPyGqWPcEYzKnUR5Y29sfZ//aAAwDAQACAAMAAAAQ/wDv/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARUf/aAAgBAwEBPxB7RoX/xAAXEQEBAQEAAAAAAAAAAAAAAAABABFR/9oACAECAQE/EDlOLf/EABwQAQABBAMAAAAAAAAAAAAAAAEAESExQYGRwf/aAAgBAQABPxBT4Fy0vGLWtAxjDSsyTcx/oiVuu5//2Q==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 58.78378378378378%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAwEBAAAAAAAAAAAAAAAAAAIDAQT/xAAVAQEBAAAAAAAAAAAAAAAAAAACAf/aAAwDAQACEAMQAAABduCgVDCL/8QAFxABAQEBAAAAAAAAAAAAAAAAAQIAEP/aAAgBAQABBQIkzM6pw45//8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAEDAQE/AYV//8QAFhEAAwAAAAAAAAAAAAAAAAAAARAR/9oACAECAQE/AaF//8QAFBABAAAAAAAAAAAAAAAAAAAAIP/aAAgBAQAGPwJf/8QAGxABAAICAwAAAAAAAAAAAAAAAQARITFBYXH/2gAIAQEAAT8hqlj3BGMsodRHljb2x9n/2gAMAwEAAgADAAAAEP8A7//EABcRAQEBAQAAAAAAAAAAAAAAAAEAEVH/2gAIAQMBAT8Qe0aF/8QAFxEBAQEBAAAAAAAAAAAAAAAAAQARUf/aAAgBAgEBPxA5Ti3/xAAbEAEAAQUBAAAAAAAAAAAAAAABABEhMUGRwf/aAAgBAQABPxBT4Fy0vGLXoBiGGlZku0f6Ilbrs//Z&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -1977,7 +2084,7 @@ npx cap add ios&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 46.621621621621614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlUlEQVQoz41SyU7jUBD05yHmYzjBDc2VO+JHkIJQFEWIG1xCiIKdEDuLHWfxEjvO8xLsFK8e44g5IGGpVK1uverqbmtZ7KAIdeRpgrKsUFUVfvsdDgf5pvwPWlEU2O8LpGkqeY/dbocgCOB5HlarFZbLpQJj13Uxn8/hOA4WiwWiKEKWZeptDc11F7i9u8f55V+8mybiOEa73Uaz2USj0UCr1UK328V4PEa/34eu6zAMA4PBAL7vg4YoSgghoBmycH1zg5M/p3h6foaQDnu9nkKn01E8nU6VS7oj6JbMvG3byjnrymGe51iv13jtvqgExxiNRjClW8uyFNPdcDhUeTLzjMmbzQZhGCpWgrRJUR6DtlmYzWYKtu1gMpkembtjns5qNq0xbGcOkf4bmaoMkmQnBVP44Rb6xMebRM/yZOyp+NX04K4CRLJhFMVqEjYvkgCHLAJKgSKTgiwQtTC5XvJP+Lq8vHK8xdVDhYu7Eme3H9DdDBp/E+L76YWQqPkIcWzK63Jv222Cx1GOppHj/i3HcpPiE9FAnSNopM5BAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 46.621621621621614%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAABYlAAAWJQFJUiTwAAABlElEQVQoz41STW+CQBD17zX9Mb00vTTptffGP9ImmsYY0/RWL9ZPjAqoIIIggriACr7uTMW0hyYlebzJbPbNm5ktJXGMva8gjSNkWY48z/Hf73Q6yTvZL5RiKXg4HCDOvNvt4HkeXNeF4ziwbZtBsWVZME0ThmFwHAQBkiQBaRQoHaXIc6WK2/sHjFUVYRii0WigVquhUqmgXq+j3W5D13X0+30oioLhcIjRaMSF0zRlUYIQQgoej3gql3F1fY2PZhNCOuz1euh2u2i1Wsyz2QzLpY3FYsEgt8TT6fTilrpgh1RhtXLQaX9ygtqYTCZQpVtN05jJHTmiPDHlx+Mx82azge/7zCxINkmUlkG26WA+nzMMw5QuZhem+VGeHBesajoMcyF3cG6ZfoQo2knBGJ6/hTL1MJDoaq6MXY47qgvLWSOQBYMg5E6o+D5a45QEQCawT6QgbZUOyS4JExdD/gvF5oNwi8e3HHfVDDcvRyhW8v1sSPTn6oWI+RkxXyAuRWm7NLftNsL7JEVtmOJ1kMLexPgCEYKdyMAEeDsAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2017,7 +2124,7 @@ npx cap add ios&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd+ykUIP/8QAFxAAAwEAAAAAAAAAAAAAAAAAAQIDIP/aAAgBAQABBQJblrjP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAAQMSICH/2gAIAQEABj8CK45b/8QAGhABAAEFAAAAAAAAAAAAAAAAAQARICFB8P/aAAgBAQABPyFKYlK7ieLf/9oADAMBAAIAAwAAABCQz//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8QP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8QP//EABwQAQACAwADAAAAAAAAAAAAAAEAESExURChwf/aAAgBAQABPxCsrlHCjacY1FT0+y3saGwL7DZg8f/Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAALABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBP/EABQBAQAAAAAAAAAAAAAAAAAAAAD/2gAMAwEAAhADEAAAAd+ykUIP/8QAFxAAAwEAAAAAAAAAAAAAAAAAAQIDIP/aAAgBAQABBQJblrjP/8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAwEBPwE//8QAFBEBAAAAAAAAAAAAAAAAAAAAEP/aAAgBAgEBPwE//8QAGBAAAgMAAAAAAAAAAAAAAAAAAQMSICH/2gAIAQEABj8CK45b/8QAGRABAAIDAAAAAAAAAAAAAAAAAQARICHw/9oACAEBAAE/IUpqUuJ4x//aAAwDAQACAAMAAAAQkM//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAEDAQE/ED//xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAcEAEAAgMAAwAAAAAAAAAAAAABABEhMVEQocH/2gAIAQEAAT8QrK5RyUbTjG0qen2W9jhsC+w2YPH/2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2052,7 +2159,7 @@ npx cap add ios&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB5UlEQVQ4y4VT227aUBD0Z0RcDcb3G1CMwTZ2cAzEgITUSry1Td8bVaqaL+iHT3c3AqWE0ofR7tlzNJ7ZXSuLfIr0PoFt27AIDiFLE8ziGLquYaD1YRo6fM+FbZnwXEdiGAYIAx/xNJLzaDiUO2WxyFE/1nA9D5ahQR+VeHz6jeTjC+6iL2jGX9GeP8HffEeD8rvoM9rJN3zY/5Ba+umF3v7CsH5GfPgJJU1TLJfLV4WWBdf1sN3tUJYP8PwAhmmRcgfzJKU3jpxtx0VR3GM2n6NarbHebJCkGR6qFZSiKLAjAt/3hdA0TQxJvk25qnbR7XbR6/XIvk5RpZoq0TQM6IMBLHpvkWW+56iUZYnVanVWyMiyDFEUySMmaDabaDQaaLVaaLfbAq7xmePbXMnzHExqypcsIU6SBFyv61ry6XSKmIY0Ho+pJS486jej3+8LeafTOUMUVlUlhI7jYEA2+IJtcs0gayflfHdJ8I6Qlez3e8xmM1GnadrZ2jVbJ5ITLklpbRbYbrcyabZ0zcYtRe8U8tqwbZ5sEAR/Ed4i/hdkbQ6HA0ajEa2KLX06WfufuquEa1rM4/GIlKYZhqGsCvfrbZ8u+3UL0kMeymQykYlqpFDTBkLMZ1bMOQ+Ll/wa+Ad4hYo/bMyDNY8jqaAAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAAB5UlEQVQ4y31SXY+aUBDlZ2xUFAX5FtCKIBB3ZWFd1MSkTXxrG9/bNGm6v6A//HRmWjbU/Xg4mYF775lzZkZJFzPkdxkc24Ht2HAdB0WRI00TTKcGDF2HZZmY+T7dseB5LkUbYRggDAIkqxUcejefR/B9D4rjemgeG3j0wDZ1TOclHi+/kX18wk38Bf3kK9T1BbPdN/Qov4k/Q80u+HD8If/yT0909xei5juS008oXHm73VIVUkiVPc/H/nBEWd7DnwUwLZuUu1hnOd1x5ZtF3N7eIV1nqOoHPOx2yPIC91UNxSfCw+EAjkxoWRaiKJJcG40wIozHY7I/pahB0zSJpmnCMAy5bxP4nHNlsVigrutnhYyiKBDHsVxign6/j16vh8FgAFVVBZwz+IzR5kpAjS3L8m8lImPiLMuw2WzQNI3kK2p8kiTg4p7niRvGZDIR8uFw+AxRWFWVELquKzb4gG3yP7bGkaHTxK8JXhByxePxSGuSijp+1FrrWmnzlqTFNakMZb/fy6RZ7Ws23lP0QiETcg95stzPLuF7xG9BLJ9OJ9r0uVjmHrbW3lJ3bfk/wiiMcD6fZZphGMqqcL+6j17rl9op0oXiuo4MZblcykR1UqjrhhC3y8s5D2v0b9GvoWktNPwBF8iAmoW3TWUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2091,7 +2198,7 @@ npx cap add ios&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 94.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAABpElEQVQ4y62U626DMAyFeZGuN0K4h1uBltKpk9jPbe//Mmc+aYtY10nTxg8rJnE+O4k5ztDVOA97vL1/4HUYUNc12qbBvm3RH4/o+97OP59OOIlxfDmf0XWdXW8lrpE9h8MBTbuHE2iNMPQRxzHKskTg+3Bd11qSJAiDAFmWIYoiGxOFIRpJSD+QtSLP4XkejEmhlIaTCIzV5LKglII3NQmMBeRLEmMMtCT3rwmZmDGcDyUJ4UEQwdHak43KwrQA7s27G39atyYsh1kvH/rhht8awazeAr1/gKZAHtvxZwSyuFmB9shToPdH42Mo5doXn69C6RL26izA2/2xP2cFspfnBbJCPTfwW4WP/pjp3AP/K9DX4wRfSl1FgaZu40QsuGn0pVVubTPeoYVI0Ha7RSpyVRaFlSYjfiFGn/LFHqNfVRXSNB3ljq3CvYRxdDbrNdZii8XCBlM4L8EV9l0PI5szkwnEiG+s4BaSlFpJceW4XC5Bzmq1guNuN6Apd4MkDqVK0T/NH92Xb6nI5KiyAoddg11eyp3p8VqoiTwqCyJw+fSETyyLL+E16MnjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 94.5945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAABoElEQVQ4y61U2XLCMAzMj1Cu2M7tXJBACB06kz62/f+f2WrNMUBhptPmYbGwpJVsK+sN3RqHYYOPzy+8DwPW6zXapkHbtuh3O/R97/b3+73Dq+DtcEDXdc7POOZst1s07QZeaAyiKECSJKjKEmEQwF8u4fs+0jRFGIbI8xxxHLuYKIrQSEHa9JVFAa01rM3gKwMvjQNspEohDqUU9DUkMBGiQIpYa2GkOG0WC8PAxXCfRUgeRjE8I0laK0dG+x76bn3mdzBaCKXq8Y95mPBbkJjdO0L9D6JrQh7bC0YkZHOjErojXxPqP4KPoeTl+eLjdShTwlkdhfB8f5zPUQk5y+MSskMzNuGPDh99MeaJ/2TfEgbmssGXUidRINR5vRILJt3Y54LnO+QPHUuRrEzkihJGabJilwLalC/OGO26rpFl2VHuqsqNCnPJw9VbzOeYCyaTiQumcB6Da2y63iXnNpfVwgoouKUUpVZSXLlOp1OQZzabwfOXCxDKXyBNIulS9M9op3cpO7IF6rzEdtVgVVRyZ+ZyLRRjHpUNkXD68oJv93gv1FbNrZEAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2213,7 +2320,7 @@ ssh-rsa AAAB3Nza어쩌구저쩌구..&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABWxGb6SAj/8QAGxAAAgIDAQAAAAAAAAAAAAAAARIAAwIRISL/2gAIAQEAAQUC8stZlWChRtRK+D//xAAZEQEAAwEBAAAAAAAAAAAAAAABAAMhAhH/2gAIAQMBAT8B9rsNI8hhP//EABkRAAIDAQAAAAAAAAAAAAAAAAABESExQf/aAAgBAgEBPwGGsZfT/8QAGhABAQACAwAAAAAAAAAAAAAAAQAQEUFRYf/aAAgBAQAGPwJ2c3Um5fcN/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAITFRYbHB/9oACAEBAAE/ISaA2tQC4bYAIiMAhuoDWMu5RqnUFDnwT//aAAwDAQACAAMAAAAQGz//xAAYEQEBAAMAAAAAAAAAAAAAAAABACFBUf/aAAgBAwEBPxBMM5yR0X//xAAWEQEBAQAAAAAAAAAAAAAAAAABAGH/2gAIAQIBAT8QtKtX/8QAGhABAAMBAQEAAAAAAAAAAAAAAQARITFB0f/aAAgBAQABPxBdb8A3rKChOfQIDGNhXhFK2VS86hcAfRhlSK96w//Z&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 59.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAMABQDASIAAhEBAxEB/8QAGAAAAgMAAAAAAAAAAAAAAAAAAAIBAwT/xAAVAQEBAAAAAAAAAAAAAAAAAAABA//aAAwDAQACEAMQAAABWxGb6SAj/8QAGxAAAgIDAQAAAAAAAAAAAAAAARIAAwIRISL/2gAIAQEAAQUC8stZlWChRtRK+D//xAAZEQEAAwEBAAAAAAAAAAAAAAABAAIhAxH/2gAIAQMBAT8B953NI1DCf//EABkRAAIDAQAAAAAAAAAAAAAAAAABESExQf/aAAgBAgEBPwGGsZfT/8QAGhABAQACAwAAAAAAAAAAAAAAAQAQEUFRYf/aAAgBAQAGPwJ2c3Um5fcN/8QAHBAAAgICAwAAAAAAAAAAAAAAAREAITFRYbHB/9oACAEBAAE/ISaA2tQC4bYAIiMAhuoDWMu5RqnUFLnwT//aAAwDAQACAAMAAAAQGz//xAAYEQEBAAMAAAAAAAAAAAAAAAABACFBUf/aAAgBAwEBPxBOM5yR0X//xAAWEQEBAQAAAAAAAAAAAAAAAAABAGH/2gAIAQIBAT8QtKtX/8QAGxABAAMAAwEAAAAAAAAAAAAAAQARITFBUdH/2gAIAQEAAT8QXW+gN6yhoTj6BAY1sK6IpWyqXnKFyj0YZUCpvWH/2Q==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2794,7 +2901,7 @@ connection.once(&amp;#39;open&amp;#39;, () =&amp;gt; {
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACCUlEQVQoz52SXW/ScBTG+/X8HN76AfwC3iwxXu3GRGPMXFCme4ksG7qROTdGCAjdxijQMimvBVb6QmmB8bOt6TKWeeNJTvo///Oc5/+cJxUWiwX3I6iju+FwiCiKVCoVEokEsVgMRVHucI+FEDXm01mAWgJrmhYSBplMJonH4w8IF5GKuxSC2nZd1k/SZJV62L+NHpnP8TwvzOA8m83C78NNovMiItSnHu9zWU7r8t2r/1rpvjWP4YRRV6OUTOFaJmJrxNpZnb7pRGNLA5OJh207uJPp301u5yEmqPUby+9PEbRshvTKCrZSY1fWebF3yVXXDAd03eHDu2Muz9UQLNdaSOVrxvZkSdVA65M9y9FtthEc20DvNMPGyBqj9nrMpi5T1+G61uT16gEf19LsJ4rsbOYQfzVCbOCnWi362AlS9juvnj9FksoIrWqKxsUh+lBDVVXaLclXYyLl48jlHSxrxkHygtS3c44OS2ROKyFh4Wibl8+e+KoUBo0O4vE+SlND6Hd/I18V0Hoa5VKdfL5Mpz1CLJz4/1+ea6XPl09Ztj6n2drIsL2R862wkEo5fuxv+tgmu18vebt+xnmxijAeOxiWhet6DPsm/Z6Oodu+sjFBbziwKF00Of0p+T7VqJTbmKaNYRjc+MSOY9HrGqy+OUaWOwhz3wvLJ/Q8l/8N23LoqD2cscsfBdo0bo3r/awAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 53.37837837837838%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAAAsTAAALEwEAmpwYAAACDUlEQVQoz52SX0/TYBTG+/X8HN76AfwC3miMd9wYjTFgIiACUeJAIGSTsS2bS4GxbmzDju5Py+jWdv23sZ9va0o2ojee5M17Ts5znvc5TyshYjabkUSUJ7XneaiqymAwQJZl8vk8hmHwcGY+pKQxDScRagGs63pMFJ3d3V3W1tZoNptzmFmi4v5IUe34Pis/suSbrbh/lzwynRIEAWEYxvlkMonvh5sk+SwhNMOA96UCx63G/av/Wmnemr/hpGFPp7J3iG/byNqQ5ZMWN5aXjC0MeF6A47j4Xvhnk7tpjIlq89aOb0kv5Mi+eI4j1O00TJ59O+eiZ8UDpumy8i5N5awtyEIalxpK9Yqx4y2outENCidFeloHyXVGmD0tbgztMdd6n0noE3guV5dtXi/t83E5S+prme2NIvJPNcZGfqq1ssB6KIXvvHr6GKWmIGn1Q9SzA8yBTrvdpqMpQo1FtbRKo7qNbU/YT51yuHfK0UGF3HEtJiwfbfHyySP6mrBI7SKnU7Q0Hcno/aJxUcboG1QrLUqlKt2OiVzOUKuVaDUNNlYLbH7KsrmeY2u9KKywUSpF0qnPdLvX7Hw55+2HE87kOtJ47GKJD+L7IYMbG0MfMho6QtmYqHc7sIWH12QzNQq5S+pKB8tyGFkWt4LY9Wz6/RFLbzLiH+0hRV7YgjAIfP43HNul2+7jjn1+A+IXNgC1Jxj+AAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -2925,7 +3032,7 @@ connection.once(&amp;#39;open&amp;#39;, () =&amp;gt; {
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEIElEQVQ4y12U21NTVxTG8yf1oX9BO9OHvvShM+1M7YxObTt1HBvlLkkDxATIlYSQREyAAEGEChTQarVWndqOtR3FYriIXARygYSEcIvc5te9DqR2ema+s/bes9b3ffvsfZZuc3OT9fV1DTIWbG9vs7W19e98Y2ODnZ0dbV1iPp/nyZMnPHv2jIWFBdbW1rR8iTp5ZTIZdnd3OTw85ODgQCORBBnv7++zt7dHPB7XIGRSk06nSaVSrK6uks1mNVGJuvn5eWZnZ1laWtIKVlZWNFWBJEiBIBaLMTk5qeUsLi5qZMlkUkMikdDWJepEaXl5mfHxca1AIAKvXr3i5cuXzM3NaWJCKs4kimiRrIiigE4SpGBqaoqZmRmNSEjEoUTZgURJFnFxIcWCFYV4IsnS8hFhSghFTRxOT08zMTGhbUcEZE22nFOQKHnyrYuEMhekUuI2dTxOoZPCeeXg7+fP1XYnNMj2x8bGeK7WxLnkiJC4nJPvrcayJohrURk4NqE5TCiFpUSK/OYWO4U3FAq72hUpolAoKLzRkN9Q10jlFZHPqxuxvaPqCtpJ63Z398ilU6TnYsRn1YFMv2Bi/A9ik+pUpyaVw0l1ONMsvJ4lmXhNPpOksJFhfzvHQSEPhztkU0skF18jj24tm+PxnRHue0u45asmYDqHqfRzSr/+gm/PnqWsspzaSyZaGixcb/Pz8HY/47/dYuav+yRijyisTnC328P1Vs9bwvu3hhl0lXGvzcqAr46Qsw6bXo+5sgJLvQW318kVayN9gQA/XO/h56Fr/H57kNivN1kcf8Tj4TBPfxk6Iszmcvx0Y5jWWj19zbX0eGuJuEz4G00E3JcINtsJBz10dwTpu9rOYLSN0f4ID0Z7+fPOAC8e/ciNriZmxh4UCdcZGRrk4tlTOIwXsFXrtdhsMRBssnK5xUGr30Mo6KM9HKTjip/erhCj33dxdyjKvdFr3OxpIbPw9O2WhxVh+TcncdRU4airxnnJgFsRehxmWjyNCg78viaCijQUaKazrZW+aDsD0RADvRHCbjMPR6JHhJm1HH39/ei/PIGjVhEqskazEWe9CbfDisfVSJPLhs/jIhBs4UrAR6TtMt2dYbpV7O3p5MLpT7ErM8eEWaLRq5w5+RlWQxVm40XMNUZM1eV8Z6yipsZAvdVIQ4MZm92G2+3E63Xj9TiVmA2/38dXH3+It+6YcDWdIRRq4/SJTzCUlVBZcp7SkgtUlJ2nolzNqyowGPWYag2YrVYaHXYcLgWHDbu9HpcSeO/dd7BU6N867OnppfTcGewWM5a6GhqsZpyOBlwuB+4mF26Pl2a/n9ZwmPbOTiLdXUS6IkQ6O+iIdPDR+x9gqa4+Iix2Wvnp06rzJBJx7SeXWOwu0hz+27H/j7zq9tuKR55/AEgx5OV6+n5GAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 95.94594594594595%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAAAsTAAALEwEAmpwYAAAEE0lEQVQ4y22UaW9aVxCG+UmV+gsiVarUT5Uq5UNTqVGaVm1dBe8mhmCMuTZwAbMaLxCzmNhOvcRxk7hpmriqu7lVbZeAF7xj4NpgMNhAvOntmeNQvvRKr+bco5lnZu49Z2T5fB5HR0dcx8fHXMViEScnJ/+9FwoFlEolvk+WYubn57GwsIDt7W0cHh5yf7KydDqNTCaD09NTXF5e4uLigkPIgdbn5+c4OztDIpHgIhgFUpwkSTg4OEA2m+VJycp2d3exsbGBeDzOA/b393lWEjlQACkSiWB5eZn7UAzBUqkUVzKZ5PtkZQTY29tDOBzmASRKsL6+jrW1NWxubvJkBKXKyFJMBVZRJQEHUsDKygpisRgHEYQqJLu1tcUtOVObVAUFk/aZEskU4ntXQImAtKAKV1dXEY1GeTuUgPao5Vwuyy0lpm9dAdI7SZKoWuntWoKMAqmCf5aWWLtRLmp/cXERS2yPKicfSkRVbtL3ZmvaIyW4ZQW8LUKWybA2mGM8KSF/fIJS+Q3K5VN+RCoql8tMb7jyBXaMmF9F+Tw7EcUSiyvzPy0De3JpCenNCBIb7IesvkY0/AciK+yvriyzCpcRW1vF9s4GUskd5DMplAsZnBdzuCjngcsSslIcqd0dQl0Bf/t+Cq/s9XjmaIVL/Q3UDZ+g4YtbuFNTg8aWJmg61HB26TDmdeGnmYcI//IMsb9eIRmZQ/kgih+CVoz1WavAl08fYcLchB+9AsYd7RgwtcMol0OraIHQqUO3zYz+Tj1Ge3rwaCyEF5Mj+HVmApGfn2AnPIffpzxYeDlZBc5MT6JPI8eoTYMhJp9ZDZdejR5LB9x2IzxuK4KDbow+uI/xIS+mH/owOz2MP5+P4fXcU3wX6Mb60mwVODUxjrs1NyGq6mBolXNr1ynh7hbQ6xTR67JiwO3A/QE3BvtdGA4M4PG3ATyfHMKLxyN4EnIis/13FTjJgM1ffgqxTQGxXQlThxJmBrSKWjiteiYRLocFbgbt77HD7+3D6BBVO4DxYR88Fi1mp4JV4MjIKGpv34CoYUAG02tVMHWqYREFWM16dJsNsFvN6HE7GdABn7cXQb8HQWaHQ37UfXYdxraWKjAYDOGrmx9DUCqgVd2Ftk0FdWsT7qkUaGtTQhBU6OrSwmA0wGIxwWazwGY1sWQGuFwOfP7RB7C1K6rA/n4Pbt+4DmVDHZrra9FQz2xjLZqb6tGiaIZSJYdao4RWEKAXjRDNTKIBRmMXzCzBtXffga5JXgWGhh6g8c7XMOo6ILRr0CV0wGTSM2cRFqsFFpsdDnZk+rweDAb88AcD8Ad88PkHmXz48L33oWtVXgHpWtFYSqWSbJocsNuQ5FOEhkA6fTUMsrkcv1o0rf9PBTZ0i2wg0/MvkDDm13YuhMoAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3092,7 +3199,7 @@ connection.once(&amp;#39;open&amp;#39;, () =&amp;gt; {
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 31.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA80lEQVQY0z1R16qEQBTz/79M0BdlFffae++KWCCXHHAfwmmZzMmMsm0biGmasCwL9n3Hfd84z1Nqzpgfx4F1XWXe9z3SNEWSJPh8PrBtG3meYxxHKCRQrCxLabyC13WhrmvpPc8josMwCNq2heM4aJpGhIqikJxQXkJVVXKz7/vQNA2WZSEIAmRZ9ptzIwrEcSwz1oxhGMo55gptzPP8245kVVWh6zpM05RD3JQOaJN5FEUiQi4j6xcK7RLclMJsUsgwDHkb3kohClKA8RVh9DxPONyQUF6xruvEMi19v39wXVfI7PFzyGPOSC7fizWfg/WLf9mYvNrFWn5uAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 31.08108108108108%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAGCAYAAADDl76dAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA8klEQVQY001QyaqFUAzz/7/qXXAjuhBBUZznecaFA/SSgJe3CG3anLQ9Std1sm0bsa6rTNMky7LIPM+/GnIAdfBxHMld15XP509UVRXbtqVpGlH2fWezrmvG4zjkvm+5rosC1J7nkfM8OQzo+55mWKYsS6mqijmgvAI8xuQwDEXXdU6MokiKovj1syyjQZqm7IEjxnHMd8iV/2dhO4g1TRPDMMSyLPK2bXlBnufMkyShCXqI4C+UYRj4N9gUxijCyDRNcRyHU2GEs2AA49cEMQgCarAhoLxmMMbJOMnzPPF9n2LUcAV0yBGhxX+B4zvAX3wBNg67QI6IH00AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3698,7 +3805,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 93.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAACEUlEQVQ4y5VUy47TQBCcG1z4ApA475HP5caVAyc4IiHOGxR5s2yCveT9cJ52bOdlJy6qZuMIiU1iRiq1Zzxd0z1T3SaKlhj5PsbEZDLFYrGAP/IRhCGazSaWyyXiOEYURaVgwmCBu7t7/H708PP+AY+eh+qPKoY8wHEchCROksSSloFZzOdoNVsYjUbodDrodruMTHMfc/4LgqA0lI2ZzWbYbrdYrVZI0/QErW02m9KRCePxGEasGnmeYzqdQgcIWtd9/s+QPwlDOzkcMrjuLzQaDxaOU0Wv1zsdVpowCJbQ/iwTKey37H4vm9MKB2J/EQc6TSYTEQ7J3eCCTzsn6oRDDAhtTHhYepVQsIRx/J0X+pIv+ga+/xaDwSu+9Ate8GvOb7DbvSNx75hUfj3lOP5GR0NSQzIDzzNotQylY1CvG76+4VbXXkWeH+x9PocTYRj2+fmZqX2k/UR8Ib4SH4j31uZ5dDbCfwiTZI1+f0UhbxhZiNtbj/PYbtDDFA/85IjrhJJNmq65mNFusF7HFPXqGM3+iIKsRIQq6IyakZWgpfjdbmeFrWoRJIlzenwm5YQp9m1VuK6LSqVCYTdsY6jVanauUixNqG5ybhR1fala/iZUhpZQglSURbdpt9uU0ODkoJTPyaX4ryE/oy5TdBqRqw0p9EuRnxtqgUaRKUJfXZvtR9BcdjgcloKIlJF8/gB8cKo5rfwA7gAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 93.91891891891892%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAATCAYAAACQjC21AAAACXBIWXMAABYlAAAWJQFJUiTwAAACCUlEQVQ4y5VUPZPTMBRUBw2/AIaelp9LSUtBRcsN9SUTfDkuIT4uHySO82U7/oztWI9dXRKY4Zz4NLPzrCdr9VZaSUVRJHEcSxiGkiSJpGkKJCYXBIHJPwcq8D25ubmVX/e2/Li9k3vblk67I47rivXdkmC7NeRcuAmUt9nI8GEo8/lcxuOxTCYTeTB9VzYY832/MbZYXK3Xa9ntdkZuURQnMJdlWePKiMViIYqsbFVVyWq1Ei5AMO95njyncT4IA9PZ70ux7Z/S798ZWFZHptPfZkxr3ZzQ97fC/8uSVYr5ZnyERl5jsQrYnwUVLpdLEjrg7iOxQNwAPcACZqwb+RikxUVCwhBG0Tds6Euc6Btx3bcym73CSb/ABr9G/53k+XsQTw+i9GXJUXSFiQpeUyBT2Eclw6GCdZT0egomV/jVNluhdWX28ymcCIOA0r5A2ifEz+Zb5CvwEfhgotZhbYX/EcZxitOMYeQMlflyfW2jHx5O/vGQ/k6Uy4S0TVGkSJaIGSRGMHVyqGZ/wJGsQYW80CU8w0hD0/F5nhtj87YQtESdH5+QHEPi1NyKwWAgrVYLxu7D2JZ0u11pt9tmwcaEfKLq2vFen7st/xJSoSGkIVklXxtiNBrBQrPTBEqus8txnI3z1PFRpSySE1zpXOV1jU+gYmWs0MWDyueHYJ/RcZxGIBEVcc4fNmirRunlam4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3775,7 +3882,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 10.81081081081081%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAc0lEQVQI123MywrCMABE0f7/t4lCq3YhImmetpqKEa2J9dpU3Lk4w8DAFGNY0Lcl3q4I5w3eLQm+Jg2aOCji4ytNnZRpxqfkqEtaU81yv1128DIUOe7XPSe3prMVvttOaoQ+IG2Dcg3CCHwv57N3VH/9tg9iVpZb88JkZwAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 10.81081081081081%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAdklEQVQI103Myw6CMBSEYd7/2YwmoLIwxkBvVJQaSxRb8ZdiNC6+OZNZnGz0C5zN6cwKf97QNUt8VxIHRRgk4f4Rp05MFONDYFXOURez1PvLDp6aLMXtuudk17SmwLXbSUmlDghTI5uaSlc4J+ZnryB/9993ewNi9pZhISQ0WAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3820,7 +3927,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 21.62162162162162%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAz0lEQVQY01WP0W6DMAxF+f+v26RtrDTACISVQIAitRsgcXah2qQ9XNmxnePraH155ZZlLHHMkiSsec6Spsxv7yylYzY588mwZh9gDJQl2zDgNdPo3ervRXGqKrheiZgmvpqGIFAnjdYySNY02LTD5R2FaQlVgHEUbAQB9/yfVNsXRcvTM3eBju3ahmAUBZwTqJ1yOctS1Qu2fUb9re8fBjT/G291fYAj1Lw7R6dzW2lQsxfAxhWl8bjzBXv6lHMPoWML/eHk2/s/7Reu4XHBD7XiKvlPdjwYAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 21.62162162162162%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAz0lEQVQY01WPwW6DMBBE+f+vaw8NDTGm4BCKwUCQkhaoeBmIWqmH0dre9ZvZaHk7cLOWOY6Zk4Qly5jTlOnwzuxKJpMxHQ2L/QBjwDnWvsdrxuve6G+tOpYlXK9EjCNfdU0QqJWGoqCXClPjbEuZteRpQzgHGAbBBhBwO/+T3jajaH555S7Q7i43BCPP4ZTARa65ktlU7znrNqP+2nXPAJr/rbeq2sERat4Vt9W6jdSr2QlQxGec8ZSnT4pjpeQeQssauj3Jt/d/2jb8Cc8NHr+NKwVP8snaAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3867,7 +3974,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 20.945945945945947%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAm0lEQVQY01WPCQrFIAxEvf81axe7b7SotPm8AQs/IDHkOTO6lJJt22bzPNu6rnYch3VdZ9M0qXPattXuvm8rBR9CsGEY1Jmf5zGHIPA4jhI+z1MAgt573Zdl0S7n/AnCN02jPYYw7/uaizFq6PteLvu+W13XAnlAQlJc1yUhUlAYFkGYv4S4A5Qv44hIVVXqxQyOFFQJQVI6OwR/0rowwF1HjmQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 20.945945945945947%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAmUlEQVQY012PWw6FIBQD3f82URTFJ0Y/CBwzTbgfl0QPpKUdulqrnedp+77bcRyWUrJpmmzbNk2+cRylve9rbaGHEGxZFk3OpRTrEDHHGBV837cM67pa3/faU4aWc/4F4vfeS6cQD3AdPw7zPKvlui4bhkFGLkAIxfM8ugDFf2B7kQgxQQhRezKNhDjnNFsZlPhZDYJgJhqBHwDLMPO0WrcAAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3908,7 +4015,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 9.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAX0lEQVQI122L2wrCMBAF+//fGUkkl62xwbhxM9L4aAeGAwdmK6XgnMN7zz0EHs+OHB/2Y9DfBkzm/PfEzBCRZa11/VtrjRgjKSVKzqT9xS0rQZTWbYW//JoxBqq69uQL+gSbu5tVSRcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 9.45945945945946%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAACCAYAAABYBvyLAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAWElEQVQI13WMSwrAMAhEc/97Fkp+dSNtNHYaE7Lsg4fMgBOICDFG1FpRS0FrAtE+1aGZofd1tzurKnLOU//3PjAzUkqrHIOZbhxFcF4CfgzOi39EZOrjzgce15viMzSh+QAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -3950,7 +4057,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 16.216216216216214%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAWklEQVQI15XPSwrAIAwE0Nz/oEaELBTR+olj47rQdmDIah6EYoxwzoGZEUJAKQWWtdZrLWOMs7WaRXNO5JwhIp+QJ9B7f8CUEuhqDb13tPv+Ba2qilrr+cycDT++6zI1Tj9OAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 16.216216216216214%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAADCAYAAACTWi8uAAAACXBIWXMAABYlAAAWJQFJUiTwAAAAV0lEQVQI15WPQQrAIAwE/f9HFUIOEUkwoisR2kMvbRfmtGTIpt47cs4HIoKqIrLWeiUyxrjvRQQpitYamPmz6CkspRxhrRVJzeHuiE//yC7mnDCzsyw8G2BY61byIM9sAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
@@ -4005,7 +4112,7 @@ end, city ASC&lt;/code&gt;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 89.86486486486487%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAACRUlEQVQ4y3WUiXKDMAxE+f+vbJuUQA7C4duY7UpAmvSYyY6MJTv4aU01DgMOhwO62w3TNGEaR8ZN21hqTp9HXM9nmL1GcxOGvsflclFZY1D1nPj4+MA4DnDOwVn7KmdhWHg+vON2PML/rJFnynIcQuCGo0HdXuFTQchgXF4U8gIbCroLF04ePi+/anbFXFBNk8GpOcO6gDwvSJxM86b8HSP/jOE1/6NmZqzkNeXY8topJaQYX5UiIqPl0b33j5qouaQ42rbFmXxlj2ok3LZtMAz9N0O36YlhS34dF3rvXvgKO2MmbVYInhsap+xELpY/ZcKM6XzDeKj5phEuyfz8yPu0xphmMjQW167HvR8ROJF2jspm2fhRhBhYG7ea/KtO5sgw55WDHFfGqzIy+QhfHe+aZ40xBj26jOXogkx8KJZSH9Z1jf5+V2MKC/mDgWb+fHvDQMObfX7L1Z8NmqZR0+/8ZCxNq4zzagkiYVxWzVAupqH76dE1t2vBrePx0/MaqF/l+JWxNCszcWelolFZZa4dTN3A3QcEPq+LZ24Y+fxaH5UnmyLs5K7Ka5fCv1wW/jaRUSHHQmYyv+cK4S+P58J1qxaqEnPKJbfcOG6GfYi5KE1gdOQTfuR3Yzf0Z9ue1ZPalBObMmy3RSaf5Tbjnt7fcWc3n2vco87oxvpxEIa7sf+79FbMfekwHU/K2/9Tqx8Hyy6roXP5ffHn1bSS9zS+PTXwtzsiW5z++JBkaYq8snxc5cjznBVs+UvMFTJT0eDln7ovY3x3/3X7to4AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+      style=&quot;padding-bottom: 89.86486486486487%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAABYlAAAWJQFJUiTwAAACOUlEQVQ4y3WUiZLCIBBE8/9fuetqTKI5uSFktmdyqLtaZReEGRDeNBTee5qmiYwxxP13cs7RpBRZtM9jPgQax5HO5zOVZUlaayqGoafT6SSLWmvJYmFrN0nfSmLzc6IWEx3n2Kcc+bbHhoph0nSp72RjJpcWcvFVHmPGz9TdMFG5tzm7QspUKKXpWjVkrKc0LxQxGOdN6dGGRITmNf4nZ0Zb8DaHYZBtxxgpgEv8Ix7jIzG3PUfy0GccdV1R0zSyRjFNowyM4/CBoVkngV9X11j0fw7HNYrmvcOC2oITiWzIb6XBUDUtTT8l0EThbcN8xF1c2xBnMNSG7t1A/TCRx0A8OC4HU4YdANEjN245EjsYLg+GKTEHJcfl/i7m48A3pfTQPEsbgpOjc5/ZMrLbbWPIPmRTDn1PZmPBTNiwl68vGtv2YLTGFJWXiqqqIqUm+eZx7nPRCm2dWAJI0C6r0GcuurqRgUfX2CqPo7Udjh+f55D4lY9daIPtIxJ2ViIYFVnm3pEuK7L9iGuWtskzFgz4fs3nNiJWcOknHI+3nTP+clnw2wRGGRxz8DK+xzLgL8d3xrxVC1QwfIXFDIDuhj3EJuYioLXbY/Ac341dwZ913UiBCr4lVxRl3G4LD9pNe5/BX7+/qUc19xzzlGM2c8vjwAx3Y3+69IbNfetIna/C233IlcfBoMpi6JT/X/x5NS3HHYxvrhW5tqeAEsc3D0niovB2O3iNjz7PScDmd0Isg5kIBs8f8n4BAWl5K7uvjbUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
     &gt;
       &lt;img
         class=&quot;gatsby-resp-image-image&quot;
