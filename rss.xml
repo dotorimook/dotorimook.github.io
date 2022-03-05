@@ -1,4 +1,49 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sun, 06 Feb 2022 12:51:39 GMT</lastBuildDate><item><title><![CDATA[개츠비 블로그 - 계륵일세..]]></title><description><![CDATA[이 블로그를 만든지도 어느덧 1년 하고도 4개월에 접어들고 있는 것 같은데, 그사이에 많은 것이 변한 것 같다. Gatsby js 홈페이지를 보면 버전도 4대가 된 것 같은데 지금 내가 쓰는 것은 2.3 대… 얼마전에는 sharp…]]></description><link>https://dotorimook.github.io/post/2022-02-06-diary/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2022-02-06-diary/</guid><pubDate>Sun, 06 Feb 2022 21:25:52 GMT</pubDate><content:encoded>&lt;p&gt;이 블로그를 만든지도 어느덧 1년 하고도 4개월에 접어들고 있는 것 같은데, 그사이에 많은 것이 변한 것 같다.&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[dotorimook's blog]]></title><description><![CDATA[Dotorimook의 블로그입니다.]]></description><link>https://dotorimook.github.io</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 05 Mar 2022 14:22:56 GMT</lastBuildDate><item><title><![CDATA[[짧은 팁] jest Cannot find module 'module' from 'src/components/Component.tsx' 에러 해결]]></title><description><![CDATA[TDD 생활중에 마주한 뜻밖의 상황에 대한 원인과 해결 방법을 공유하고자 한다. jest Cannot find module ‘module…]]></description><link>https://dotorimook.github.io/post/2022-02-15-jest-before-initialization/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2022-02-15-jest-before-initialization/</guid><pubDate>Sat, 05 Mar 2022 23:06:01 GMT</pubDate><content:encoded>&lt;p&gt;TDD 생활중에 마주한 뜻밖의 상황에 대한 원인과 해결 방법을 공유하고자 한다.&lt;/p&gt;
+&lt;h2&gt;jest Cannot find module ‘module’ 에러&lt;/h2&gt;
+&lt;deckgo-highlight-code   &gt;
+          &lt;code slot=&quot;code&quot;&gt;● Test suite failed to run
+
+    Cannot find module &amp;#39;module&amp;#39; from &amp;#39;src/components/Component.tsx&amp;#39;
+
+    Require stack:
+      src/components/Component.tsx
+      src/__test__/components/Component.spec.tsx
+
+       9 | import React from &amp;#39;react&amp;#39;
+    &amp;gt; 10 | import { Method } from &amp;#39;module&amp;#39;
+         | ^
+      11 |
+
+      at Resolver.resolveModule (node_modules/jest-resolve/build/index.js:306:11)
+      at Object.&amp;lt;anonymous&amp;gt; (src/components/Component.tsx:10:1)&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;(경로나 모듈명들 중요하지 않은 내용 일부는 각색했다.)&lt;/p&gt;
+&lt;p&gt;최근 작업하는 프로젝트에서 모듈을 하나 추가한 후 Jest로 테스트 코드를 작성했는데, 테스트 중에  &lt;code class=&quot;language-text&quot;&gt;Cannot find module&lt;/code&gt; 이라는 에러 메시지를 만나게 됐다. 재밌는 점은 브라우저로 실행해보았을 때엔 잘 된다는 점이었다. jest로 테스트만 잘 작동하지 않았다.&lt;/p&gt;
+&lt;h2&gt;원인과 해결 방법&lt;/h2&gt;
+&lt;p&gt;원인은 -당연하겠지만- 새롭게 추가한 모듈에 있었다. 해당 모듈을 jest에서 부를 수 없는 이유는 해당 모듈의 package.json에 &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; 프로퍼티가 정의되어있지 않아서였다. 실제로 해당 모듈의 package.json을 살펴보니 &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt;이 없었다.&lt;/p&gt;
+&lt;p&gt;해결방법은 당연하게도 &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt;의 경로를 입력해주면 된다.&lt;/p&gt;
+&lt;deckgo-highlight-code language=&quot;json&quot;  &gt;
+          &lt;code slot=&quot;code&quot;&gt;{
+  ...
+  &amp;quot;module&amp;quot;: &amp;quot;dist/index.js&amp;quot;,
+  &amp;quot;main&amp;quot;: &amp;quot;dist/index.js&amp;quot;,
+  ...
+}&lt;/code&gt;
+        &lt;/deckgo-highlight-code&gt;
+&lt;p&gt;깔끔하게 해결된다.✨😎✨&lt;/p&gt;
+&lt;h3&gt;package.json의 &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt; 프로퍼티의 역할&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt;은 모듈의 시작점, entrypoint가 되는 지점을 알려준다.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;“main” 항목은 당신의 프로그램의 시작점이 되는 모듈의 ID입니다.&lt;/p&gt;
+&lt;p&gt;즉, ‘foo’ 라는 패키지가 있다면, 이 패키지를 사용자가 설치한 뒤, require(“foo”) 를 실행했을 때 “main” 으로 지정한 모듈의 exports 객체가 반환됩니다.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;https://webclub.tistory.com/472&quot;&gt;package.json 간단히 알아보기&lt;/a&gt;의 내용을 보면 &lt;code class=&quot;language-text&quot;&gt;main&lt;/code&gt;에 대해 위와 같이 설명하고 있다.&lt;/p&gt;
+&lt;p&gt;위 내용을 살펴보면 jest가 해당 모듈을 import하려고 할 때에 메인 진입 지점을 찾지 못하기 때문으로 추측해볼 수 있다.&lt;/p&gt;
+&lt;h2&gt;Reference&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;a href=&quot;https://stackoverflow.com/questions/53466859/jest-cannot-find-module-from-node-modules&quot;&gt;https://stackoverflow.com/questions/53466859/jest-cannot-find-module-from-node-modules&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://programmingsummaries.tistory.com/385&quot;&gt;https://programmingsummaries.tistory.com/385&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[개츠비 블로그 - 계륵일세..]]></title><description><![CDATA[이 블로그를 만든지도 어느덧 1년 하고도 4개월에 접어들고 있는 것 같은데, 그사이에 많은 것이 변한 것 같다. Gatsby js 홈페이지를 보면 버전도 4대가 된 것 같은데 지금 내가 쓰는 것은 2.3 대… 얼마전에는 sharp…]]></description><link>https://dotorimook.github.io/post/2022-02-06-diary/</link><guid isPermaLink="false">https://dotorimook.github.io/post/2022-02-06-diary/</guid><pubDate>Sun, 06 Feb 2022 21:25:52 GMT</pubDate><content:encoded>&lt;p&gt;이 블로그를 만든지도 어느덧 1년 하고도 4개월에 접어들고 있는 것 같은데, 그사이에 많은 것이 변한 것 같다.&lt;/p&gt;
 &lt;p&gt;Gatsby js 홈페이지를 보면 버전도 4대가 된 것 같은데 지금 내가 쓰는 것은 2.3 대…&lt;/p&gt;
 &lt;p&gt;얼마전에는 sharp 모듈 때문에 말썽이 있었는데 맥북을 바꾸고 나니까 비슷한 현상이 또 발생했다. 그래서 이참에 버전을 올려볼까 했는데 이것저것 추가한 플러그인도 많고 하려니까 일이 이만저만이 아니다. 디자인도 바꾸고 싶었지만 그건 엄두도 내기 어렵군… 심지어 GraphQL은 이럴 때가 아니면 사용하지 않다보니 매번 낯설게만 느껴진다 ㅡ.ㅡ 쩝…&lt;/p&gt;
 &lt;p&gt;그렇다고 블로그 서비스들이 많지만 그쪽에 기대기엔 웬지 또 DYI 블로그에 대한 환상(ㅋㅋ) 때문에 쉽게 놓치지도 못하는 것 같다..&lt;/p&gt;
