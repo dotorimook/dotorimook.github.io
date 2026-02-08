@@ -4,6 +4,7 @@ import Layout from '../layouts/Layout.astro';
 import PageLayout from '../components/PageLayout';
 import { Bio } from '../components/bio';
 import Utterances from '../components/Utterances';
+import AdSense from '../components/AdSense';
 
 export async function getStaticPaths() {
   const posts = await getCollection('blog');
@@ -22,16 +23,18 @@ const tags = [...new Set(allPosts.flatMap(p => p.data.tags || p.data.tag || []))
 const categories = [...new Set(allPosts.flatMap(p => p.data.categories || []))];
 ---
 
-<Layout title={post.data.title} description={post.data.description}>
+<Layout title={post.data.title} description={post.data.description} article={true}>
   <PageLayout client:load title={post.data.title} tags={tags} categories={categories}>
     <article>
       <header>
         <h1>{post.data.title}</h1>
         <p>{post.data.date.toLocaleDateString()}</p>
       </header>
+      <AdSense client="ca-pub-5013570089563608" slot="3747930287" client:load />
       <div class="blog-post-content">
         <Content />
       </div>
+      <AdSense client="ca-pub-5013570089563608" slot="5476601469" client:load />
       <hr />
       <footer>
         <Bio />
