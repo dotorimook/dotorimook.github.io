@@ -1,0 +1,70 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../layouts/Layout.astro';
+import { Bio } from '../components/bio';
+import Utterances from '../components/Utterances';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map(post => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+// Fetch tags/categories for sidebar
+const allPosts = await getCollection('blog');
+const tags = [...new Set(allPosts.flatMap(p => p.data.tags || p.data.tag || []))];
+const categories = [...new Set(allPosts.flatMap(p => p.data.categories || []))];
+---
+
+<Layout title={post.data.title} description={post.data.description}>
+  <article>
+    <header>
+      <h1>{post.data.title}</h1>
+      <p>{post.data.date.toLocaleDateString()}</p>
+    </header>
+    <div class="blog-post-content">
+      <Content />
+    </div>
+    <hr />
+    <footer>
+      <Bio />
+    </footer>
+  </article>
+  <Utterances repo="dotorimook/dotorimook.github.io" theme="github-light" client:visible />
+</Layout>
+
+<style is:global>
+  /* Basic markdown styling for the content */
+  .blog-post-content {
+    line-height: 1.6;
+    font-size: 1.1rem;
+  }
+  .blog-post-content h1, 
+  .blog-post-content h2, 
+  .blog-post-content h3 {
+    margin-top: 1.5em;
+    margin-bottom: 0.5em;
+  }
+  .blog-post-content p {
+    margin-bottom: 1em;
+  }
+  .blog-post-content ul, 
+  .blog-post-content ol {
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+  }
+  .blog-post-content img {
+    max-width: 100%;
+    height: auto;
+  }
+  .blog-post-content pre {
+    padding: 1em;
+    border-radius: 4px;
+    overflow-x: auto;
+  }
+</style>

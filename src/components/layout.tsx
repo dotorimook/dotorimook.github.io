@@ -1,23 +1,20 @@
-import { Link, PageRendererProps, useStaticQuery } from "gatsby"
-import React, { ReactNode } from "react"
+import React, { type ReactNode } from "react"
 import styled from "styled-components"
-import WindowFrame from "../../WindowFrame"
+import { Link } from "../GatsbyCompat"
+import WindowFrame from "./WindowFrame"
 import colors from "../consts/styles/colors"
 import GlobalStyle from "../consts/styles/GlobalStyles"
 import { rhythm, styledScale } from "../utils/typography"
-import { FadeLink } from "./link"
 import TitleBar from "./TitleBar"
-import { defineCustomElements as deckDeckGoHighlightElement } from '@deckdeckgo/highlight-code/dist/loader';
-import Helmet from "react-helmet"
-import iconFolder from '../../content/assets/img/folder.ico';
-import imgProfile from '../../content/assets/img/xvz60Z.gif';
-deckDeckGoHighlightElement();
+import iconFolder from '../content/assets/img/folder.ico';
+import imgProfile from '../content/assets/img/xvz60Z.gif';
 
-interface Props extends PageRendererProps {
+interface Props {
   title: string
   children: ReactNode
+  tags?: string[]
+  categories?: string[]
 }
-
 
 const ContentFrame = styled.div`
   height:fit-content;
@@ -184,23 +181,6 @@ const ContentFrame = styled.div`
   }
 `;
 
-const StyledH1 = styled.h1`
-  ${styledScale(1.5)};
-  margin-bottom: ${rhythm(1.5)};
-  margin-top: 0;
-`
-
-const StyledH3 = styled.h3`
-  font-family: Montserrat, sans-serif;
-  margin-top: 0;
-`
-
-const StyledLink = styled(FadeLink)`
-  box-shadow: none;
-  color: inherit;
-  text-decoration: none;
-`
-
 const Content = styled.div`
   /* margin-left: auto;
   margin-right: auto;
@@ -219,48 +199,12 @@ const Content = styled.div`
   }
 `
 
-export const Layout = (props: Props) => {
-  const { title, children } = props
-  const rootPath = `/`
-
-  // const HeaderTitle = location.pathname === rootPath ? StyledH1 : StyledH3
-
-  const data = useStaticQuery(graphql`
-    query {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
-        edges {
-          node {
-            excerpt
-          }
-        }
-        tags: distinct(field: frontmatter___tags)
-        categories: distinct(field: frontmatter___categories)
-      }
-    }
-`);
-
-  const tags = data.allMarkdownRemark.tags;
-  const categories = data.allMarkdownRemark.categories;
-
+export const Layout = ({ title, children, tags = [], categories = [] }: Props) => {
   return (
     <Content>
       <GlobalStyle />
-      {/* <header>
-        <HeaderTitle>
-          <StyledLink to={`/`}>{title}</StyledLink>
-        </HeaderTitle>
-      </header> */}
-      <Helmet>
-        <script data-ad-client="ca-pub-5013570089563608" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-        <meta name="google-site-verification" content="6K7FT8G98v9kxm3ZVXq8Krb2SSdAm6HZhgqmAARYdC4" />
-      </Helmet>
       <WindowFrame>
-        <TitleBar title='title' />
+        <TitleBar title={title} />
         <ContentFrame>
           <section className='frame-menu'>
             <section className='main-banner'>
@@ -290,7 +234,7 @@ export const Layout = (props: Props) => {
               <h1 className='title'>Categories</h1>
               <ul>
                 {
-                  (categories || []).map(category => (
+                  categories.map(category => (
                     <li className='li-category' key={`link-category-${category}`}>
                       <Link to={`/category/${category}`}><span className='folder'>{category}</span></Link>
                     </li>
@@ -302,7 +246,7 @@ export const Layout = (props: Props) => {
               <h2 className='title'>Tags</h2>
               <ul>
                 {
-                  (tags || []).map(tag => (
+                  tags.map(tag => (
                     <li key={`link-tag-${tag}`}>
                       <Link to={`/tag/${tag}`}>{tag}</Link>
                     </li>
@@ -314,15 +258,10 @@ export const Layout = (props: Props) => {
           <section className='frame-content'>
             {children}
           </section>
-          {/* <main> */}
-          {/* </main> */}
         </ContentFrame>
       </WindowFrame>
-      {/* <footer>
-        © {new Date().getFullYear()}, Built with
-        {` `}
-        <a href="https://www.gatsbyjs.org">Gatsby</a>
-      </footer> */}
     </Content>
   )
 }
+
+export default Layout;

@@ -1,5 +1,5 @@
-import { Link } from 'gatsby';
-import React, { FC } from 'react';
+import { Link } from '../GatsbyCompat';
+import React, { type FC } from 'react';
 import styled from 'styled-components';
 import colors from '../consts/styles/colors';
 import { formatDateTime } from '../utils/date';
@@ -61,8 +61,8 @@ export interface IPost {
     slug:string;
   }
   frontmatter: {
-    tilte?:string;
-    cateogries: string[];
+    title?:string;
+    categories: string[];
     tags: string[];
     date?: string;
     description?:string;
@@ -120,7 +120,7 @@ const PostListItem:FC<IPostListItemProps> = ({post}) => {
             ))
           }
         </ul>
-        <div className='date'>{formatDateTime(date)}</div>
+        <div className='date'>{formatDateTime(date || '')}</div>
       </Frame>
   )
 }

@@ -47,6 +47,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
   line-height: 1;
+  font-family: 'GmarketSansMedium', sans-serif;
 }
 ol, ul {
   list-style: none;
@@ -64,7 +65,6 @@ table {
   border-spacing: 0;
 }
 html,body {
-  /* colors:${colors.BLACK}; */
   background:${colors.bgBasic};
 }
 textarea:focus, input:focus{

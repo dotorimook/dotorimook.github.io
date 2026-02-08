@@ -1,13 +1,13 @@
-import React, { FC } from 'react'
+import React, { type FC } from 'react'
 import styled from 'styled-components';
-import IComponentProps from '../interfaces/IComponentProps'
+import type IComponentProps from '../interfaces/IComponentProps'
 
-import iconMinimize from '../../content/assets/icon_header_minimize.svg';
-import iconMaximize from '../../content/assets/icon_header_maximize.svg';
-import iconClose from '../../content/assets/icon_header_close.svg';
-import iconMinimizeDisable from '../../content/assets/icon_header_minimize_disable.svg';
-import iconMaximizeDisable from '../../content/assets/icon_header_maximize_disable.svg';
-import iconCloseDisable from '../../content/assets/icon_header_close_disable.svg';
+import iconMinimize from '../content/assets/icon_header_minimize.svg';
+import iconMaximize from '../content/assets/icon_header_maximize.svg';
+import iconClose from '../content/assets/icon_header_close.svg';
+import iconMinimizeDisable from '../content/assets/icon_header_minimize_disable.svg';
+import iconMaximizeDisable from '../content/assets/icon_header_maximize_disable.svg';
+import iconCloseDisable from '../content/assets/icon_header_close_disable.svg';
 import Button from './Button';
 
 const TitleFrame = styled.div`

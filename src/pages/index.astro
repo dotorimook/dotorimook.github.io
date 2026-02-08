@@ -1,0 +1,42 @@
+---
+import Layout from '../layouts/Layout.astro';
+import WindowFrame from '../components/WindowFrame';
+import TitleBar from '../components/TitleBar';
+import PostListItem from '../components/PostListItem';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+---
+
+<Layout title="Dotorimook's Blog">
+	<main style="padding: 20px; max-width: 800px; margin: 0 auto;">
+		<WindowFrame client:load>
+			<TitleBar title="Dotorimook's Blog" client:load />
+			<div style="padding: 20px; background: #fff;">
+				{
+					posts.map((post) => (
+						<PostListItem
+                            client:load
+							post={{
+								id: post.id,
+								excerpt: post.data.description || '',
+								fields: {
+									slug: `/blog/${post.slug}/`,
+								},
+								frontmatter: {
+									title: post.data.title,
+									categories: post.data.categories || [],
+									tags: post.data.tags || [],
+									date: post.data.date.toISOString(),
+									description: post.data.description,
+								},
+							}}
+						/>
+					))
+				}
+			</div>
+		</WindowFrame>
+	</main>
+</Layout>

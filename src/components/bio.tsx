@@ -1,63 +1,41 @@
-/**
- * Bio component that queries for data
- * with Gatsby's StaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/static-query/
- */
-
-import { graphql, useStaticQuery } from "gatsby"
-import Image from "gatsby-image"
-import React, { ComponentProps, forwardRef, Ref } from "react"
+import React from "react"
 import styled from "styled-components"
 import { rhythm } from "../utils/typography"
+
+interface BioProps {
+  author?: string;
+  social?: {
+    twitter?: string;
+  };
+  avatar?: string;
+}
 
 const Content = styled.div`
   display: flex;
   margin-bottom: ${rhythm(2.5)};
 `
 
-const GatsbyImage = forwardRef(
-  (props: ComponentProps<typeof Image>, ref: Ref<Image>) => (
-    <Image {...props} ref={ref} />
-  )
-)
-
-const Avatar = styled(GatsbyImage)`
+const Avatar = styled.img`
   border-radius: 100%;
   margin-bottom: 0;
   margin-right: ${rhythm(1 / 2)};
   min-width: 50px;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
 `
 
-export const Bio = () => {
-  const data = useStaticQuery(graphql`
-    query BioQuery {
-      avatar: file(absolutePath: { regex: "/profile-pic.jpg/" }) {
-        childImageSharp {
-          fixed(width: 50, height: 50) {
-            ...GatsbyImageSharpFixed
-          }
-        }
-      }
-      site {
-        siteMetadata {
-          author
-          social {
-            twitter
-          }
-        }
-      }
-    }
-  `)
-
-  const { author, social } = data.site.siteMetadata
-
+export const Bio: React.FC<BioProps> = ({ 
+  author = "Dotorimook", 
+  social = { twitter: "kylemathews" }, 
+  avatar = "/assets/profile-pic.jpg" 
+}) => {
   return (
     <Content>
       <Avatar
-        fixed={data.avatar.childImageSharp.fixed}
+        src={avatar}
         alt={author}
-        imgStyle={{ borderRadius: "50%" }}
+        style={{ borderRadius: "50%" }}
       />
       <p>
         Written by <strong>{author}</strong> who lives and works in San
