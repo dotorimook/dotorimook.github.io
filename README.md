@@ -37,7 +37,29 @@ All commands are run from the root of the project, from a terminal:
 | `npm run preview`         | Preview your build locally, before deploying     |
 | `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
 | `npm run astro -- --help` | Get help using the Astro CLI                     |
+| `npm run deploy`          | Deploy to GitHub Pages (Manual)                  |
 
-## 👀 Want to learn more?
+## 🚀 Deployment
+
+This project is configured to deploy to **GitHub Pages**.
+
+### 1. Automatic Deployment (GitHub Actions) - Recommended
+A workflow is set up in `.github/workflows/deploy.yml`. 
+1. Push your changes to `master` or `feature/astro-migration` branch.
+2. Go to your GitHub Repository **Settings > Pages**.
+3. Under **Build and deployment > Source**, select **GitHub Actions**.
+4. The site will automatically build and deploy on every push.
+
+### 2. Manual Deployment (CLI)
+If you prefer to deploy manually from your local machine:
+```sh
+npm run build
+npm run deploy
+```
+This will push the contents of the `dist` folder to the `gh-pages` branch.
+
+### ⚙️ Configuration
+- **Site URL**: Configured in `astro.config.mjs` as `https://dotorimook.github.io`.
+- **Package**: Uses `gh-pages` for manual deployment.
 
 Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
