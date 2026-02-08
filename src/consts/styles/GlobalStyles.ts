@@ -2,23 +2,9 @@ import { createGlobalStyle } from 'styled-components';
 import colors from './colors';
 
 const GlobalStyle = createGlobalStyle`
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-@font-face {
-    font-family: 'GmarketSansBold';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css");
 
+/* Reset & Base */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -38,57 +24,38 @@ time, mark, audio, video {
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
-  box-sizing:border-box;
+  box-sizing: border-box;
 }
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+
 body {
-  line-height: 1;
-  font-family: 'GmarketSansMedium', sans-serif;
+  line-height: 1.6;
+  font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+  color: ${colors.c333};
+  background: ${colors.bgWhite};
 }
-ol, ul {
-  list-style: none;
-}
-blockquote, q {
-  quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-html,body {
-  background:${colors.bgBasic};
-}
-textarea:focus, input:focus{
-  outline: none;
-}
-* {
-  word-break:keep-all;
-}
+
 a {
-  text-decoration:none;
+  text-decoration: none;
   color: inherit;
-  box-shadow:none;
+  transition: color 0.2s;
   &:hover {
-    text-decoration:underline;
+    color: ${colors.primary};
   }
 }
-ion-content {
-  --background:transparent;
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.3;
+  margin-bottom: 0.5em;
 }
-html, body, #___gatsby, #gatsby-focus-wrapper, .tl-edges, .tl-wrapper {
-  width:100%;
-  height:100%;
-  padding:0;
-  margin:0;
+
+p {
+  margin-bottom: 1em;
+}
+
+ul, ol {
+  list-style: none;
 }
 `;
 

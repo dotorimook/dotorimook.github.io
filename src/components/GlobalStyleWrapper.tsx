@@ -1,6 +1,6 @@
 import React from 'react';
-import GlobalStyles from '../consts/styles/GlobalStyles';
+import GlobalStyle from '../consts/styles/GlobalStyles';
 
-export const GlobalStyleWrapper = () => {
-  return <GlobalStyles />;
+export const GlobalStyleWrapper: React.FC = () => {
+  return <GlobalStyle />;
 };

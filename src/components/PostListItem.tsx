@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import colors from '../consts/styles/colors';
 import { formatDateTime } from '../utils/date';
 import { scale } from '../utils/typography';
+import { slugify } from '../utils/slugify';
 
 
 const Frame = styled.article`
@@ -51,6 +52,10 @@ const Frame = styled.article`
   .frame-description {
     line-height:1.2em;
     margin-bottom:8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
   }
 `;
 
@@ -99,7 +104,7 @@ const PostListItem:FC<IPostListItemProps> = ({post}) => {
               {/* { (categories || []).join(' ') } */}
               {
                 (categories || []).map(category => (
-                  <Link key={`link-category-${category}`} to={`/category/${category}`}>
+                  <Link key={`link-category-${category}`} to={`/category/${slugify(category)}`}>
                     {category}
                   </Link>
                 ))
@@ -113,7 +118,7 @@ const PostListItem:FC<IPostListItemProps> = ({post}) => {
           {
             (tags || []).map(tag => (
               <li key={`link-tag-${tag}`} className='li-tag'>
-                <Link to={`/tag/${tag}`}>
+                <Link to={`/tag/${slugify(tag)}`}>
                   {tag}
                 </Link>
               </li>

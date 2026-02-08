@@ -4,10 +4,17 @@ import WindowFrame from '../components/WindowFrame';
 import TitleBar from '../components/TitleBar';
 import PostListItem from '../components/PostListItem';
 import { getCollection } from 'astro:content';
+import Layout from '../components/layout';
+import PostListItem from '../components/PostListItem';
+import HeroPost from '../components/HeroPost';
+import { getExcerpt } from '../utils/excerpt';
 
 const posts = (await getCollection('blog')).sort(
 	(a, b) => b.data.date.valueOf() - a.data.date.valueOf()
 );
+
+const heroPost = posts[0];
+const otherPosts = posts.slice(1);
 ---
 
 <Layout title="Dotorimook's Blog">
@@ -16,12 +23,33 @@ const posts = (await getCollection('blog')).sort(
 			<TitleBar title="Dotorimook's Blog" client:load />
 			<div style="padding: 20px; background: #fff;">
 				{
-					posts.map((post) => (
+					heroPost && (
+						<HeroPost
+							client:load
+							post={{
+								id: heroPost.id,
+								excerpt: heroPost.data.description || getExcerpt(heroPost.body),
+								fields: {
+									slug: `/blog/${heroPost.slug}/`,
+								},
+								frontmatter: {
+									title: heroPost.data.title,
+									categories: heroPost.data.categories || [],
+									tags: heroPost.data.tags || [],
+									date: heroPost.data.date.toISOString(),
+									description: heroPost.data.description,
+								},
+							}}
+						/>
+					)
+				}
+				{
+					otherPosts.map((post) => (
 						<PostListItem
-                            client:load
+							client:load
 							post={{
 								id: post.id,
-								excerpt: post.data.description || '',
+								excerpt: post.data.description || getExcerpt(post.body),
 								fields: {
 									slug: `/blog/${post.slug}/`,
 								},
