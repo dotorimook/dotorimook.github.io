@@ -2,7 +2,6 @@ import React, { type ReactNode } from "react"
 import styled from "styled-components"
 import { Link } from "../GatsbyCompat"
 import colors from "../consts/styles/colors"
-import GlobalStyle from "../consts/styles/GlobalStyles"
 import { rhythm } from "../utils/typography"
 import { slugify } from "../utils/slugify"
 
@@ -93,14 +92,12 @@ const Footer = styled.footer`
 export const PageLayout = ({ title, children, tags = [], categories = [] }: Props) => {
   return (
     <Container>
-      <GlobalStyle />
       <Header>
         <h1>
           <Link to="/">Dotorimook's blog</Link>
         </h1>
         <nav>
           <Link to="/">Home</Link>
-          <Link to="/about">About</Link>
         </nav>
       </Header>
       
