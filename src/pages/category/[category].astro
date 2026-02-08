@@ -34,7 +34,7 @@ const adaptedPosts = sortedPosts.map(post => ({
   id: post.id,
   excerpt: post.data.description || generateExcerpt(post.body || ''),
   fields: {
-    slug: `/blog/${post.slug}/`,
+    slug: `/${post.slug}/`,
   },
   frontmatter: {
     title: post.data.title,

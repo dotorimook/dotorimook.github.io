@@ -27,7 +27,7 @@ const categories = [...new Set(posts.flatMap(p => p.data.categories || []))];
 						id: heroPost.id,
 						excerpt: heroPost.data.description || getExcerpt(heroPost.body),
 						fields: {
-							slug: `/blog/${heroPost.slug}/`,
+            slug: `/${heroPost.slug}/`,
 						},
 						frontmatter: {
 							title: heroPost.data.title,
@@ -48,7 +48,7 @@ const categories = [...new Set(posts.flatMap(p => p.data.categories || []))];
 						id: post.id,
 						excerpt: post.data.description || getExcerpt(post.body),
 						fields: {
-							slug: `/blog/${post.slug}/`,
+                slug: `/${post.slug}/`,
 						},
 						frontmatter: {
 							title: post.data.title,
