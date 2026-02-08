@@ -7,50 +7,64 @@ import { scale } from '../utils/typography';
 import { slugify } from '../utils/slugify';
 import type { IPost } from './PostListItem';
 
-const HeroFrame = styled.article`
+const HeroItem = styled.article`
   position: relative;
   margin-top: ${scale(0.5).fontSize};
   margin-bottom: ${scale(1.5).fontSize};
   padding-bottom: ${scale(0.5).fontSize};
-  border-bottom: 2px solid ${colors.gray};
+  border-bottom: 2px solid ${colors.c333};
   
   .hero-label {
     font-size: 0.8rem;
-    font-weight: bold;
-    color: ${colors.c666};
+    font-weight: 800;
+    color: ${colors.primary};
     text-transform: uppercase;
     margin-bottom: 8px;
     display: inline-block;
-    border: 1px solid ${colors.c666};
-    padding: 2px 6px;
-    border-radius: 4px;
+    letter-spacing: 0.05em;
   }
 
-  .frame-title {
+  .title-row {
     margin-bottom: 12px;
   }
+
   .title {
     font-size: 2.2rem;
     line-height: 1.2em;
     font-weight: 800;
+    color: ${colors.c333};
+    text-decoration: none;
+    
+    &:hover {
+      color: ${colors.primary};
+    }
   }
+
+  .category {
+    margin-left: 10px;
+    font-size: 1rem;
+    color: ${colors.c666};
+    font-weight: 500;
+    
+    a {
+      color: inherit;
+      text-decoration: none;
+      &:hover {
+        color: ${colors.primary};
+        text-decoration: underline;
+      }
+    }
+  }
+
   .date {
     font-size: 0.9rem;
     color: ${colors.c666};
     margin-bottom: 12px;
   }
-  .category {
-    margin-left: 10px;
-    font-size: 1rem;
-    color: ${colors.c666};
-    &:before {
-      content: '/';
-      margin-right: 8px;
-    }
-  }
-  .frame-description {
+
+  .description {
     font-size: 1.1rem;
-    line-height: 1.5em;
+    line-height: 1.6em;
     margin-bottom: 16px;
     color: ${colors.c333};
     display: -webkit-box;
@@ -58,25 +72,37 @@ const HeroFrame = styled.article`
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+
   .read-more {
     font-size: 0.9rem;
-    font-weight: bold;
-    text-decoration: underline;
-    color: ${colors.c333};
+    font-weight: 700;
+    text-decoration: none;
+    color: ${colors.primary};
     display: inline-block;
     margin-bottom: 16px;
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
-  .ul-tags {
+
+  .tags {
     margin-top: 10px;
-    color: ${colors.c666};
-    .li-tag {
-      display: inline;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    
+    a {
+      color: ${colors.c666};
+      text-decoration: none;
+      &:hover {
+        color: ${colors.primary};
+      }
       &:before {
         content: '#';
+        margin-right: 1px;
+        color: ${colors.c999};
       }
-    }
-    .li-tag:not(:first-child) {
-      margin-left: 6px;
     }
   }
 `;
@@ -93,35 +119,41 @@ const HeroPost: FC<HeroPostProps> = ({ post }) => {
   } = post;
 
   return (
-    <HeroFrame>
+    <HeroItem>
       <div className="hero-label">Featured Post</div>
-      <div className="frame-title">
-        <Link to={slug}>
-          <span className="title">{title}</span>
+      <div className="title-row">
+        <Link to={slug} className="title">
+          {title}
         </Link>
-        <span className="category">
-          {(categories || []).map((category) => (
-            <Link key={`link-category-${category}`} to={`/category/${slugify(category)}`}>
-              {category}
-            </Link>
-          ))}
-        </span>
+        {categories && categories.length > 0 && (
+          <span className="category">
+            {categories.map((category, index) => (
+              <React.Fragment key={category}>
+                {index > 0 && <span style={{ margin: '0 4px', color: colors.c999 }}>/</span>}
+                <Link to={`/category/${slugify(category)}`}>{category}</Link>
+              </React.Fragment>
+            ))}
+          </span>
+        )}
       </div>
       <div className="date">{formatDateTime(date || '')}</div>
-      <Link to={slug}>
-        <div className="frame-description">{description || excerpt}</div>
+      
+      <Link to={slug} style={{ textDecoration: 'none' }}>
+        <div className="description">{description || excerpt}</div>
       </Link>
+      
       <Link to={slug} className="read-more">
         Read more →
       </Link>
-      <ul className="ul-tags">
+      
+      <div className="tags">
         {(tags || []).map((tag) => (
-          <li key={`link-tag-${tag}`} className="li-tag">
-            <Link to={`/tag/${slugify(tag)}`}>{tag}</Link>
-          </li>
+          <Link key={tag} to={`/tag/${slugify(tag)}`}>
+            {tag}
+          </Link>
         ))}
-      </ul>
-    </HeroFrame>
+      </div>
+    </HeroItem>
   );
 };
 

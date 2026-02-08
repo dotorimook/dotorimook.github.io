@@ -45,6 +45,6 @@ This project has been migrated from Gatsby to **Astro**.
 - **Styling**: `styled-components` is configured via `astro.config.mjs` (Vite SSR).
 - **Interactive Components**: Use `client:visible` directive when using React components in Astro pages (e.g., `<Utterances client:visible />`).
 
-## 6. Deployment
-- The build output is static HTML in `dist/`.
-- Ready for GitHub Pages or any static host.
+## 7. Communication Guidelines
+- **Language**: You may think in any language, but **all answers and deliverables must be written or spoken in Korean** (unless specifically requested otherwise).
+

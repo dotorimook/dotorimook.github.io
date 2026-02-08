@@ -1,12 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import WindowFrame from '../components/WindowFrame';
-import TitleBar from '../components/TitleBar';
-import PostListItem from '../components/PostListItem';
-import { getCollection } from 'astro:content';
-import Layout from '../components/layout';
+import PageLayout from '../components/PageLayout';
 import PostListItem from '../components/PostListItem';
 import HeroPost from '../components/HeroPost';
+import { getCollection } from 'astro:content';
 import { getExcerpt } from '../utils/excerpt';
 
 const posts = (await getCollection('blog')).sort(
@@ -15,56 +12,54 @@ const posts = (await getCollection('blog')).sort(
 
 const heroPost = posts[0];
 const otherPosts = posts.slice(1);
+
+const tags = [...new Set(posts.flatMap(p => p.data.tags || []))];
+const categories = [...new Set(posts.flatMap(p => p.data.categories || []))];
 ---
 
 <Layout title="Dotorimook's Blog">
-	<main style="padding: 20px; max-width: 800px; margin: 0 auto;">
-		<WindowFrame client:load>
-			<TitleBar title="Dotorimook's Blog" client:load />
-			<div style="padding: 20px; background: #fff;">
-				{
-					heroPost && (
-						<HeroPost
-							client:load
-							post={{
-								id: heroPost.id,
-								excerpt: heroPost.data.description || getExcerpt(heroPost.body),
-								fields: {
-									slug: `/blog/${heroPost.slug}/`,
-								},
-								frontmatter: {
-									title: heroPost.data.title,
-									categories: heroPost.data.categories || [],
-									tags: heroPost.data.tags || [],
-									date: heroPost.data.date.toISOString(),
-									description: heroPost.data.description,
-								},
-							}}
-						/>
-					)
-				}
-				{
-					otherPosts.map((post) => (
-						<PostListItem
-							client:load
-							post={{
-								id: post.id,
-								excerpt: post.data.description || getExcerpt(post.body),
-								fields: {
-									slug: `/blog/${post.slug}/`,
-								},
-								frontmatter: {
-									title: post.data.title,
-									categories: post.data.categories || [],
-									tags: post.data.tags || [],
-									date: post.data.date.toISOString(),
-									description: post.data.description,
-								},
-							}}
-						/>
-					))
-				}
-			</div>
-		</WindowFrame>
-	</main>
+	<PageLayout client:load title="Dotorimook's Blog" tags={tags} categories={categories}>
+		{
+			heroPost && (
+				<HeroPost
+					client:load
+					post={{
+						id: heroPost.id,
+						excerpt: heroPost.data.description || getExcerpt(heroPost.body),
+						fields: {
+							slug: `/blog/${heroPost.slug}/`,
+						},
+						frontmatter: {
+							title: heroPost.data.title,
+							categories: heroPost.data.categories || [],
+							tags: heroPost.data.tags || [],
+							date: heroPost.data.date.toISOString(),
+							description: heroPost.data.description,
+						},
+					}}
+				/>
+			)
+		}
+		{
+			otherPosts.map((post) => (
+				<PostListItem
+					client:load
+					post={{
+						id: post.id,
+						excerpt: post.data.description || getExcerpt(post.body),
+						fields: {
+							slug: `/blog/${post.slug}/`,
+						},
+						frontmatter: {
+							title: post.data.title,
+							categories: post.data.categories || [],
+							tags: post.data.tags || [],
+							date: post.data.date.toISOString(),
+							description: post.data.description,
+						},
+					}}
+				/>
+			))
+		}
+	</PageLayout>
 </Layout>

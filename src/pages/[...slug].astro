@@ -1,6 +1,7 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../layouts/Layout.astro';
+import PageLayout from '../components/PageLayout';
 import { Bio } from '../components/bio';
 import Utterances from '../components/Utterances';
 
@@ -22,20 +23,22 @@ const categories = [...new Set(allPosts.flatMap(p => p.data.categories || []))];
 ---
 
 <Layout title={post.data.title} description={post.data.description}>
-  <article>
-    <header>
-      <h1>{post.data.title}</h1>
-      <p>{post.data.date.toLocaleDateString()}</p>
-    </header>
-    <div class="blog-post-content">
-      <Content />
-    </div>
-    <hr />
-    <footer>
-      <Bio />
-    </footer>
-  </article>
-  <Utterances repo="dotorimook/dotorimook.github.io" theme="github-light" client:visible />
+  <PageLayout client:load title={post.data.title} tags={tags} categories={categories}>
+    <article>
+      <header>
+        <h1>{post.data.title}</h1>
+        <p>{post.data.date.toLocaleDateString()}</p>
+      </header>
+      <div class="blog-post-content">
+        <Content />
+      </div>
+      <hr />
+      <footer>
+        <Bio />
+      </footer>
+    </article>
+    <Utterances repo="dotorimook/dotorimook.github.io" theme="github-light" client:visible />
+  </PageLayout>
 </Layout>
 
 <style is:global>

@@ -1,0 +1,56 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/Layout.astro';
+import PageLayout from '../../components/PageLayout';
+import PostListItem from '../../components/PostListItem';
+import { slugify } from '../../utils/slugify';
+import { generateExcerpt } from '../../utils/content';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const uniqueCategories = [...new Set(allPosts.flatMap(post => post.data.categories || []))];
+
+  return uniqueCategories
+    .map(category => {
+      const slug = slugify(category);
+      if (!slug) return null;
+      const filteredPosts = allPosts.filter(post => post.data.categories?.includes(category));
+      return {
+        params: { category: slug },
+        props: { posts: filteredPosts, categoryName: category },
+      };
+    })
+    .filter(Boolean);
+}
+
+const { category } = Astro.params;
+const { posts, categoryName } = Astro.props;
+
+// Sort posts by date
+const sortedPosts = posts.sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+
+// Adapt Astro posts to PostListItem interface
+const adaptedPosts = sortedPosts.map(post => ({
+  id: post.id,
+  excerpt: post.data.description || generateExcerpt(post.body || ''),
+  fields: {
+    slug: `/blog/${post.slug}/`,
+  },
+  frontmatter: {
+    title: post.data.title,
+    categories: post.data.categories || [],
+    tags: post.data.tags || post.data.tag || [],
+    date: post.data.date.toISOString(),
+    description: post.data.description,
+  }
+}));
+---
+
+<BaseLayout title={`Category: ${categoryName}`}>
+  <PageLayout client:load title={`Category: ${categoryName}`}>
+    <h1>Category: {categoryName}</h1>
+    {adaptedPosts.map((post) => (
+      <PostListItem post={post} client:visible />
+    ))}
+  </PageLayout>
+</BaseLayout>
