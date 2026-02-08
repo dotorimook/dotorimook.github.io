@@ -28,16 +28,18 @@ time, mark, audio, video {
 }
 
 body {
-  line-height: 1.6;
+  line-height: 1.7;
   font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
-  color: ${colors.c333};
+  color: ${colors.textBody};
   background: ${colors.bgWhite};
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-  transition: color 0.2s;
+  transition: color 0.2s ease-in-out;
   &:hover {
     color: ${colors.primary};
   }
@@ -45,6 +47,7 @@ a {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  color: ${colors.textMain};
   font-weight: 700;
   line-height: 1.3;
   margin-bottom: 0.5em;
