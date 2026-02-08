@@ -10,21 +10,21 @@
   },
   "dependencies": {
     "@astrojs/react": "^4.4.2",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.1",
     "@types/luxon": "^3.7.1",
     "@types/react": "^19.2.13",
     "@types/react-dom": "^19.2.3",
-    "@types/styled-components": "^5.1.36",
     "@types/typography": "^0.16.9",
     "astro": "^5.17.1",
     "luxon": "^3.7.2",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
-    "styled-components": "^6.3.9",
     "typography": "^0.16.24",
     "typography-theme-wordpress-2016": "^0.16.19",
     "zod": "^3.25.76"
   },
   "devDependencies": {
-    "babel-plugin-styled-components": "^2.1.4"
+    "@emotion/babel-plugin": "^11.13.5"
   }
 }

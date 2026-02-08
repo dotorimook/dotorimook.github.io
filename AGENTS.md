@@ -42,7 +42,7 @@ This project has been migrated from Gatsby to **Astro**.
 
 ## 5. Components & styling
 - **React Components**: Located in `src/components`. Used inside `.astro` pages.
-- **Styling**: `styled-components` is configured via `astro.config.mjs` (Vite SSR).
+- **Styling**: `@emotion/styled` is configured via `astro.config.mjs` (Vite SSR) with `@emotion/babel-plugin`.
 - **Interactive Components**: Use `client:visible` directive when using React components in Astro pages (e.g., `<Utterances client:visible />`).
 
 ## 7. Communication Guidelines

@@ -1,5 +1,5 @@
 import React, { type ReactNode } from "react"
-import styled from "styled-components"
+import styled from "@emotion/styled"
 import { Link } from "../GatsbyCompat"
 import colors from "../consts/styles/colors"
 import { rhythm } from "../utils/typography"

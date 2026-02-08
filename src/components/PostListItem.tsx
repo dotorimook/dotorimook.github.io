@@ -1,6 +1,6 @@
 import { Link } from '../GatsbyCompat';
 import React, { type FC } from 'react';
-import styled from 'styled-components';
+import styled from '@emotion/styled';
 import colors from '../consts/styles/colors';
 import { formatDateTime } from '../utils/date';
 import { scale } from '../utils/typography';

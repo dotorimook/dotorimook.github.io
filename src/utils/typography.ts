@@ -1,4 +1,4 @@
-import type { CSSObject } from "styled-components"
+import type { CSSObject } from "@emotion/react"
 import Typography from "typography"
 import Wordpress2016 from "typography-theme-wordpress-2016"
 
