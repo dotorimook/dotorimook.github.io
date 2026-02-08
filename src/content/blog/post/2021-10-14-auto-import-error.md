@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "hoist-non-react-statics/node_modules/@types/react vscode auto import 문제"
 date: 2021-10-14 16:42:24
 categories:

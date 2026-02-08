@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "속독을 위한 몇 가지 테크닉 - 페이서, 들여쓰기"
 date: 2021-11-09 10:20:00
 categories:

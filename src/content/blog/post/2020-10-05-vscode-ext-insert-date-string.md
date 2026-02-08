@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "날짜 입력을 편하게 해주는 vscode extension Insert Date String"
 categories:
   - vscode

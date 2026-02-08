@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "vscode.dev! 브라우저에서 VSCode 실행하기"
 date: 2021-10-24 22:16:20
 categories:

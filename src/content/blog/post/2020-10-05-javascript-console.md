@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "아직도 console.log만 쓰니? 내 콘솔창과 디버깅 생활에 생기를 불어넣어줄 console API"
 date: 2020-10-06 13:37:00
 categories:

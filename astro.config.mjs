@@ -8,4 +8,9 @@ import sitemap from '@astrojs/sitemap';
 export default defineConfig({
   site: 'https://dotorimook.github.io',
   integrations: [react(), sitemap()],
+  vite: {
+    optimizeDeps: {
+      include: ['@emotion/is-prop-valid'],
+    },
+  },
 });

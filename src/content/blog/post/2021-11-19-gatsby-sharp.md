@@ -1,5 +1,4 @@
 ---
-layout: post
 title: 'Gatsby Something went wrong installing the "sharp" module 개츠비 오류'
 date: 2021-11-19 00:28:13
 categories:

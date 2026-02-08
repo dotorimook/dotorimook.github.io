@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Javacript Hidden Class와 Inline Caching"
 date: 2021-10-11 10:39:41
 categories:

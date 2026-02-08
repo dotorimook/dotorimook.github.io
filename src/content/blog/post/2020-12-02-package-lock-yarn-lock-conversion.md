@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "yarn.lock package-lock.json 간 변환"
 date: 2020-12-02 13:11:10
 categories:

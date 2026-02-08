@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "개발자를 위한 친절한 UI 컴포넌트 라이브러리 만들기 - LINE Developer Days 2021 요약"
 date: 2021-11-16 16:54:06
 categories:

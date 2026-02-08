@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[mongoose] mongoose 연결하기"
 date: 2020-10-24 16:19:25
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "JQuery Uncaught TypeError: a.indexOf is not a function 에러처리"
 date: 2020-11-13 09:41:58
 categories:

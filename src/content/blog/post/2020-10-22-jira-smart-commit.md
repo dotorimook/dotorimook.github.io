@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Jira 스마트 커밋(Smart Commit) 사용하기"
 date: 2020-10-22 13:05:21
 categories:

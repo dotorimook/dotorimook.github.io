@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "NextJS + Typescript + ESLint + Capacitor 세팅을 해보자"
 date: 2021-06-13 21:34:49
 categories:

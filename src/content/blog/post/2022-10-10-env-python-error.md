@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[짧은 팁] mac env: python: No such file or directory 에러 해결"
 date: 2022-10-10 14:10:43
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[mongoose] mongoose paranoid (soft delete) 적용하기 (feat. plugin)"
 date: 2020-10-24 17:20:15
 categories:

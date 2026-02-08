@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "로컬에서 Jekyll 확인하기 - 기본 Jekyll 커맨드"
 date: 2020-10-09 22:19:11
 categories:

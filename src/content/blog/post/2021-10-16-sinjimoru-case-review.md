@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "아이폰13 미니 신지모루 에어로핏 구입하고 버린 후기"
 date: 2021-10-16 01:59:34
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "React Hook Form의 watch() vs getValues"
 date: 2020-10-05 14:11:13
 categories:

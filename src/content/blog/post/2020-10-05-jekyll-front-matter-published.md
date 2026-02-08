@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Jekyll 포스트를 숨기고 싶을 땐 published!"
 date: 2020-10-05 14:12:15
 categories:
@@ -34,7 +33,6 @@ jekyll 블로그를 사용하게 되면서 다른 것보다도 제일 먼저 필
 일반적으로 설정하게 되는 front-matter는 다음과 같다.
 
 ```
-layout: post
 title: "Jekyll 포스트를 숨기고 싶을 땐 published"
 date: 2020-10-05 14:12:15
 categories: jekyll

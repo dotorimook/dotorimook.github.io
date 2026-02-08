@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약"
 date: 2021-11-15 22:02:50
 categories:

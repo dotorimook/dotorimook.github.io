@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "React Portal + Hook으로 외부 DOM에 Component 생성하기"
 date: 2020-11-17 08:24:48
 categories:

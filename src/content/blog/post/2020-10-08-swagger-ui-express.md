@@ -1,5 +1,4 @@
 ---
-layout: default
 title: "node.js express 서버에 Swagger 끼얹기"
 date: 2020-10-08 12:45:52
 categories:

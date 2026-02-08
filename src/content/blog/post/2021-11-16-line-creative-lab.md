@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기"
 date: 2021-11-16 16:54:06
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "MySQL Field를 이용해서 원하는 순서로 정렬하기"
 date: 2020-10-06 13:43:59
 categories:

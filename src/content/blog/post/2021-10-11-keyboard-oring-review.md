@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "기계식 키보드 소음 감소 오링 장착 후기"
 date: 2021-10-11 10:39:41
 categories:

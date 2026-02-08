@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "에러 “error fsevents@2.0.7: The platform ”linux“ is incompatible with this module.”, ”error Found incompatible module.”를 만났을 때"
 date: 2021-01-17 10:03:58
 categories:

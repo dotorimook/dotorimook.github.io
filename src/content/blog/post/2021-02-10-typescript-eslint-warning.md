@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "eslint 'React' was used before it was defined  @typescript-eslint/no-use-before-define 대처법"
 date: 2021-02-10 22:53:41
 categories:

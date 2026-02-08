@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "4대 거래소 상장 알트코인 쟁글 신용도 평가 - QTUM A- 등급"
 date: 2021-06-22 23:01:03
 categories:

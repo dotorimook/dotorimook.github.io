@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "맥에서 vscode auto import가 되지 않을 때"
 date: 2021-06-20 14:07:19
 categories:

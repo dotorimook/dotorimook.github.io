@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[짧은 팁] jest Cannot find module 'module' from 'src/components/Component.tsx' 에러 해결"
 date: 2022-03-05 23:06:01
 categories:

@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "Gatsby 블로그 github에 빌드/배포하기 (Feat. gh-pages)"
 date: 2021-02-06 19:43:59
 categories:

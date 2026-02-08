@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "[nginx] nginx.conf 설정으로 프록시 서버 쿠키 설정 추가하기"
 date: 2020-11-22 00:01:10
 categories:

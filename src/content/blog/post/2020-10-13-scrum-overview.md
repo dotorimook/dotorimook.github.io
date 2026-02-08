@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "스크럼의 이론과 실천에 대한 가벼운 안내서"
 date: 2020-10-13 08:58:53
 categories:

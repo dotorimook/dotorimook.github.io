@@ -1,5 +1,4 @@
 ---
-layout: post
 title: "module 'telegram' has no attribute 'Bot' 에러 해결 python telegram"
 date: 2021-10-04 09:58:07
 categories:
