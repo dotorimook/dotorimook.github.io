@@ -15,16 +15,6 @@ const Content = styled.div`
   margin-bottom: ${rhythm(2.5)};
 `
 
-const Avatar = styled.img`
-  border-radius: 100%;
-  margin-bottom: 0;
-  margin-right: ${rhythm(1 / 2)};
-  min-width: 50px;
-  width: 50px;
-  height: 50px;
-  object-fit: cover;
-`
-
 export const Bio: React.FC<BioProps> = ({ 
   author = "Dotorimook", 
   social = { twitter: "kylemathews" }, 
@@ -32,11 +22,6 @@ export const Bio: React.FC<BioProps> = ({
 }) => {
   return (
     <Content>
-      <Avatar
-        src={avatar}
-        alt={author}
-        style={{ borderRadius: "50%" }}
-      />
       <p>
         Written by <strong>{author}</strong>
       </p>
