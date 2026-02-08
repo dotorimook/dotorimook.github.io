@@ -10,10 +10,7 @@ export default defineConfig({
   integrations: [react(), sitemap()],
   vite: {
     ssr: {
-      noExternal: ['@emotion/styled', '@emotion/react', '@emotion/is-prop-valid'],
-    },
-    optimizeDeps: {
-      include: ['@emotion/is-prop-valid'],
+      noExternal: true,
     },
   },
 });
