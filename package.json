@@ -23,5 +23,8 @@
     "typography": "^0.16.24",
     "typography-theme-wordpress-2016": "^0.16.19",
     "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "babel-plugin-styled-components": "^2.1.4"
   }
 }
