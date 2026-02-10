@@ -9,9 +9,4 @@ export default defineConfig({
     react(),
     sitemap()
   ],
-  vite: {
-    ssr: {
-      noExternal: ['@emotion/styled', '@emotion/react', '@emotion/is-prop-valid'],
-    },
-  },
 });
