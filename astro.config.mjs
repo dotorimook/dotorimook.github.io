@@ -9,4 +9,9 @@ export default defineConfig({
     react(),
     sitemap()
   ],
+  vite: {
+    ssr: {
+      noExternal: ['@emotion/*'],
+    },
+  },
 });
