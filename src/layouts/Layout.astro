@@ -53,6 +53,17 @@ const siteTitle = title === "Dotorimook's Blog" ? title : `${title} | Dotorimook
 
         <!-- Google AdSense -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5013570089563608" crossorigin="anonymous"></script>
+
+        <!-- Service Worker Unregistration (Fix for Gatsby -> Astro migration) -->
+        <script is:inline>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for(let registration of registrations) {
+                        registration.unregister();
+                    }
+                });
+            }
+        </script>
 	</head>
 	<body>
 		<slot />
