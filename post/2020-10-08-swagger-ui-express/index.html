@@ -1,0 +1,270 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.17.2"><!-- Canonical URL --><link rel="canonical" href="https://dotorimook.github.io/post/2020-10-08-swagger-ui-express/"><title>node.js express 서버에 Swagger 끼얹기 | Dotorimook&#39;s Blog</title><meta name="title" content="node.js express 서버에 Swagger 끼얹기 | Dotorimook's Blog"><meta name="description" content="Dotorimook's Tech Blog"><!-- Open Graph / Facebook --><meta property="og:type" content="article"><meta property="og:url" content="https://dotorimook.github.io/post/2020-10-08-swagger-ui-express/"><meta property="og:title" content="node.js express 서버에 Swagger 끼얹기"><meta property="og:description" content="Dotorimook's Tech Blog"><meta property="og:image" content="https://dotorimook.github.io/assets/profile-pic.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://dotorimook.github.io/post/2020-10-08-swagger-ui-express/"><meta property="twitter:title" content="node.js express 서버에 Swagger 끼얹기"><meta property="twitter:description" content="Dotorimook's Tech Blog"><meta property="twitter:image" content="https://dotorimook.github.io/assets/profile-pic.jpg"><!-- Additional SEO --><meta name="robots" content="index, follow"><!-- Google AdSense --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5013570089563608" crossorigin="anonymous"></script><!-- Service Worker Unregistration (Fix for Gatsby -> Astro migration) --><script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for(let registration of registrations) {
+                        registration.unregister();
+                    }
+                });
+            }
+        </script><style>@import"https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;box-sizing:border-box}body{line-height:1.7;font-family:Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;color:#374151;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{text-decoration:none;color:inherit;transition:color .2s ease-in-out}a:hover{color:#4f46e5}h1,h2,h3,h4,h5,h6{color:#111827;font-weight:700;line-height:1.3;margin-bottom:.5em}p{margin-bottom:1em}ul,ol{list-style:none}
+.blog-post-content{line-height:1.6;font-size:1.1rem}.blog-post-content h1,.blog-post-content h2,.blog-post-content h3{margin-top:1.5em;margin-bottom:.5em}.blog-post-content p{margin-bottom:1em}.blog-post-content ul,.blog-post-content ol{margin-bottom:1em;padding-left:1.5em}.blog-post-content img{max-width:100%;height:auto}.blog-post-content pre{padding:1em;border-radius:4px;overflow-x:auto}
+</style></head> <body>  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><script>(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();</script><astro-island uid="Z23lPqC" prefix="r8" component-url="/_astro/PageLayout.D1kAFV_b.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;title&quot;:[0,&quot;node.js express 서버에 Swagger 끼얹기&quot;],&quot;tags&quot;:[1,[[0,&quot;jekyll&quot;],[0,&quot;etc&quot;],[0,&quot;react&quot;],[0,&quot;react-hook-form&quot;],[0,&quot;javascript&quot;],[0,&quot;typescript&quot;],[0,&quot;web&quot;],[0,&quot;vscode&quot;],[0,&quot;mongoose&quot;],[0,&quot;node&quot;],[0,&quot;js&quot;],[0,&quot;db&quot;],[0,&quot;database&quot;],[0,&quot;mac&quot;],[0,&quot;MySQL&quot;],[0,&quot;console&quot;],[0,&quot;Jira&quot;],[0,&quot;git&quot;],[0,&quot;bitbucket&quot;],[0,&quot;commit&quot;],[0,&quot;jquery&quot;],[0,&quot;load&quot;],[0,&quot;unload&quot;],[0,&quot;indexOf&quot;],[0,&quot;error&quot;],[0,&quot;scurm&quot;],[0,&quot;agile&quot;],[0,&quot;sprint&quot;],[0,&quot;Software-Engineering&quot;],[0,&quot;yarn&quot;],[0,&quot;npm&quot;],[0,&quot;package&quot;],[0,&quot;lock&quot;],[0,&quot;nginx&quot;],[0,&quot;server&quot;],[0,&quot;cookie&quot;],[0,&quot;docker&quot;],[0,&quot;pm2&quot;],[0,&quot;pm2-runtime&quot;],[0,&quot;mobx&quot;],[0,&quot;mobx-react&quot;],[0,&quot;troubleshooting&quot;],[0,&quot;eslint&quot;],[0,&quot;gatsby&quot;],[0,&quot;gh-page&quot;],[0,&quot;github.io&quot;],[0,&quot;adsense&quot;],[0,&quot;m1&quot;],[0,&quot;apple silicon&quot;],[0,&quot;express&quot;],[0,&quot;swagger&quot;],[0,&quot;오토 임포트&quot;],[0,&quot;auto import&quot;],[0,&quot;blockchain&quot;],[0,&quot;altcoin&quot;],[0,&quot;cryptocurrency&quot;],[0,&quot;Qtum&quot;],[0,&quot;퀀텀&quot;],[0,&quot;python&quot;],[0,&quot;telegram&quot;],[0,&quot;jira&quot;],[0,&quot;kanban&quot;],[0,&quot;dots&quot;],[0,&quot;keybiard&quot;],[0,&quot;review&quot;],[0,&quot;리뷰&quot;],[0,&quot;키보드&quot;],[0,&quot;기계식키보드&quot;],[0,&quot;키캡&quot;],[0,&quot;xda&quot;],[0,&quot;앤프로2&quot;],[0,&quot;hidden class&quot;],[0,&quot;inline caching&quot;],[0,&quot;javascript perforamnce&quot;],[0,&quot;keyboard&quot;],[0,&quot;ann pro2&quot;],[0,&quot;keycap&quot;],[0,&quot;소음&quot;],[0,&quot;오링&quot;],[0,&quot;oring&quot;],[0,&quot;reivew&quot;],[0,&quot;iphone&quot;],[0,&quot;아이폰&quot;],[0,&quot;신지모루&quot;],[0,&quot;신지모루 에어로핏&quot;],[0,&quot;아이폰 케이스&quot;],[0,&quot;vscode.dev&quot;],[0,&quot;git.dev&quot;],[0,&quot;setting sync&quot;],[0,&quot;web IDE&quot;],[0,&quot;IDE&quot;],[0,&quot;속독&quot;],[0,&quot;LINE dev days 2021&quot;],[0,&quot;line developer days 2021&quot;],[0,&quot;line dev days&quot;],[0,&quot;line developer days&quot;],[0,&quot;React&quot;],[0,&quot;storybook&quot;],[0,&quot;TSDoc&quot;],[0,&quot;Declare file&quot;],[0,&quot;mdx&quot;],[0,&quot;typesciprt&quot;],[0,&quot;sharp&quot;],[0,&quot;NextJS&quot;],[0,&quot;ESLint&quot;],[0,&quot;Capacitor&quot;],[0,&quot;react-hook&quot;],[0,&quot;portal&quot;],[0,&quot;layout shift&quot;],[0,&quot;skeleton&quot;],[0,&quot;TDD&quot;],[0,&quot;FE&quot;],[0,&quot;jest&quot;],[0,&quot;etc, AI, astro&quot;],[0,&quot;github&quot;],[0,&quot;gitlab&quot;],[0,&quot;git-authentication&quot;],[0,&quot;ssh&quot;],[0,&quot;pre-receive hook declined&quot;],[0,&quot;env&quot;]]],&quot;categories&quot;:[1,[[0,&quot;jekyll&quot;],[0,&quot;update&quot;],[0,&quot;vscode&quot;],[0,&quot;mongoose&quot;],[0,&quot;mac&quot;],[0,&quot;MySQL&quot;],[0,&quot;javascript&quot;],[0,&quot;Jira&quot;],[0,&quot;JQuery&quot;],[0,&quot;Software-Engineering&quot;],[0,&quot;nginx&quot;],[0,&quot;react&quot;],[0,&quot;typescript&quot;],[0,&quot;gatsby&quot;],[0,&quot;blahblah&quot;],[0,&quot;express&quot;],[0,&quot;cryptocurrency&quot;],[0,&quot;python&quot;],[0,&quot;review&quot;],[0,&quot;etc&quot;],[0,&quot;React&quot;],[0,&quot;NextJS&quot;],[0,&quot;ESLint&quot;],[0,&quot;Capacitor&quot;],[0,&quot;react-hook&quot;],[0,&quot;portal&quot;],[0,&quot;jest&quot;],[0,&quot;git&quot;],[0,&quot;troubleshooting&quot;],[0,&quot;npm&quot;]]]}" ssr client="load" opts="{&quot;name&quot;:&quot;PageLayout&quot;,&quot;value&quot;:true}" await-children><style data-emotion="css 1k3zkui">.css-1k3zkui{max-width:800px;margin:0 auto;padding:2.175rem 1.0875rem;min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><div class="css-1k3zkui"><style data-emotion="css 1k9en36">.css-1k9en36{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:2.9rem;padding-bottom:1.45rem;border-bottom:1px solid #9CA3AF40;}.css-1k9en36 h1{font-size:1.5rem;margin:0;font-weight:800;}.css-1k9en36 h1 a{color:#111827;-webkit-text-decoration:none;text-decoration:none;}.css-1k9en36 h1 a:hover{color:#4F46E5;}.css-1k9en36 nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:1rem;}.css-1k9en36 nav a{font-size:0.9rem;font-weight:600;color:#4B5563;-webkit-text-decoration:none;text-decoration:none;}.css-1k9en36 nav a:hover{color:#4F46E5;}</style><header class="css-1k9en36"><h1><a href="/">Dotorimook&#x27;s blog</a></h1><nav><a href="/">Home</a></nav></header><style data-emotion="css yp9swi">.css-yp9swi{-webkit-flex:1;-ms-flex:1;flex:1;}</style><main class="css-yp9swi"><astro-slot> <article> <header> <h1>node.js express 서버에 Swagger 끼얹기</h1> <p>10/8/2020</p> </header> <astro-island uid="270IvJ" prefix="r4" component-url="/_astro/AdSense.B1uZh6Rd.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;client&quot;:[0,&quot;ca-pub-5013570089563608&quot;],&quot;slot&quot;:[0,&quot;3747930287&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;AdSense&quot;,&quot;value&quot;:true}" await-children><div style="margin:20px 0;overflow:hidden"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5013570089563608" data-ad-slot="3747930287" data-ad-format="auto" data-full-width-responsive="true"></ins></div><!--astro:end--></astro-island> <div class="blog-post-content"> <h1 id="express-프로젝트에-swagger를-달아보자">Express 프로젝트에 Swagger를 달아보자.</h1>
+<h2 id="swager">Swager?</h2>
+<p><strong>Swagger</strong>는 RESTful 웹 서비스에서 설계, 구축, 문서화 등을 도와주는 오픈소스 프레임워크라고 볼 수 있다.
+Spring 프로젝트에서 적용된 사례를 많이 접했는데, node.js도 지원하고 있었다.</p>
+<h2 id="swagger-tools">Swagger Tools</h2>
+<p>Swagger는 다음과 같은 것들이 있다.</p>
+<ul>
+<li>
+<p><strong><a href="https://swagger.io/tools/swagger-editor/">Swagger Editor</a></strong></p>
+<p><strong>Swagger Editor</strong>는 RESTful API를 Swagger 스펙에 맞게 설계, 정의, 문서화할 수 있는 오픈소스 에디터이다.</p>
+</li>
+<li>
+<p><strong><a href="https://swagger.io/tools/swagger-codegen/">Swagger Codegen</a></strong></p>
+<p><strong>Swagger Codegen</strong>은 OpenAPI 스펙을 기반으로 API 클라이언트 라이브러리(SDK generation), server stubs, 문서화 등을 자동으로 해준다.</p>
+</li>
+<li>
+<p><strong><a href="https://swagger.io/tools/swagger-ui/">Swagger UI</a></strong></p>
+<p><strong>Swagger UI</strong>는 API 스펙들을 가시적으로 볼 수 있고, 실제 API를 테스트해볼 수 있게 해준다. API에</p>
+</li>
+<li>
+<p><strong><a href="https://swagger.io/tools/swagger-inspector/">Swagger Inspector</a></strong> </p>
+<p>자동 생성된 OpenAPI 문서를 테스트 할 수 있는 툴이다.</p>
+</li>
+</ul>
+<p>현업에서 일반적으로 <strong>Swagger</strong>라고 하면 <strong>swager-ui</strong>를 많이 지칭하는 것 같다. <strong>swagger-ui</strong>는 백엔드 - 프론트 개발자 간 소통하는 문서로 많이 사용되고 있는데,</p>
+<ul>
+<li>프론트 작업자 입장에서는  API 스펙을 볼 수 있고, 테스트도 해볼 수 있기 때문에
+<ul>
+<li>백엔드 작업자를 찾아가서 물어보지 않을 수 있고,</li>
+<li>백엔드 프로젝트를 들춰서 VO 소스코드를 보지 않아도 작업을 할 수 있는 장점이 있다.</li>
+</ul>
+</li>
+<li>백엔드 개발자 입장에서는 <strong>swagger-ui</strong> 자체가 문서가 되기 때문에
+<ul>
+<li>별도의 문서가 필요하지 않다는 점,</li>
+<li>프로젝트 소스와 연동되어있기 때문에 <em>가장 신선한</em> 문서라고 볼 수 있다는 장점이 있다.</li>
+</ul>
+</li>
+</ul>
+<p>실제로 Spring 개발자들은 <strong>swagger-ui</strong>를 많이 도입해서 사용하는 사례들을 자주 보았다. 쓰는 프로젝트와 안쓰는 프로젝트의 차이? 말모말모.. 없으면 너무 불편한 정도다.</p>
+<p>그렇다면 node.js에는 어떻게 적용할 수 있을까?</p>
+<h2 id="express-프로젝트에-swagger-ui를-적용하기">express 프로젝트에 <code>swagger-ui</code>를 적용하기</h2>
+<p>express로 개발된 node.js 프로젝트에 <code>swagger-ui</code>를 적용해보자.</p>
+<h3 id="swagger-ui-express-설치"><code>swagger-ui-express</code> 설치</h3>
+<p>프로젝트에 <code>swagger-ui-express</code>를 설치한다.</p>
+<p><code>swagger-ui-express</code>는 swagger-ui를 사용할 수 있게 하는 express 미들웨어이다.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="bash"><code><span class="line"><span style="color:#B392F0">$</span><span style="color:#9ECBFF"> yarn</span><span style="color:#9ECBFF"> add</span><span style="color:#9ECBFF"> swagger-ui-express</span></span></code></pre>
+<h3 id="swaggerjson-생성"><code>swagger.json</code> 생성</h3>
+<p><code>swagger.json</code>파일을 프로젝트 루트에 생성한다.</p>
+<p>이 JSON 파일에 OpenAPI 정의를 작성한다.</p>
+<p>swagger open api 스펙은 다음링크에서 확인 가능: <a href="https://swagger.io/docs/specification/basic-structure/">https://swagger.io/docs/specification/basic-structure/</a></p>
+<ul>
+<li>swagger 기본 구조
+<ul>
+<li><code>info</code>
+<ul>
+<li>API의 정보들을 정의: <code>title</code>, <code>description</code>(optional), <code>version</code>, …</li>
+</ul>
+</li>
+<li><code>Paths</code>
+<ul>
+<li>각 endpoint path를 나타냄</li>
+</ul>
+</li>
+<li><code>Parameters</code>
+<ul>
+<li>URL에 포함된 파라미터나 Query String들을 정의함.</li>
+</ul>
+</li>
+<li><code>Request Body</code>
+<ul>
+<li><code>requestBody</code>로 body content와 media type을 정의할 수 있음.</li>
+</ul>
+</li>
+<li><code>Responses</code>
+<ul>
+<li>가능한 status code와 response body <code>schema</code>를 정의할 수있음.</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>아래와 같이 <code>swagger,json</code>파일을 작성한다. 참고로 아래 <code>version</code>은 OpenAPI 스펙의 버전이다.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">{</span></span>
+<span class="line"><span style="color:#79B8FF">  "swagger"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"2.0"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  "info"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">    "version"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"1.0.0"</span><span style="color:#E1E4E8">, </span><span style="color:#6A737D">//version of the OpenAPI Specification</span></span>
+<span class="line"><span style="color:#79B8FF">    "title"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"My User Project CRUD"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">    "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"My User Project Application API"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">    "license"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">      "name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"MIT"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">      "url"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"https://opensource.org/licenses/MIT"</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#79B8FF">  "host"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"localhost:8000"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  "basePath"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"/"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">  "tags"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">    {</span></span>
+<span class="line"><span style="color:#79B8FF">      "name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Users"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">      "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"API for users in the system"</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  ],</span></span>
+<span class="line"><span style="color:#79B8FF">  "schemes"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">    "http"</span></span>
+<span class="line"><span style="color:#E1E4E8">  ],</span></span>
+<span class="line"><span style="color:#79B8FF">  "consumes"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">    "application/json"</span></span>
+<span class="line"><span style="color:#E1E4E8">  ],</span></span>
+<span class="line"><span style="color:#79B8FF">  "produces"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">    "application/json"</span></span>
+<span class="line"><span style="color:#E1E4E8">  ]</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<h3 id="swagger-ui-express-연동하기"><code>swagger-ui-express</code> 연동하기</h3>
+<p>아래와같이 <code>swagger-ui-express</code>와 작성한 <code>swagger.json</code>을 import 하여</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#F97583">const</span><span style="color:#79B8FF"> swaggerUi</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> require</span><span style="color:#E1E4E8">(‘swagger</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">ui</span><span style="color:#F97583">-</span><span style="color:#E1E4E8">express’),</span></span>
+<span class="line"><span style="color:#79B8FF">swaggerDocument</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> require</span><span style="color:#E1E4E8">(‘.</span><span style="color:#F97583">/</span><span style="color:#E1E4E8">swagger.json’);</span></span></code></pre>
+<p><code>app.listen()</code>앞에 아래 코드를 추가한다.</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="jsx"><code><span class="line"><span style="color:#E1E4E8">app.</span><span style="color:#B392F0">use</span><span style="color:#E1E4E8">(</span><span style="color:#9ECBFF">'/api-docs'</span><span style="color:#E1E4E8">, swaggerUi.serve, swaggerUi.</span><span style="color:#B392F0">setup</span><span style="color:#E1E4E8">(swaggerDocument));</span></span></code></pre>
+<p>이렇게하면 호스트에서 <code>{{host}}/api-docs</code>를 통해서 Swagger 문서를 볼 수있는 것을 확인할 수 있다.</p>
+<h3 id="api-정의-완성하기">API 정의 완성하기</h3>
+<p>이제 <code>swagger.json</code>을 사용하는 API로 완성하면 된다. <code>paths</code> 필드에 api 스펙을 추가해나가면 된다. <code>definitions</code>에는 API에서 사용하게되는 object 형태를 제공 할 수 있다.</p>
+<p><code>endpoint</code> 명과 method type이 key가 되고, 각 값들을 정의할 수 있다. <code>parameters</code>로 파라미터의 타이</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="json"><code><span class="line"><span style="color:#E1E4E8">..</span></span>
+<span class="line"><span style="color:#9ECBFF">"paths"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">    "/users"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">      "get"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">        "tags"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">          "Users"</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#79B8FF">        "summary"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Get all users in system"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">        "responses"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "200"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">            "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"OK"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "schema"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">              "$ref"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"#/definitions/Users"</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#79B8FF">    "/addUser"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">      "post"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">        "tags"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">          "Users"</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#79B8FF">        "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Create new user in system"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">        "parameters"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">          {</span></span>
+<span class="line"><span style="color:#79B8FF">            "name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"user"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "in"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"body"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"User that we want to create"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "schema"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">              "$ref"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"#/definitions/User"</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#79B8FF">        "produces"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">          "application/json"</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#79B8FF">        "responses"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "200"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">            "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"New user is created"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "schema"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">            "$ref"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"#/definitions/User"</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#79B8FF">    "/user/{id}"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">      "put"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">        "summary"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"Update user with given ID"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">        "tags"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">          "Users"</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#79B8FF">        "parameters"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#E1E4E8">          {</span></span>
+<span class="line"><span style="color:#79B8FF">            "name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"id"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "in"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"path"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "rquired"</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"ID of user that we want to find"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"integer"</span></span>
+<span class="line"><span style="color:#E1E4E8">          },</span></span>
+<span class="line"><span style="color:#E1E4E8">          {</span></span>
+<span class="line"><span style="color:#79B8FF">            "name"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"user"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "in"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"body"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"User with new values of properties"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "schema"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">              "$ref"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"#/definitions/User"</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        ],</span></span>
+<span class="line"><span style="color:#79B8FF">        "responses"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "200"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">            "description"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"User is updated"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "schema"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">              "$ref"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"#/definitions/User"</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  },</span></span>
+<span class="line"><span style="color:#9ECBFF">  "definitions"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">    "User"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">      "required"</span><span style="color:#E1E4E8">: [</span></span>
+<span class="line"><span style="color:#9ECBFF">        "name"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">        "_id"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#9ECBFF">        "companies"</span></span>
+<span class="line"><span style="color:#E1E4E8">      ],</span></span>
+<span class="line"><span style="color:#79B8FF">      "properties"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">        "_id"</span><span style="color:#E1E4E8">:{</span></span>
+<span class="line"><span style="color:#79B8FF">          "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"integer"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">          "uniqueItems"</span><span style="color:#E1E4E8">: </span><span style="color:#79B8FF">true</span></span>
+<span class="line"><span style="color:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#79B8FF">        "isPublic"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"boolean"</span></span>
+<span class="line"><span style="color:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#79B8FF">        "name"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "types"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"string"</span></span>
+<span class="line"><span style="color:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#79B8FF">        "books"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"array"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">          "items"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">            "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"object"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">            "properties"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">              "name"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">                "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"string"</span></span>
+<span class="line"><span style="color:#E1E4E8">              },</span></span>
+<span class="line"><span style="color:#79B8FF">              "amount"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">                "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"number"</span></span>
+<span class="line"><span style="color:#E1E4E8">              }</span></span>
+<span class="line"><span style="color:#E1E4E8">            }</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        },</span></span>
+<span class="line"><span style="color:#79B8FF">        "companies"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">          "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"array"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">          "items"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">            "type"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"string"</span></span>
+<span class="line"><span style="color:#E1E4E8">          }</span></span>
+<span class="line"><span style="color:#E1E4E8">        }</span></span>
+<span class="line"><span style="color:#E1E4E8">      }</span></span>
+<span class="line"><span style="color:#E1E4E8">    },</span></span>
+<span class="line"><span style="color:#79B8FF">    "Users"</span><span style="color:#E1E4E8">: {</span></span>
+<span class="line"><span style="color:#79B8FF">      "type"</span><span style="color:#E1E4E8"> :</span><span style="color:#9ECBFF">"array"</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#79B8FF">      "$ref"</span><span style="color:#E1E4E8">: </span><span style="color:#9ECBFF">"#/definitions/User"</span></span>
+<span class="line"><span style="color:#E1E4E8">    }</span></span>
+<span class="line"><span style="color:#E1E4E8">  }</span></span>
+<span class="line"><span style="color:#E1E4E8">...</span></span></code></pre>
+<p>대략적으로 형태들이 파악이 가능하다.</p>
+<p>그런데… 이 모든 API에 대해서 <code>swagger.json</code>을 작성해야하나?!!
+이럴거면 단순 문서를 위해서라면 JSDoc, TSDoc, docz 등을 차라리 사용했겠죠..</p>
+<p>그럼 다음 포스트에서 좀 더 쉽게 작성할 수 잇는 방법을 소개한다!</p>
+<h3 id="reference">Reference</h3>
+<p>참고가 된 사이트</p>
+<ul>
+<li><a href="https://github.com/OAI/OpenAPI-Specification/blob/master/versions/3.0.3.md">Open API Spec</a></li>
+<li><a href="https://medium.com/@kirtikau/how-to-add-swagger-ui-to-existing-node-js-and-express-js-project-2c8bad9364ce">how-to-add-swagger-ui-to-existing-node-js-and-express-js-project</a></li>
+<li><a href="https://levelup.gitconnected.com/the-simplest-way-to-add-swagger-to-a-node-js-project-c2a4aa895a3c">the-simplest-way-to-add-swagger-to-a-node-js-project</a></li>
+</ul> </div> <astro-island uid="Z2crMHf" prefix="r5" component-url="/_astro/AdSense.B1uZh6Rd.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;client&quot;:[0,&quot;ca-pub-5013570089563608&quot;],&quot;slot&quot;:[0,&quot;5476601469&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;AdSense&quot;,&quot;value&quot;:true}" await-children><div style="margin:20px 0;overflow:hidden"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5013570089563608" data-ad-slot="5476601469" data-ad-format="auto" data-full-width-responsive="true"></ins></div><!--astro:end--></astro-island> <hr> <footer> <style data-emotion="css jgy9hf">.css-jgy9hf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:3.625rem;}</style><div class="css-jgy9hf"><p>Written by <strong>Dotorimook</strong></p></div> </footer> </article> <astro-island uid="gkgg4" prefix="r3" component-url="/_astro/Utterances.BElInP5o.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;repo&quot;:[0,&quot;dotorimook/dotorimook.github.io&quot;],&quot;theme&quot;:[0,&quot;github-light&quot;]}" ssr client="visible" opts="{&quot;name&quot;:&quot;Utterances&quot;,&quot;value&quot;:true}" await-children><div></div><!--astro:end--></astro-island> </astro-slot></main><style data-emotion="css 1qofucn">.css-1qofucn{margin-top:4.35rem;padding-top:1.45rem;border-top:1px solid #9CA3AF40;font-size:0.85rem;color:#9CA3AF;text-align:center;}.css-1qofucn .tags-list{margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:0.5rem;}.css-1qofucn .tags-list a{color:#4B5563;-webkit-text-decoration:none;text-decoration:none;}.css-1qofucn .tags-list a:hover{color:#4F46E5;-webkit-text-decoration:underline;text-decoration:underline;}</style><footer class="css-1qofucn"><div class="tags-list"><a href="/tag/jekyll">#<!-- -->jekyll</a><a href="/tag/etc">#<!-- -->etc</a><a href="/tag/react">#<!-- -->react</a><a href="/tag/react-hook-form">#<!-- -->react-hook-form</a><a href="/tag/javascript">#<!-- -->javascript</a><a href="/tag/typescript">#<!-- -->typescript</a><a href="/tag/web">#<!-- -->web</a><a href="/tag/vscode">#<!-- -->vscode</a><a href="/tag/mongoose">#<!-- -->mongoose</a><a href="/tag/node">#<!-- -->node</a><a href="/tags">More...</a></div><p>© <!-- -->2026<!-- --> Dotorimook. All rights reserved.</p></footer></div><!--astro:end--></astro-island>  </body></html> 

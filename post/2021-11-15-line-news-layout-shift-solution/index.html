@@ -1,0 +1,202 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.17.2"><!-- Canonical URL --><link rel="canonical" href="https://dotorimook.github.io/post/2021-11-15-line-news-layout-shift-solution/"><title>LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약 | Dotorimook&#39;s Blog</title><meta name="title" content="LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약 | Dotorimook's Blog"><meta name="description" content="Dotorimook's Tech Blog"><!-- Open Graph / Facebook --><meta property="og:type" content="article"><meta property="og:url" content="https://dotorimook.github.io/post/2021-11-15-line-news-layout-shift-solution/"><meta property="og:title" content="LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약"><meta property="og:description" content="Dotorimook's Tech Blog"><meta property="og:image" content="https://dotorimook.github.io/assets/profile-pic.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://dotorimook.github.io/post/2021-11-15-line-news-layout-shift-solution/"><meta property="twitter:title" content="LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약"><meta property="twitter:description" content="Dotorimook's Tech Blog"><meta property="twitter:image" content="https://dotorimook.github.io/assets/profile-pic.jpg"><!-- Additional SEO --><meta name="robots" content="index, follow"><!-- Google AdSense --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5013570089563608" crossorigin="anonymous"></script><!-- Service Worker Unregistration (Fix for Gatsby -> Astro migration) --><script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for(let registration of registrations) {
+                        registration.unregister();
+                    }
+                });
+            }
+        </script><style>@import"https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;box-sizing:border-box}body{line-height:1.7;font-family:Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;color:#374151;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{text-decoration:none;color:inherit;transition:color .2s ease-in-out}a:hover{color:#4f46e5}h1,h2,h3,h4,h5,h6{color:#111827;font-weight:700;line-height:1.3;margin-bottom:.5em}p{margin-bottom:1em}ul,ol{list-style:none}
+.blog-post-content{line-height:1.6;font-size:1.1rem}.blog-post-content h1,.blog-post-content h2,.blog-post-content h3{margin-top:1.5em;margin-bottom:.5em}.blog-post-content p{margin-bottom:1em}.blog-post-content ul,.blog-post-content ol{margin-bottom:1em;padding-left:1.5em}.blog-post-content img{max-width:100%;height:auto}.blog-post-content pre{padding:1em;border-radius:4px;overflow-x:auto}
+</style></head> <body>  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><script>(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();</script><astro-island uid="ZooW6N" prefix="r8" component-url="/_astro/PageLayout.D1kAFV_b.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;title&quot;:[0,&quot;LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약&quot;],&quot;tags&quot;:[1,[[0,&quot;jekyll&quot;],[0,&quot;etc&quot;],[0,&quot;react&quot;],[0,&quot;react-hook-form&quot;],[0,&quot;javascript&quot;],[0,&quot;typescript&quot;],[0,&quot;web&quot;],[0,&quot;vscode&quot;],[0,&quot;mongoose&quot;],[0,&quot;node&quot;],[0,&quot;js&quot;],[0,&quot;db&quot;],[0,&quot;database&quot;],[0,&quot;mac&quot;],[0,&quot;MySQL&quot;],[0,&quot;console&quot;],[0,&quot;Jira&quot;],[0,&quot;git&quot;],[0,&quot;bitbucket&quot;],[0,&quot;commit&quot;],[0,&quot;jquery&quot;],[0,&quot;load&quot;],[0,&quot;unload&quot;],[0,&quot;indexOf&quot;],[0,&quot;error&quot;],[0,&quot;scurm&quot;],[0,&quot;agile&quot;],[0,&quot;sprint&quot;],[0,&quot;Software-Engineering&quot;],[0,&quot;yarn&quot;],[0,&quot;npm&quot;],[0,&quot;package&quot;],[0,&quot;lock&quot;],[0,&quot;nginx&quot;],[0,&quot;server&quot;],[0,&quot;cookie&quot;],[0,&quot;docker&quot;],[0,&quot;pm2&quot;],[0,&quot;pm2-runtime&quot;],[0,&quot;mobx&quot;],[0,&quot;mobx-react&quot;],[0,&quot;troubleshooting&quot;],[0,&quot;eslint&quot;],[0,&quot;gatsby&quot;],[0,&quot;gh-page&quot;],[0,&quot;github.io&quot;],[0,&quot;adsense&quot;],[0,&quot;m1&quot;],[0,&quot;apple silicon&quot;],[0,&quot;express&quot;],[0,&quot;swagger&quot;],[0,&quot;오토 임포트&quot;],[0,&quot;auto import&quot;],[0,&quot;blockchain&quot;],[0,&quot;altcoin&quot;],[0,&quot;cryptocurrency&quot;],[0,&quot;Qtum&quot;],[0,&quot;퀀텀&quot;],[0,&quot;python&quot;],[0,&quot;telegram&quot;],[0,&quot;jira&quot;],[0,&quot;kanban&quot;],[0,&quot;dots&quot;],[0,&quot;keybiard&quot;],[0,&quot;review&quot;],[0,&quot;리뷰&quot;],[0,&quot;키보드&quot;],[0,&quot;기계식키보드&quot;],[0,&quot;키캡&quot;],[0,&quot;xda&quot;],[0,&quot;앤프로2&quot;],[0,&quot;hidden class&quot;],[0,&quot;inline caching&quot;],[0,&quot;javascript perforamnce&quot;],[0,&quot;keyboard&quot;],[0,&quot;ann pro2&quot;],[0,&quot;keycap&quot;],[0,&quot;소음&quot;],[0,&quot;오링&quot;],[0,&quot;oring&quot;],[0,&quot;reivew&quot;],[0,&quot;iphone&quot;],[0,&quot;아이폰&quot;],[0,&quot;신지모루&quot;],[0,&quot;신지모루 에어로핏&quot;],[0,&quot;아이폰 케이스&quot;],[0,&quot;vscode.dev&quot;],[0,&quot;git.dev&quot;],[0,&quot;setting sync&quot;],[0,&quot;web IDE&quot;],[0,&quot;IDE&quot;],[0,&quot;속독&quot;],[0,&quot;LINE dev days 2021&quot;],[0,&quot;line developer days 2021&quot;],[0,&quot;line dev days&quot;],[0,&quot;line developer days&quot;],[0,&quot;React&quot;],[0,&quot;storybook&quot;],[0,&quot;TSDoc&quot;],[0,&quot;Declare file&quot;],[0,&quot;mdx&quot;],[0,&quot;typesciprt&quot;],[0,&quot;sharp&quot;],[0,&quot;NextJS&quot;],[0,&quot;ESLint&quot;],[0,&quot;Capacitor&quot;],[0,&quot;react-hook&quot;],[0,&quot;portal&quot;],[0,&quot;layout shift&quot;],[0,&quot;skeleton&quot;],[0,&quot;TDD&quot;],[0,&quot;FE&quot;],[0,&quot;jest&quot;],[0,&quot;etc, AI, astro&quot;],[0,&quot;github&quot;],[0,&quot;gitlab&quot;],[0,&quot;git-authentication&quot;],[0,&quot;ssh&quot;],[0,&quot;pre-receive hook declined&quot;],[0,&quot;env&quot;]]],&quot;categories&quot;:[1,[[0,&quot;jekyll&quot;],[0,&quot;update&quot;],[0,&quot;vscode&quot;],[0,&quot;mongoose&quot;],[0,&quot;mac&quot;],[0,&quot;MySQL&quot;],[0,&quot;javascript&quot;],[0,&quot;Jira&quot;],[0,&quot;JQuery&quot;],[0,&quot;Software-Engineering&quot;],[0,&quot;nginx&quot;],[0,&quot;react&quot;],[0,&quot;typescript&quot;],[0,&quot;gatsby&quot;],[0,&quot;blahblah&quot;],[0,&quot;express&quot;],[0,&quot;cryptocurrency&quot;],[0,&quot;python&quot;],[0,&quot;review&quot;],[0,&quot;etc&quot;],[0,&quot;React&quot;],[0,&quot;NextJS&quot;],[0,&quot;ESLint&quot;],[0,&quot;Capacitor&quot;],[0,&quot;react-hook&quot;],[0,&quot;portal&quot;],[0,&quot;jest&quot;],[0,&quot;git&quot;],[0,&quot;troubleshooting&quot;],[0,&quot;npm&quot;]]]}" ssr client="load" opts="{&quot;name&quot;:&quot;PageLayout&quot;,&quot;value&quot;:true}" await-children><style data-emotion="css 1k3zkui">.css-1k3zkui{max-width:800px;margin:0 auto;padding:2.175rem 1.0875rem;min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><div class="css-1k3zkui"><style data-emotion="css 1k9en36">.css-1k9en36{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:2.9rem;padding-bottom:1.45rem;border-bottom:1px solid #9CA3AF40;}.css-1k9en36 h1{font-size:1.5rem;margin:0;font-weight:800;}.css-1k9en36 h1 a{color:#111827;-webkit-text-decoration:none;text-decoration:none;}.css-1k9en36 h1 a:hover{color:#4F46E5;}.css-1k9en36 nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:1rem;}.css-1k9en36 nav a{font-size:0.9rem;font-weight:600;color:#4B5563;-webkit-text-decoration:none;text-decoration:none;}.css-1k9en36 nav a:hover{color:#4F46E5;}</style><header class="css-1k9en36"><h1><a href="/">Dotorimook&#x27;s blog</a></h1><nav><a href="/">Home</a></nav></header><style data-emotion="css yp9swi">.css-yp9swi{-webkit-flex:1;-ms-flex:1;flex:1;}</style><main class="css-yp9swi"><astro-slot> <article> <header> <h1>LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법 - LINE Developer Days 2021 요약</h1> <p>11/16/2021</p> </header> <astro-island uid="270IvJ" prefix="r4" component-url="/_astro/AdSense.B1uZh6Rd.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;client&quot;:[0,&quot;ca-pub-5013570089563608&quot;],&quot;slot&quot;:[0,&quot;3747930287&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;AdSense&quot;,&quot;value&quot;:true}" await-children><div style="margin:20px 0;overflow:hidden"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5013570089563608" data-ad-slot="3747930287" data-ad-format="auto" data-full-width-responsive="true"></ins></div><!--astro:end--></astro-island> <div class="blog-post-content"> <h1 id="line-news에서-레이아웃-시프트-문제를-해결한-방법">LINE NEWS에서 레이아웃 시프트 문제를 해결한 방법</h1>
+<aside>
+💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
+</aside>
+<h1 id="abstract">Abstract</h1>
+<blockquote>
+<p>LINE NEWS의 특징 중 하나는 개인 맞춤형 콘텐츠라는 것입니다. 월 154억 PV(2021년 8월 기준)를 바탕으로 데이터를 집계해서 사용자별로 콘텐츠와 레이아웃을 나누고 있습니다. 사용하는 UI 컴포넌트는 100개 이상이며, 첫 화면에 필요한 API 요청 수도 20개가 넘는데요. 이로 인해 페이지 로딩 속도가 느려지거나 레이아웃이 콘텐츠의 로딩에 따라서 움직이는 ‘Layout Shift’현상 심각해지는 경우가 있었습니다. LINE NEWS에서는 이러한 문제를 해결하기 위해 스켈레톤 스크린을 구현하는 방식을 채택하고 성능을 향상시키기 위해 노력했습니다.</p>
+<p>이번 세션에서는 LINE NEWS에서 스켈레톤 스크린을 활용한 방법과 개발하면서 겪은 비하인드 스토리를 소개합니다.</p>
+</blockquote>
+<p>LINE NEWS 서비스 UI에서  발생할 수 있는 Layout Shift 문제를 해결하기 위해서 도입한 스켈레톤 스크린을 어떻개 개발하였는지 설명합니다.</p>
+<h1 id="layout-shift란">Layout Shift란?</h1>
+<ul>
+<li>페이지 로딩 이후 data fetching 등이 완료됨에 따라 컴포넌트가 렌더링되면서 레이아웃이 변경될 수 있는데, 이 과저엥서 기존에 있던 컴포넌트 영역이 밀려날 수 있는 현상을 의미</li>
+<li>레이아웃 시프트가 일어나는 시점에 클릭을 하게 되면 사용자가 원하지 않았던 뉴스 기사로 이동 되는 등 불편을 초래할 수 있음.</li>
+</ul>
+<h1 id="line-news에서-발생하는-layout-shift">LINE NEWS에서 발생하는 Layout Shift</h1>
+<p>LINE NEWS 태에서는 세가지 성격의 Layout Shift를 야기하는 API가 있음:</p>
+<ol>
+<li>개인화된 API
+<ul>
+<li>모든 유저에게 해당되고</li>
+<li>유저마다 다른 영상을 보여주어야하므로 CDN Cache를 사용할 수 없음</li>
+<li>Response time이 느림</li>
+</ul>
+</li>
+<li>A/B 테스팅
+<ul>
+<li>신규 UI를 릴리즈할 때마다 A/B 테스팅을 활용해서 사용자 반응에 따라 최종 PR UI를 결정한다고 함</li>
+<li>릴리즈를 할 때에는 새로운 UI에 대한 오류 영향을 최소화하기 위해 단계적으로 릴리즈하는 롤 아웃 방식을 사용하고 있다고 함.</li>
+<li>사용자 셋에 따라 다른  UI를 노출해야함</li>
+</ul>
+</li>
+<li>광고
+<ul>
+<li>개인화된 광고를 사용하므로 개인화된 API와 유사함</li>
+</ul>
+</li>
+</ol>
+<h1 id="layout-shift에-대한-해결방안--skeleton-screen">Layout Shift에 대한 해결방안 → Skeleton Screen</h1>
+<h2 id="skeleton-screen">Skeleton Screen</h2>
+<ul>
+<li>레이아웃 시프트를 해결하기 위해 Skeleton Screen을 이용하고 있음.</li>
+<li>스켈레톤을 이용하면, data fetching 후 영역을 미리 잡아 둘 수 있으므로 레이아웃 시프트를 예방하는 방안이 될 수 있음</li>
+<li>하지만 광고 같은 경우는 광고에 따라 컴포넌트 영역이 달라질 수 도 있기 때문에 그 위치를 제대로 파악하기 어려우며, 여전히 레이아웃 시프트가 발생할 수 있음</li>
+<li>그래서 스크린 전체를 뒤덮는 스켈레톤 방식을 이용했다 고 함.
+<ul>
+<li>화면에 필요한 data fetching이 다 이루어진 상태에서 스켈레톤을 해제하는 방식임</li>
+<li>실제 레이아웃과 미묘하게 달라서 위화감이 없지 않겠느냐는 우려가 있었지만, 실제 구현해서 확인했을 때 큰 위화감이 들지 않아서 채택했다고 함.</li>
+</ul>
+</li>
+</ul>
+<h2 id="skeleton-screen의-해제-조건">Skeleton Screen의 해제 조건</h2>
+<ul>
+<li>모든 API를 다 기다리면 너무 늦어질 가능성이 있음</li>
+<li>결론적으로 해제 조건은 뷰포트 내에 들어오는 API와 해당하는 컴포넌트들의 아이템 높이를 이용해서 파악해야함 (뷰포트 높이 &#x3C; 고정 컨텐츠의 전체 높이 일 때)</li>
+</ul>
+<h2 id="skeleton을-적용한-ui-아키텍쳐">Skeleton을 적용한 UI 아키텍쳐</h2>
+<h3 id="컴포넌트">컴포넌트</h3>
+<ul>
+<li>컴포넌트의 렌더링과 State 관리는 Flux 패턴을 사용 (<a href="https://facebook.github.io/flux/docs/flux-utils/">Facebook Utils</a>를 이용)</li>
+<li>스켈레톤을 위해 두가지 타입의 컴포넌트를 사용함
+<ol>
+<li><code>&#x3C;SkeletonScreen /></code>
+<ul>
+<li>비즈니스로직을 포함하지 않고 스타일만 있는 stateless한 컴포넌트</li>
+</ul>
+</li>
+<li><code>&#x3C;SkeletonOverlap /></code>
+<ul>
+<li>스켈레톤 / 컴포넌트를 그려주는 로직이 포함된 컴포넌트</li>
+<li>스켈레톤 해제시 fade-out 애니메이션 담당</li>
+<li><code>useAnimationSkeletonOverlap</code>이라는 훅을 사용함
+<ul>
+<li>스켈레톤을 그리기 위한 state를 사용하도록 해주는 hook</li>
+<li>다른 컴포넌트에서도 SkeletonScreen을 사용하는 방식을 재사용하기 위해 훅으로 관리</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+<h3 id="상태-관리">상태 관리</h3>
+<ul>
+<li>
+<p>스켈레톤 스크린을 위한 상태를 정의함</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> interface</span><span style="color:#B392F0"> SkeletonOverlapState</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#FFAB70">	screenHeight</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	tabs</span><span style="color:#F97583">:</span><span style="color:#B392F0"> SkeletonOverlapTab</span><span style="color:#E1E4E8">[];</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> interface</span><span style="color:#B392F0"> SkeletonOverlapTab</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#E1E4E8">	[</span><span style="color:#FFAB70">index</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">]</span><span style="color:#F97583">:</span><span style="color:#E1E4E8"> {</span></span>
+<span class="line"><span style="color:#FFAB70">		elementHeight</span><span style="color:#F97583">:</span><span style="color:#79B8FF">number</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">	}</span></span>
+<span class="line"><span style="color:#FFAB70">	totalElementHeight</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> number</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#FFAB70">	readyToHide</span><span style="color:#F97583">:</span><span style="color:#79B8FF"> boolean</span><span style="color:#E1E4E8">;</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+<ul>
+<li>인덱스와 컴포넌트의 높이 값을 모두 기록하고 있는데, 순서에 따라서도 레이아웃 시프트가 발생할 수 있기 때문에 컴포넌트의 순서가 중요해진다고 함.</li>
+</ul>
+</li>
+<li>
+<p>각 API를 통해 내용이 확정되어 높이값이 확정시키는데, 데이터 상태에 따라 상태값을 나눠서 관리하고 있음</p>
+<ul>
+<li><code>None</code>, <code>Pending</code>, <code>Sucess</code>, <code>Failed</code>, <code>Cached</code>, <code>Cached &#x26; Pending</code></li>
+<li><code>Sucess</code>, <code>Failed</code>, <code>Cached</code>, <code>Cached &#x26; Pending</code> 는 컴포넌트가 렌더링 할 수 있는 상태임</li>
+<li>data fetching 이후 이 상태값을 바꿔주는 Action을 dispatch 해줌</li>
+</ul>
+</li>
+<li>
+<p>뷰포트에 포함된 데이터의 상태가 모두 렌더링 가능한 조건일 때 (AND 조건) 스켈레톤을 해제시킴</p>
+</li>
+</ul>
+<h3 id="유틸리티">유틸리티</h3>
+<ul>
+<li>스켈레톤을 좀 더 쉽게 사용할 수 있는 훅과 클래스 컴포넌트를 제공하고 있음</li>
+</ul>
+<ol>
+<li>
+<p>for hooks</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> function</span><span style="color:#B392F0"> useRenderReady</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">T</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> HTMLElement</span><span style="color:#E1E4E8">>({</span></span>
+<span class="line"><span style="color:#FFAB70">	dataStatus</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">	onRenderReady</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">}) {</span></span>
+<span class="line"><span style="color:#F97583">...</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+</li>
+<li>
+<p>for class components</p>
+<pre class="astro-code github-dark" style="background-color:#24292e;color:#e1e4e8; overflow-x: auto;" tabindex="0" data-language="tsx"><code><span class="line"><span style="color:#F97583">export</span><span style="color:#F97583"> function</span><span style="color:#B392F0"> RenderReadyWrapper</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">T</span><span style="color:#F97583"> extends</span><span style="color:#B392F0"> HTMLElement</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> HTMLElement</span><span style="color:#E1E4E8">>({</span></span>
+<span class="line"><span style="color:#FFAB70">dataStatus</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">onREnderReady</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#FFAB70">childerenCallback</span><span style="color:#E1E4E8">,</span></span>
+<span class="line"><span style="color:#E1E4E8">})</span><span style="color:#F97583">:</span><span style="color:#B392F0">RenderReadyWRapperProps</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">T</span><span style="color:#E1E4E8">>){</span></span>
+<span class="line"><span style="color:#F97583">	const</span><span style="color:#79B8FF"> rootRef</span><span style="color:#F97583"> =</span><span style="color:#B392F0"> useRenderReady</span><span style="color:#E1E4E8">&#x3C;</span><span style="color:#B392F0">T</span><span style="color:#E1E4E8">>({</span><span style="color:#F97583">...</span><span style="color:#E1E4E8">});</span></span>
+<span class="line"><span style="color:#F97583">	return</span><span style="color:#B392F0"> childrenCallback</span><span style="color:#E1E4E8">(rootRef);</span></span>
+<span class="line"><span style="color:#E1E4E8">}</span></span></code></pre>
+</li>
+</ol>
+<ul>
+<li>이런 유틸리티를 통해 스켈레톤을 사용하는 방법을 통일하여 작업할 수 있도록 가이드함</li>
+</ul>
+<h2 id="trouble-shooting">Trouble Shooting</h2>
+<p>스켈레톤 컴포넌트를 개발하면서 두 가지 문제와 해결책을 생각했다고 함.</p>
+<ol>
+<li>
+<p>스켈레톤이 해제되지 않는 현상</p>
+<p>→ 타임아웃을 걸어서 어쨌든 스켈레톤을 해제시킴</p>
+</li>
+<li>
+<p>스켈레톤이 통합되어있는 상태이기 때문에 어떤 부분에서 장애가 났는지 판별이 어려움 → 디버깅 메커니즘을 제공</p>
+<ul>
+<li>개발 환경에서 디버깅 툴을 제공하고 있음</li>
+<li>각 컴포넌트의 데이터 상태와 높이값 등을 제공하고 있음</li>
+</ul>
+</li>
+</ol>
+<h2 id="결과">결과</h2>
+<ul>
+<li>스켈레톤 스크린을 적용하고 난뒤에 레이아웃 시프트 빈도 비율이 0.348 → 0.002로 낮아짐
+<ul>
+<li>롤링 등의 극단적인 케이스에서 발생한 것이므로 실제로는 0이라고 봐도 무방</li>
+</ul>
+</li>
+<li>최악의 경우 타임아웃 값인 2.5s 정도 스켈레톤 스크린이 노출됨 → 스켈레톤이 통으로 이루어져있기 때문에 느려졌을 때 전체 스켈레톤 해제에 어려움이 있음</li>
+</ul>
+<h1 id="느낀점">느낀점</h1>
+<p>관심있어하는 FE 분야의 첫 번째 세션이라 기대를 했는데, 일본스러운 발표였다라는 느낌이 들었다.</p>
+<ol>
+<li>
+<p>꼼꼼함</p>
+<p>이렇게 꼼꼼하게 모든 상태를 관리하는 것이 일본 특유의 장인정신과 디테일이 느껴지는 것 같아 감동스러웠다. 이제껏 스켈레톤을 쓸 때 이런식으로 관리한 적이 없었는데, 좀 신기하다는 느낌이 들었다.</p>
+</li>
+<li>
+<p>이렇게까지 해야했나?</p>
+<p>일본스러운 해법이었다는 생각이 드는 느낌이 들었던 것은, ‘일반적으로 스켈레톤을 만들 때에 컴포넌트 별로 분리해서 관리하는 것이 더 유연하게 관리할 수 있는데 왜 이렇게 해야만 했을까?’ 하는 점이었다. 발표의 초반부에 그 이유를 설명하고는 있다. 개인화된 일부 컴포넌트에서 보여지는 컨텐츠가 일정하지 않기 때문이었다. 이런 부분에서 이렇게 디테일이 들어가면, 당연히 이 작업을 하는 시간만큼 다른 일정을 수행할 수 없게 될 텐데, 디자인적으로 컨텐츠 높이를 고정시키면 이렇게까지 관리할 필요가 없지않았나 하는 생각이 들었다.</p>
+<p>어쩌면 제품 개발이 이미 일정 궤도에 올랐고, 디테일한 튜닝이 필요한 시점에 적절하게 튜닝한 것일 수도 있겠지만, 그런 상황이 아니었다면 유관 부서 간에 협의로 조율될 수 있는 문제가 아니었나 생각한다.</p>
+<p>환경적으로 조율할 수 없었을 수도 있지만 (대부분의 인간사는 말로 다 해결된다..), 주어진 환경을 최대한 만족하는 방안을 찾은 것, 혹은 조율보다 그냥 방법을 찾지 뭐라고 생각했을 수도 있을 것 같은데 (ㅋㅋ). 이런 점이 좀 일본 스럽달까(?)..</p>
+</li>
+<li>
+<p>협업과 코드 퀄리티를 고려한 유틸리티와 디버깅 툴</p>
+<p>프로 개발자의 소양(ㅋㅋ) 이기도 한 것 같은데, 디버깅 툴을 통해 개발 환경에서 쉽게 디버깅이 가능하게 UI를 제공한 점과 custom hook 등의 유틸리티를 이용해서 다른 개발자들이 작업할 때에 스켈레톤 렌더링 방식을 통일하고, 관련 로직을 재사용하게 했다는 점이 좋은 점인 것 같다.</p>
+</li>
+</ol>
+<p>접근 방식 등 여러가지 흥미로운 점이 있었던 발표이긴 했다.</p>
+<h1 id="발표-영상">발표 영상</h1>
+<iframe width="1488" height="846" src="https://www.youtube.com/embed/jJ6MqAbsDc8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<h1 id="reference">Reference</h1>
+<p><a href="https://linedevday.linecorp.com/2021/ko/sessions/97">Line Developer Days 2021 세션</a></p>
+<p><a href="https://www.youtube.com/watch?v=jJ6MqAbsDc8">발표 Youtube</a></p>
+<p><a href="https://speakerdeck.com/line_devday2021/solving-the-layout-shift-problem-in-line-news">발표자료 PDF</a></p> </div> <astro-island uid="Z2crMHf" prefix="r5" component-url="/_astro/AdSense.B1uZh6Rd.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;client&quot;:[0,&quot;ca-pub-5013570089563608&quot;],&quot;slot&quot;:[0,&quot;5476601469&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;AdSense&quot;,&quot;value&quot;:true}" await-children><div style="margin:20px 0;overflow:hidden"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5013570089563608" data-ad-slot="5476601469" data-ad-format="auto" data-full-width-responsive="true"></ins></div><!--astro:end--></astro-island> <hr> <footer> <style data-emotion="css jgy9hf">.css-jgy9hf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:3.625rem;}</style><div class="css-jgy9hf"><p>Written by <strong>Dotorimook</strong></p></div> </footer> </article> <astro-island uid="gkgg4" prefix="r3" component-url="/_astro/Utterances.BElInP5o.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;repo&quot;:[0,&quot;dotorimook/dotorimook.github.io&quot;],&quot;theme&quot;:[0,&quot;github-light&quot;]}" ssr client="visible" opts="{&quot;name&quot;:&quot;Utterances&quot;,&quot;value&quot;:true}" await-children><div></div><!--astro:end--></astro-island> </astro-slot></main><style data-emotion="css 1qofucn">.css-1qofucn{margin-top:4.35rem;padding-top:1.45rem;border-top:1px solid #9CA3AF40;font-size:0.85rem;color:#9CA3AF;text-align:center;}.css-1qofucn .tags-list{margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:0.5rem;}.css-1qofucn .tags-list a{color:#4B5563;-webkit-text-decoration:none;text-decoration:none;}.css-1qofucn .tags-list a:hover{color:#4F46E5;-webkit-text-decoration:underline;text-decoration:underline;}</style><footer class="css-1qofucn"><div class="tags-list"><a href="/tag/jekyll">#<!-- -->jekyll</a><a href="/tag/etc">#<!-- -->etc</a><a href="/tag/react">#<!-- -->react</a><a href="/tag/react-hook-form">#<!-- -->react-hook-form</a><a href="/tag/javascript">#<!-- -->javascript</a><a href="/tag/typescript">#<!-- -->typescript</a><a href="/tag/web">#<!-- -->web</a><a href="/tag/vscode">#<!-- -->vscode</a><a href="/tag/mongoose">#<!-- -->mongoose</a><a href="/tag/node">#<!-- -->node</a><a href="/tags">More...</a></div><p>© <!-- -->2026<!-- --> Dotorimook. All rights reserved.</p></footer></div><!--astro:end--></astro-island>  </body></html> 

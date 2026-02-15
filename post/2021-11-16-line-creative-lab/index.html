@@ -1,0 +1,144 @@
+<!DOCTYPE html><html lang="ko"> <head><meta charset="UTF-8"><meta name="viewport" content="width=device-width"><link rel="icon" type="image/svg+xml" href="/favicon.svg"><meta name="generator" content="Astro v5.17.2"><!-- Canonical URL --><link rel="canonical" href="https://dotorimook.github.io/post/2021-11-16-line-creative-lab/"><title>LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기 | Dotorimook&#39;s Blog</title><meta name="title" content="LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기 | Dotorimook's Blog"><meta name="description" content="Dotorimook's Tech Blog"><!-- Open Graph / Facebook --><meta property="og:type" content="article"><meta property="og:url" content="https://dotorimook.github.io/post/2021-11-16-line-creative-lab/"><meta property="og:title" content="LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기"><meta property="og:description" content="Dotorimook's Tech Blog"><meta property="og:image" content="https://dotorimook.github.io/assets/profile-pic.jpg"><!-- Twitter --><meta property="twitter:card" content="summary_large_image"><meta property="twitter:url" content="https://dotorimook.github.io/post/2021-11-16-line-creative-lab/"><meta property="twitter:title" content="LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기"><meta property="twitter:description" content="Dotorimook's Tech Blog"><meta property="twitter:image" content="https://dotorimook.github.io/assets/profile-pic.jpg"><!-- Additional SEO --><meta name="robots" content="index, follow"><!-- Google AdSense --><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5013570089563608" crossorigin="anonymous"></script><!-- Service Worker Unregistration (Fix for Gatsby -> Astro migration) --><script>
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker.getRegistrations().then(function(registrations) {
+                    for(let registration of registrations) {
+                        registration.unregister();
+                    }
+                });
+            }
+        </script><style>@import"https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/static/pretendard.css";html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;box-sizing:border-box}body{line-height:1.7;font-family:Pretendard Variable,Pretendard,-apple-system,BlinkMacSystemFont,system-ui,Roboto,Helvetica Neue,Segoe UI,Apple SD Gothic Neo,Noto Sans KR,Malgun Gothic,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,sans-serif;color:#374151;background:#fff;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}a{text-decoration:none;color:inherit;transition:color .2s ease-in-out}a:hover{color:#4f46e5}h1,h2,h3,h4,h5,h6{color:#111827;font-weight:700;line-height:1.3;margin-bottom:.5em}p{margin-bottom:1em}ul,ol{list-style:none}
+.blog-post-content{line-height:1.6;font-size:1.1rem}.blog-post-content h1,.blog-post-content h2,.blog-post-content h3{margin-top:1.5em;margin-bottom:.5em}.blog-post-content p{margin-bottom:1em}.blog-post-content ul,.blog-post-content ol{margin-bottom:1em;padding-left:1.5em}.blog-post-content img{max-width:100%;height:auto}.blog-post-content pre{padding:1em;border-radius:4px;overflow-x:auto}
+</style></head> <body>  <style>astro-island,astro-slot,astro-static-slot{display:contents}</style><script>(()=>{var e=async t=>{await(await t())()};(self.Astro||(self.Astro={})).load=e;window.dispatchEvent(new Event("astro:load"));})();</script><script>(()=>{var A=Object.defineProperty;var g=(i,o,a)=>o in i?A(i,o,{enumerable:!0,configurable:!0,writable:!0,value:a}):i[o]=a;var d=(i,o,a)=>g(i,typeof o!="symbol"?o+"":o,a);{let i={0:t=>m(t),1:t=>a(t),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(a(t)),5:t=>new Set(a(t)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(t),9:t=>new Uint16Array(t),10:t=>new Uint32Array(t),11:t=>1/0*t},o=t=>{let[l,e]=t;return l in i?i[l](e):void 0},a=t=>t.map(o),m=t=>typeof t!="object"||t===null?t:Object.fromEntries(Object.entries(t).map(([l,e])=>[l,o(e)]));class y extends HTMLElement{constructor(){super(...arguments);d(this,"Component");d(this,"hydrator");d(this,"hydrate",async()=>{var b;if(!this.hydrator||!this.isConnected)return;let e=(b=this.parentElement)==null?void 0:b.closest("astro-island[ssr]");if(e){e.addEventListener("astro:hydrate",this.hydrate,{once:!0});return}let c=this.querySelectorAll("astro-slot"),n={},h=this.querySelectorAll("template[data-astro-template]");for(let r of h){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(let r of c){let s=r.closest(this.tagName);s!=null&&s.isSameNode(this)&&(n[r.getAttribute("name")||"default"]=r.innerHTML)}let p;try{p=this.hasAttribute("props")?m(JSON.parse(this.getAttribute("props"))):{}}catch(r){let s=this.getAttribute("component-url")||"<unknown>",v=this.getAttribute("component-export");throw v&&(s+=` (export ${v})`),console.error(`[hydrate] Error parsing props for component ${s}`,this.getAttribute("props"),r),r}let u;await this.hydrator(this)(this.Component,p,n,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),this.dispatchEvent(new CustomEvent("astro:hydrate"))});d(this,"unmount",()=>{this.isConnected||this.dispatchEvent(new CustomEvent("astro:unmount"))})}disconnectedCallback(){document.removeEventListener("astro:after-swap",this.unmount),document.addEventListener("astro:after-swap",this.unmount,{once:!0})}connectedCallback(){if(!this.hasAttribute("await-children")||document.readyState==="interactive"||document.readyState==="complete")this.childrenConnectedCallback();else{let e=()=>{document.removeEventListener("DOMContentLoaded",e),c.disconnect(),this.childrenConnectedCallback()},c=new MutationObserver(()=>{var n;((n=this.lastChild)==null?void 0:n.nodeType)===Node.COMMENT_NODE&&this.lastChild.nodeValue==="astro:end"&&(this.lastChild.remove(),e())});c.observe(this,{childList:!0}),document.addEventListener("DOMContentLoaded",e)}}async childrenConnectedCallback(){let e=this.getAttribute("before-hydration-url");e&&await import(e),this.start()}async start(){let e=JSON.parse(this.getAttribute("opts")),c=this.getAttribute("client");if(Astro[c]===void 0){window.addEventListener(`astro:${c}`,()=>this.start(),{once:!0});return}try{await Astro[c](async()=>{let n=this.getAttribute("renderer-url"),[h,{default:p}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),u=this.getAttribute("component-export")||"default";if(!u.includes("."))this.Component=h[u];else{this.Component=h;for(let f of u.split("."))this.Component=this.Component[f]}return this.hydrator=p,this.hydrate},e,this)}catch(n){console.error(`[astro-island] Error hydrating ${this.getAttribute("component-url")}`,n)}}attributeChangedCallback(){this.hydrate()}}d(y,"observedAttributes",["props"]),customElements.get("astro-island")||customElements.define("astro-island",y)}})();</script><script>(()=>{var a=(s,i,o)=>{let r=async()=>{await(await s())()},t=typeof i.value=="object"?i.value:void 0,c={rootMargin:t==null?void 0:t.rootMargin},n=new IntersectionObserver(e=>{for(let l of e)if(l.isIntersecting){n.disconnect(),r();break}},c);for(let e of o.children)n.observe(e)};(self.Astro||(self.Astro={})).visible=a;window.dispatchEvent(new Event("astro:visible"));})();</script><astro-island uid="ZexM68" prefix="r8" component-url="/_astro/PageLayout.D1kAFV_b.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;title&quot;:[0,&quot;LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기&quot;],&quot;tags&quot;:[1,[[0,&quot;jekyll&quot;],[0,&quot;etc&quot;],[0,&quot;react&quot;],[0,&quot;react-hook-form&quot;],[0,&quot;javascript&quot;],[0,&quot;typescript&quot;],[0,&quot;web&quot;],[0,&quot;vscode&quot;],[0,&quot;mongoose&quot;],[0,&quot;node&quot;],[0,&quot;js&quot;],[0,&quot;db&quot;],[0,&quot;database&quot;],[0,&quot;mac&quot;],[0,&quot;MySQL&quot;],[0,&quot;console&quot;],[0,&quot;Jira&quot;],[0,&quot;git&quot;],[0,&quot;bitbucket&quot;],[0,&quot;commit&quot;],[0,&quot;jquery&quot;],[0,&quot;load&quot;],[0,&quot;unload&quot;],[0,&quot;indexOf&quot;],[0,&quot;error&quot;],[0,&quot;scurm&quot;],[0,&quot;agile&quot;],[0,&quot;sprint&quot;],[0,&quot;Software-Engineering&quot;],[0,&quot;yarn&quot;],[0,&quot;npm&quot;],[0,&quot;package&quot;],[0,&quot;lock&quot;],[0,&quot;nginx&quot;],[0,&quot;server&quot;],[0,&quot;cookie&quot;],[0,&quot;docker&quot;],[0,&quot;pm2&quot;],[0,&quot;pm2-runtime&quot;],[0,&quot;mobx&quot;],[0,&quot;mobx-react&quot;],[0,&quot;troubleshooting&quot;],[0,&quot;eslint&quot;],[0,&quot;gatsby&quot;],[0,&quot;gh-page&quot;],[0,&quot;github.io&quot;],[0,&quot;adsense&quot;],[0,&quot;m1&quot;],[0,&quot;apple silicon&quot;],[0,&quot;express&quot;],[0,&quot;swagger&quot;],[0,&quot;오토 임포트&quot;],[0,&quot;auto import&quot;],[0,&quot;blockchain&quot;],[0,&quot;altcoin&quot;],[0,&quot;cryptocurrency&quot;],[0,&quot;Qtum&quot;],[0,&quot;퀀텀&quot;],[0,&quot;python&quot;],[0,&quot;telegram&quot;],[0,&quot;jira&quot;],[0,&quot;kanban&quot;],[0,&quot;dots&quot;],[0,&quot;keybiard&quot;],[0,&quot;review&quot;],[0,&quot;리뷰&quot;],[0,&quot;키보드&quot;],[0,&quot;기계식키보드&quot;],[0,&quot;키캡&quot;],[0,&quot;xda&quot;],[0,&quot;앤프로2&quot;],[0,&quot;hidden class&quot;],[0,&quot;inline caching&quot;],[0,&quot;javascript perforamnce&quot;],[0,&quot;keyboard&quot;],[0,&quot;ann pro2&quot;],[0,&quot;keycap&quot;],[0,&quot;소음&quot;],[0,&quot;오링&quot;],[0,&quot;oring&quot;],[0,&quot;reivew&quot;],[0,&quot;iphone&quot;],[0,&quot;아이폰&quot;],[0,&quot;신지모루&quot;],[0,&quot;신지모루 에어로핏&quot;],[0,&quot;아이폰 케이스&quot;],[0,&quot;vscode.dev&quot;],[0,&quot;git.dev&quot;],[0,&quot;setting sync&quot;],[0,&quot;web IDE&quot;],[0,&quot;IDE&quot;],[0,&quot;속독&quot;],[0,&quot;LINE dev days 2021&quot;],[0,&quot;line developer days 2021&quot;],[0,&quot;line dev days&quot;],[0,&quot;line developer days&quot;],[0,&quot;React&quot;],[0,&quot;storybook&quot;],[0,&quot;TSDoc&quot;],[0,&quot;Declare file&quot;],[0,&quot;mdx&quot;],[0,&quot;typesciprt&quot;],[0,&quot;sharp&quot;],[0,&quot;NextJS&quot;],[0,&quot;ESLint&quot;],[0,&quot;Capacitor&quot;],[0,&quot;react-hook&quot;],[0,&quot;portal&quot;],[0,&quot;layout shift&quot;],[0,&quot;skeleton&quot;],[0,&quot;TDD&quot;],[0,&quot;FE&quot;],[0,&quot;jest&quot;],[0,&quot;etc, AI, astro&quot;],[0,&quot;github&quot;],[0,&quot;gitlab&quot;],[0,&quot;git-authentication&quot;],[0,&quot;ssh&quot;],[0,&quot;pre-receive hook declined&quot;],[0,&quot;env&quot;]]],&quot;categories&quot;:[1,[[0,&quot;jekyll&quot;],[0,&quot;update&quot;],[0,&quot;vscode&quot;],[0,&quot;mongoose&quot;],[0,&quot;mac&quot;],[0,&quot;MySQL&quot;],[0,&quot;javascript&quot;],[0,&quot;Jira&quot;],[0,&quot;JQuery&quot;],[0,&quot;Software-Engineering&quot;],[0,&quot;nginx&quot;],[0,&quot;react&quot;],[0,&quot;typescript&quot;],[0,&quot;gatsby&quot;],[0,&quot;blahblah&quot;],[0,&quot;express&quot;],[0,&quot;cryptocurrency&quot;],[0,&quot;python&quot;],[0,&quot;review&quot;],[0,&quot;etc&quot;],[0,&quot;React&quot;],[0,&quot;NextJS&quot;],[0,&quot;ESLint&quot;],[0,&quot;Capacitor&quot;],[0,&quot;react-hook&quot;],[0,&quot;portal&quot;],[0,&quot;jest&quot;],[0,&quot;git&quot;],[0,&quot;troubleshooting&quot;],[0,&quot;npm&quot;]]]}" ssr client="load" opts="{&quot;name&quot;:&quot;PageLayout&quot;,&quot;value&quot;:true}" await-children><style data-emotion="css 1k3zkui">.css-1k3zkui{max-width:800px;margin:0 auto;padding:2.175rem 1.0875rem;min-height:100vh;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;}</style><div class="css-1k3zkui"><style data-emotion="css 1k9en36">.css-1k9en36{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-webkit-justify-content:space-between;justify-content:space-between;-webkit-align-items:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;margin-bottom:2.9rem;padding-bottom:1.45rem;border-bottom:1px solid #9CA3AF40;}.css-1k9en36 h1{font-size:1.5rem;margin:0;font-weight:800;}.css-1k9en36 h1 a{color:#111827;-webkit-text-decoration:none;text-decoration:none;}.css-1k9en36 h1 a:hover{color:#4F46E5;}.css-1k9en36 nav{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;gap:1rem;}.css-1k9en36 nav a{font-size:0.9rem;font-weight:600;color:#4B5563;-webkit-text-decoration:none;text-decoration:none;}.css-1k9en36 nav a:hover{color:#4F46E5;}</style><header class="css-1k9en36"><h1><a href="/">Dotorimook&#x27;s blog</a></h1><nav><a href="/">Home</a></nav></header><style data-emotion="css yp9swi">.css-yp9swi{-webkit-flex:1;-ms-flex:1;flex:1;}</style><main class="css-yp9swi"><astro-slot> <article> <header> <h1>LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기</h1> <p>11/17/2021</p> </header> <astro-island uid="270IvJ" prefix="r4" component-url="/_astro/AdSense.B1uZh6Rd.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;client&quot;:[0,&quot;ca-pub-5013570089563608&quot;],&quot;slot&quot;:[0,&quot;3747930287&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;AdSense&quot;,&quot;value&quot;:true}" await-children><div style="margin:20px 0;overflow:hidden"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5013570089563608" data-ad-slot="3747930287" data-ad-format="auto" data-full-width-responsive="true"></ins></div><!--astro:end--></astro-island> <div class="blog-post-content"> <h1 id="line-creative-lab-html5-canvas로-눈길-끄는-광고-만들기">LINE Creative Lab: HTML5 Canvas로 눈길 끄는 광고 만들기</h1>
+<aside>
+💡 제가 발표를 보면서 흥미롭게 보았던 내용 위주로 정리를 한 내용입니다. 모든 발표 내용을 수록하지 않고 있을 수 있고 더 자세하게 내용을 알고 싶으시다면 함께 첨부된 발표자료 링크나 유튜브를 보시길 바랍니다 😎
+</aside>
+<h1 id="abstract">Abstract</h1>
+<blockquote>
+<p>LINE Creative Lab은 사용자가 자신이 만든 콘텐츠를 다른 LINE 서비스에 광고로 게시할 수 있는 서비스로 현재 일본에서만 제공하고 있습니다.</p>
+<p>LINE Creative Lab은 HTML5 Canvas를 이용해 사용자가 몇 개의 간단한 단계만 거치면 광고를 만들 수 있게 해줍니다. 사용자는 이미지와 영상 편집기를 사용해 다양한 광고를 제작할 수 있습니다. 영상 편집기는 크게 두 부분으로 나뉘는데요. 첫 번째는 영상 템플릿을 만들 수 있는 프론트엔드 애플리케이션이고, 두 번째는 영상 렌더링 처리를 담당하는 Node.js 인코딩 서버입니다. 빠른 렌더링을 위해 클라이언트에서는 WebGL을 이용한 GPU 하드웨어 가속을 지원하고 서버에서는 headless-gl(OpenGL) GPU 하드웨어 가속을 지원합니다. 이번 발표에서는 LINE 사용자에게 LINE Creative Lab을 제공하기 위해 어떻게 서비스를 기획하고, 개발하고, 배포했는지에 대해서 이야기하고자 합니다.</p>
+</blockquote>
+<h1 id="요약">요약</h1>
+<h2 id="line-creative-lab">LINE Creative Lab?</h2>
+<ul>
+<li>라인에서 보여줄 광고(이미지 및 동영상 배너)를 직접 만들 수 있는 에디터</li>
+<li>기존 agency에 비용을 지불해서 광고 컨텐츠를 제작 (금전전 비용, 컨텐츠 의뢰에서 나오는 부담 및 시간 소요) → 직접 제작 (빠르고, 비용절감 가능)</li>
+<li>이미지 및 비디오 에디터 제공</li>
+<li>제공 기능
+<ul>
+<li>요소를 편집할 수 있는 레이어 제공
+<ul>
+<li>이미지 레이어 (이미지, 비디오)</li>
+<li>쉐잎 레이어 (이미지, 비디오)</li>
+<li>로고 레이어 (이미지, 비디오)</li>
+<li>텍스트 레이어 (이미지, 비디오)</li>
+<li>씬 편집 (비디오만)</li>
+<li>전환 편집 (비디오만)</li>
+</ul>
+</li>
+<li>쉽게 제작이 가능한 템플릿 제공</li>
+</ul>
+</li>
+<li>일반적인 시나리오
+<ul>
+<li>툴을 이용해서 내용을 편집</li>
+<li>미리보기</li>
+<li>템플릿으로 저장</li>
+<li>렌더링</li>
+</ul>
+</li>
+</ul>
+<h2 id="challenge">Challenge</h2>
+<h3 id="font-loading">Font Loading</h3>
+<ul>
+<li>
+<p>폰트 사이즈가 크면 미리보기 등 렌더링하는데 시간이 소요됨</p>
+</li>
+<li>
+<p>해결책은 두가지</p>
+<ol>
+<li>Font Server:  폰트 서버가 특정 렌더링 데이터를 넘기면 텍스트가 렌더링 된 이미지를 넘겨준다.
+<ul>
+<li>잦은 변경에 오히려 비효율이 발생할 수 있음</li>
+</ul>
+</li>
+<li>Font subsets: 유니코드 범위로 폰트를 분리하고 css <code>@font-face</code>의  <code>unicode-range</code>를 이용하여 유니코드 범위로 구분
+<ul>
+<li>일일이 폰트를 분리가 번거로움</li>
+<li>최악의 경우 모든 폰트를 불러야함</li>
+</ul>
+</li>
+</ol>
+<p>⇒ 결론은 Font subsets로 적용함</p>
+</li>
+</ul>
+<h3 id="shape">Shape</h3>
+<ul>
+<li>쉐입을 디자이너가 svg 형태로 전달 받음</li>
+<li>이 형태에서 스트로크를 적용했을 때 처음 설정한 범위에서 crop 되는 현상이 있음
+<ul>
+<li>svg를 <strong>Path2D</strong>를 이용해서 그림</li>
+<li><strong>Path2D</strong>는 모던 브라우저에서 대부분 지원하고 있음</li>
+</ul>
+</li>
+</ul>
+<h3 id="encoding">Encoding</h3>
+<ul>
+<li>비디오를 인코딩 할 수 있는 방법은 몇 가지가 있음:
+<ul>
+<li>
+<p>MediaRecorder API ⇒ 30s 영상을 만들 때 30s 소요</p>
+<ul>
+<li>대부분의 브라우저에서 지원</li>
+<li>브라우저 단에서 인코딩 가능하고</li>
+<li>구현이 간편</li>
+<li>캡쳐하는 형태기 때문에 동영상 길이만큼 기다려야함</li>
+<li>탭 이동시 pause 되고, 탭을 닫을 때 멈추는 단점이 있음</li>
+</ul>
+<p>⇒ 프로덕션에서 사용하지 않음</p>
+</li>
+<li>
+<p>FFMPEG ⇒ 30s 영상을 만들 때 7s 소요</p>
+<ul>
+<li>Raw frames → FFMPEG → video encoding 방식</li>
+<li>클라이언트에서 실행할 수 없으므로 서버가 필요함</li>
+</ul>
+</li>
+<li>
+<p>Hardware Encoder 활용 ⇒ 30s 영상을 만들 때 2s 소요</p>
+<ul>
+<li>NodeJS SERVER → N-API binding(C++을 실행시켜주는 스크립트) → low-level SDK (C++) → HW encoder 로 전달되면서 인코딩 되는 형태</li>
+<li>클라이언트에서 실행할 수 없으므로 서버가 필요함</li>
+<li>Node JS 서버를 이용해서 코드베이스를 재사용할 수 있음</li>
+<li>브라우저에서만 지원되던 API 일부는 특정 패키지와 맵핑돼서 사용할 수 있음
+<ul>
+<li><code>canvas</code> → <code>node-canvas</code></li>
+<li>WebGL → <code>headless-gl</code></li>
+</ul>
+</li>
+<li>GPU Memory - RAM/SDD 간 이동시 병목이 발생 → 통으로 GPU Memory를 이용하면서 병목현상을 제거</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="difference-of-text">Difference of text</h3>
+<ul>
+<li>서버쪽에서 인코딩하기 때문에 일부 클라이언트 환경과 텍스트 렌더링의 미묘한 차이가 있음
+<ul>
+<li>macOS - node server 간 차이</li>
+<li>MacOS - Headless (Linux) 간 차이</li>
+</ul>
+</li>
+</ul>
+<h3 id="신규-이펙트-추가">신규 이펙트 추가</h3>
+<ul>
+<li>GLSL 개발자 부재와 오픈소스를 사용으로 인해 신규 이펙트를 추가할 때 개발 시간이 충분히 필요함</li>
+</ul>
+<h1 id="느낀점">느낀점</h1>
+<p>개발 과정에서 발생할 수 있는 이슈들과 이를 해결해나가는 방법이 흥미로웠다.</p>
+<p>상당히 디테일한 부분까지도 신경을 쓰고 있음을 알 수 있었다.</p>
+<p>javascript는 역시 백 프론트를 넘나들면서 개발하기 좋은 언어라는 생각이 들었다. 😎</p>
+<h1 id="reference">Reference</h1>
+<p><a href="https://linedevday.linecorp.com/2021/ko/sessions/103">Line Developer Days 2021 소개 사이트</a></p>
+<p><a href="https://youtu.be/buWVbRubuBE">영상</a></p>
+<p><a href="https://speakerdeck.com/line_devday2021/line-creative-lab-create-catchy-ads-with-html5-canvas">발표자료</a></p> </div> <astro-island uid="Z2crMHf" prefix="r5" component-url="/_astro/AdSense.B1uZh6Rd.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;client&quot;:[0,&quot;ca-pub-5013570089563608&quot;],&quot;slot&quot;:[0,&quot;5476601469&quot;]}" ssr client="load" opts="{&quot;name&quot;:&quot;AdSense&quot;,&quot;value&quot;:true}" await-children><div style="margin:20px 0;overflow:hidden"><ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-5013570089563608" data-ad-slot="5476601469" data-ad-format="auto" data-full-width-responsive="true"></ins></div><!--astro:end--></astro-island> <hr> <footer> <style data-emotion="css jgy9hf">.css-jgy9hf{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;margin-bottom:3.625rem;}</style><div class="css-jgy9hf"><p>Written by <strong>Dotorimook</strong></p></div> </footer> </article> <astro-island uid="gkgg4" prefix="r3" component-url="/_astro/Utterances.BElInP5o.js" component-export="default" renderer-url="/_astro/client.DLi40IjL.js" props="{&quot;repo&quot;:[0,&quot;dotorimook/dotorimook.github.io&quot;],&quot;theme&quot;:[0,&quot;github-light&quot;]}" ssr client="visible" opts="{&quot;name&quot;:&quot;Utterances&quot;,&quot;value&quot;:true}" await-children><div></div><!--astro:end--></astro-island> </astro-slot></main><style data-emotion="css 1qofucn">.css-1qofucn{margin-top:4.35rem;padding-top:1.45rem;border-top:1px solid #9CA3AF40;font-size:0.85rem;color:#9CA3AF;text-align:center;}.css-1qofucn .tags-list{margin-bottom:1rem;display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;-webkit-justify-content:center;justify-content:center;-webkit-box-flex-wrap:wrap;-webkit-flex-wrap:wrap;-ms-flex-wrap:wrap;flex-wrap:wrap;gap:0.5rem;}.css-1qofucn .tags-list a{color:#4B5563;-webkit-text-decoration:none;text-decoration:none;}.css-1qofucn .tags-list a:hover{color:#4F46E5;-webkit-text-decoration:underline;text-decoration:underline;}</style><footer class="css-1qofucn"><div class="tags-list"><a href="/tag/jekyll">#<!-- -->jekyll</a><a href="/tag/etc">#<!-- -->etc</a><a href="/tag/react">#<!-- -->react</a><a href="/tag/react-hook-form">#<!-- -->react-hook-form</a><a href="/tag/javascript">#<!-- -->javascript</a><a href="/tag/typescript">#<!-- -->typescript</a><a href="/tag/web">#<!-- -->web</a><a href="/tag/vscode">#<!-- -->vscode</a><a href="/tag/mongoose">#<!-- -->mongoose</a><a href="/tag/node">#<!-- -->node</a><a href="/tags">More...</a></div><p>© <!-- -->2026<!-- --> Dotorimook. All rights reserved.</p></footer></div><!--astro:end--></astro-island>  </body></html> 
