@@ -20,12 +20,19 @@ const siteTitle = title === "Dotorimook's Blog" ? title : `${title} | Dotorimook
 ---
 
 <!doctype html>
-<html lang="ko">
+<html lang="ko-KR">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="theme-color" content="#ffffff" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+		<!-- Preconnect to font CDN for faster loading -->
+		<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
 		<meta name="generator" content={Astro.generator} />
+
+        <!-- Google Search Console Verification -->
+        <meta name="google-site-verification" content="6K7FT8G98v9kxm3ZVXq8Krb2SSdAm6HZhgqmAARYdC4" />
 
         <!-- Canonical URL -->
         <link rel="canonical" href={canonicalURL} />
@@ -40,6 +47,11 @@ const siteTitle = title === "Dotorimook's Blog" ? title : `${title} | Dotorimook
         <meta property="og:title" content={title} />
         <meta property="og:description" content={description} />
         <meta property="og:image" content={new URL(image, Astro.url)} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content={title} />
+        <meta property="og:site_name" content="Dotorimook's Blog" />
+        <meta property="og:locale" content="ko_KR" />
 
         <!-- Twitter -->
         <meta property="twitter:card" content="summary_large_image" />
@@ -47,9 +59,13 @@ const siteTitle = title === "Dotorimook's Blog" ? title : `${title} | Dotorimook
         <meta property="twitter:title" content={title} />
         <meta property="twitter:description" content={description} />
         <meta property="twitter:image" content={new URL(image, Astro.url)} />
+        <meta property="twitter:image:alt" content={title} />
 
         <!-- Additional SEO -->
         <meta name="robots" content="index, follow" />
+
+        <!-- Slot for additional head content (JSON-LD, etc.) -->
+        <slot name="head" />
 
         <!-- Google AdSense -->
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5013570089563608" crossorigin="anonymous"></script>
