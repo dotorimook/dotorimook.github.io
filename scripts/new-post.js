@@ -61,9 +61,18 @@ description: "${title}"
 `;
 
   fs.writeFileSync(filePath, template);
+  
+  // Create assets folder for the post
+  const assetsDirPath = path.join(process.cwd(), 'src/content/blog/post/assets/posts', `${dateStr}-${slug}`);
+  if (!fs.existsSync(assetsDirPath)) {
+    fs.mkdirSync(assetsDirPath, { recursive: true });
+    console.log(`📁 Assets folder created: ${assetsDirPath}`);
+  }
+  
   console.log(`
 ✅ Success! New post created:`);
   console.log(`📍 ${filePath}`);
+  console.log(`📁 Assets folder: ${assetsDirPath}`);
   
   rl.close();
 });
