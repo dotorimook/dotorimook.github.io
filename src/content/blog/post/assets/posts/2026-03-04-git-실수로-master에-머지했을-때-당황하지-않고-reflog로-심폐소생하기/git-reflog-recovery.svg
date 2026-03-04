@@ -26,7 +26,7 @@
   <rect x="380" y="100" width="180" height="120" rx="5" fill="#fff" stroke="#1e90ff" stroke-width="2"/>
   <text x="470" y="125" font-family="sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#1e90ff">Reflog</text>
   <text x="395" y="150" font-family="sans-serif" font-size="10" fill="#333">HEAD@{1}: reset: moving to v2.0.2</text>
-  <text x="395" y="170" font-family="sans-serif" font-size="10" fill="#ff4757" font-weight="bold">HEAD@{2}: commit: EXR-24483...</text>
+  <text x="395" y="170" font-family="sans-serif" font-size="10" fill="#ff4757" font-weight="bold">HEAD@{2}: commit: ABC-24483...</text>
   <text x="395" y="190" font-family="sans-serif" font-size="10" fill="#333">HEAD@{3}: commit: EXR-24482...</text>
   
   <path d="M315 150 L370 150" stroke="#1e90ff" stroke-width="2"/>
@@ -39,7 +39,7 @@
   <circle cx="200" cy="315" r="15" fill="#1e90ff"/>
   <line x1="215" y1="315" x2="285" y2="315" stroke="#ccc" stroke-width="2"/>
   <circle cx="300" cy="315" r="15" fill="#1e90ff"/>
-  <text x="250" y="345" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#1e90ff">feature/EXR-24483</text>
+  <text x="250" y="345" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#1e90ff">feature/ABC-24483</text>
   <text x="470" y="280" font-family="sans-serif" font-size="12" text-anchor="middle" fill="#1e90ff" font-weight="bold">3. git cherry-pick &amp; amend</text>
   <path d="M470 230 L470 290 Q470 315 315 315" fill="none" stroke="#1e90ff" stroke-width="2" stroke-dasharray="5,5"/>
   <path d="M315 315 l10 5 l0 -10 z" fill="#1e90ff"/>

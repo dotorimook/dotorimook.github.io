@@ -25,7 +25,7 @@ description: "실수로 master 브랜치에 커밋하거나 머지했을 때, gi
 
 분명 피처 브랜치를 따서 작업했다고 생각했는데, 정신을 차려보니 `master` 브랜치에 4개의 커밋이 직접 올라가 있고 원격 저장소까지 푸시된 상태였습니다. 
 
-팀의 컨벤션상 모든 작업은 Jira 티켓 번호(예: `EXR-24483`)를 포함한 커밋 메시지와 함께 전용 피처 브랜치에서 Pull Request를 통해 머지되어야 합니다. 지금의 `master`는 오염된 상태가 된 것이죠.
+팀의 컨벤션상 모든 작업은 Jira 티켓 번호(예: `ABC-24483`)를 포함한 커밋 메시지와 함께 전용 피처 브랜치에서 Pull Request를 통해 머지되어야 합니다. 지금의 `master`는 오염된 상태가 된 것이죠.
 
 ## 2. 해결 전략: Reset, Rescue, Reconstruct
 
@@ -53,9 +53,9 @@ git reflog
 이제 올바른 이름의 피처 브랜치를 만들고, `reflog`에서 찾은 커밋들을 하나씩 가져오면서 컨벤션에 맞게 메시지를 수정합니다.
 
 ```bash
-git checkout -b feature/EXR-24483
+git checkout -b feature/ABC-24483
 git cherry-pick <사라졌던_커밋_해시_1>
-git commit --amend -m "feat: EXR-24483 작업 내용 요약"
+git commit --amend -m "feat: ABC-24483 작업 내용 요약"
 # ... 반복
 ```
 이렇게 하면 `master`는 깨끗하게 원복되고, 내 작업물은 올바른 브랜치에서 올바른 메시지를 가진 채 부활하게 됩니다.
